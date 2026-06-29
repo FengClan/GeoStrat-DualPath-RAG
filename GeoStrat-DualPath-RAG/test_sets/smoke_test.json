@@ -1,0 +1,175 @@
+{
+  "version": "smoke",
+  "questions": [
+    {
+      "id": "FJ-001",
+      "question": "南园组的岩性特征是什么？",
+      "query_type": "FACTUAL",
+      "expected_answer": "南园组主要岩性为流纹岩、凝灰岩、英安质凝灰熔岩，夹有少量砂岩和页岩。颜色以紫红色、灰紫色为主。属于晚侏罗世火山喷发产物。",
+      "key_points": [
+        "流纹岩",
+        "凝灰岩",
+        "英安质凝灰熔岩",
+        "晚侏罗世",
+        "紫红色"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "expected_entities": [
+        "南园组",
+        "流纹岩",
+        "凝灰岩",
+        "英安质凝灰熔岩"
+      ],
+      "expected_kg_path": [
+        {
+          "entity": "南园组",
+          "relation": "COMPOSED_OF",
+          "target": "流纹岩"
+        },
+        {
+          "entity": "南园组",
+          "relation": "COMPOSED_OF",
+          "target": "凝灰岩"
+        },
+        {
+          "entity": "南园组",
+          "relation": "DATED_AS",
+          "target": "晚侏罗世"
+        }
+      ],
+      "difficulty": "easy",
+      "category": "lithology",
+      "kb_id": "all"
+    },
+    {
+      "id": "FJ-004",
+      "question": "请对比南园组和长林组的岩性差异。",
+      "query_type": "COMPARATIVE",
+      "expected_answer": "南园组以中酸性火山岩为主，包括流纹岩、凝灰岩、英安质凝灰熔岩，颜色偏紫红色；长林组以陆相碎屑沉积为主，包括砂岩、粉砂岩、页岩，夹火山碎屑岩。两者反映了不同的沉积环境：南园组为大规模火山喷发产物，长林组为火山活动间歇期的正常沉积。",
+      "key_points": [
+        "南园组中酸性火山岩",
+        "长林组陆相碎屑沉积",
+        "沉积环境差异",
+        "火山喷发与间歇期"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "expected_entities": [
+        "南园组",
+        "长林组",
+        "流纹岩",
+        "砂岩"
+      ],
+      "expected_kg_path": [
+        {
+          "entity": "南园组",
+          "relation": "COMPOSED_OF",
+          "target": "流纹岩"
+        },
+        {
+          "entity": "长林组",
+          "relation": "COMPOSED_OF",
+          "target": "砂岩"
+        }
+      ],
+      "difficulty": "medium",
+      "category": "stratigraphic_comparison",
+      "kb_id": "all"
+    },
+    {
+      "id": "FJ-006",
+      "question": "根据南园组的岩性组合特征，推断其形成的构造环境。",
+      "query_type": "REASONING",
+      "expected_answer": "南园组以大规模中酸性火山岩（流纹岩、英安岩、凝灰岩）为主，属于钙碱性系列，结合其形成于晚侏罗世，反映其形成于活动大陆边缘的火山弧环境，与古太平洋板块向欧亚板块的俯冲作用有关。该构造环境与浙闽沿海中生代火山岩带整体背景一致。",
+      "key_points": [
+        "钙碱性系列",
+        "活动大陆边缘",
+        "火山弧",
+        "板块俯冲",
+        "晚侏罗世"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "expected_entities": [
+        "南园组",
+        "古太平洋板块",
+        "欧亚板块"
+      ],
+      "expected_kg_path": [
+        {
+          "entity": "南园组",
+          "relation": "COMPOSED_OF",
+          "target": "流纹岩"
+        },
+        {
+          "entity": "南园组",
+          "relation": "COMPOSED_OF",
+          "target": "英安岩"
+        },
+        {
+          "entity": "南园组",
+          "relation": "DATED_AS",
+          "target": "晚侏罗世"
+        }
+      ],
+      "difficulty": "hard",
+      "category": "tectonic_reasoning",
+      "kb_id": "all"
+    },
+    {
+      "id": "FJ-011",
+      "question": "什么是岩石地层单位的【组】？",
+      "query_type": "FACTUAL",
+      "expected_answer": "组（Formation）是岩石地层划分的基本单位。组具有岩性、岩相和变质程度的一致性，可以由单一岩石类型构成，也可以由多种岩石类型的组合构成。组的厚度从数米到数千米不等，是进行区域地质填图的基本单位。",
+      "key_points": [
+        "基本岩石地层单位",
+        "岩性岩相一致",
+        "可单一或多种岩石",
+        "区域填图基本单位"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "expected_entities": [
+        "组"
+      ],
+      "expected_kg_path": [],
+      "difficulty": "easy",
+      "category": "stratigraphic_knowledge",
+      "kb_id": "all"
+    },
+    {
+      "id": "FJ-012",
+      "question": "坂头组的地质时代和主要岩性是什么？",
+      "query_type": "FACTUAL",
+      "expected_answer": "坂头组属于早白垩世，主要岩性为紫红色砂砾岩、砂岩、粉砂岩夹凝灰岩，属于陆相盆地沉积，含有叶肢介、介形虫等化石。",
+      "key_points": [
+        "早白垩世",
+        "紫红色砂砾岩",
+        "陆相盆地沉积",
+        "含化石"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "expected_entities": [
+        "坂头组",
+        "早白垩世"
+      ],
+      "expected_kg_path": [
+        {
+          "entity": "坂头组",
+          "relation": "DATED_AS",
+          "target": "早白垩世"
+        }
+      ],
+      "difficulty": "medium",
+      "category": "lithology",
+      "kb_id": "all"
+    }
+  ]
+}

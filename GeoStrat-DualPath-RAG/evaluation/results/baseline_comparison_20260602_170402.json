@@ -1,0 +1,550 @@
+{
+  "baselines": {
+    "direct_llm": {
+      "overall_scores": {
+        "qa_correctness": 0.6,
+        "qa_faithfulness": 0.55,
+        "qa_completeness": 0.65,
+        "citation_precision": 1.0,
+        "citation_recall": 0.0,
+        "retrieval_recall@5": 0.0,
+        "retrieval_mrr": 0.0,
+        "extraction_entity_f1": 1.0,
+        "extraction_triple_f1": 1.0,
+        "contrast_agreement": 1.0,
+        "avg_latency_ms": 17848.0488,
+        "overall_score": 0.5275
+      },
+      "per_question_results": [
+        {
+          "id": "FJ-001",
+          "question": "南园组的岩性特征是什么？",
+          "query_type": "FACTUAL",
+          "difficulty": "easy",
+          "qa_metrics": {
+            "key_point_coverage": 0.9,
+            "citation_precision": 1.0,
+            "citation_recall": 0.0,
+            "correctness": 1.0,
+            "completeness": 1.0,
+            "faithfulness": 1.0,
+            "coherence": 1.0,
+            "domain_accuracy": 1.0,
+            "llm_judge_score": 1.0,
+            "llm_judge_reason": "系统回答完全符合标准答案的核心内容（流纹岩、凝灰岩、英安质凝灰熔岩、紫红/灰紫色、晚侏罗世火山成因），且在事实性、细节深度、术语规范性、逻辑结构和地层学表述上均严格遵循现代区域地质文献（如《福建省岩石地层》、中国地层指南及华南火山岩研究共识），无任何幻觉或错误。"
+          },
+          "retrieval_metrics": {
+            "recall@5": 0.0,
+            "mrr": 0.0,
+            "hit@5": 0.0,
+            "details": "no retrieved documents"
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 1.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 22109.516859054565
+        },
+        {
+          "id": "FJ-002",
+          "question": "长林组的地质年代是什么？",
+          "query_type": "FACTUAL",
+          "difficulty": "easy",
+          "qa_metrics": {
+            "key_point_coverage": 0.5,
+            "citation_precision": 1.0,
+            "citation_recall": 0.0,
+            "correctness": 0.2,
+            "completeness": 0.3,
+            "faithfulness": 0.1,
+            "coherence": 0.9,
+            "domain_accuracy": 0.8,
+            "llm_judge_score": 0.3,
+            "llm_judge_reason": "系统回答将长林组错误定为早白垩世（125–100 Ma），但标准答案明确其属晚侏罗世；且将分布地误述为广西、广东、湖南南部，而长林组是福建闽东地区专属火山岩系，非华南陆相红层；存在严重地理、时代、岩石成因三重幻觉。"
+          },
+          "retrieval_metrics": {
+            "recall@5": 0.0,
+            "mrr": 0.0,
+            "hit@5": 0.0,
+            "details": "no retrieved documents"
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 1.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 13586.580753326416
+        }
+      ],
+      "by_difficulty": {
+        "easy": {
+          "avg_score": 0.575,
+          "count": 2
+        }
+      },
+      "by_query_type": {
+        "FACTUAL": {
+          "avg_score": 0.575,
+          "count": 2
+        }
+      },
+      "timing": {
+        "total_seconds": 45.57,
+        "total_questions": 2,
+        "avg_per_question_ms": 22782.6
+      },
+      "evaluated_at": "2026-06-02 17:02:11",
+      "evaluator_model": "qwen3.5-plus"
+    },
+    "vector_rag": {
+      "overall_scores": {
+        "qa_correctness": 0.7,
+        "qa_faithfulness": 0.75,
+        "qa_completeness": 0.65,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "retrieval_recall@5": 0.0,
+        "retrieval_mrr": 0.0,
+        "extraction_entity_f1": 1.0,
+        "extraction_triple_f1": 1.0,
+        "contrast_agreement": 1.0,
+        "avg_latency_ms": 24161.978,
+        "overall_score": 0.4875
+      },
+      "per_question_results": [
+        {
+          "id": "FJ-001",
+          "question": "南园组的岩性特征是什么？",
+          "query_type": "FACTUAL",
+          "difficulty": "easy",
+          "qa_metrics": {
+            "key_point_coverage": 0.6,
+            "citation_precision": 0.0,
+            "citation_recall": 0.0,
+            "correctness": 0.4,
+            "completeness": 0.3,
+            "faithfulness": 0.5,
+            "coherence": 0.9,
+            "domain_accuracy": 0.6,
+            "llm_judge_score": 0.5,
+            "llm_judge_reason": "系统回答严重偏离标准答案：将南园组错误表述为以安山岩—英安岩—流纹岩为主（标准答案明确排除安山岩，强调流纹岩、凝灰岩、英安质凝灰熔岩），且断言‘未夹显著沉积岩层’与标准答案‘夹有少量砂岩和页岩’直接矛盾；同时引入大量标准答案未要求的地球化学、构造背景及地层划分细节，属过度推断和事实性偏差。"
+          },
+          "retrieval_metrics": {
+            "recall@1": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr": 0.0,
+            "first_relevant_rank": null,
+            "hit@1": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 0.0,
+            "hit@10": 0.0,
+            "ndcg@1": 0.0,
+            "ndcg@3": 0.0,
+            "ndcg@5": 0.0,
+            "ndcg@10": 0.0
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 1.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 36125.31018257141
+        },
+        {
+          "id": "FJ-002",
+          "question": "长林组的地质年代是什么？",
+          "query_type": "FACTUAL",
+          "difficulty": "easy",
+          "qa_metrics": {
+            "key_point_coverage": 0.75,
+            "citation_precision": 0.0,
+            "citation_recall": 0.0,
+            "correctness": 1.0,
+            "completeness": 1.0,
+            "faithfulness": 1.0,
+            "coherence": 1.0,
+            "domain_accuracy": 1.0,
+            "llm_judge_score": 1.0,
+            "llm_judge_reason": "系统回答精准匹配标准答案‘晚侏罗世’，并以地层接触关系、文献依据和构造背景提供严谨、无幻觉的多重证据；术语（如‘不整合覆于’‘南园组’‘漳平组’‘J₃¹’）使用规范，逻辑严密，完全符合区域地层学共识。"
+          },
+          "retrieval_metrics": {
+            "recall@1": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr": 0.0,
+            "first_relevant_rank": null,
+            "hit@1": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 0.0,
+            "hit@10": 0.0,
+            "ndcg@1": 0.0,
+            "ndcg@3": 0.0,
+            "ndcg@5": 0.0,
+            "ndcg@10": 0.0
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 1.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 12198.645830154419
+        }
+      ],
+      "by_difficulty": {
+        "easy": {
+          "avg_score": 0.725,
+          "count": 2
+        }
+      },
+      "by_query_type": {
+        "FACTUAL": {
+          "avg_score": 0.725,
+          "count": 2
+        }
+      },
+      "timing": {
+        "total_seconds": 55.92,
+        "total_questions": 2,
+        "avg_per_question_ms": 27958.3
+      },
+      "evaluated_at": "2026-06-02 17:03:06",
+      "evaluator_model": "qwen3.5-plus"
+    },
+    "graph_rag": {
+      "overall_scores": {
+        "qa_correctness": 0.2,
+        "qa_faithfulness": 0.8,
+        "qa_completeness": 0.1,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "retrieval_recall@5": 0.0,
+        "retrieval_mrr": 0.0,
+        "extraction_entity_f1": 1.0,
+        "extraction_triple_f1": 1.0,
+        "contrast_agreement": 1.0,
+        "avg_latency_ms": 8057.6694,
+        "overall_score": 0.29
+      },
+      "per_question_results": [
+        {
+          "id": "FJ-001",
+          "question": "南园组的岩性特征是什么？",
+          "query_type": "FACTUAL",
+          "difficulty": "easy",
+          "qa_metrics": {
+            "key_point_coverage": 0.6,
+            "citation_precision": 0.0,
+            "citation_recall": 0.0,
+            "correctness": 0.0,
+            "completeness": 0.0,
+            "faithfulness": 1.0,
+            "coherence": 0.9,
+            "domain_accuracy": 1.0,
+            "llm_judge_score": 0.3,
+            "llm_judge_reason": "系统回答完全未提供标准答案中的任何岩性信息（流纹岩、凝灰岩等），故正确性与完整性均为0；但其严格依据给定知识图谱的缺失声明，无事实性幻觉，术语和地层学逻辑严谨，故忠实性、领域准确性和连贯性均高。"
+          },
+          "retrieval_metrics": {
+            "recall@5": 0.0,
+            "mrr": 0.0,
+            "hit@5": 0.0,
+            "details": "no retrieved documents"
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 1.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 10234.865427017212
+        },
+        {
+          "id": "FJ-002",
+          "question": "长林组的地质年代是什么？",
+          "query_type": "FACTUAL",
+          "difficulty": "easy",
+          "qa_metrics": {
+            "key_point_coverage": 0.5,
+            "citation_precision": 0.0,
+            "citation_recall": 0.0,
+            "correctness": 0.4,
+            "completeness": 0.2,
+            "faithfulness": 0.6,
+            "coherence": 0.9,
+            "domain_accuracy": 0.5,
+            "llm_judge_score": 0.4,
+            "llm_judge_reason": "系统回答将长林组笼统定为‘侏罗纪’，但标准答案明确为‘晚侏罗世’；且错误地将长林组描述为闽西北‘陆相碎屑岩沉积单元’（实际为闽东晚中生代火山岩系），与标准答案的地理分布、岩石成因和时代精度均矛盾，存在关键性地层学幻觉。"
+          },
+          "retrieval_metrics": {
+            "recall@5": 0.0,
+            "mrr": 0.0,
+            "hit@5": 0.0,
+            "details": "no retrieved documents"
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 1.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 5880.473375320435
+        }
+      ],
+      "by_difficulty": {
+        "easy": {
+          "avg_score": 0.5,
+          "count": 2
+        }
+      },
+      "by_query_type": {
+        "FACTUAL": {
+          "avg_score": 0.5,
+          "count": 2
+        }
+      },
+      "timing": {
+        "total_seconds": 23.63,
+        "total_questions": 2,
+        "avg_per_question_ms": 11816.9
+      },
+      "evaluated_at": "2026-06-02 17:03:30",
+      "evaluator_model": "qwen3.5-plus"
+    },
+    "dual_path": {
+      "overall_scores": {
+        "qa_correctness": 0.65,
+        "qa_faithfulness": 0.7,
+        "qa_completeness": 0.6,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "retrieval_recall@5": 0.0,
+        "retrieval_mrr": 0.0,
+        "extraction_entity_f1": 1.0,
+        "extraction_triple_f1": 1.0,
+        "contrast_agreement": 1.0,
+        "avg_latency_ms": 11031.4656,
+        "overall_score": 0.46
+      },
+      "per_question_results": [
+        {
+          "id": "FJ-001",
+          "question": "南园组的岩性特征是什么？",
+          "query_type": "FACTUAL",
+          "difficulty": "easy",
+          "qa_metrics": {
+            "key_point_coverage": 0.6,
+            "citation_precision": 0.0,
+            "citation_recall": 0.0,
+            "correctness": 0.3,
+            "completeness": 0.2,
+            "faithfulness": 0.4,
+            "coherence": 0.8,
+            "domain_accuracy": 0.5,
+            "llm_judge_score": 0.4,
+            "llm_judge_reason": "系统回答严重偏离标准答案：将南园组错误描述为以安山岩—英安岩—流纹岩组合为主的中性—酸性序列，但标准答案明确其主体为流纹岩、凝灰岩、英安质凝灰熔岩（无安山岩），且夹砂岩/页岩沉积夹层（系统称‘无沉积夹层’，直接矛盾）；颜色、典型岩性、火山碎屑岩主导特征等关键信息全部缺失；引入未经证实的‘高钾钙碱性系列’‘下地壳来源’‘断陷盆地’等幻觉性成因解释；地层接触关系（如‘喷发不整合’）及时代限定（仅笼统称侏罗纪，未强调晚侏罗世）亦不准确。"
+          },
+          "retrieval_metrics": {
+            "recall@1": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr": 0.0,
+            "first_relevant_rank": null,
+            "hit@1": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 0.0,
+            "hit@10": 0.0,
+            "ndcg@1": 0.0,
+            "ndcg@3": 0.0,
+            "ndcg@5": 0.0,
+            "ndcg@10": 0.0
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 1.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 10710.732221603394
+        },
+        {
+          "id": "FJ-002",
+          "question": "长林组的地质年代是什么？",
+          "query_type": "FACTUAL",
+          "difficulty": "easy",
+          "qa_metrics": {
+            "key_point_coverage": 1.0,
+            "citation_precision": 0.0,
+            "citation_recall": 0.0,
+            "correctness": 1.0,
+            "completeness": 1.0,
+            "faithfulness": 1.0,
+            "coherence": 1.0,
+            "domain_accuracy": 1.0,
+            "llm_judge_score": 1.0,
+            "llm_judge_reason": "系统回答精准匹配标准答案‘晚侏罗世’，并完整涵盖‘闽东地区晚中生代火山岩系重要组成部分’的隐含内涵（通过构造背景、层序关系及区域地层格架明确支撑）；所有地质术语（如不整合、裂陷盆地、南园组、漳平组）、时代界定（163–145 Ma）、地层接触关系及文献依据均准确无误，无任何事实性幻觉，逻辑严密、层级清晰。"
+          },
+          "retrieval_metrics": {
+            "recall@1": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr": 0.0,
+            "first_relevant_rank": null,
+            "hit@1": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 0.0,
+            "hit@10": 0.0,
+            "ndcg@1": 0.0,
+            "ndcg@3": 0.0,
+            "ndcg@5": 0.0,
+            "ndcg@10": 0.0
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 1.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 11352.199077606201
+        }
+      ],
+      "by_difficulty": {
+        "easy": {
+          "avg_score": 0.675,
+          "count": 2
+        }
+      },
+      "by_query_type": {
+        "FACTUAL": {
+          "avg_score": 0.675,
+          "count": 2
+        }
+      },
+      "timing": {
+        "total_seconds": 32.18,
+        "total_questions": 2,
+        "avg_per_question_ms": 16090.3
+      },
+      "evaluated_at": "2026-06-02 17:04:02",
+      "evaluator_model": "qwen3.5-plus"
+    }
+  },
+  "comparison": {
+    "qa_correctness": {
+      "direct_llm": 0.6,
+      "vector_rag": 0.7,
+      "graph_rag": 0.2,
+      "dual_path": 0.65
+    },
+    "qa_faithfulness": {
+      "direct_llm": 0.55,
+      "vector_rag": 0.75,
+      "graph_rag": 0.8,
+      "dual_path": 0.7
+    },
+    "qa_completeness": {
+      "direct_llm": 0.65,
+      "vector_rag": 0.65,
+      "graph_rag": 0.1,
+      "dual_path": 0.6
+    },
+    "citation_precision": {
+      "direct_llm": 1.0,
+      "vector_rag": 0.0,
+      "graph_rag": 0.0,
+      "dual_path": 0.0
+    },
+    "citation_recall": {
+      "direct_llm": 0.0,
+      "vector_rag": 0.0,
+      "graph_rag": 0.0,
+      "dual_path": 0.0
+    },
+    "retrieval_recall@5": {
+      "direct_llm": 0.0,
+      "vector_rag": 0.0,
+      "graph_rag": 0.0,
+      "dual_path": 0.0
+    },
+    "retrieval_mrr": {
+      "direct_llm": 0.0,
+      "vector_rag": 0.0,
+      "graph_rag": 0.0,
+      "dual_path": 0.0
+    },
+    "extraction_entity_f1": {
+      "direct_llm": 1.0,
+      "vector_rag": 1.0,
+      "graph_rag": 1.0,
+      "dual_path": 1.0
+    },
+    "extraction_triple_f1": {
+      "direct_llm": 1.0,
+      "vector_rag": 1.0,
+      "graph_rag": 1.0,
+      "dual_path": 1.0
+    },
+    "contrast_agreement": {
+      "direct_llm": 1.0,
+      "vector_rag": 1.0,
+      "graph_rag": 1.0,
+      "dual_path": 1.0
+    },
+    "avg_latency_ms": {
+      "direct_llm": 17848.0488,
+      "vector_rag": 24161.978,
+      "graph_rag": 8057.6694,
+      "dual_path": 11031.4656
+    },
+    "overall_score": {
+      "direct_llm": 0.5275,
+      "vector_rag": 0.4875,
+      "graph_rag": 0.29,
+      "dual_path": 0.46
+    }
+  },
+  "winner": "direct_llm",
+  "winner_name": "纯LLM (无RAG)",
+  "evaluated_at": "2026-06-02 17:04:02",
+  "model": "qwen3.5-plus"
+}

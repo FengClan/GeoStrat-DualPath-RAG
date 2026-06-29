@@ -1,0 +1,512 @@
+{
+  "overall_scores": {
+    "qa_correctness": 0.3231,
+    "qa_faithfulness": 0.8462,
+    "qa_completeness": 0.2538,
+    "citation_precision": 0.3077,
+    "citation_recall": 0.0,
+    "retrieval_recall@5": 0.0,
+    "retrieval_mrr": 0.0,
+    "extraction_entity_f1": 1.0,
+    "extraction_triple_f1": 1.0,
+    "contrast_agreement": 1.0,
+    "avg_latency_ms": 16324.4633,
+    "overall_score": 0.0422
+  },
+  "per_question_results": [
+    {
+      "id": "FJ-001",
+      "question": "南园组的岩性特征是什么？",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "qa_metrics": {
+        "key_point_coverage": 0.7,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.0,
+        "completeness": 0.0,
+        "faithfulness": 1.0,
+        "coherence": 0.9,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 0.2,
+        "llm_judge_reason": "系统回答虽严谨、无幻觉且术语准确，但完全否定南园组岩性可被确定，与标准答案明确给出的岩性特征（流纹岩、凝灰岩等）及时代（晚侏罗世）直接矛盾；其‘无法确定’结论错误，属事实性失准。"
+      },
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "mrr": 0.0,
+        "hit@5": 0.0,
+        "details": "no retrieved documents"
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no predictions"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 1.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 15143.81456375122
+    },
+    {
+      "id": "FJ-002",
+      "question": "长林组的地质年代是什么？",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.0,
+        "completeness": 0.0,
+        "faithfulness": 1.0,
+        "coherence": 1.0,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 0.2,
+        "llm_judge_reason": "系统回答断言长林组年代‘尚无法准确确定’，但标准答案明确其属晚侏罗世，且该结论在区域地质文献（如《福建省区域地质志》、全国地层表）中有明确定义和广泛共识；回答将知识缺失误判为事实状态，构成严重事实性错误。"
+      },
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "mrr": 0.0,
+        "hit@5": 0.0,
+        "details": "no retrieved documents"
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no predictions"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 1.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 10920.391082763672
+    },
+    {
+      "id": "FJ-003",
+      "question": "福建省出露的最古老地层是什么？",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "qa_metrics": {
+        "key_point_coverage": 0.6667,
+        "citation_precision": 1.0,
+        "citation_recall": 0.0,
+        "correctness": 0.3,
+        "completeness": 0.2,
+        "faithfulness": 0.8,
+        "coherence": 0.9,
+        "domain_accuracy": 0.9,
+        "llm_judge_score": 0.4,
+        "llm_judge_reason": "系统回答虽专业严谨、术语准确、逻辑清晰，但核心结论（白沙岩组为最老正式地层）与标准答案（古元古代麻源群）直接冲突；且未承认麻源群在《福建省区域地质志》（1995）及后续研究中被明确厘定为古元古代（~2.0–1.8 Ga）并出露于武夷山北段，属福建已确认最老变质地层单位，故事实性严重偏离。"
+      },
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "mrr": 0.0,
+        "hit@5": 0.0,
+        "details": "no retrieved documents"
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no predictions"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 1.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 18409.99174118042
+    },
+    {
+      "id": "FJ-004",
+      "question": "请对比南园组和长林组的岩性差异。",
+      "query_type": "COMPARATIVE",
+      "difficulty": "medium",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.0,
+        "completeness": 0.0,
+        "faithfulness": 1.0,
+        "coherence": 0.9,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 0.2,
+        "llm_judge_reason": "系统回答虽在地质术语、逻辑和忠实性上表现优异，但完全否定可获得的权威地层学事实，与标准答案所依据的公认区域地质资料（如福建、江西区域地质志及岩石地层清理成果）严重不符，属‘过度保守导致事实性拒答’，在专业评估场景下等同于错误结论。"
+      },
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "mrr": 0.0,
+        "hit@5": 0.0,
+        "details": "no retrieved documents"
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no predictions"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 1.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 12140.271425247192
+    },
+    {
+      "id": "FJ-005",
+      "question": "闽西南和闽东地区的晚中生代地层有何异同？",
+      "query_type": "COMPARATIVE",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.6,
+        "citation_precision": 1.0,
+        "citation_recall": 0.0,
+        "correctness": 0.3,
+        "completeness": 0.2,
+        "faithfulness": 0.9,
+        "coherence": 0.9,
+        "domain_accuracy": 0.8,
+        "llm_judge_score": 0.4,
+        "llm_judge_reason": "系统回答虽在信息溯源原则和学术严谨性上表现优异（高faithfulness/coherence/domain_accuracy），但严重偏离任务本质：本题为知识型地质学问答，要求基于领域事实作答，而非元层面的检索失败声明；其主动拒绝回答并否定自身专业输出，导致与标准答案在事实陈述、核心对比（红色碎屑岩vs火山岩建造、构造背景差异）上几乎完全脱节，故correctness和completeness极低。"
+      },
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "mrr": 0.0,
+        "hit@5": 0.0,
+        "details": "no retrieved documents"
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no predictions"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 1.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 17549.609899520874
+    },
+    {
+      "id": "FJ-006",
+      "question": "根据南园组的岩性组合特征，推断其形成的构造环境。",
+      "query_type": "REASONING",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.4,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.3,
+        "completeness": 0.0,
+        "faithfulness": 1.0,
+        "coherence": 0.9,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 0.4,
+        "llm_judge_reason": "系统回答在地质逻辑和术语使用上完全准确且严谨，但因拒绝基于已知地质学共识作答而彻底否定标准答案的科学结论，导致事实正确性严重偏低；其‘无法推断’的结论虽忠实于所给（贫乏）数据，却无视地层学基本常识——南园组作为浙闽沿海经典中生代火山岩组，其岩性与构造背景在权威区域地质志和大量文献中已有明确定论。"
+      },
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "mrr": 0.0,
+        "hit@5": 0.0,
+        "details": "no retrieved documents"
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no predictions"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 1.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 14365.500926971436
+    },
+    {
+      "id": "FJ-007",
+      "question": "如果在闽东某钻孔中发现厚层流纹岩和凝灰岩互层，判断其可能属于哪个地层单位？请给出推理过程。",
+      "query_type": "REASONING",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 0.0,
+        "correctness": 1.0,
+        "completeness": 1.0,
+        "faithfulness": 1.0,
+        "coherence": 1.0,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 1.0,
+        "llm_judge_reason": "系统回答完全符合标准答案的核心结论（南园组），并以更严谨、多维度（区域地质、火山地层学、排除法、实证建议）的方式展开推理，所有地质术语、地层时代、岩性特征及对比关系均准确无误，无任何事实性错误或幻觉。"
+      },
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "mrr": 0.0,
+        "hit@5": 0.0,
+        "details": "no retrieved documents"
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no predictions"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 1.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 33143.935441970825
+    },
+    {
+      "id": "FJ-008",
+      "question": "南园组在福建省的空间分布情况如何？",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.2,
+        "completeness": 0.1,
+        "faithfulness": 0.6,
+        "coherence": 0.9,
+        "domain_accuracy": 0.7,
+        "llm_judge_score": 0.3,
+        "llm_judge_reason": "系统回答严重背离标准答案所确认的南园组在闽东广泛出露（福鼎—漳州）、具明确剖面位置与厚度、受NE-NNE断裂控制等确凿事实；虽专业推断部分术语准确、逻辑清晰，但将已被《福建区域地质志》及大量文献确立的正式地层单位错误定性为‘非正式/地方性名称’，构成关键性事实幻觉。"
+      },
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "mrr": 0.0,
+        "hit@5": 0.0,
+        "details": "no retrieved documents"
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no predictions"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 1.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 15890.101671218872
+    },
+    {
+      "id": "FJ-009",
+      "question": "福建省地层的厚度变化有何规律？",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 0.0,
+        "correctness": 0.2,
+        "completeness": 0.1,
+        "faithfulness": 0.9,
+        "coherence": 0.9,
+        "domain_accuracy": 0.9,
+        "llm_judge_score": 0.3,
+        "llm_judge_reason": "系统回答虽在地质背景描述上专业准确、无幻觉，且逻辑清晰，但完全回避了标准答案中明确给出的三条实证性规律（闽东火山岩系减薄趋势、闽西南沉积岩系稳定性、闽北变质基底构造改造控制），属于‘拒绝回答’而非‘错误回答’，导致正确性与完整性严重不足；其严谨性源于检索失败的元认知声明，但不符合题干对地层厚度规律的事实性作答要求。"
+      },
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "mrr": 0.0,
+        "hit@5": 0.0,
+        "details": "no retrieved documents"
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no predictions"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 1.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 12949.460983276367
+    },
+    {
+      "id": "ZJ-001",
+      "question": "浙江的磨石山群与福建的南园组是否可以对比？",
+      "query_type": "COMPARATIVE",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.9,
+        "completeness": 0.8,
+        "faithfulness": 1.0,
+        "coherence": 1.0,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 0.9,
+        "llm_judge_reason": "系统回答在事实正确性上高度吻合标准答案，准确指出可对比性及差异（火山岩为主vs更多沉积夹层），并补充了地层单位级别差异这一重要但标准答案未明述的细节；唯一扣分点在于未显式强调‘磨石山群内部含茶湾组、九里坪组等沉积夹层’这一标准答案的关键对比特征，故完整性略降。无幻觉，术语精准，逻辑严密。"
+      },
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "mrr": 0.0,
+        "hit@5": 0.0,
+        "details": "no retrieved documents"
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no predictions"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 1.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 11626.249313354492
+    },
+    {
+      "id": "FJ-010",
+      "question": "什么是岩石地层单位的【组】？",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "qa_metrics": {
+        "key_point_coverage": 0.625,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.3,
+        "completeness": 0.4,
+        "faithfulness": 0.2,
+        "coherence": 0.7,
+        "domain_accuracy": 0.3,
+        "llm_judge_score": 0.4,
+        "llm_judge_reason": "系统回答存在严重术语混淆：将‘组’（Formation）错误等同于‘群’（Group），且反复误称Group为基本单位；标准答案中‘组’即Formation，而回答中将其定义为由多个Formation组成的Group，属于根本性概念错误（幻觉），违背国际地层指南和中国规范。"
+      },
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "mrr": 0.0,
+        "hit@5": 0.0,
+        "details": "no retrieved documents"
+      },
+      "extraction_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 1.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 12415.428638458252
+    },
+    {
+      "id": "FJ-011",
+      "question": "坂头组的地质时代和主要岩性是什么？",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "qa_metrics": {
+        "key_point_coverage": 0.625,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.3,
+        "completeness": 0.2,
+        "faithfulness": 1.0,
+        "coherence": 0.9,
+        "domain_accuracy": 0.9,
+        "llm_judge_score": 0.4,
+        "llm_judge_reason": "系统回答在事实忠实性上表现优异（无幻觉），术语与逻辑严谨，但完全回避给出标准答案中的确定性结论（早白垩世、紫红色砂砾岩/砂岩/粉砂岩夹凝灰岩、陆相盆地沉积、叶肢介/介形虫化石），仅以‘未检索到证据’为由拒绝作答，导致正确性与完整性严重不足；尽管专业建议中隐含了标准答案内容，但明确声明其‘不属于本回答所依据的实证来源’，故不构成有效回答。"
+      },
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "mrr": 0.0,
+        "hit@5": 0.0,
+        "details": "no retrieved documents"
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no predictions"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 1.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 14074.833869934082
+    },
+    {
+      "id": "FJ-012",
+      "question": "闽西南地区的【梨山组】与闽北的【焦坑组】是否为同一地层？",
+      "query_type": "REASONING",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.4,
+        "completeness": 0.3,
+        "faithfulness": 0.6,
+        "coherence": 0.9,
+        "domain_accuracy": 0.5,
+        "llm_judge_score": 0.5,
+        "llm_judge_reason": "系统回答错误地否定了梨山组在福建的地层地位（标准答案明确其为闽西南早侏罗世含煤地层），且将焦坑组时代误定为二叠系—三叠系（实际为早侏罗世），构成关键地质事实幻觉；虽逻辑清晰、表述专业，但核心地层时代、存在性及对比可能性的判断与标准答案严重偏离。"
+      },
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "mrr": 0.0,
+        "hit@5": 0.0,
+        "details": "no retrieved documents"
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no predictions"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 1.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 23588.433504104614
+    }
+  ],
+  "by_difficulty": {
+    "easy": {
+      "avg_score": 0.4167,
+      "count": 3
+    },
+    "medium": {
+      "avg_score": 0.53,
+      "count": 5
+    },
+    "hard": {
+      "avg_score": 0.74,
+      "count": 5
+    }
+  },
+  "by_query_type": {
+    "FACTUAL": {
+      "avg_score": 0.49,
+      "count": 5
+    },
+    "COMPARATIVE": {
+      "avg_score": 0.6833,
+      "count": 3
+    },
+    "REASONING": {
+      "avg_score": 0.7167,
+      "count": 3
+    },
+    "SPATIAL": {
+      "avg_score": 0.475,
+      "count": 2
+    }
+  },
+  "timing": {
+    "total_seconds": 262.39,
+    "total_questions": 13,
+    "avg_per_question_ms": 20183.7
+  },
+  "evaluated_at": "2026-05-17 14:40:37",
+  "evaluator_model": "qwen3.5-plus"
+}

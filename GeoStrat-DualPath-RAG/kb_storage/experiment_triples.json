@@ -1,0 +1,2807 @@
+[
+  {
+    "head": "天井坪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英岩"
+  },
+  {
+    "head": "天井坪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩云母"
+  },
+  {
+    "head": "天井坪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩石英"
+  },
+  {
+    "head": "天井坪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "云母"
+  },
+  {
+    "head": "天井坪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "天井坪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "（斜长）变粒岩"
+  },
+  {
+    "head": "天井坪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩"
+  },
+  {
+    "head": "天井坪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩石英岩"
+  },
+  {
+    "head": "天井坪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "混合岩"
+  },
+  {
+    "head": "天井坪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "片岩"
+  },
+  {
+    "head": "天井坪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "质矿物混合岩"
+  },
+  {
+    "head": "天井坪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "角闪岩"
+  },
+  {
+    "head": "天井坪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "由低角闪岩"
+  },
+  {
+    "head": "天井坪岩组",
+    "relation": "DATED_AS",
+    "tail": "太古代"
+  },
+  {
+    "head": "天井坪岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "天井坪岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "建宁西部"
+  },
+  {
+    "head": "天井坪岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "伊家等地"
+  },
+  {
+    "head": "大金山岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩云母"
+  },
+  {
+    "head": "大金山岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "云母"
+  },
+  {
+    "head": "大金山岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "程度为低角闪岩"
+  },
+  {
+    "head": "大金山岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩"
+  },
+  {
+    "head": "大金山岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "黑云斜长变粒岩"
+  },
+  {
+    "head": "大金山岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "片岩"
+  },
+  {
+    "head": "大金山岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "角闪岩"
+  },
+  {
+    "head": "大金山岩组",
+    "relation": "DATED_AS",
+    "tail": "前震旦纪"
+  },
+  {
+    "head": "大金山岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "建阳市"
+  },
+  {
+    "head": "大金山岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "松溪等地"
+  },
+  {
+    "head": "大金山岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "南山岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩云母"
+  },
+  {
+    "head": "南山岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "云母"
+  },
+  {
+    "head": "南山岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "南山岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "岩相到低角闪岩"
+  },
+  {
+    "head": "南山岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩片岩"
+  },
+  {
+    "head": "南山岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "母片岩石英"
+  },
+  {
+    "head": "南山岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩"
+  },
+  {
+    "head": "南山岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "片岩"
+  },
+  {
+    "head": "南山岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "角闪岩"
+  },
+  {
+    "head": "南山岩组",
+    "relation": "DATED_AS",
+    "tail": "前震旦纪"
+  },
+  {
+    "head": "南山岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "建瓯等地"
+  },
+  {
+    "head": "南山岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "迪口岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "夹有云母片岩"
+  },
+  {
+    "head": "迪口岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "云母"
+  },
+  {
+    "head": "迪口岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "迪口岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "程度为低角闪岩"
+  },
+  {
+    "head": "迪口岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩"
+  },
+  {
+    "head": "迪口岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "长石"
+  },
+  {
+    "head": "迪口岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "成分为斜长石"
+  },
+  {
+    "head": "迪口岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "斜长石和石英"
+  },
+  {
+    "head": "迪口岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "黑云斜长变粒岩"
+  },
+  {
+    "head": "迪口岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "片岩"
+  },
+  {
+    "head": "迪口岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "片麻岩"
+  },
+  {
+    "head": "迪口岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "角闪岩"
+  },
+  {
+    "head": "迪口岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩（片麻岩"
+  },
+  {
+    "head": "迪口岩组",
+    "relation": "DATED_AS",
+    "tail": "早震旦世"
+  },
+  {
+    "head": "迪口岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "迪口岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "平后洋一带"
+  },
+  {
+    "head": "桃溪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英岩"
+  },
+  {
+    "head": "桃溪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "黑云石英片岩"
+  },
+  {
+    "head": "桃溪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "桃溪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩"
+  },
+  {
+    "head": "桃溪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "呈片岩与变粒岩"
+  },
+  {
+    "head": "桃溪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "片岩"
+  },
+  {
+    "head": "桃溪岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "斜长黑云石英"
+  },
+  {
+    "head": "桃溪岩组",
+    "relation": "DATED_AS",
+    "tail": "前震旦纪"
+  },
+  {
+    "head": "桃溪岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "上杭等地"
+  },
+  {
+    "head": "桃溪岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "武平湘村"
+  },
+  {
+    "head": "桃溪岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "布于闽西南"
+  },
+  {
+    "head": "桃溪岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "东岩（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩云母"
+  },
+  {
+    "head": "东岩（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "云母"
+  },
+  {
+    "head": "东岩（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩"
+  },
+  {
+    "head": "东岩（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "斜长阳起片岩"
+  },
+  {
+    "head": "东岩（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "辉石"
+  },
+  {
+    "head": "东岩（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "岩相—低角闪岩"
+  },
+  {
+    "head": "东岩（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "片岩"
+  },
+  {
+    "head": "东岩（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "角闪岩"
+  },
+  {
+    "head": "东岩（岩）组",
+    "relation": "DATED_AS",
+    "tail": "前震旦纪"
+  },
+  {
+    "head": "东岩（岩）组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "溪梅仙一带"
+  },
+  {
+    "head": "东岩（岩）组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "于建瓯东南"
+  },
+  {
+    "head": "东岩（岩）组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "大岭（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "云母"
+  },
+  {
+    "head": "大岭（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "大岭（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩"
+  },
+  {
+    "head": "大岭（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "长石"
+  },
+  {
+    "head": "大岭（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "灰绿色云母"
+  },
+  {
+    "head": "大岭（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "云母石英片岩"
+  },
+  {
+    "head": "大岭（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "绿色云母石英"
+  },
+  {
+    "head": "大岭（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "片岩"
+  },
+  {
+    "head": "大岭（岩）组",
+    "relation": "DATED_AS",
+    "tail": "前震旦纪"
+  },
+  {
+    "head": "大岭（岩）组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "德化等地"
+  },
+  {
+    "head": "大岭（岩）组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "大岭（岩）组",
+    "relation": "SAME_AS",
+    "tail": "卓地组"
+  },
+  {
+    "head": "龙北溪（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "特征包括石英"
+  },
+  {
+    "head": "龙北溪（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "包括石英云母"
+  },
+  {
+    "head": "龙北溪（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "云母"
+  },
+  {
+    "head": "龙北溪（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "龙北溪（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩"
+  },
+  {
+    "head": "龙北溪（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英云母片岩"
+  },
+  {
+    "head": "龙北溪（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "岩相—低角闪岩"
+  },
+  {
+    "head": "龙北溪（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "片岩"
+  },
+  {
+    "head": "龙北溪（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "角闪岩"
+  },
+  {
+    "head": "龙北溪（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "英片岩变粒岩"
+  },
+  {
+    "head": "龙北溪（岩）组",
+    "relation": "DATED_AS",
+    "tail": "前震旦纪"
+  },
+  {
+    "head": "龙北溪（岩）组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "安溪等地"
+  },
+  {
+    "head": "龙北溪（岩）组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "龙北溪（岩）组",
+    "relation": "SAME_AS",
+    "tail": "葛坑组"
+  },
+  {
+    "head": "龙北溪（岩）组",
+    "relation": "SAME_AS",
+    "tail": "泮地组"
+  },
+  {
+    "head": "黄潭（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "夹白云石英"
+  },
+  {
+    "head": "黄潭（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "黄潭（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩"
+  },
+  {
+    "head": "黄潭（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "白云石"
+  },
+  {
+    "head": "黄潭（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "白云石英片岩"
+  },
+  {
+    "head": "黄潭（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "片岩"
+  },
+  {
+    "head": "黄潭（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "黑云钠长变粒岩"
+  },
+  {
+    "head": "黄潭（岩）组",
+    "relation": "DATED_AS",
+    "tail": "元古代"
+  },
+  {
+    "head": "黄潭（岩）组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "将乐等地"
+  },
+  {
+    "head": "黄潭（岩）组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "泰宁等地"
+  },
+  {
+    "head": "黄潭（岩）组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "黄潭（岩）组",
+    "relation": "SAME_AS",
+    "tail": "丁屋岭组"
+  },
+  {
+    "head": "黄潭（岩）组",
+    "relation": "SAME_AS",
+    "tail": "吴墩组"
+  },
+  {
+    "head": "下峰（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "云母"
+  },
+  {
+    "head": "下峰（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "下峰（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "黑色绿泥白云石"
+  },
+  {
+    "head": "下峰（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩"
+  },
+  {
+    "head": "下峰（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "白云石"
+  },
+  {
+    "head": "下峰（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "白云石英片岩"
+  },
+  {
+    "head": "下峰（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "片岩"
+  },
+  {
+    "head": "下峰（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "英片岩云母"
+  },
+  {
+    "head": "下峰（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "绿泥白云石英"
+  },
+  {
+    "head": "下峰（岩）组",
+    "relation": "DATED_AS",
+    "tail": "元古代"
+  },
+  {
+    "head": "下峰（岩）组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "下峰（岩）组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "乐黄潭等地"
+  },
+  {
+    "head": "下峰（岩）组",
+    "relation": "SAME_AS",
+    "tail": "丁屋岭组"
+  },
+  {
+    "head": "下峰（岩）组",
+    "relation": "SAME_AS",
+    "tail": "三溪寨组"
+  },
+  {
+    "head": "楼前组",
+    "relation": "COMPOSED_OF",
+    "tail": "流纹质凝灰岩"
+  },
+  {
+    "head": "楼前组",
+    "relation": "COMPOSED_OF",
+    "tail": "灰岩"
+  },
+  {
+    "head": "楼前组",
+    "relation": "COMPOSED_OF",
+    "tail": "质流纹质凝灰岩"
+  },
+  {
+    "head": "楼前组",
+    "relation": "COMPOSED_OF",
+    "tail": "凝灰质粉砂岩"
+  },
+  {
+    "head": "楼前组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "楼前组",
+    "relation": "COMPOSED_OF",
+    "tail": "夹有变质沉凝灰岩"
+  },
+  {
+    "head": "楼前组",
+    "relation": "COMPOSED_OF",
+    "tail": "熔结凝灰岩"
+  },
+  {
+    "head": "楼前组",
+    "relation": "COMPOSED_OF",
+    "tail": "沉凝灰岩"
+  },
+  {
+    "head": "楼前组",
+    "relation": "COMPOSED_OF",
+    "tail": "凝灰岩"
+  },
+  {
+    "head": "楼前组",
+    "relation": "COMPOSED_OF",
+    "tail": "流纹岩"
+  },
+  {
+    "head": "楼前组",
+    "relation": "DATED_AS",
+    "tail": "震旦纪"
+  },
+  {
+    "head": "楼前组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "化方田等地"
+  },
+  {
+    "head": "楼前组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "楼前组",
+    "relation": "SAME_AS",
+    "tail": "丁屋岭组"
+  },
+  {
+    "head": "楼前组",
+    "relation": "SAME_AS",
+    "tail": "大岭（岩）组"
+  },
+  {
+    "head": "楼前组",
+    "relation": "SAME_AS",
+    "tail": "天井坪岩组"
+  },
+  {
+    "head": "西溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "细粒长石石英"
+  },
+  {
+    "head": "西溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "细—细粒长石"
+  },
+  {
+    "head": "西溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "薄层变质硅质岩"
+  },
+  {
+    "head": "西溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "硅质岩"
+  },
+  {
+    "head": "西溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "千枚岩"
+  },
+  {
+    "head": "西溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "西溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "长石石英砂岩"
+  },
+  {
+    "head": "西溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "长石"
+  },
+  {
+    "head": "西溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "西溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "泥岩"
+  },
+  {
+    "head": "西溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "含）砂质泥岩"
+  },
+  {
+    "head": "西溪组",
+    "relation": "DATED_AS",
+    "tail": "震旦纪"
+  },
+  {
+    "head": "西溪组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "西溪组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "南平一带"
+  },
+  {
+    "head": "西溪组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "布于闽西北"
+  },
+  {
+    "head": "楼子坝组",
+    "relation": "COMPOSED_OF",
+    "tail": "中）细粒长石"
+  },
+  {
+    "head": "楼子坝组",
+    "relation": "COMPOSED_OF",
+    "tail": "细粒长石石英"
+  },
+  {
+    "head": "楼子坝组",
+    "relation": "COMPOSED_OF",
+    "tail": "千枚岩"
+  },
+  {
+    "head": "楼子坝组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "楼子坝组",
+    "relation": "COMPOSED_OF",
+    "tail": "板岩"
+  },
+  {
+    "head": "楼子坝组",
+    "relation": "COMPOSED_OF",
+    "tail": "绿泥绢云千枚岩"
+  },
+  {
+    "head": "楼子坝组",
+    "relation": "COMPOSED_OF",
+    "tail": "石石英杂砂岩"
+  },
+  {
+    "head": "楼子坝组",
+    "relation": "COMPOSED_OF",
+    "tail": "长石"
+  },
+  {
+    "head": "楼子坝组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "楼子坝组",
+    "relation": "COMPOSED_OF",
+    "tail": "千枚岩或板岩"
+  },
+  {
+    "head": "楼子坝组",
+    "relation": "DATED_AS",
+    "tail": "前震旦纪"
+  },
+  {
+    "head": "楼子坝组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "于上杭等地"
+  },
+  {
+    "head": "楼子坝组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "平桃溪东部"
+  },
+  {
+    "head": "楼子坝组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "布于闽西南"
+  },
+  {
+    "head": "楼子坝组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "南岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "大理岩"
+  },
+  {
+    "head": "南岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "硅质岩"
+  },
+  {
+    "head": "南岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "千枚岩"
+  },
+  {
+    "head": "南岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "岩及少量磷块岩"
+  },
+  {
+    "head": "南岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "间夹变质硅质岩"
+  },
+  {
+    "head": "南岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "钙质）细砂岩"
+  },
+  {
+    "head": "南岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "粉砂岩千枚岩"
+  },
+  {
+    "head": "南岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "南岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "见白云质大理岩"
+  },
+  {
+    "head": "南岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "磷块岩"
+  },
+  {
+    "head": "南岩组",
+    "relation": "DATED_AS",
+    "tail": "晚震旦世"
+  },
+  {
+    "head": "南岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "长塘里等地"
+  },
+  {
+    "head": "南岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "黄连组",
+    "relation": "COMPOSED_OF",
+    "tail": "硅质岩"
+  },
+  {
+    "head": "黄连组",
+    "relation": "COMPOSED_OF",
+    "tail": "千枚岩"
+  },
+  {
+    "head": "黄连组",
+    "relation": "COMPOSED_OF",
+    "tail": "薄-中层硅质岩"
+  },
+  {
+    "head": "黄连组",
+    "relation": "COMPOSED_OF",
+    "tail": "夹变质细砂岩"
+  },
+  {
+    "head": "黄连组",
+    "relation": "COMPOSED_OF",
+    "tail": "粉砂岩千枚岩"
+  },
+  {
+    "head": "黄连组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "黄连组",
+    "relation": "DATED_AS",
+    "tail": "晚震旦世"
+  },
+  {
+    "head": "黄连组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "黄连组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "横坑等地"
+  },
+  {
+    "head": "亲营山（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "云母"
+  },
+  {
+    "head": "亲营山（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "亲营山（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "区岩性呈混合岩"
+  },
+  {
+    "head": "亲营山（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "（石英）片岩"
+  },
+  {
+    "head": "亲营山（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "变粒岩"
+  },
+  {
+    "head": "亲营山（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "为特征的云母"
+  },
+  {
+    "head": "亲营山（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "混合岩"
+  },
+  {
+    "head": "亲营山（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "的云母（石英"
+  },
+  {
+    "head": "亲营山（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "片岩"
+  },
+  {
+    "head": "亲营山（岩）组",
+    "relation": "COMPOSED_OF",
+    "tail": "）片岩夹变粒岩"
+  },
+  {
+    "head": "亲营山（岩）组",
+    "relation": "DATED_AS",
+    "tail": "泥盆纪"
+  },
+  {
+    "head": "亲营山（岩）组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "平潭等地"
+  },
+  {
+    "head": "亲营山（岩）组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "早—晚寒武世林田组",
+    "relation": "COMPOSED_OF",
+    "tail": "大理岩"
+  },
+  {
+    "head": "早—晚寒武世林田组",
+    "relation": "COMPOSED_OF",
+    "tail": "硅质岩"
+  },
+  {
+    "head": "早—晚寒武世林田组",
+    "relation": "COMPOSED_OF",
+    "tail": "千枚岩"
+  },
+  {
+    "head": "早—晚寒武世林田组",
+    "relation": "COMPOSED_OF",
+    "tail": "色的变质砂岩"
+  },
+  {
+    "head": "早—晚寒武世林田组",
+    "relation": "COMPOSED_OF",
+    "tail": "硅质岩和大理岩"
+  },
+  {
+    "head": "早—晚寒武世林田组",
+    "relation": "COMPOSED_OF",
+    "tail": "岩及变质硅质岩"
+  },
+  {
+    "head": "早—晚寒武世林田组",
+    "relation": "COMPOSED_OF",
+    "tail": "质砂岩千枚岩"
+  },
+  {
+    "head": "早—晚寒武世林田组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "早—晚寒武世林田组",
+    "relation": "DATED_AS",
+    "tail": "寒武纪"
+  },
+  {
+    "head": "早—晚寒武世林田组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "东坑口组",
+    "relation": "COMPOSED_OF",
+    "tail": "变质石英砂岩"
+  },
+  {
+    "head": "东坑口组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "东坑口组",
+    "relation": "COMPOSED_OF",
+    "tail": "厚层变质石英"
+  },
+  {
+    "head": "东坑口组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "东坑口组",
+    "relation": "DATED_AS",
+    "tail": "寒武系中—上统"
+  },
+  {
+    "head": "东坑口组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "东坑口组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "明溪等地"
+  },
+  {
+    "head": "魏坊组",
+    "relation": "COMPOSED_OF",
+    "tail": "黑色薄层千枚岩"
+  },
+  {
+    "head": "魏坊组",
+    "relation": "COMPOSED_OF",
+    "tail": "硅质岩"
+  },
+  {
+    "head": "魏坊组",
+    "relation": "COMPOSED_OF",
+    "tail": "千枚岩"
+  },
+  {
+    "head": "魏坊组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "魏坊组",
+    "relation": "COMPOSED_OF",
+    "tail": "粉砂质）泥岩"
+  },
+  {
+    "head": "魏坊组",
+    "relation": "COMPOSED_OF",
+    "tail": "夹变质石英"
+  },
+  {
+    "head": "魏坊组",
+    "relation": "COMPOSED_OF",
+    "tail": "变质石英砂岩"
+  },
+  {
+    "head": "魏坊组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "魏坊组",
+    "relation": "COMPOSED_OF",
+    "tail": "泥岩"
+  },
+  {
+    "head": "魏坊组",
+    "relation": "DATED_AS",
+    "tail": "奥陶纪"
+  },
+  {
+    "head": "魏坊组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "长汀一带"
+  },
+  {
+    "head": "魏坊组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "流小池等地"
+  },
+  {
+    "head": "魏坊组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "罗峰溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "硅质岩"
+  },
+  {
+    "head": "罗峰溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "千枚岩"
+  },
+  {
+    "head": "罗峰溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "罗峰溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "板岩"
+  },
+  {
+    "head": "罗峰溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "粉砂岩和千枚岩"
+  },
+  {
+    "head": "罗峰溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "千枚岩板岩"
+  },
+  {
+    "head": "罗峰溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "英（杂）砂岩"
+  },
+  {
+    "head": "罗峰溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "变质（含长石"
+  },
+  {
+    "head": "罗峰溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "长石"
+  },
+  {
+    "head": "罗峰溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "板岩硅质岩"
+  },
+  {
+    "head": "罗峰溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "罗峰溪组",
+    "relation": "COMPOSED_OF",
+    "tail": "含长石）石英"
+  },
+  {
+    "head": "罗峰溪组",
+    "relation": "DATED_AS",
+    "tail": "奥陶纪"
+  },
+  {
+    "head": "罗峰溪组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "长汀县"
+  },
+  {
+    "head": "罗峰溪组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "大源坝一带"
+  },
+  {
+    "head": "罗峰溪组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "天瓦崠组",
+    "relation": "COMPOSED_OF",
+    "tail": "千枚岩"
+  },
+  {
+    "head": "天瓦崠组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "天瓦崠组",
+    "relation": "COMPOSED_OF",
+    "tail": "变质岩千枚岩"
+  },
+  {
+    "head": "天瓦崠组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "天瓦崠组",
+    "relation": "COMPOSED_OF",
+    "tail": "砾岩"
+  },
+  {
+    "head": "天瓦崠组",
+    "relation": "COMPOSED_OF",
+    "tail": "由石英砾岩"
+  },
+  {
+    "head": "天瓦崠组",
+    "relation": "DATED_AS",
+    "tail": "白垩纪"
+  },
+  {
+    "head": "天瓦崠组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "桃子坑组",
+    "relation": "COMPOSED_OF",
+    "tail": "砾岩"
+  },
+  {
+    "head": "桃子坑组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "桃子坑组",
+    "relation": "COMPOSED_OF",
+    "tail": "由石英砾岩"
+  },
+  {
+    "head": "桃子坑组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "桃子坑组",
+    "relation": "DATED_AS",
+    "tail": "白垩纪"
+  },
+  {
+    "head": "桃子坑组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "林地组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "林地组",
+    "relation": "COMPOSED_OF",
+    "tail": "以石英砂岩"
+  },
+  {
+    "head": "林地组",
+    "relation": "COMPOSED_OF",
+    "tail": "页岩"
+  },
+  {
+    "head": "林地组",
+    "relation": "COMPOSED_OF",
+    "tail": "粉砂岩泥岩"
+  },
+  {
+    "head": "林地组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "林地组",
+    "relation": "COMPOSED_OF",
+    "tail": "部含碳质页岩"
+  },
+  {
+    "head": "林地组",
+    "relation": "COMPOSED_OF",
+    "tail": "泥岩"
+  },
+  {
+    "head": "林地组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英砂砾岩"
+  },
+  {
+    "head": "林地组",
+    "relation": "COMPOSED_OF",
+    "tail": "砾岩"
+  },
+  {
+    "head": "林地组",
+    "relation": "DATED_AS",
+    "tail": "石炭纪"
+  },
+  {
+    "head": "林地组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "林地组",
+    "relation": "SAME_AS",
+    "tail": "与下伏桃子坑组平行不整合接触"
+  },
+  {
+    "head": "林地组",
+    "relation": "SAME_AS",
+    "tail": "上与经畲组"
+  },
+  {
+    "head": "林地组",
+    "relation": "SAME_AS",
+    "tail": "船山组"
+  },
+  {
+    "head": "林地组",
+    "relation": "SAME_AS",
+    "tail": "栖霞组呈不整合或断层接触。"
+  },
+  {
+    "head": "经畲组",
+    "relation": "DATED_AS",
+    "tail": "石炭纪"
+  },
+  {
+    "head": "经畲组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "宁化湖村"
+  },
+  {
+    "head": "经畲组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "地层小区"
+  },
+  {
+    "head": "经畲组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "布于闽西南"
+  },
+  {
+    "head": "经畲组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "老虎洞组",
+    "relation": "COMPOSED_OF",
+    "tail": "局部含燧石"
+  },
+  {
+    "head": "老虎洞组",
+    "relation": "COMPOSED_OF",
+    "tail": "白云质灰岩"
+  },
+  {
+    "head": "老虎洞组",
+    "relation": "COMPOSED_OF",
+    "tail": "白云岩"
+  },
+  {
+    "head": "老虎洞组",
+    "relation": "COMPOSED_OF",
+    "tail": "燧石"
+  },
+  {
+    "head": "老虎洞组",
+    "relation": "COMPOSED_OF",
+    "tail": "灰岩"
+  },
+  {
+    "head": "老虎洞组",
+    "relation": "DATED_AS",
+    "tail": "石炭纪"
+  },
+  {
+    "head": "老虎洞组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "安坑边等地"
+  },
+  {
+    "head": "老虎洞组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "船山组",
+    "relation": "COMPOSED_OF",
+    "tail": "硅质岩"
+  },
+  {
+    "head": "船山组",
+    "relation": "COMPOSED_OF",
+    "tail": "核灰岩及硅质岩"
+  },
+  {
+    "head": "船山组",
+    "relation": "COMPOSED_OF",
+    "tail": "燧石"
+  },
+  {
+    "head": "船山组",
+    "relation": "COMPOSED_OF",
+    "tail": "灰黑色灰岩"
+  },
+  {
+    "head": "船山组",
+    "relation": "COMPOSED_OF",
+    "tail": "灰岩"
+  },
+  {
+    "head": "船山组",
+    "relation": "COMPOSED_OF",
+    "tail": "质灰岩燧石"
+  },
+  {
+    "head": "船山组",
+    "relation": "DATED_AS",
+    "tail": "石炭纪"
+  },
+  {
+    "head": "船山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "宁化湖村"
+  },
+  {
+    "head": "船山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "亚等地区"
+  },
+  {
+    "head": "船山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "向北至东南"
+  },
+  {
+    "head": "船山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "船山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "上杭等地"
+  },
+  {
+    "head": "栖霞组",
+    "relation": "COMPOSED_OF",
+    "tail": "层含燧石灰岩"
+  },
+  {
+    "head": "栖霞组",
+    "relation": "COMPOSED_OF",
+    "tail": "硅质岩"
+  },
+  {
+    "head": "栖霞组",
+    "relation": "COMPOSED_OF",
+    "tail": "燧石"
+  },
+  {
+    "head": "栖霞组",
+    "relation": "COMPOSED_OF",
+    "tail": "中薄层含燧石"
+  },
+  {
+    "head": "栖霞组",
+    "relation": "COMPOSED_OF",
+    "tail": "灰岩"
+  },
+  {
+    "head": "栖霞组",
+    "relation": "COMPOSED_OF",
+    "tail": "碎屑岩或硅质岩"
+  },
+  {
+    "head": "栖霞组",
+    "relation": "DATED_AS",
+    "tail": "二叠纪"
+  },
+  {
+    "head": "栖霞组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "龙岩等地"
+  },
+  {
+    "head": "栖霞组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "泉上组",
+    "relation": "COMPOSED_OF",
+    "tail": "灰岩"
+  },
+  {
+    "head": "泉上组",
+    "relation": "COMPOSED_OF",
+    "tail": "夹灰岩或硅质岩"
+  },
+  {
+    "head": "泉上组",
+    "relation": "COMPOSED_OF",
+    "tail": "碎屑岩夹灰岩"
+  },
+  {
+    "head": "泉上组",
+    "relation": "COMPOSED_OF",
+    "tail": "硅质岩"
+  },
+  {
+    "head": "泉上组",
+    "relation": "DATED_AS",
+    "tail": "二叠纪"
+  },
+  {
+    "head": "泉上组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "地层小区"
+  },
+  {
+    "head": "泉上组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "文笔山组",
+    "relation": "DATED_AS",
+    "tail": "二叠纪"
+  },
+  {
+    "head": "文笔山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "化泉上等地"
+  },
+  {
+    "head": "文笔山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "童子岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "碎屑岩煤层"
+  },
+  {
+    "head": "童子岩组",
+    "relation": "COMPOSED_OF",
+    "tail": "煤层"
+  },
+  {
+    "head": "童子岩组",
+    "relation": "DATED_AS",
+    "tail": "二叠纪"
+  },
+  {
+    "head": "童子岩组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "翠屏山组",
+    "relation": "COMPOSED_OF",
+    "tail": "性沉积煤层"
+  },
+  {
+    "head": "翠屏山组",
+    "relation": "COMPOSED_OF",
+    "tail": "煤层"
+  },
+  {
+    "head": "翠屏山组",
+    "relation": "DATED_AS",
+    "tail": "二叠纪"
+  },
+  {
+    "head": "翠屏山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "龙岩一带"
+  },
+  {
+    "head": "翠屏山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "罗坑组",
+    "relation": "COMPOSED_OF",
+    "tail": "泥岩"
+  },
+  {
+    "head": "罗坑组",
+    "relation": "COMPOSED_OF",
+    "tail": "粉砂岩泥岩"
+  },
+  {
+    "head": "罗坑组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "罗坑组",
+    "relation": "DATED_AS",
+    "tail": "二叠纪"
+  },
+  {
+    "head": "罗坑组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "罗坑组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "永安等地"
+  },
+  {
+    "head": "罗坑组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "南平等地"
+  },
+  {
+    "head": "罗坑组",
+    "relation": "SAME_AS",
+    "tail": "大隆组"
+  },
+  {
+    "head": "长兴组",
+    "relation": "COMPOSED_OF",
+    "tail": "灰岩"
+  },
+  {
+    "head": "长兴组",
+    "relation": "COMPOSED_OF",
+    "tail": "生物屑灰岩"
+  },
+  {
+    "head": "长兴组",
+    "relation": "COMPOSED_OF",
+    "tail": "硅质岩"
+  },
+  {
+    "head": "长兴组",
+    "relation": "COMPOSED_OF",
+    "tail": "质灰岩硅质岩"
+  },
+  {
+    "head": "长兴组",
+    "relation": "DATED_AS",
+    "tail": "二叠纪"
+  },
+  {
+    "head": "长兴组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "洪田等地"
+  },
+  {
+    "head": "长兴组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "溪口组",
+    "relation": "COMPOSED_OF",
+    "tail": "角岩灰岩"
+  },
+  {
+    "head": "溪口组",
+    "relation": "COMPOSED_OF",
+    "tail": "钙质粉砂岩"
+  },
+  {
+    "head": "溪口组",
+    "relation": "COMPOSED_OF",
+    "tail": "角岩化硅泥岩"
+  },
+  {
+    "head": "溪口组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "溪口组",
+    "relation": "COMPOSED_OF",
+    "tail": "灰岩"
+  },
+  {
+    "head": "溪口组",
+    "relation": "COMPOSED_OF",
+    "tail": "泥岩"
+  },
+  {
+    "head": "溪口组",
+    "relation": "COMPOSED_OF",
+    "tail": "角岩"
+  },
+  {
+    "head": "溪口组",
+    "relation": "DATED_AS",
+    "tail": "三叠纪"
+  },
+  {
+    "head": "溪口组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "定等闽西南"
+  },
+  {
+    "head": "溪口组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "新祠角岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "主要由角岩"
+  },
+  {
+    "head": "新祠角岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "角岩化硅泥岩"
+  },
+  {
+    "head": "新祠角岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "角岩化粉砂岩"
+  },
+  {
+    "head": "新祠角岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "辉石"
+  },
+  {
+    "head": "新祠角岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "新祠角岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "泥岩"
+  },
+  {
+    "head": "新祠角岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "角岩"
+  },
+  {
+    "head": "新祠角岩段",
+    "relation": "DATED_AS",
+    "tail": "三叠纪"
+  },
+  {
+    "head": "新祠角岩段",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "岩适中等地"
+  },
+  {
+    "head": "新祠角岩段",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "兰田灰岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "泥灰岩"
+  },
+  {
+    "head": "兰田灰岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "钙质砂泥岩"
+  },
+  {
+    "head": "兰田灰岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "灰岩"
+  },
+  {
+    "head": "兰田灰岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "泥岩"
+  },
+  {
+    "head": "兰田灰岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "角岩"
+  },
+  {
+    "head": "兰田灰岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "由灰岩泥灰岩"
+  },
+  {
+    "head": "兰田灰岩段",
+    "relation": "DATED_AS",
+    "tail": "三叠纪"
+  },
+  {
+    "head": "兰田灰岩段",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "平拱桥一带"
+  },
+  {
+    "head": "兰田灰岩段",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "永定抚市"
+  },
+  {
+    "head": "兰田灰岩段",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "石碧溪泥岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "石碧溪泥岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "分地区夹角岩"
+  },
+  {
+    "head": "石碧溪泥岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "主要由粉砂岩"
+  },
+  {
+    "head": "石碧溪泥岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "粉砂岩泥岩"
+  },
+  {
+    "head": "石碧溪泥岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "石碧溪泥岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "泥岩"
+  },
+  {
+    "head": "石碧溪泥岩段",
+    "relation": "COMPOSED_OF",
+    "tail": "角岩"
+  },
+  {
+    "head": "石碧溪泥岩段",
+    "relation": "DATED_AS",
+    "tail": "三叠纪"
+  },
+  {
+    "head": "石碧溪泥岩段",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "永定抚市"
+  },
+  {
+    "head": "石碧溪泥岩段",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "昌杨厝等地"
+  },
+  {
+    "head": "石碧溪泥岩段",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "安仁组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "安仁组",
+    "relation": "COMPOSED_OF",
+    "tail": "绿色钙质砂岩"
+  },
+  {
+    "head": "安仁组",
+    "relation": "COMPOSED_OF",
+    "tail": "粉砂岩长石"
+  },
+  {
+    "head": "安仁组",
+    "relation": "COMPOSED_OF",
+    "tail": "长石"
+  },
+  {
+    "head": "安仁组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "安仁组",
+    "relation": "COMPOSED_OF",
+    "tail": "英砂岩砾岩"
+  },
+  {
+    "head": "安仁组",
+    "relation": "COMPOSED_OF",
+    "tail": "砾岩"
+  },
+  {
+    "head": "安仁组",
+    "relation": "DATED_AS",
+    "tail": "三叠纪"
+  },
+  {
+    "head": "安仁组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "田桃源等地"
+  },
+  {
+    "head": "安仁组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "大坑村组",
+    "relation": "COMPOSED_OF",
+    "tail": "岩及局部煤层"
+  },
+  {
+    "head": "大坑村组",
+    "relation": "COMPOSED_OF",
+    "tail": "煤层"
+  },
+  {
+    "head": "大坑村组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "大坑村组",
+    "relation": "COMPOSED_OF",
+    "tail": "由细砂岩"
+  },
+  {
+    "head": "大坑村组",
+    "relation": "COMPOSED_OF",
+    "tail": "泥岩"
+  },
+  {
+    "head": "大坑村组",
+    "relation": "DATED_AS",
+    "tail": "侏罗纪"
+  },
+  {
+    "head": "大坑村组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "泰玉山等地"
+  },
+  {
+    "head": "大坑村组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "文宾山组",
+    "relation": "DATED_AS",
+    "tail": "侏罗纪"
+  },
+  {
+    "head": "文宾山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "文宾山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "闽南等地"
+  },
+  {
+    "head": "文宾山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "粤北地区"
+  },
+  {
+    "head": "文宾山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "以及闽西南"
+  },
+  {
+    "head": "象牙群",
+    "relation": "DATED_AS",
+    "tail": "侏罗纪"
+  },
+  {
+    "head": "象牙群",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "长汀等地"
+  },
+  {
+    "head": "象牙群",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "象牙群",
+    "relation": "SAME_AS",
+    "tail": "象牙组"
+  },
+  {
+    "head": "下村组",
+    "relation": "COMPOSED_OF",
+    "tail": "英砂岩长石"
+  },
+  {
+    "head": "下村组",
+    "relation": "COMPOSED_OF",
+    "tail": "下段以石英"
+  },
+  {
+    "head": "下村组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "下村组",
+    "relation": "COMPOSED_OF",
+    "tail": "长石"
+  },
+  {
+    "head": "下村组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "下村组",
+    "relation": "COMPOSED_OF",
+    "tail": "段以石英砂岩"
+  },
+  {
+    "head": "下村组",
+    "relation": "COMPOSED_OF",
+    "tail": "砾岩"
+  },
+  {
+    "head": "下村组",
+    "relation": "DATED_AS",
+    "tail": "侏罗纪"
+  },
+  {
+    "head": "下村组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "藩坑组",
+    "relation": "COMPOSED_OF",
+    "tail": "安山岩"
+  },
+  {
+    "head": "藩坑组",
+    "relation": "COMPOSED_OF",
+    "tail": "玄武岩凝灰岩"
+  },
+  {
+    "head": "藩坑组",
+    "relation": "COMPOSED_OF",
+    "tail": "流纹岩安山岩"
+  },
+  {
+    "head": "藩坑组",
+    "relation": "COMPOSED_OF",
+    "tail": "凝灰岩"
+  },
+  {
+    "head": "藩坑组",
+    "relation": "COMPOSED_OF",
+    "tail": "灰岩"
+  },
+  {
+    "head": "藩坑组",
+    "relation": "COMPOSED_OF",
+    "tail": "安山岩玄武岩"
+  },
+  {
+    "head": "藩坑组",
+    "relation": "COMPOSED_OF",
+    "tail": "玄武岩"
+  },
+  {
+    "head": "藩坑组",
+    "relation": "COMPOSED_OF",
+    "tail": "流纹岩"
+  },
+  {
+    "head": "藩坑组",
+    "relation": "DATED_AS",
+    "tail": "侏罗纪"
+  },
+  {
+    "head": "藩坑组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "平洪坑等地"
+  },
+  {
+    "head": "藩坑组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "永定下村"
+  },
+  {
+    "head": "藩坑组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "梨山组",
+    "relation": "DATED_AS",
+    "tail": "侏罗纪"
+  },
+  {
+    "head": "梨山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "建阳等地"
+  },
+  {
+    "head": "梨山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "长林组",
+    "relation": "COMPOSED_OF",
+    "tail": "硅质岩"
+  },
+  {
+    "head": "长林组",
+    "relation": "COMPOSED_OF",
+    "tail": "泥灰岩"
+  },
+  {
+    "head": "长林组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英"
+  },
+  {
+    "head": "长林组",
+    "relation": "COMPOSED_OF",
+    "tail": "硅质岩泥灰岩"
+  },
+  {
+    "head": "长林组",
+    "relation": "COMPOSED_OF",
+    "tail": "砾岩石英"
+  },
+  {
+    "head": "长林组",
+    "relation": "COMPOSED_OF",
+    "tail": "浅灰色砂砾岩"
+  },
+  {
+    "head": "长林组",
+    "relation": "COMPOSED_OF",
+    "tail": "石英杂砂岩"
+  },
+  {
+    "head": "长林组",
+    "relation": "COMPOSED_OF",
+    "tail": "粉砂岩硅质岩"
+  },
+  {
+    "head": "长林组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "长林组",
+    "relation": "COMPOSED_OF",
+    "tail": "灰岩"
+  },
+  {
+    "head": "长林组",
+    "relation": "COMPOSED_OF",
+    "tail": "砾岩"
+  },
+  {
+    "head": "长林组",
+    "relation": "DATED_AS",
+    "tail": "侏罗纪"
+  },
+  {
+    "head": "长林组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "南园组",
+    "relation": "DATED_AS",
+    "tail": "侏罗纪"
+  },
+  {
+    "head": "南园组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "地层小区"
+  },
+  {
+    "head": "南园组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "武夷山区"
+  },
+  {
+    "head": "南园组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "南园组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "平和一带"
+  },
+  {
+    "head": "南园组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "尤以沿海"
+  },
+  {
+    "head": "南园组",
+    "relation": "SAME_AS",
+    "tail": "鹅宅组"
+  },
+  {
+    "head": "南园组",
+    "relation": "SAME_AS",
+    "tail": "赤水组"
+  },
+  {
+    "head": "小溪组",
+    "relation": "DATED_AS",
+    "tail": "侏罗纪"
+  },
+  {
+    "head": "小溪组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "田小溪等地"
+  },
+  {
+    "head": "小溪组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "下渡组",
+    "relation": "DATED_AS",
+    "tail": "白垩纪"
+  },
+  {
+    "head": "下渡组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "三明等地"
+  },
+  {
+    "head": "下渡组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "坂头组",
+    "relation": "DATED_AS",
+    "tail": "白垩纪"
+  },
+  {
+    "head": "坂头组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "赤头坂一带"
+  },
+  {
+    "head": "坂头组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "吉山组",
+    "relation": "COMPOSED_OF",
+    "tail": "白色复分砾岩"
+  },
+  {
+    "head": "吉山组",
+    "relation": "COMPOSED_OF",
+    "tail": "砾岩"
+  },
+  {
+    "head": "吉山组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "吉山组",
+    "relation": "DATED_AS",
+    "tail": "白垩纪"
+  },
+  {
+    "head": "吉山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "春船山等地"
+  },
+  {
+    "head": "吉山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "石帽山群",
+    "relation": "COMPOSED_OF",
+    "tail": "性熔岩流纹岩"
+  },
+  {
+    "head": "石帽山群",
+    "relation": "COMPOSED_OF",
+    "tail": "流纹岩"
+  },
+  {
+    "head": "石帽山群",
+    "relation": "DATED_AS",
+    "tail": "白垩纪"
+  },
+  {
+    "head": "石帽山群",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "石帽山群",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "地层小区"
+  },
+  {
+    "head": "石帽山群",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "交界区"
+  },
+  {
+    "head": "石帽山群",
+    "relation": "SAME_AS",
+    "tail": "白牙山组"
+  },
+  {
+    "head": "黄坑组",
+    "relation": "DATED_AS",
+    "tail": "白垩纪"
+  },
+  {
+    "head": "黄坑组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省沿海"
+  },
+  {
+    "head": "黄坑组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "地层小区"
+  },
+  {
+    "head": "黄坑组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "黄坑组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "交界区"
+  },
+  {
+    "head": "石牛山组",
+    "relation": "COMPOSED_OF",
+    "tail": "凝灰质砂砾岩"
+  },
+  {
+    "head": "石牛山组",
+    "relation": "COMPOSED_OF",
+    "tail": "质熔结凝灰岩"
+  },
+  {
+    "head": "石牛山组",
+    "relation": "COMPOSED_OF",
+    "tail": "灰岩"
+  },
+  {
+    "head": "石牛山组",
+    "relation": "COMPOSED_OF",
+    "tail": "纹质熔结凝灰岩"
+  },
+  {
+    "head": "石牛山组",
+    "relation": "COMPOSED_OF",
+    "tail": "粉砂岩泥岩"
+  },
+  {
+    "head": "石牛山组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "石牛山组",
+    "relation": "COMPOSED_OF",
+    "tail": "熔结凝灰岩"
+  },
+  {
+    "head": "石牛山组",
+    "relation": "COMPOSED_OF",
+    "tail": "泥岩"
+  },
+  {
+    "head": "石牛山组",
+    "relation": "COMPOSED_OF",
+    "tail": "砾岩"
+  },
+  {
+    "head": "石牛山组",
+    "relation": "COMPOSED_OF",
+    "tail": "凝灰岩"
+  },
+  {
+    "head": "石牛山组",
+    "relation": "DATED_AS",
+    "tail": "白垩纪"
+  },
+  {
+    "head": "石牛山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省沿海"
+  },
+  {
+    "head": "石牛山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "地层小区"
+  },
+  {
+    "head": "石牛山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "顺盆地西南"
+  },
+  {
+    "head": "石牛山组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "赤石群",
+    "relation": "COMPOSED_OF",
+    "tail": "含砂岩砾岩"
+  },
+  {
+    "head": "赤石群",
+    "relation": "COMPOSED_OF",
+    "tail": "页岩"
+  },
+  {
+    "head": "赤石群",
+    "relation": "COMPOSED_OF",
+    "tail": "砾岩页岩"
+  },
+  {
+    "head": "赤石群",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "赤石群",
+    "relation": "COMPOSED_OF",
+    "tail": "砾岩"
+  },
+  {
+    "head": "赤石群",
+    "relation": "DATED_AS",
+    "tail": "白垩纪"
+  },
+  {
+    "head": "赤石群",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建西部"
+  },
+  {
+    "head": "赤石群",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "均口组",
+    "relation": "COMPOSED_OF",
+    "tail": "泥灰岩"
+  },
+  {
+    "head": "均口组",
+    "relation": "COMPOSED_OF",
+    "tail": "粉砂质泥岩"
+  },
+  {
+    "head": "均口组",
+    "relation": "COMPOSED_OF",
+    "tail": "紫红色粉砂岩"
+  },
+  {
+    "head": "均口组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "均口组",
+    "relation": "COMPOSED_OF",
+    "tail": "灰岩"
+  },
+  {
+    "head": "均口组",
+    "relation": "COMPOSED_OF",
+    "tail": "泥岩"
+  },
+  {
+    "head": "均口组",
+    "relation": "DATED_AS",
+    "tail": "白垩纪"
+  },
+  {
+    "head": "均口组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "沙县组",
+    "relation": "COMPOSED_OF",
+    "tail": "泥质）粉砂岩"
+  },
+  {
+    "head": "沙县组",
+    "relation": "COMPOSED_OF",
+    "tail": "长石"
+  },
+  {
+    "head": "沙县组",
+    "relation": "COMPOSED_OF",
+    "tail": "细砂岩长石"
+  },
+  {
+    "head": "沙县组",
+    "relation": "COMPOSED_OF",
+    "tail": "粉砂岩泥岩"
+  },
+  {
+    "head": "沙县组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "沙县组",
+    "relation": "COMPOSED_OF",
+    "tail": "灰岩"
+  },
+  {
+    "head": "沙县组",
+    "relation": "COMPOSED_OF",
+    "tail": "泥岩"
+  },
+  {
+    "head": "沙县组",
+    "relation": "COMPOSED_OF",
+    "tail": "砾岩"
+  },
+  {
+    "head": "沙县组",
+    "relation": "COMPOSED_OF",
+    "tail": "凝灰岩"
+  },
+  {
+    "head": "沙县组",
+    "relation": "COMPOSED_OF",
+    "tail": "粉砂岩凝灰岩"
+  },
+  {
+    "head": "沙县组",
+    "relation": "DATED_AS",
+    "tail": "白垩纪"
+  },
+  {
+    "head": "沙县组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "沙县组",
+    "relation": "SAME_AS",
+    "tail": "禾口组（早期）"
+  },
+  {
+    "head": "崇安组",
+    "relation": "COMPOSED_OF",
+    "tail": "砾岩"
+  },
+  {
+    "head": "崇安组",
+    "relation": "COMPOSED_OF",
+    "tail": "砂岩"
+  },
+  {
+    "head": "崇安组",
+    "relation": "COMPOSED_OF",
+    "tail": "巨厚层砂砾岩"
+  },
+  {
+    "head": "崇安组",
+    "relation": "COMPOSED_OF",
+    "tail": "层含砾细砂岩"
+  },
+  {
+    "head": "崇安组",
+    "relation": "DATED_AS",
+    "tail": "白垩纪"
+  },
+  {
+    "head": "崇安组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "武夷山市"
+  },
+  {
+    "head": "崇安组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "建宁等地"
+  },
+  {
+    "head": "崇安组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "崇安组",
+    "relation": "SAME_AS",
+    "tail": "赤石群（同物异名）"
+  },
+  {
+    "head": "天宝组",
+    "relation": "DATED_AS",
+    "tail": "早更新世"
+  },
+  {
+    "head": "天宝组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "龙海市"
+  },
+  {
+    "head": "天宝组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "港尾镇"
+  },
+  {
+    "head": "天宝组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "头自然村"
+  },
+  {
+    "head": "天宝组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "龙海组",
+    "relation": "DATED_AS",
+    "tail": "晚更新世"
+  },
+  {
+    "head": "龙海组",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  },
+  {
+    "head": "残积层",
+    "relation": "DATED_AS",
+    "tail": "更新世"
+  },
+  {
+    "head": "残积层",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建沿海"
+  },
+  {
+    "head": "残积层",
+    "relation": "DISTRIBUTED_IN",
+    "tail": "福建省"
+  }
+]

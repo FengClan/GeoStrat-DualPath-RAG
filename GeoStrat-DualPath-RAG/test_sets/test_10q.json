@@ -1,0 +1,344 @@
+{
+  "version": "10q",
+  "questions": [
+    {
+      "id": "FJ-027",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "question": "南岩组的主要岩性特征是什么？",
+      "expected_answer": "南岩组的岩石类型主要包括钙质）细砂岩、砂岩、粉砂岩千枚岩、岩及少量磷块岩、见白云质大理岩。",
+      "key_points": [
+        "南岩组的岩性组成",
+        "主要岩石：钙质）细砂岩、砂岩、粉砂岩千枚岩、岩及少量磷块岩、见白云质大理岩"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "lithology",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "南岩组",
+          "relation": "COMPOSED_OF",
+          "target": "钙质）细砂岩"
+        },
+        {
+          "entity": "南岩组",
+          "relation": "COMPOSED_OF",
+          "target": "砂岩"
+        },
+        {
+          "entity": "南岩组",
+          "relation": "COMPOSED_OF",
+          "target": "粉砂岩千枚岩"
+        }
+      ],
+      "expected_entities": [
+        "南岩组",
+        "钙质）细砂岩",
+        "砂岩",
+        "粉砂岩千枚岩"
+      ]
+    },
+    {
+      "id": "FJ-138",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "question": "溪口组主要分布在哪些地区？",
+      "expected_answer": "溪口组主要分布于定等闽西南、福建省等地。",
+      "key_points": [
+        "溪口组的分布范围",
+        "分布区：定等闽西南、福建省"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "spatial_distribution",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "溪口组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "定等闽西南"
+        },
+        {
+          "entity": "溪口组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "福建省"
+        }
+      ],
+      "expected_entities": [
+        "溪口组",
+        "定等闽西南",
+        "福建省"
+      ]
+    },
+    {
+      "id": "FJ-045",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "question": "溪口组的主要岩性特征是什么？",
+      "expected_answer": "溪口组的岩石类型主要包括砂岩、角岩、钙质粉砂岩、角岩化硅泥岩、泥岩。",
+      "key_points": [
+        "溪口组的岩性组成",
+        "主要岩石：砂岩、角岩、钙质粉砂岩、角岩化硅泥岩、泥岩"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "lithology",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "溪口组",
+          "relation": "COMPOSED_OF",
+          "target": "砂岩"
+        },
+        {
+          "entity": "溪口组",
+          "relation": "COMPOSED_OF",
+          "target": "角岩"
+        },
+        {
+          "entity": "溪口组",
+          "relation": "COMPOSED_OF",
+          "target": "钙质粉砂岩"
+        }
+      ],
+      "expected_entities": [
+        "溪口组",
+        "砂岩",
+        "角岩",
+        "钙质粉砂岩"
+      ]
+    },
+    {
+      "id": "FJ-209",
+      "query_type": "COMPARATIVE",
+      "difficulty": "hard",
+      "question": "老虎洞组（石炭纪）与南园组（侏罗纪）在地质年代上有何差异？",
+      "expected_answer": "老虎洞组的地质年代为石炭纪，南园组为侏罗纪。两者分属不同地质时期。",
+      "key_points": [
+        "老虎洞组年代：石炭纪",
+        "南园组年代：侏罗纪"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "geochronology_comparison",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "老虎洞组",
+          "relation": "DATED_AS",
+          "target": "石炭纪"
+        },
+        {
+          "entity": "南园组",
+          "relation": "DATED_AS",
+          "target": "侏罗纪"
+        }
+      ],
+      "expected_entities": [
+        "老虎洞组",
+        "南园组",
+        "石炭纪",
+        "侏罗纪"
+      ]
+    },
+    {
+      "id": "FJ-137",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "question": "长兴组主要分布在哪些地区？",
+      "expected_answer": "长兴组主要分布于洪田等地、福建省等地。",
+      "key_points": [
+        "长兴组的分布范围",
+        "分布区：洪田等地、福建省"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "spatial_distribution",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "长兴组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "洪田等地"
+        },
+        {
+          "entity": "长兴组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "福建省"
+        }
+      ],
+      "expected_entities": [
+        "长兴组",
+        "洪田等地",
+        "福建省"
+      ]
+    },
+    {
+      "id": "FJ-056",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "question": "天井坪岩组形成于什么地质年代？",
+      "expected_answer": "天井坪岩组的地质年代为太古代。",
+      "key_points": [
+        "天井坪岩组的地质年代",
+        "太古代"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "geochronology",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "天井坪岩组",
+          "relation": "DATED_AS",
+          "target": "太古代"
+        }
+      ],
+      "expected_entities": [
+        "天井坪岩组",
+        "太古代"
+      ]
+    },
+    {
+      "id": "FJ-020",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "question": "大岭（岩）组的主要岩性特征是什么？",
+      "expected_answer": "大岭（岩）组的岩石类型主要包括云母石英片岩、片岩、云母、灰绿色云母、石英。",
+      "key_points": [
+        "大岭（岩）组的岩性组成",
+        "主要岩石：云母石英片岩、片岩、云母、灰绿色云母、石英"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "lithology",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "大岭（岩）组",
+          "relation": "COMPOSED_OF",
+          "target": "云母石英片岩"
+        },
+        {
+          "entity": "大岭（岩）组",
+          "relation": "COMPOSED_OF",
+          "target": "片岩"
+        },
+        {
+          "entity": "大岭（岩）组",
+          "relation": "COMPOSED_OF",
+          "target": "云母"
+        }
+      ],
+      "expected_entities": [
+        "大岭（岩）组",
+        "云母石英片岩",
+        "片岩",
+        "云母"
+      ]
+    },
+    {
+      "id": "FJ-195",
+      "query_type": "COMPARATIVE",
+      "difficulty": "hard",
+      "question": "亲营山（岩）组（泥盆纪）与楼前组（震旦纪）在地质年代上有何差异？",
+      "expected_answer": "亲营山（岩）组的地质年代为泥盆纪，楼前组为震旦纪。两者分属不同地质时期。",
+      "key_points": [
+        "亲营山（岩）组年代：泥盆纪",
+        "楼前组年代：震旦纪"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "geochronology_comparison",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "亲营山（岩）组",
+          "relation": "DATED_AS",
+          "target": "泥盆纪"
+        },
+        {
+          "entity": "楼前组",
+          "relation": "DATED_AS",
+          "target": "震旦纪"
+        }
+      ],
+      "expected_entities": [
+        "亲营山（岩）组",
+        "楼前组",
+        "泥盆纪",
+        "震旦纪"
+      ]
+    },
+    {
+      "id": "FJ-275",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "question": "梨山组在福建省的空间展布有何特征？",
+      "expected_answer": "梨山组在福建省内主要分布于建阳等地、福建省等地，受区域构造控制，呈带状或面状展布。",
+      "key_points": [
+        "分布区域：建阳等地、福建省",
+        "受区域构造控制"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "spatial_distribution",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "梨山组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "建阳等地"
+        },
+        {
+          "entity": "梨山组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "福建省"
+        }
+      ],
+      "expected_entities": [
+        "梨山组",
+        "建阳等地",
+        "福建省"
+      ]
+    },
+    {
+      "id": "FJ-288",
+      "query_type": "SPATIAL",
+      "difficulty": "hard",
+      "question": "早—晚寒武世林田组在福建省一带的厚度变化规律是什么？",
+      "expected_answer": "早—晚寒武世林田组在福建省一带的厚度受沉积环境和后期构造改造的双重影响。区域上，该单位通常呈现由沉积中心向边缘减薄或受断层切割导致厚度突变的特征。",
+      "key_points": [
+        "早—晚寒武世林田组厚度受沉积环境控制",
+        "后期构造改造影响厚度分布",
+        "由中心向边缘减薄或断裂切割突变"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "thickness_analysis",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "早—晚寒武世林田组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "福建省"
+        }
+      ],
+      "expected_entities": [
+        "早—晚寒武世林田组",
+        "福建省"
+      ]
+    }
+  ]
+}

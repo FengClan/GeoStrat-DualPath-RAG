@@ -1,0 +1,1094 @@
+{
+  "baselines": {
+    "direct_llm": {
+      "overall_scores": {
+        "qa_correctness": 0.72,
+        "qa_faithfulness": 0.72,
+        "qa_completeness": 0.72,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "retrieval_recall@5": 0.0,
+        "retrieval_mrr": 0.0,
+        "extraction_entity_f1": 1.0,
+        "extraction_triple_f1": 1.0,
+        "contrast_agreement": 0.0,
+        "avg_latency_ms": 23129.6623,
+        "overall_score": 0.468
+      },
+      "per_question_results": [
+        {
+          "id": "FJ-001",
+          "question": "南园组的岩性特征是什么？",
+          "query_type": "FACTUAL",
+          "difficulty": "easy",
+          "qa_metrics": {
+            "key_point_coverage": 0.8,
+            "citation_precision": 0.0,
+            "citation_recall": 0.0,
+            "correctness": 1.0,
+            "completeness": 1.0,
+            "faithfulness": 1.0,
+            "coherence": 1.0,
+            "domain_accuracy": 1.0,
+            "llm_judge_score": 1.0,
+            "llm_judge_reason": "系统回答完全符合标准答案的核心内容（流纹岩、凝灰岩、英安质凝灰熔岩、紫红—灰紫色、晚侏罗世火山成因），且在事实性、术语使用、地层时代、构造背景和区域分布上均严格遵循权威地质文献，无任何幻觉或错误；信息远超标准答案的广度与深度，但全部忠实于已发表研究成果。"
+          },
+          "retrieval_metrics": {
+            "recall@5": 0.0,
+            "mrr": 0.0,
+            "hit@5": 0.0,
+            "details": "no retrieved documents"
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 26307.024002075195
+        },
+        {
+          "id": "FJ-004",
+          "question": "请对比南园组和长林组的岩性差异。",
+          "query_type": "COMPARATIVE",
+          "difficulty": "medium",
+          "qa_metrics": {
+            "key_point_coverage": 0.5,
+            "citation_precision": 0.0,
+            "citation_recall": 0.0,
+            "correctness": 0.9,
+            "completeness": 1.0,
+            "faithfulness": 0.8,
+            "coherence": 1.0,
+            "domain_accuracy": 1.0,
+            "llm_judge_score": 0.9,
+            "llm_judge_reason": "系统回答在岩性、时代、环境和地质意义等核心维度上全面超越标准答案，事实准确、术语规范、逻辑严密；但存在轻微幻觉风险——如将长林组‘油页岩有机质含量达3–8%’及‘已获工业气流验证’等未见于权威公开文献的细节表述，缺乏可查证出处，故faithfulness扣1分。"
+          },
+          "retrieval_metrics": {
+            "recall@5": 0.0,
+            "mrr": 0.0,
+            "hit@5": 0.0,
+            "details": "no retrieved documents"
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 33504.3580532074
+        },
+        {
+          "id": "FJ-006",
+          "question": "根据南园组的岩性组合特征，推断其形成的构造环境。",
+          "query_type": "REASONING",
+          "difficulty": "hard",
+          "qa_metrics": {
+            "key_point_coverage": 0.8,
+            "citation_precision": 0.0,
+            "citation_recall": 0.0,
+            "correctness": 0.7,
+            "completeness": 0.6,
+            "faithfulness": 0.8,
+            "coherence": 1.0,
+            "domain_accuracy": 1.0,
+            "llm_judge_score": 0.7,
+            "llm_judge_reason": "系统回答在地质事实和术语上高度准确、逻辑严密，但将南园组构造环境判定为‘陆内伸展裂陷’与标准答案‘活动大陆边缘火山弧’存在根本性分歧；当前主流文献（如《中国区域地质志·福建卷》、Zhou & Li, 2000, GSA Bulletin）支持其属俯冲相关陆缘弧，双峰式特征被解释为壳幔相互作用而非典型裂谷；虽引用合理证据，但结论偏离学界共识，属高级别解释性偏差而非幻觉。"
+          },
+          "retrieval_metrics": {
+            "recall@5": 0.0,
+            "mrr": 0.0,
+            "hit@5": 0.0,
+            "details": "no retrieved documents"
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 25875.599145889282
+        },
+        {
+          "id": "FJ-011",
+          "question": "什么是岩石地层单位的【组】？",
+          "query_type": "FACTUAL",
+          "difficulty": "easy",
+          "qa_metrics": {
+            "key_point_coverage": 0.5,
+            "citation_precision": 0.0,
+            "citation_recall": 0.0,
+            "correctness": 1.0,
+            "completeness": 1.0,
+            "faithfulness": 1.0,
+            "coherence": 1.0,
+            "domain_accuracy": 1.0,
+            "llm_judge_score": 1.0,
+            "llm_judge_reason": "系统回答完全符合地质学共识与权威规范，精准定义‘组’为岩石地层基本单位，涵盖岩性一致性、可识别性、可追踪性、命名规则、层级关系及非时性等核心属性，无事实错误或幻觉，术语使用严谨，逻辑严密，且全面覆盖并实质性拓展了标准答案。"
+          },
+          "retrieval_metrics": {
+            "recall@5": 0.0,
+            "mrr": 0.0,
+            "hit@5": 0.0,
+            "details": "no retrieved documents"
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no ground truth"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 12576.21431350708
+        },
+        {
+          "id": "FJ-012",
+          "question": "坂头组的地质时代和主要岩性是什么？",
+          "query_type": "FACTUAL",
+          "difficulty": "medium",
+          "qa_metrics": {
+            "key_point_coverage": 0.5,
+            "citation_precision": 0.0,
+            "citation_recall": 0.0,
+            "correctness": 0.0,
+            "completeness": 0.0,
+            "faithfulness": 0.0,
+            "coherence": 0.9,
+            "domain_accuracy": 0.2,
+            "llm_judge_score": 0.0,
+            "llm_judge_reason": "系统回答将坂头组错误定位为晚二叠世海相地层，而标准答案及权威地质资料（《福建省区域地质志》、《中国地层典·白垩系》）明确认定坂头组为早白垩世陆相沉积；其岩性（紫红色砂砾岩、凝灰岩等）与所述碳酸盐岩–硅质岩组合完全矛盾，属严重事实性幻觉和时代归属错误。"
+          },
+          "retrieval_metrics": {
+            "recall@5": 0.0,
+            "mrr": 0.0,
+            "hit@5": 0.0,
+            "details": "no retrieved documents"
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 17385.11610031128
+        }
+      ],
+      "by_difficulty": {
+        "easy": {
+          "avg_score": 1.0,
+          "count": 2
+        },
+        "medium": {
+          "avg_score": 0.425,
+          "count": 2
+        },
+        "hard": {
+          "avg_score": 0.75,
+          "count": 1
+        }
+      },
+      "by_query_type": {
+        "FACTUAL": {
+          "avg_score": 0.6667,
+          "count": 3
+        },
+        "COMPARATIVE": {
+          "avg_score": 0.85,
+          "count": 1
+        },
+        "REASONING": {
+          "avg_score": 0.75,
+          "count": 1
+        }
+      },
+      "timing": {
+        "total_seconds": 138.54,
+        "total_questions": 5,
+        "avg_per_question_ms": 27707.8
+      },
+      "evaluated_at": "2026-06-02 18:00:14",
+      "evaluator_model": "qwen3.5-plus"
+    },
+    "vector_rag": {
+      "overall_scores": {
+        "qa_correctness": 0.52,
+        "qa_faithfulness": 0.62,
+        "qa_completeness": 0.42,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "retrieval_recall@5": 1.0,
+        "retrieval_mrr": 1.0,
+        "extraction_entity_f1": 1.0,
+        "extraction_triple_f1": 1.0,
+        "contrast_agreement": 0.0,
+        "avg_latency_ms": 19601.8401,
+        "overall_score": 0.698
+      },
+      "per_question_results": [
+        {
+          "id": "FJ-001",
+          "question": "南园组的岩性特征是什么？",
+          "query_type": "FACTUAL",
+          "difficulty": "easy",
+          "qa_metrics": {
+            "key_point_coverage": 0.4,
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "correctness": 0.3,
+            "completeness": 0.2,
+            "faithfulness": 0.4,
+            "coherence": 0.9,
+            "domain_accuracy": 0.5,
+            "llm_judge_score": 0.4,
+            "llm_judge_reason": "系统回答严重偏离标准答案：南园组实际以流纹岩、凝灰岩、英安质凝灰熔岩为主，不含安山岩；标准答案明确为晚侏罗世火山喷发产物，而回答错误引入安山岩—英安岩—流纹岩单峰式序列（属典型双峰式或钙碱性演化中罕见安山岩主导的误述），且未提紫红色/灰紫色颜色特征及砂岩/页岩夹层；文献引用虚构（'文献片段1/2'无依据），构成事实性幻觉和术语误用。"
+          },
+          "retrieval_metrics": {
+            "recall@1": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr": 1.0,
+            "first_relevant_rank": 1,
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "hit@10": 1.0,
+            "ndcg@1": 1.0,
+            "ndcg@3": 2.1309,
+            "ndcg@5": 2.9485,
+            "ndcg@10": 2.9485
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 33380.46312332153
+        },
+        {
+          "id": "FJ-004",
+          "question": "请对比南园组和长林组的岩性差异。",
+          "query_type": "COMPARATIVE",
+          "difficulty": "medium",
+          "qa_metrics": {
+            "key_point_coverage": 0.5,
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "correctness": 0.3,
+            "completeness": 0.2,
+            "faithfulness": 0.4,
+            "coherence": 0.9,
+            "domain_accuracy": 0.5,
+            "llm_judge_score": 0.4,
+            "llm_judge_reason": "系统回答严重偏离标准答案：将长林组错误断定为海相钙质硅质岩（实际为陆相碎屑沉积夹火山碎屑岩），否定其含砂岩/粉砂岩/页岩等关键岩性，且虚构‘条带状钙质硅质岩占67%’等文献中未见的量化数据；南园组虽正确指出火山岩属性，但误增‘安山岩’（标准答案未提，且区域上南园组确以流纹质为主，安山质罕见），并错误强调‘不含沉积夹层’（标准答案明确南园组夹火山碎屑岩，且实际野外常见沉凝灰岩夹层）；接触关系描述‘喷发不整合’属术语滥用（地质学中无此规范术语，应为‘不整合’或‘角度不整合/侵入不整合’，而南园组与长林组实为平行不整合或微角度不整合）；整体存在系统性地层归属幻觉和环境误判。"
+          },
+          "retrieval_metrics": {
+            "recall@1": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr": 1.0,
+            "first_relevant_rank": 1,
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "hit@10": 1.0,
+            "ndcg@1": 1.0,
+            "ndcg@3": 2.1309,
+            "ndcg@5": 2.9485,
+            "ndcg@10": 2.9485
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 26091.0165309906
+        },
+        {
+          "id": "FJ-006",
+          "question": "根据南园组的岩性组合特征，推断其形成的构造环境。",
+          "query_type": "REASONING",
+          "difficulty": "hard",
+          "qa_metrics": {
+            "key_point_coverage": 0.6,
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "correctness": 0.9,
+            "completeness": 0.8,
+            "faithfulness": 1.0,
+            "coherence": 1.0,
+            "domain_accuracy": 1.0,
+            "llm_judge_score": 0.9,
+            "llm_judge_reason": "系统回答准确识别了活动大陆边缘相关构造背景，但将标准答案中明确的‘活动大陆边缘火山弧’细化为‘活动大陆边缘向板内过渡地带挤压环境’，虽有文献依据且地质上合理，但弱化了俯冲作用主导的火山弧本质；未显式提及‘古太平洋板块俯冲’和‘晚侏罗世’时间约束，故完整性扣1分；其余维度均严谨、忠实、专业。"
+          },
+          "retrieval_metrics": {
+            "recall@1": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr": 1.0,
+            "first_relevant_rank": 1,
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "hit@10": 1.0,
+            "ndcg@1": 1.0,
+            "ndcg@3": 2.1309,
+            "ndcg@5": 2.9485,
+            "ndcg@10": 2.9485
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 5220.815896987915
+        },
+        {
+          "id": "FJ-011",
+          "question": "什么是岩石地层单位的【组】？",
+          "query_type": "FACTUAL",
+          "difficulty": "easy",
+          "qa_metrics": {
+            "key_point_coverage": 0.5,
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "correctness": 0.3,
+            "completeness": 0.2,
+            "faithfulness": 0.4,
+            "coherence": 0.7,
+            "domain_accuracy": 0.5,
+            "llm_judge_score": 0.4,
+            "llm_judge_reason": "系统回答严重偏离标准定义，将‘组（Formation）’错误限定为福建前泥盆纪变质构造背景下的特殊‘岩组’，混淆了国际通用岩石地层单位定义与区域性、非标准修订术语；未提及组作为基本地层单位、岩性/岩相一致性、厚度范围及填图基础等核心要素，且虚构‘非典型构造岩石地层单位’等无权威依据的分类，存在术语误用和语境偷换。"
+          },
+          "retrieval_metrics": {
+            "recall@1": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr": 1.0,
+            "first_relevant_rank": 1,
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "hit@10": 1.0,
+            "ndcg@1": 1.0,
+            "ndcg@3": 2.1309,
+            "ndcg@5": 2.9485,
+            "ndcg@10": 2.9485
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no ground truth"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 8296.891927719116
+        },
+        {
+          "id": "FJ-012",
+          "question": "坂头组的地质时代和主要岩性是什么？",
+          "query_type": "FACTUAL",
+          "difficulty": "medium",
+          "qa_metrics": {
+            "key_point_coverage": 0.625,
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "correctness": 0.8,
+            "completeness": 0.7,
+            "faithfulness": 0.9,
+            "coherence": 1.0,
+            "domain_accuracy": 1.0,
+            "llm_judge_score": 0.8,
+            "llm_judge_reason": "系统回答在时代判定上正确支持早白垩世，但岩性描述与标准答案存在关键偏差：标准答案明确‘紫红色砂砾岩、砂岩、粉砂岩夹凝灰岩’，而系统回答强调‘灰绿色’细碎屑岩并弱化紫红色及砂砾岩，且将凝灰岩归为局部火山岩段而非夹层；虽引用文献严谨、无幻觉，但遗漏了‘紫红色’‘砂砾岩’及‘夹凝灰岩’这一核心组合特征。"
+          },
+          "retrieval_metrics": {
+            "recall@1": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr": 1.0,
+            "first_relevant_rank": 1,
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "hit@10": 1.0,
+            "ndcg@1": 1.0,
+            "ndcg@3": 2.1309,
+            "ndcg@5": 2.9485,
+            "ndcg@10": 2.9485
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 25020.013093948364
+        }
+      ],
+      "by_difficulty": {
+        "easy": {
+          "avg_score": 0.35,
+          "count": 2
+        },
+        "medium": {
+          "avg_score": 0.6,
+          "count": 2
+        },
+        "hard": {
+          "avg_score": 0.95,
+          "count": 1
+        }
+      },
+      "by_query_type": {
+        "FACTUAL": {
+          "avg_score": 0.5167,
+          "count": 3
+        },
+        "COMPARATIVE": {
+          "avg_score": 0.35,
+          "count": 1
+        },
+        "REASONING": {
+          "avg_score": 0.95,
+          "count": 1
+        }
+      },
+      "timing": {
+        "total_seconds": 122.41,
+        "total_questions": 5,
+        "avg_per_question_ms": 24482.2
+      },
+      "evaluated_at": "2026-06-02 18:02:17",
+      "evaluator_model": "qwen3.5-plus"
+    },
+    "graph_rag": {
+      "overall_scores": {
+        "qa_correctness": 0.24,
+        "qa_faithfulness": 1.0,
+        "qa_completeness": 0.1,
+        "citation_precision": 0.8,
+        "citation_recall": 0.8,
+        "retrieval_recall@5": 0.0,
+        "retrieval_mrr": 0.0,
+        "extraction_entity_f1": 1.0,
+        "extraction_triple_f1": 1.0,
+        "contrast_agreement": 0.0,
+        "avg_latency_ms": 5827.072,
+        "overall_score": 0.414
+      },
+      "per_question_results": [
+        {
+          "id": "FJ-001",
+          "question": "南园组的岩性特征是什么？",
+          "query_type": "FACTUAL",
+          "difficulty": "easy",
+          "qa_metrics": {
+            "key_point_coverage": 0.5,
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "correctness": 0.0,
+            "completeness": 0.0,
+            "faithfulness": 1.0,
+            "coherence": 0.9,
+            "domain_accuracy": 0.8,
+            "llm_judge_score": 0.3,
+            "llm_judge_reason": "系统回答虽忠实于其声称的知识图谱（无幻觉），但与地质学客观事实严重不符：南园组岩性在权威文献（如《中国区域地质志·福建卷》、GB/T 17766-2020）中有明确记载，标准答案内容准确可靠；系统以‘图谱未收录’为由拒绝提供已知科学事实，违背地质学问答的基本专业义务。"
+          },
+          "retrieval_metrics": {
+            "recall@5": 0.0,
+            "mrr": 0.0,
+            "hit@5": 0.0,
+            "details": "no retrieved documents"
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 4407.399654388428
+        },
+        {
+          "id": "FJ-004",
+          "question": "请对比南园组和长林组的岩性差异。",
+          "query_type": "COMPARATIVE",
+          "difficulty": "medium",
+          "qa_metrics": {
+            "key_point_coverage": 0.5,
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "correctness": 0.3,
+            "completeness": 0.2,
+            "faithfulness": 1.0,
+            "coherence": 0.9,
+            "domain_accuracy": 0.4,
+            "llm_judge_score": 0.4,
+            "llm_judge_reason": "系统回答严格忠实于知识图谱（无幻觉），逻辑清晰，但完全否定南园组岩性认知违背区域地层学基本事实；标准答案中南园组火山岩属性是闽西南中生代陆相火山-沉积地层序列的公认定论（《福建省区域地质志》《中国地层典·中生界》均明确），而系统将‘图谱未收录’等同于‘事实不存在’，导致领域准确性严重失当，且遗漏全部关键对比信息（岩性类型、成因环境、颜色、构造背景）。"
+          },
+          "retrieval_metrics": {
+            "recall@5": 0.0,
+            "mrr": 0.0,
+            "hit@5": 0.0,
+            "details": "no retrieved documents"
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 10118.15619468689
+        },
+        {
+          "id": "FJ-006",
+          "question": "根据南园组的岩性组合特征，推断其形成的构造环境。",
+          "query_type": "REASONING",
+          "difficulty": "hard",
+          "qa_metrics": {
+            "key_point_coverage": 0.6,
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "correctness": 0.3,
+            "completeness": 0.0,
+            "faithfulness": 1.0,
+            "coherence": 0.9,
+            "domain_accuracy": 0.8,
+            "llm_judge_score": 0.4,
+            "llm_judge_reason": "系统回答在事实层面忠实于所声明的知识图谱局限（无幻觉），但完全回避了问题核心——南园组实际岩性组合及构造环境推断，而该信息在地质学界属公认基础事实；其拒绝作答的立场虽逻辑自洽，却严重违背地层学基本评估范式：岩性组合是推断构造环境的首要依据，标准答案所述内容（中酸性钙碱性火山岩、晚侏罗世、活动大陆边缘火山弧）为华南区域地质共识，具充分文献支持。"
+          },
+          "retrieval_metrics": {
+            "recall@5": 0.0,
+            "mrr": 0.0,
+            "hit@5": 0.0,
+            "details": "no retrieved documents"
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 7006.27589225769
+        },
+        {
+          "id": "FJ-011",
+          "question": "什么是岩石地层单位的【组】？",
+          "query_type": "FACTUAL",
+          "difficulty": "easy",
+          "qa_metrics": {
+            "key_point_coverage": 0.5,
+            "citation_precision": 0.0,
+            "citation_recall": 0.0,
+            "correctness": 0.0,
+            "completeness": 0.0,
+            "faithfulness": 1.0,
+            "coherence": 0.9,
+            "domain_accuracy": 1.0,
+            "llm_judge_score": 0.2,
+            "llm_judge_reason": "系统回答在事实层面完全未提供地质学定义，与标准答案零重合；虽忠实于 its constrained instruction（无图谱则不答）且术语使用准确、逻辑自洽，但作为地质学问答任务，拒绝回答核心专业问题导致正确性、完整性归零，整体失效。"
+          },
+          "retrieval_metrics": {
+            "recall@5": 0.0,
+            "mrr": 0.0,
+            "hit@5": 0.0,
+            "details": "no retrieved documents"
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no ground truth"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 3366.126775741577
+        },
+        {
+          "id": "FJ-012",
+          "question": "坂头组的地质时代和主要岩性是什么？",
+          "query_type": "FACTUAL",
+          "difficulty": "medium",
+          "qa_metrics": {
+            "key_point_coverage": 0.5,
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "correctness": 0.6,
+            "completeness": 0.3,
+            "faithfulness": 1.0,
+            "coherence": 0.9,
+            "domain_accuracy": 0.7,
+            "llm_judge_score": 0.5,
+            "llm_judge_reason": "回答在忠实性上满分（未虚构岩性），但地质时代仅答‘白垩纪’而未细化至‘早白垩世’，且完全遗漏标准答案中全部岩性细节（紫红色砂砾岩等）及沉积环境、化石等关键地质信息，领域术语基本准确但缺乏地层学必要精度。"
+          },
+          "retrieval_metrics": {
+            "recall@5": 0.0,
+            "mrr": 0.0,
+            "hit@5": 0.0,
+            "details": "no retrieved documents"
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 4237.401247024536
+        }
+      ],
+      "by_difficulty": {
+        "easy": {
+          "avg_score": 0.5,
+          "count": 2
+        },
+        "medium": {
+          "avg_score": 0.725,
+          "count": 2
+        },
+        "hard": {
+          "avg_score": 0.65,
+          "count": 1
+        }
+      },
+      "by_query_type": {
+        "FACTUAL": {
+          "avg_score": 0.6,
+          "count": 3
+        },
+        "COMPARATIVE": {
+          "avg_score": 0.65,
+          "count": 1
+        },
+        "REASONING": {
+          "avg_score": 0.65,
+          "count": 1
+        }
+      },
+      "timing": {
+        "total_seconds": 49.33,
+        "total_questions": 5,
+        "avg_per_question_ms": 9866.5
+      },
+      "evaluated_at": "2026-06-02 18:03:06",
+      "evaluator_model": "qwen3.5-plus"
+    },
+    "dual_path": {
+      "overall_scores": {
+        "qa_correctness": 0.76,
+        "qa_faithfulness": 0.92,
+        "qa_completeness": 0.7,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "retrieval_recall@5": 1.0,
+        "retrieval_mrr": 1.0,
+        "extraction_entity_f1": 1.0,
+        "extraction_triple_f1": 1.0,
+        "contrast_agreement": 0.0,
+        "avg_latency_ms": 20258.1172,
+        "overall_score": 0.87
+      },
+      "per_question_results": [
+        {
+          "id": "FJ-001",
+          "question": "南园组的岩性特征是什么？",
+          "query_type": "FACTUAL",
+          "difficulty": "easy",
+          "qa_metrics": {
+            "key_point_coverage": 0.6,
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "correctness": 0.7,
+            "completeness": 0.5,
+            "faithfulness": 0.9,
+            "coherence": 0.8,
+            "domain_accuracy": 0.9,
+            "llm_judge_score": 0.7,
+            "llm_judge_reason": "系统回答在地质事实和术语上高度准确、无幻觉，逻辑严谨且忠实于文献共识；但与标准答案存在关键偏差：标准答案明确指出‘流纹岩、凝灰岩、英安质凝灰熔岩’为主，强调火山碎屑岩（凝灰岩、凝灰熔岩）主导，而系统回答过度强调‘喷出岩类’中的熔岩成分（安山岩—英安岩—流纹岩），忽略凝灰质组分，且未提紫红色/灰紫色颜色特征及夹层（砂岩、页岩），导致岩性组合描述失准、完整性不足。"
+          },
+          "retrieval_metrics": {
+            "recall@1": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr": 1.0,
+            "first_relevant_rank": 1,
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "hit@10": 1.0,
+            "ndcg@1": 1.0,
+            "ndcg@3": 2.1309,
+            "ndcg@5": 2.9485,
+            "ndcg@10": 2.9485
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 17911.42749786377
+        },
+        {
+          "id": "FJ-004",
+          "question": "请对比南园组和长林组的岩性差异。",
+          "query_type": "COMPARATIVE",
+          "difficulty": "medium",
+          "qa_metrics": {
+            "key_point_coverage": 0.5,
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "correctness": 0.9,
+            "completeness": 1.0,
+            "faithfulness": 0.8,
+            "coherence": 1.0,
+            "domain_accuracy": 1.0,
+            "llm_judge_score": 0.9,
+            "llm_judge_reason": "系统回答准确抓住南园组（火山岩）与长林组（碎屑沉积为主）的本质差异，完整覆盖并大幅拓展标准答案，术语规范、逻辑严密；但存在轻微幻觉：将长林组描述为‘碎屑-碳酸盐混合沉积’并列举‘泥灰岩、灰岩、硅质岩’等，而标准答案明确其为‘陆相碎屑沉积，夹火山碎屑岩’，未提碳酸盐岩或硅质岩，且‘陆相’环境与‘浅海/湖相碳酸盐’存在矛盾。"
+          },
+          "retrieval_metrics": {
+            "recall@1": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr": 1.0,
+            "first_relevant_rank": 1,
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "hit@10": 1.0,
+            "ndcg@1": 1.0,
+            "ndcg@3": 2.1309,
+            "ndcg@5": 2.9485,
+            "ndcg@10": 2.9485
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 36060.84370613098
+        },
+        {
+          "id": "FJ-006",
+          "question": "根据南园组的岩性组合特征，推断其形成的构造环境。",
+          "query_type": "REASONING",
+          "difficulty": "hard",
+          "qa_metrics": {
+            "key_point_coverage": 1.0,
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "correctness": 0.9,
+            "completeness": 0.9,
+            "faithfulness": 1.0,
+            "coherence": 1.0,
+            "domain_accuracy": 1.0,
+            "llm_judge_score": 0.9,
+            "llm_judge_reason": "系统回答在构造环境定性（活动大陆边缘向板内过渡的挤压环境）上与标准答案高度一致，且提供了更精细的地球化学、岩浆源区和动力学机制支撑；唯一扣分点在于未显式强调‘古太平洋板块向欧亚板块俯冲’这一具体板块对，但通过‘西太平洋板块俯冲作用影响下华南陆块东南缘’已等效涵盖；全文无事实性幻觉，术语精准，逻辑严密，完全符合中生代华南火山岩带地质共识。"
+          },
+          "retrieval_metrics": {
+            "recall@1": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr": 1.0,
+            "first_relevant_rank": 1,
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "hit@10": 1.0,
+            "ndcg@1": 1.0,
+            "ndcg@3": 2.1309,
+            "ndcg@5": 2.9485,
+            "ndcg@10": 2.9485
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 20941.304922103882
+        },
+        {
+          "id": "FJ-011",
+          "question": "什么是岩石地层单位的【组】？",
+          "query_type": "FACTUAL",
+          "difficulty": "easy",
+          "qa_metrics": {
+            "key_point_coverage": 0.625,
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "correctness": 0.3,
+            "completeness": 0.2,
+            "faithfulness": 0.9,
+            "coherence": 0.8,
+            "domain_accuracy": 0.9,
+            "llm_judge_score": 0.4,
+            "llm_judge_reason": "系统回答虽在术语使用和地质逻辑上高度准确（无幻觉、尊重ICS/中国指南规范），但严重偏离问题意图：问题要求定义岩石地层单位‘组’这一基础概念，而回答因拘泥于虚构的‘图谱缺失’前提，拒绝提供标准定义，导致事实正确性与完整性极低；其严谨性反而造成教学与实践层面的根本性失当。"
+          },
+          "retrieval_metrics": {
+            "recall@1": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr": 1.0,
+            "first_relevant_rank": 1,
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "hit@10": 1.0,
+            "ndcg@1": 1.0,
+            "ndcg@3": 2.1309,
+            "ndcg@5": 2.9485,
+            "ndcg@10": 2.9485
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no ground truth"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 12146.353244781494
+        },
+        {
+          "id": "FJ-012",
+          "question": "坂头组的地质时代和主要岩性是什么？",
+          "query_type": "FACTUAL",
+          "difficulty": "medium",
+          "qa_metrics": {
+            "key_point_coverage": 0.625,
+            "citation_precision": 1.0,
+            "citation_recall": 1.0,
+            "correctness": 1.0,
+            "completeness": 0.9,
+            "faithfulness": 1.0,
+            "coherence": 0.9,
+            "domain_accuracy": 1.0,
+            "llm_judge_score": 0.9,
+            "llm_judge_reason": "系统回答在地质时代（早白垩世）和岩性（砂岩、页岩等陆相碎屑岩）上完全符合标准答案，仅未明确列出‘紫红色’‘砂砾岩’‘凝灰岩’及具体化石名称（叶肢介），但‘河湖相砂页岩’‘偶夹粉砂岩’‘介形类’等描述与之高度一致且无冲突；所有地层关系、生物群佐证、术语使用均专业准确，逻辑严密，无幻觉。"
+          },
+          "retrieval_metrics": {
+            "recall@1": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr": 1.0,
+            "first_relevant_rank": 1,
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "hit@10": 1.0,
+            "ndcg@1": 1.0,
+            "ndcg@3": 2.1309,
+            "ndcg@5": 2.9485,
+            "ndcg@10": 2.9485
+          },
+          "extraction_metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "details": "no predictions"
+          },
+          "contrast_metrics": {
+            "dimension_agreement": 0.0,
+            "details": "no ground truth"
+          },
+          "latency_ms": 14230.656623840332
+        }
+      ],
+      "by_difficulty": {
+        "easy": {
+          "avg_score": 0.7,
+          "count": 2
+        },
+        "medium": {
+          "avg_score": 0.925,
+          "count": 2
+        },
+        "hard": {
+          "avg_score": 0.95,
+          "count": 1
+        }
+      },
+      "by_query_type": {
+        "FACTUAL": {
+          "avg_score": 0.8,
+          "count": 3
+        },
+        "COMPARATIVE": {
+          "avg_score": 0.85,
+          "count": 1
+        },
+        "REASONING": {
+          "avg_score": 0.95,
+          "count": 1
+        }
+      },
+      "timing": {
+        "total_seconds": 123.28,
+        "total_questions": 5,
+        "avg_per_question_ms": 24656.1
+      },
+      "evaluated_at": "2026-06-02 18:05:09",
+      "evaluator_model": "qwen3.5-plus"
+    }
+  },
+  "comparison": {
+    "qa_correctness": {
+      "direct_llm": 0.72,
+      "vector_rag": 0.52,
+      "graph_rag": 0.24,
+      "dual_path": 0.76
+    },
+    "qa_faithfulness": {
+      "direct_llm": 0.72,
+      "vector_rag": 0.62,
+      "graph_rag": 1.0,
+      "dual_path": 0.92
+    },
+    "qa_completeness": {
+      "direct_llm": 0.72,
+      "vector_rag": 0.42,
+      "graph_rag": 0.1,
+      "dual_path": 0.7
+    },
+    "citation_precision": {
+      "direct_llm": 0.0,
+      "vector_rag": 1.0,
+      "graph_rag": 0.8,
+      "dual_path": 1.0
+    },
+    "citation_recall": {
+      "direct_llm": 0.0,
+      "vector_rag": 1.0,
+      "graph_rag": 0.8,
+      "dual_path": 1.0
+    },
+    "retrieval_recall@5": {
+      "direct_llm": 0.0,
+      "vector_rag": 1.0,
+      "graph_rag": 0.0,
+      "dual_path": 1.0
+    },
+    "retrieval_mrr": {
+      "direct_llm": 0.0,
+      "vector_rag": 1.0,
+      "graph_rag": 0.0,
+      "dual_path": 1.0
+    },
+    "extraction_entity_f1": {
+      "direct_llm": 1.0,
+      "vector_rag": 1.0,
+      "graph_rag": 1.0,
+      "dual_path": 1.0
+    },
+    "extraction_triple_f1": {
+      "direct_llm": 1.0,
+      "vector_rag": 1.0,
+      "graph_rag": 1.0,
+      "dual_path": 1.0
+    },
+    "contrast_agreement": {
+      "direct_llm": 0.0,
+      "vector_rag": 0.0,
+      "graph_rag": 0.0,
+      "dual_path": 0.0
+    },
+    "avg_latency_ms": {
+      "direct_llm": 23129.6623,
+      "vector_rag": 19601.8401,
+      "graph_rag": 5827.072,
+      "dual_path": 20258.1172
+    },
+    "overall_score": {
+      "direct_llm": 0.468,
+      "vector_rag": 0.698,
+      "graph_rag": 0.414,
+      "dual_path": 0.87
+    }
+  },
+  "winner": "dual_path",
+  "winner_name": "双路自适应融合 (Proposed)",
+  "evaluated_at": "2026-06-02 18:05:09",
+  "model": "qwen3.5-plus"
+}

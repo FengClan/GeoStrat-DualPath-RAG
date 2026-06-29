@@ -1,0 +1,1115 @@
+{
+  "version": "30q_test",
+  "questions": [
+    {
+      "id": "FJ-037",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "question": "船山组的主要岩性特征是什么？",
+      "expected_answer": "船山组的岩石类型主要包括质灰岩燧石、核灰岩及硅质岩、燧石、灰岩、硅质岩。",
+      "key_points": [
+        "船山组的岩性组成",
+        "主要岩石：质灰岩燧石、核灰岩及硅质岩、燧石、灰岩、硅质岩"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "lithology",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "船山组",
+          "relation": "COMPOSED_OF",
+          "target": "质灰岩燧石"
+        },
+        {
+          "entity": "船山组",
+          "relation": "COMPOSED_OF",
+          "target": "核灰岩及硅质岩"
+        },
+        {
+          "entity": "船山组",
+          "relation": "COMPOSED_OF",
+          "target": "燧石"
+        }
+      ],
+      "expected_entities": [
+        "船山组",
+        "质灰岩燧石",
+        "核灰岩及硅质岩",
+        "燧石"
+      ]
+    },
+    {
+      "id": "FJ-186",
+      "query_type": "COMPARATIVE",
+      "difficulty": "medium",
+      "question": "请对比大岭（岩）组与老虎洞组的岩性特征差异。",
+      "expected_answer": "大岭（岩）组的岩石类型包括云母石英片岩、片岩、云母；老虎洞组的岩石类型包括白云质灰岩、白云岩、燧石。",
+      "key_points": [
+        "大岭（岩）组岩性：云母石英片岩、片岩、云母",
+        "老虎洞组岩性：白云质灰岩、白云岩、燧石"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "stratigraphic_comparison",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "大岭（岩）组",
+          "relation": "COMPOSED_OF",
+          "target": "云母石英片岩"
+        },
+        {
+          "entity": "大岭（岩）组",
+          "relation": "COMPOSED_OF",
+          "target": "片岩"
+        },
+        {
+          "entity": "老虎洞组",
+          "relation": "COMPOSED_OF",
+          "target": "白云质灰岩"
+        },
+        {
+          "entity": "老虎洞组",
+          "relation": "COMPOSED_OF",
+          "target": "白云岩"
+        }
+      ],
+      "expected_entities": [
+        "大岭（岩）组",
+        "老虎洞组",
+        "云母石英片岩",
+        "片岩",
+        "白云质灰岩",
+        "白云岩"
+      ]
+    },
+    {
+      "id": "FJ-257",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "question": "亲营山（岩）组在福建省的空间展布有何特征？",
+      "expected_answer": "亲营山（岩）组在福建省内主要分布于平潭等地、福建省等地，受区域构造控制，呈带状或面状展布。",
+      "key_points": [
+        "分布区域：平潭等地、福建省",
+        "受区域构造控制"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "spatial_distribution",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "亲营山（岩）组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "平潭等地"
+        },
+        {
+          "entity": "亲营山（岩）组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "福建省"
+        }
+      ],
+      "expected_entities": [
+        "亲营山（岩）组",
+        "平潭等地",
+        "福建省"
+      ]
+    },
+    {
+      "id": "FJ-234",
+      "query_type": "REASONING",
+      "difficulty": "hard",
+      "question": "在安溪等地、福建省等地出露的一套以['角闪岩', '石英云母片岩']为主的地层，年代推测为前震旦纪，请判断该地层可能属于哪个地层单位。",
+      "expected_answer": "综合分布范围（安溪等地、福建省）、岩石组合及年代特征，该地层单位应为龙北溪（岩）组。其以['角闪岩', '石英云母片岩']为主要岩性、分布于上述区域的特征与龙北溪（岩）组的定义吻合。",
+      "key_points": [
+        "分布范围：安溪等地、福建省",
+        "岩石组合：['角闪岩', '石英云母片岩']",
+        "年代：前震旦纪",
+        "结论：龙北溪（岩）组"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "stratigraphic_identification",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "龙北溪（岩）组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "安溪等地"
+        },
+        {
+          "entity": "龙北溪（岩）组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "福建省"
+        },
+        {
+          "entity": "龙北溪（岩）组",
+          "relation": "COMPOSED_OF",
+          "target": "角闪岩"
+        },
+        {
+          "entity": "龙北溪（岩）组",
+          "relation": "COMPOSED_OF",
+          "target": "石英云母片岩"
+        }
+      ],
+      "expected_entities": [
+        "龙北溪（岩）组",
+        "安溪等地",
+        "福建省",
+        "角闪岩",
+        "石英云母片岩"
+      ]
+    },
+    {
+      "id": "FJ-148",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "question": "吉山组主要分布在哪些地区？",
+      "expected_answer": "吉山组主要分布于福建省、春船山等地等地。",
+      "key_points": [
+        "吉山组的分布范围",
+        "分布区：福建省、春船山等地"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "spatial_distribution",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "吉山组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "福建省"
+        },
+        {
+          "entity": "吉山组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "春船山等地"
+        }
+      ],
+      "expected_entities": [
+        "吉山组",
+        "福建省",
+        "春船山等地"
+      ]
+    },
+    {
+      "id": "FJ-291",
+      "query_type": "SPATIAL",
+      "difficulty": "hard",
+      "question": "下渡组在三明等地一带的厚度变化规律是什么？",
+      "expected_answer": "下渡组在三明等地一带的厚度受沉积环境和后期构造改造的双重影响。区域上，该单位通常呈现由沉积中心向边缘减薄或受断层切割导致厚度突变的特征。",
+      "key_points": [
+        "下渡组厚度受沉积环境控制",
+        "后期构造改造影响厚度分布",
+        "由中心向边缘减薄或断裂切割突变"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "thickness_analysis",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "下渡组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "三明等地"
+        }
+      ],
+      "expected_entities": [
+        "下渡组",
+        "三明等地"
+      ]
+    },
+    {
+      "id": "FJ-189",
+      "query_type": "COMPARATIVE",
+      "difficulty": "medium",
+      "question": "请对比楼前组与船山组的岩性特征差异。",
+      "expected_answer": "楼前组的岩石类型包括流纹岩、夹有变质沉凝灰岩、砂岩；船山组的岩石类型包括质灰岩燧石、核灰岩及硅质岩、燧石。两者均含有灰岩。",
+      "key_points": [
+        "楼前组岩性：流纹岩、夹有变质沉凝灰岩、砂岩",
+        "船山组岩性：质灰岩燧石、核灰岩及硅质岩、燧石"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "stratigraphic_comparison",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "楼前组",
+          "relation": "COMPOSED_OF",
+          "target": "流纹岩"
+        },
+        {
+          "entity": "楼前组",
+          "relation": "COMPOSED_OF",
+          "target": "夹有变质沉凝灰岩"
+        },
+        {
+          "entity": "船山组",
+          "relation": "COMPOSED_OF",
+          "target": "质灰岩燧石"
+        },
+        {
+          "entity": "船山组",
+          "relation": "COMPOSED_OF",
+          "target": "核灰岩及硅质岩"
+        }
+      ],
+      "expected_entities": [
+        "楼前组",
+        "船山组",
+        "流纹岩",
+        "夹有变质沉凝灰岩",
+        "质灰岩燧石",
+        "核灰岩及硅质岩"
+      ]
+    },
+    {
+      "id": "FJ-196",
+      "query_type": "COMPARATIVE",
+      "difficulty": "hard",
+      "question": "童子岩组（二叠纪）与经畲组（石炭纪）在地质年代上有何差异？",
+      "expected_answer": "童子岩组的地质年代为二叠纪，经畲组为石炭纪。两者分属不同地质时期。",
+      "key_points": [
+        "童子岩组年代：二叠纪",
+        "经畲组年代：石炭纪"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "geochronology_comparison",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "童子岩组",
+          "relation": "DATED_AS",
+          "target": "二叠纪"
+        },
+        {
+          "entity": "经畲组",
+          "relation": "DATED_AS",
+          "target": "石炭纪"
+        }
+      ],
+      "expected_entities": [
+        "童子岩组",
+        "经畲组",
+        "二叠纪",
+        "石炭纪"
+      ]
+    },
+    {
+      "id": "FJ-006",
+      "question": "根据南园组的岩性组合特征，推断其形成的构造环境。",
+      "query_type": "REASONING",
+      "expected_answer": "南园组以大规模中酸性火山岩（流纹岩、英安岩、凝灰岩）为主，属于钙碱性系列，结合其形成于晚侏罗世，反映其形成于活动大陆边缘的火山弧环境，与古太平洋板块向欧亚板块的俯冲作用有关。该构造环境与浙闽沿海中生代火山岩带整体背景一致。",
+      "key_points": [
+        "钙碱性系列",
+        "活动大陆边缘",
+        "火山弧",
+        "板块俯冲",
+        "晚侏罗世"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "expected_entities": [
+        "南园组",
+        "古太平洋板块",
+        "欧亚板块"
+      ],
+      "expected_kg_path": [
+        {
+          "entity": "南园组",
+          "relation": "COMPOSED_OF",
+          "target": "流纹岩"
+        },
+        {
+          "entity": "南园组",
+          "relation": "COMPOSED_OF",
+          "target": "英安岩"
+        },
+        {
+          "entity": "南园组",
+          "relation": "DATED_AS",
+          "target": "晚侏罗世"
+        }
+      ],
+      "difficulty": "hard",
+      "category": "tectonic_reasoning",
+      "kb_id": "all"
+    },
+    {
+      "id": "FJ-064",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "question": "黄潭（岩）组形成于什么地质年代？",
+      "expected_answer": "黄潭（岩）组的地质年代为元古代。",
+      "key_points": [
+        "黄潭（岩）组的地质年代",
+        "元古代"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "geochronology",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "黄潭（岩）组",
+          "relation": "DATED_AS",
+          "target": "元古代"
+        }
+      ],
+      "expected_entities": [
+        "黄潭（岩）组",
+        "元古代"
+      ]
+    },
+    {
+      "id": "FJ-183",
+      "query_type": "COMPARATIVE",
+      "difficulty": "medium",
+      "question": "请对比桃溪岩组与南山岩组的岩性特征差异。",
+      "expected_answer": "桃溪岩组的岩石类型包括片岩、石英、变粒岩；南山岩组的岩石类型包括角闪岩、变粒岩片岩、片岩。两者均含有片岩、石英。",
+      "key_points": [
+        "桃溪岩组岩性：片岩、石英、变粒岩",
+        "南山岩组岩性：角闪岩、变粒岩片岩、片岩"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "stratigraphic_comparison",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "桃溪岩组",
+          "relation": "COMPOSED_OF",
+          "target": "片岩"
+        },
+        {
+          "entity": "桃溪岩组",
+          "relation": "COMPOSED_OF",
+          "target": "石英"
+        },
+        {
+          "entity": "南山岩组",
+          "relation": "COMPOSED_OF",
+          "target": "角闪岩"
+        },
+        {
+          "entity": "南山岩组",
+          "relation": "COMPOSED_OF",
+          "target": "变粒岩片岩"
+        }
+      ],
+      "expected_entities": [
+        "桃溪岩组",
+        "南山岩组",
+        "片岩",
+        "石英",
+        "角闪岩",
+        "变粒岩片岩"
+      ]
+    },
+    {
+      "id": "FJ-066",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "question": "楼前组形成于什么地质年代？",
+      "expected_answer": "楼前组的地质年代为震旦纪。",
+      "key_points": [
+        "楼前组的地质年代",
+        "震旦纪"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "geochronology",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "楼前组",
+          "relation": "DATED_AS",
+          "target": "震旦纪"
+        }
+      ],
+      "expected_entities": [
+        "楼前组",
+        "震旦纪"
+      ]
+    },
+    {
+      "id": "FJ-250",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "question": "黄潭（岩）组在福建省的空间展布有何特征？",
+      "expected_answer": "黄潭（岩）组在福建省内主要分布于泰宁等地、将乐等地、福建省等地，受区域构造控制，呈带状或面状展布。",
+      "key_points": [
+        "分布区域：泰宁等地、将乐等地、福建省",
+        "受区域构造控制"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "spatial_distribution",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "黄潭（岩）组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "泰宁等地"
+        },
+        {
+          "entity": "黄潭（岩）组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "将乐等地"
+        },
+        {
+          "entity": "黄潭（岩）组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "福建省"
+        }
+      ],
+      "expected_entities": [
+        "黄潭（岩）组",
+        "泰宁等地",
+        "将乐等地",
+        "福建省"
+      ]
+    },
+    {
+      "id": "FJ-218",
+      "query_type": "REASONING",
+      "difficulty": "hard",
+      "question": "根据区域地层对比资料，林地组与与下伏桃子坑组平行不整合接触是否为同一地层单位？请说明判断依据。",
+      "expected_answer": "林地组与与下伏桃子坑组平行不整合接触为同物异名，属于同一地层单位。依据包括二者在岩性组合和地层层位上具有一致性，已在地层清理工作中被认定为同义名称。",
+      "key_points": [
+        "林地组与与下伏桃子坑组平行不整合接触为同物异名",
+        "岩性组合及层位一致性为判定依据"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "synonym_detection",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "林地组",
+          "relation": "SAME_AS",
+          "target": "与下伏桃子坑组平行不整合接触"
+        }
+      ],
+      "expected_entities": [
+        "林地组",
+        "与下伏桃子坑组平行不整合接触"
+      ]
+    },
+    {
+      "id": "FJ-017",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "question": "迪口岩组的主要岩性特征是什么？",
+      "expected_answer": "迪口岩组的岩石类型主要包括角闪岩、成分为斜长石、程度为低角闪岩、片岩、夹有云母片岩。",
+      "key_points": [
+        "迪口岩组的岩性组成",
+        "主要岩石：角闪岩、成分为斜长石、程度为低角闪岩、片岩、夹有云母片岩"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "lithology",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "迪口岩组",
+          "relation": "COMPOSED_OF",
+          "target": "角闪岩"
+        },
+        {
+          "entity": "迪口岩组",
+          "relation": "COMPOSED_OF",
+          "target": "成分为斜长石"
+        },
+        {
+          "entity": "迪口岩组",
+          "relation": "COMPOSED_OF",
+          "target": "程度为低角闪岩"
+        }
+      ],
+      "expected_entities": [
+        "迪口岩组",
+        "角闪岩",
+        "成分为斜长石",
+        "程度为低角闪岩"
+      ]
+    },
+    {
+      "id": "FJ-235",
+      "query_type": "REASONING",
+      "difficulty": "hard",
+      "question": "在乐黄潭等地、福建省等地出露的一套以['黑色绿泥白云石', '片岩']为主的地层，年代推测为元古代，请判断该地层可能属于哪个地层单位。",
+      "expected_answer": "综合分布范围（乐黄潭等地、福建省）、岩石组合及年代特征，该地层单位应为下峰（岩）组。其以['黑色绿泥白云石', '片岩']为主要岩性、分布于上述区域的特征与下峰（岩）组的定义吻合。",
+      "key_points": [
+        "分布范围：乐黄潭等地、福建省",
+        "岩石组合：['黑色绿泥白云石', '片岩']",
+        "年代：元古代",
+        "结论：下峰（岩）组"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "stratigraphic_identification",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "下峰（岩）组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "乐黄潭等地"
+        },
+        {
+          "entity": "下峰（岩）组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "福建省"
+        },
+        {
+          "entity": "下峰（岩）组",
+          "relation": "COMPOSED_OF",
+          "target": "黑色绿泥白云石"
+        },
+        {
+          "entity": "下峰（岩）组",
+          "relation": "COMPOSED_OF",
+          "target": "片岩"
+        }
+      ],
+      "expected_entities": [
+        "下峰（岩）组",
+        "乐黄潭等地",
+        "福建省",
+        "黑色绿泥白云石",
+        "片岩"
+      ]
+    },
+    {
+      "id": "FJ-253",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "question": "西溪组在福建省的空间展布有何特征？",
+      "expected_answer": "西溪组在福建省内主要分布于南平一带、福建省、布于闽西北等地，受区域构造控制，呈带状或面状展布。",
+      "key_points": [
+        "分布区域：南平一带、福建省、布于闽西北",
+        "受区域构造控制"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "spatial_distribution",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "西溪组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "南平一带"
+        },
+        {
+          "entity": "西溪组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "福建省"
+        },
+        {
+          "entity": "西溪组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "布于闽西北"
+        }
+      ],
+      "expected_entities": [
+        "西溪组",
+        "南平一带",
+        "福建省",
+        "布于闽西北"
+      ]
+    },
+    {
+      "id": "FJ-267",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "question": "翠屏山组在福建省的空间展布有何特征？",
+      "expected_answer": "翠屏山组在福建省内主要分布于龙岩一带、福建省等地，受区域构造控制，呈带状或面状展布。",
+      "key_points": [
+        "分布区域：龙岩一带、福建省",
+        "受区域构造控制"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "spatial_distribution",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "翠屏山组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "龙岩一带"
+        },
+        {
+          "entity": "翠屏山组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "福建省"
+        }
+      ],
+      "expected_entities": [
+        "翠屏山组",
+        "龙岩一带",
+        "福建省"
+      ]
+    },
+    {
+      "id": "FJ-016",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "question": "南山岩组的主要岩性特征是什么？",
+      "expected_answer": "南山岩组的岩石类型主要包括角闪岩、变粒岩片岩、片岩、云母、变粒岩云母。",
+      "key_points": [
+        "南山岩组的岩性组成",
+        "主要岩石：角闪岩、变粒岩片岩、片岩、云母、变粒岩云母"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "lithology",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "南山岩组",
+          "relation": "COMPOSED_OF",
+          "target": "角闪岩"
+        },
+        {
+          "entity": "南山岩组",
+          "relation": "COMPOSED_OF",
+          "target": "变粒岩片岩"
+        },
+        {
+          "entity": "南山岩组",
+          "relation": "COMPOSED_OF",
+          "target": "片岩"
+        }
+      ],
+      "expected_entities": [
+        "南山岩组",
+        "角闪岩",
+        "变粒岩片岩",
+        "片岩"
+      ]
+    },
+    {
+      "id": "FJ-117",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "question": "龙北溪（岩）组主要分布在哪些地区？",
+      "expected_answer": "龙北溪（岩）组主要分布于安溪等地、福建省等地。",
+      "key_points": [
+        "龙北溪（岩）组的分布范围",
+        "分布区：安溪等地、福建省"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "spatial_distribution",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "龙北溪（岩）组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "安溪等地"
+        },
+        {
+          "entity": "龙北溪（岩）组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "福建省"
+        }
+      ],
+      "expected_entities": [
+        "龙北溪（岩）组",
+        "安溪等地",
+        "福建省"
+      ]
+    },
+    {
+      "id": "FJ-261",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "question": "船山组在福建省的空间展布有何特征？",
+      "expected_answer": "船山组在福建省内主要分布于宁化湖村、亚等地区、向北至东南、上杭等地等地，受区域构造控制，呈带状或面状展布。",
+      "key_points": [
+        "分布区域：宁化湖村、亚等地区、向北至东南、上杭等地",
+        "受区域构造控制"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "spatial_distribution",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "船山组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "宁化湖村"
+        },
+        {
+          "entity": "船山组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "亚等地区"
+        },
+        {
+          "entity": "船山组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "向北至东南"
+        }
+      ],
+      "expected_entities": [
+        "船山组",
+        "宁化湖村",
+        "亚等地区",
+        "向北至东南"
+      ]
+    },
+    {
+      "id": "FJ-079",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "question": "船山组形成于什么地质年代？",
+      "expected_answer": "船山组的地质年代为石炭纪。",
+      "key_points": [
+        "船山组的地质年代",
+        "石炭纪"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "geochronology",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "船山组",
+          "relation": "DATED_AS",
+          "target": "石炭纪"
+        }
+      ],
+      "expected_entities": [
+        "船山组",
+        "石炭纪"
+      ]
+    },
+    {
+      "id": "FJ-032",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "question": "魏坊组的主要岩性特征是什么？",
+      "expected_answer": "魏坊组的岩石类型主要包括黑色薄层千枚岩、砂岩、石英、千枚岩、粉砂质）泥岩。",
+      "key_points": [
+        "魏坊组的岩性组成",
+        "主要岩石：黑色薄层千枚岩、砂岩、石英、千枚岩、粉砂质）泥岩"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "lithology",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "魏坊组",
+          "relation": "COMPOSED_OF",
+          "target": "黑色薄层千枚岩"
+        },
+        {
+          "entity": "魏坊组",
+          "relation": "COMPOSED_OF",
+          "target": "砂岩"
+        },
+        {
+          "entity": "魏坊组",
+          "relation": "COMPOSED_OF",
+          "target": "石英"
+        }
+      ],
+      "expected_entities": [
+        "魏坊组",
+        "黑色薄层千枚岩",
+        "砂岩",
+        "石英"
+      ]
+    },
+    {
+      "id": "FJ-071",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "question": "亲营山（岩）组形成于什么地质年代？",
+      "expected_answer": "亲营山（岩）组的地质年代为泥盆纪。",
+      "key_points": [
+        "亲营山（岩）组的地质年代",
+        "泥盆纪"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "geochronology",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "亲营山（岩）组",
+          "relation": "DATED_AS",
+          "target": "泥盆纪"
+        }
+      ],
+      "expected_entities": [
+        "亲营山（岩）组",
+        "泥盆纪"
+      ]
+    },
+    {
+      "id": "FJ-005",
+      "question": "闽西南和闽东地区的晚中生代地层有何异同？",
+      "query_type": "COMPARATIVE",
+      "expected_answer": "闽西南地区晚中生代以陆相红色碎屑岩建造为主（如沙县组、赤水组），火山岩不发育；闽东地区晚中生代则以大规模的火山岩建造为主（如南园组、小溪组），火山活动强烈。两区差异反映了东南沿海火山岩带与内陆盆地的不同构造环境。",
+      "key_points": [
+        "闽西南红色碎屑岩",
+        "闽东火山岩建造",
+        "构造环境差异",
+        "沙县组",
+        "南园组"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "expected_entities": [
+        "沙县组",
+        "赤水组",
+        "南园组",
+        "小溪组"
+      ],
+      "expected_kg_path": [
+        {
+          "entity": "南园组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "闽东"
+        },
+        {
+          "entity": "沙县组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "闽西南"
+        }
+      ],
+      "difficulty": "hard",
+      "category": "cross_region_comparison",
+      "kb_id": "all"
+    },
+    {
+      "id": "FJ-165",
+      "query_type": "COMPARATIVE",
+      "difficulty": "medium",
+      "question": "请对比崇安组与下村组的岩性特征差异。",
+      "expected_answer": "崇安组的岩石类型包括巨厚层砂砾岩、砾岩、砂岩；下村组的岩石类型包括砂岩、英砂岩长石、砾岩。两者均含有砾岩、砂岩。",
+      "key_points": [
+        "崇安组岩性：巨厚层砂砾岩、砾岩、砂岩",
+        "下村组岩性：砂岩、英砂岩长石、砾岩"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "stratigraphic_comparison",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "崇安组",
+          "relation": "COMPOSED_OF",
+          "target": "巨厚层砂砾岩"
+        },
+        {
+          "entity": "崇安组",
+          "relation": "COMPOSED_OF",
+          "target": "砾岩"
+        },
+        {
+          "entity": "下村组",
+          "relation": "COMPOSED_OF",
+          "target": "砂岩"
+        },
+        {
+          "entity": "下村组",
+          "relation": "COMPOSED_OF",
+          "target": "英砂岩长石"
+        }
+      ],
+      "expected_entities": [
+        "崇安组",
+        "下村组",
+        "巨厚层砂砾岩",
+        "砾岩",
+        "砂岩",
+        "英砂岩长石"
+      ]
+    },
+    {
+      "id": "FJ-217",
+      "query_type": "REASONING",
+      "difficulty": "hard",
+      "question": "根据区域地层对比资料，楼前组与丁屋岭组是否为同一地层单位？请说明判断依据。",
+      "expected_answer": "楼前组与丁屋岭组为同物异名，属于同一地层单位。依据包括二者在岩性组合和地层层位上具有一致性，已在地层清理工作中被认定为同义名称。",
+      "key_points": [
+        "楼前组与丁屋岭组为同物异名",
+        "岩性组合及层位一致性为判定依据"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "synonym_detection",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "楼前组",
+          "relation": "SAME_AS",
+          "target": "丁屋岭组"
+        }
+      ],
+      "expected_entities": [
+        "楼前组",
+        "丁屋岭组"
+      ]
+    },
+    {
+      "id": "FJ-015",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "question": "大金山岩组的主要岩性特征是什么？",
+      "expected_answer": "大金山岩组的岩石类型主要包括角闪岩、程度为低角闪岩、片岩、云母、变粒岩云母。",
+      "key_points": [
+        "大金山岩组的岩性组成",
+        "主要岩石：角闪岩、程度为低角闪岩、片岩、云母、变粒岩云母"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "lithology",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "大金山岩组",
+          "relation": "COMPOSED_OF",
+          "target": "角闪岩"
+        },
+        {
+          "entity": "大金山岩组",
+          "relation": "COMPOSED_OF",
+          "target": "程度为低角闪岩"
+        },
+        {
+          "entity": "大金山岩组",
+          "relation": "COMPOSED_OF",
+          "target": "片岩"
+        }
+      ],
+      "expected_entities": [
+        "大金山岩组",
+        "角闪岩",
+        "程度为低角闪岩",
+        "片岩"
+      ]
+    },
+    {
+      "id": "FJ-228",
+      "query_type": "REASONING",
+      "difficulty": "hard",
+      "question": "在福建省、横坑等地等地出露的一套以['粉砂岩千枚岩', '砂岩']为主的地层，年代推测为晚震旦世，请判断该地层可能属于哪个地层单位。",
+      "expected_answer": "综合分布范围（福建省、横坑等地）、岩石组合及年代特征，该地层单位应为黄连组。其以['粉砂岩千枚岩', '砂岩']为主要岩性、分布于上述区域的特征与黄连组的定义吻合。",
+      "key_points": [
+        "分布范围：福建省、横坑等地",
+        "岩石组合：['粉砂岩千枚岩', '砂岩']",
+        "年代：晚震旦世",
+        "结论：黄连组"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "stratigraphic_identification",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "黄连组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "福建省"
+        },
+        {
+          "entity": "黄连组",
+          "relation": "DISTRIBUTED_IN",
+          "target": "横坑等地"
+        },
+        {
+          "entity": "黄连组",
+          "relation": "COMPOSED_OF",
+          "target": "粉砂岩千枚岩"
+        },
+        {
+          "entity": "黄连组",
+          "relation": "COMPOSED_OF",
+          "target": "砂岩"
+        }
+      ],
+      "expected_entities": [
+        "黄连组",
+        "福建省",
+        "横坑等地",
+        "粉砂岩千枚岩",
+        "砂岩"
+      ]
+    },
+    {
+      "id": "FJ-031",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "question": "东坑口组的主要岩性特征是什么？",
+      "expected_answer": "东坑口组的岩石类型主要包括厚层变质石英、变质石英砂岩、砂岩、石英。",
+      "key_points": [
+        "东坑口组的岩性组成",
+        "主要岩石：厚层变质石英、变质石英砂岩、砂岩、石英"
+      ],
+      "supporting_sources": [
+        "福建地质志.docx"
+      ],
+      "category": "lithology",
+      "kb_id": "experiment",
+      "expected_kg_path": [
+        {
+          "entity": "东坑口组",
+          "relation": "COMPOSED_OF",
+          "target": "厚层变质石英"
+        },
+        {
+          "entity": "东坑口组",
+          "relation": "COMPOSED_OF",
+          "target": "变质石英砂岩"
+        },
+        {
+          "entity": "东坑口组",
+          "relation": "COMPOSED_OF",
+          "target": "砂岩"
+        }
+      ],
+      "expected_entities": [
+        "东坑口组",
+        "厚层变质石英",
+        "变质石英砂岩",
+        "砂岩"
+      ]
+    }
+  ]
+}

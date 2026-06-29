@@ -1,0 +1,46 @@
+# ============================================================
+# 面向岩石地层问答的自适应双路检索增强生成方法
+# Python 依赖清单
+# ============================================================
+# 安装方式: pip install -r requirements.txt
+# 最低 Python 版本: 3.9
+# ============================================================
+
+# --- Web 框架 (Flask API 服务) ---
+flask>=2.0,<4.0
+flask-cors>=4.0
+
+# --- HTTP & API ---
+requests>=2.28
+openai>=1.0                   # DashScope / 百炼 API (OpenAI 兼容接口)
+python-dotenv>=1.0            # .env 环境变量加载 (可选，缺少时自动跳过)
+
+# --- 向量检索 (RAG 核心) ---
+sentence-transformers>=2.6,<4.0
+faiss-cpu>=1.7.3              # Facebook AI Similarity Search (CPU版)
+chromadb>=0.4                 # ChromaDB (旧版兼容，核心已切换为 FAISS)
+langchain-community>=0.1      # Document loaders (PyPDFLoader, Docx2txtLoader, TextLoader)
+langchain-text-splitters>=0.1 # RecursiveCharacterTextSplitter
+langchain-core>=0.1           # Document schema
+
+# --- 知识图谱 ---
+networkx>=3.0                 # 图存储 / BFS多跳检索 / 图融合
+
+# --- 数据处理 ---
+numpy>=1.24
+pandas>=1.5
+openpyxl>=3.1                 # Excel 读取 (KG构建脚本)
+python-docx>=1.0              # Word 读取 (文档加载)
+
+# --- 图像处理 (岩性图像提取，可选) ---
+Pillow>=9.0
+
+# ============================================================
+# 以下为遗留/可选依赖，核心功能不需要
+# 如需使用 integrated.py (MySQL图库) 或旧模型后端，请取消注释
+# ============================================================
+# pymysql>=1.0                 # integrated.py MySQL 连接
+# sqlalchemy>=1.4              # integrated.py ORM
+# google-generativeai>=0.3     # Google Gemini (已注释)
+# sparkai>=0.1                 # 讯飞星火 (已注释)
+# websocket-client>=1.5        # 星火 WebSocket (已注释)

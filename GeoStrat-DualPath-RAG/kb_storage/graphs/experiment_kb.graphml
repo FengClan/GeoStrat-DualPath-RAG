@@ -1,0 +1,3391 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="edge" attr.name="relation" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="directed"><node id="天井坪岩组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="石英岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="变粒岩云母">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="变粒岩石英">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="云母">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="石英">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="（斜长）变粒岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="变粒岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="变粒岩石英岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="混合岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="片岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="质矿物混合岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="角闪岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="由低角闪岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="太古代">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="福建省">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="建宁西部">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="伊家等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="天井坪岩组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="建宁伊家乡天井坪村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="大金山岩组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="程度为低角闪岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="黑云斜长变粒岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="前震旦纪">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="建阳市">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="松溪等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="大金山岩组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="建阳市西南约21km的大金山">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="南山岩组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="岩相到低角闪岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="变粒岩片岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="母片岩石英">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="建瓯等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="南山岩组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="建阳市城东4km的南山村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="迪口岩组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="夹有云母片岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="长石">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="成分为斜长石">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="斜长石和石英">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="片麻岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="变粒岩（片麻岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="早震旦世">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="平后洋一带">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="迪口岩组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="建瓯迪口—南平后洋一带">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="桃溪岩组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="黑云石英片岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="呈片岩与变粒岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="斜长黑云石英">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="上杭等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="武平湘村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="布于闽西南">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="桃溪岩组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="武平县桃溪镇">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="东岩（岩）组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="斜长阳起片岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="辉石">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="岩相—低角闪岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="溪梅仙一带">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="于建瓯东南">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="东岩（岩）组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="建瓯东南34km东岩村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="大岭（岩）组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="灰绿色云母">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="云母石英片岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="绿色云母石英">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="德化等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="卓地组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="大岭（岩）组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="建瓯大岭">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="龙北溪（岩）组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="特征包括石英">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="包括石英云母">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="石英云母片岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="英片岩变粒岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="安溪等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="葛坑组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="泮地组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="龙北溪（岩）组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="建瓯市龙北溪">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="黄潭（岩）组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="夹白云石英">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="白云石">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="白云石英片岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="黑云钠长变粒岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="元古代">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="将乐等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="泰宁等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="丁屋岭组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="吴墩组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="黄潭（岩）组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="将乐黄潭镇">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="下峰（岩）组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="黑色绿泥白云石">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="英片岩云母">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="绿泥白云石英">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="乐黄潭等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="三溪寨组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="下峰（岩）组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="将乐县黄潭镇西北约5 km下峰自然村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="楼前组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="流纹质凝灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="质流纹质凝灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="凝灰质粉砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="夹有变质沉凝灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="熔结凝灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="沉凝灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="凝灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="流纹岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="震旦纪">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="化方田等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="楼前组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="明溪县盖洋镇北7 km楼前村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="西溪组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="细粒长石石英">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="细—细粒长石">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="薄层变质硅质岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="硅质岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="千枚岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="长石石英砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="泥岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="含）砂质泥岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="南平一带">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="布于闽西北">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="西溪组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="将乐县黄潭镇西北8.5 km西溪村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="楼子坝组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="中）细粒长石">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="板岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="绿泥绢云千枚岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="石石英杂砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="千枚岩或板岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="于上杭等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="平桃溪东部">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="楼子坝组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="长汀县西南30 km楼子坝村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="南岩组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="大理岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="岩及少量磷块岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="间夹变质硅质岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="钙质）细砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="粉砂岩千枚岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="见白云质大理岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="磷块岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="晚震旦世">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="长塘里等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="南岩组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="长汀县西南15 km南岩村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="黄连组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="薄-中层硅质岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="夹变质细砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="横坑等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="黄连组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="长汀县西南约11 km黄连村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="亲营山（岩）组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="区岩性呈混合岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="（石英）片岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="为特征的云母">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="的云母（石英">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="）片岩夹变粒岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="泥盆纪">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="平潭等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="亲营山（岩）组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="东山县城东南约3.5km亲营山">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="早—晚寒武世林田组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="色的变质砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="硅质岩和大理岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="岩及变质硅质岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="质砂岩千枚岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="寒武纪">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="早—晚寒武世林田组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="长汀县东南25 km林田村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="东坑口组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="变质石英砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="厚层变质石英">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="寒武系中—上统">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="明溪等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="东坑口组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="永安市西北17 km东坑口">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="魏坊组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="黑色薄层千枚岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="粉砂质）泥岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="夹变质石英">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="奥陶纪">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="长汀一带">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="流小池等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="魏坊组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="永安市西北15 km魏坊村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="罗峰溪组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="粉砂岩和千枚岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="千枚岩板岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="英（杂）砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="变质（含长石">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="板岩硅质岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="含长石）石英">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="长汀县">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="大源坝一带">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="罗峰溪组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="长汀县城西北7 km坝下剖面">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="天瓦崠组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="变质岩千枚岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="砾岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="由石英砾岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="白垩纪">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="天瓦崠组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="闽西南（龙岩、上杭、永定、清流、长汀等地）">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="桃子坑组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="桃子坑组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="闽西南（龙岩、永定、清流等地）">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="林地组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="以石英砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="页岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="粉砂岩泥岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="部含碳质页岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="石英砂砾岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="石炭纪">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="与下伏桃子坑组平行不整合接触">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="上与经畲组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="船山组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="栖霞组呈不整合或断层接触。">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="林地组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="漳平市双洋乡林地村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="经畲组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="宁化湖村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="地层小区">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="经畲组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="龙岩市东南15 km曹溪乡经杨村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="老虎洞组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="局部含燧石">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="白云质灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="白云岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="燧石">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="安坑边等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="老虎洞组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="江苏省江宁县淳化老虎洞">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="核灰岩及硅质岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="灰黑色灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="质灰岩燧石">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="亚等地区">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="向北至东南">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="船山组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="江苏句容县东昌街北赣船山">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="栖霞组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="层含燧石灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="中薄层含燧石">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="碎屑岩或硅质岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="二叠纪">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="龙岩等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="栖霞组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="江苏南京东郊栖霞山">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="泉上组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="夹灰岩或硅质岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="碎屑岩夹灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="泉上组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="宁化泉上">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="文笔山组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="化泉上等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="文笔山组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="永安市大湖镇">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="童子岩组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="碎屑岩煤层">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="煤层">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="童子岩组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="连城县西山童子岩">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="翠屏山组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="性沉积煤层">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="龙岩一带">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="翠屏山组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="龙岩市翠屏山一带">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="罗坑组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="永安等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="南平等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="大隆组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="罗坑组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="清流县罗坑村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="长兴组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="生物屑灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="质灰岩硅质岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="洪田等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="长兴组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="大田县梅林崆洞山">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="溪口组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="角岩灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="钙质粉砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="角岩化硅泥岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="角岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="三叠纪">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="定等闽西南">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="溪口组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="龙岩市东南22km适中镇陈坑尾—兰田剖面">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="新祠角岩段">
+  <data key="d0">MEMBER</data>
+</node>
+<node id="主要由角岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="角岩化粉砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="岩适中等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="新祠角岩段层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="龙岩市适中乡新祠">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="兰田灰岩段">
+  <data key="d0">MEMBER</data>
+</node>
+<node id="泥灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="钙质砂泥岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="由灰岩泥灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="平拱桥一带">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="永定抚市">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="兰田灰岩段层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="龙岩市25km适中镇兰田村东">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="石碧溪泥岩段">
+  <data key="d0">MEMBER</data>
+</node>
+<node id="分地区夹角岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="主要由粉砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="昌杨厝等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="石碧溪泥岩段层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="永定县城东北21 km石碧溪村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="安仁组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="绿色钙质砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="粉砂岩长石">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="英砂岩砾岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="田桃源等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="安仁组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="漳平市东北30 km新桥镇安仁">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="大坑村组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="岩及局部煤层">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="由细砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="侏罗纪">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="泰玉山等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="大坑村组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="漳平大坑矿区">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="文宾山组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="闽南等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="粤北地区">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="以及闽西南">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="文宾山组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="漳平市北27km新桥镇文宾山">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="象牙群">
+  <data key="d0">GROUP</data>
+</node>
+<node id="长汀等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="象牙组">
+  <data key="d0">GROUP</data>
+</node>
+<node id="象牙群层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="永定县堂堡下村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="下村组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="英砂岩长石">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="下段以石英">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="段以石英砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="下村组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="藩坑组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="安山岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="玄武岩凝灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="流纹岩安山岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="安山岩玄武岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="玄武岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="平洪坑等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="永定下村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="藩坑组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="永定县堂堡下村藩坑">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="梨山组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="建阳等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="梨山组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="建瓯县梨山煤矿">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="长林组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="硅质岩泥灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="砾岩石英">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="浅灰色砂砾岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="石英杂砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="粉砂岩硅质岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="长林组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="尤溪近德坑长林">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="南园组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="武夷山区">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="平和一带">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="尤以沿海">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="鹅宅组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="赤水组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="南园组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="闽侯县鸿尾乡南园村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="小溪组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="田小溪等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="小溪组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="古田县鹤塘乡东南5 km 小溪村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="下渡组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="三明等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="下渡组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="永安市下渡村北1 km公路剖面">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="坂头组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="赤头坂一带">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="坂头组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="坂头村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="吉山组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="白色复分砾岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="春船山等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="吉山组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="吉山村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="石帽山群">
+  <data key="d0">GROUP</data>
+</node>
+<node id="性熔岩流纹岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="交界区">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="白牙山组">
+  <data key="d0">GROUP</data>
+</node>
+<node id="石帽山群层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="石帽山">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="黄坑组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="福建省沿海">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="黄坑组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="福清市黄坑之南公路剖面">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="石牛山组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="凝灰质砂砾岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="质熔结凝灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="纹质熔结凝灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="顺盆地西南">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="石牛山组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="德化南埕镇东约9 km与水口镇交界的石牛山">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="赤石群">
+  <data key="d0">GROUP</data>
+</node>
+<node id="含砂岩砾岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="砾岩页岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="福建西部">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="赤石群层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="武夷山市西南10 km赤石街">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="均口组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="粉砂质泥岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="紫红色粉砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="均口组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="建宁县均口乡南约20 km">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="沙县组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="泥质）粉砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="细砂岩长石">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="粉砂岩凝灰岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="禾口组（早期）">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="沙县组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="沙县城北约3 km">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="崇安组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="巨厚层砂砾岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="层含砾细砂岩">
+  <data key="d0">LITHOLOGY</data>
+</node>
+<node id="武夷山市">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="建宁等地">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="赤石群（同物异名）">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="崇安组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="武夷山市西南约11 km">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="天宝组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="早更新世">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="龙海市">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="港尾镇">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="头自然村">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="天宝组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="漳州天宝东2 km的茶铺公路旁">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="龙海组">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="晚更新世">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="龙海组层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<node id="龙海下沧">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="残积层">
+  <data key="d0">FORMATION</data>
+</node>
+<node id="更新世">
+  <data key="d0">GEOLOGICAL_TIME</data>
+</node>
+<node id="福建沿海">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="残积层层型剖面">
+  <data key="d0">SECTION</data>
+</node>
+<edge source="天井坪岩组" target="石英岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天井坪岩组" target="变粒岩云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天井坪岩组" target="变粒岩石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天井坪岩组" target="云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天井坪岩组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天井坪岩组" target="（斜长）变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天井坪岩组" target="变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天井坪岩组" target="变粒岩石英岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天井坪岩组" target="混合岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天井坪岩组" target="片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天井坪岩组" target="质矿物混合岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天井坪岩组" target="角闪岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天井坪岩组" target="由低角闪岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天井坪岩组" target="太古代">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="天井坪岩组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="天井坪岩组" target="建宁西部">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="天井坪岩组" target="伊家等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="天井坪岩组" target="天井坪岩组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="天井坪岩组层型剖面" target="建宁伊家乡天井坪村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="大金山岩组" target="变粒岩云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大金山岩组" target="云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大金山岩组" target="程度为低角闪岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大金山岩组" target="变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大金山岩组" target="黑云斜长变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大金山岩组" target="片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大金山岩组" target="角闪岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大金山岩组" target="前震旦纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="大金山岩组" target="建阳市">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="大金山岩组" target="松溪等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="大金山岩组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="大金山岩组" target="大金山岩组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="大金山岩组层型剖面" target="建阳市西南约21km的大金山">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="南山岩组" target="变粒岩云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南山岩组" target="云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南山岩组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南山岩组" target="岩相到低角闪岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南山岩组" target="变粒岩片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南山岩组" target="母片岩石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南山岩组" target="变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南山岩组" target="片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南山岩组" target="角闪岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南山岩组" target="前震旦纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="南山岩组" target="建瓯等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="南山岩组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="南山岩组" target="南山岩组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="南山岩组层型剖面" target="建阳市城东4km的南山村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="迪口岩组" target="夹有云母片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="迪口岩组" target="云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="迪口岩组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="迪口岩组" target="程度为低角闪岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="迪口岩组" target="变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="迪口岩组" target="长石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="迪口岩组" target="成分为斜长石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="迪口岩组" target="斜长石和石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="迪口岩组" target="黑云斜长变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="迪口岩组" target="片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="迪口岩组" target="片麻岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="迪口岩组" target="角闪岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="迪口岩组" target="变粒岩（片麻岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="迪口岩组" target="早震旦世">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="迪口岩组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="迪口岩组" target="平后洋一带">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="迪口岩组" target="迪口岩组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="迪口岩组层型剖面" target="建瓯迪口—南平后洋一带">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="桃溪岩组" target="石英岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="桃溪岩组" target="黑云石英片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="桃溪岩组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="桃溪岩组" target="变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="桃溪岩组" target="呈片岩与变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="桃溪岩组" target="片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="桃溪岩组" target="斜长黑云石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="桃溪岩组" target="前震旦纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="桃溪岩组" target="上杭等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="桃溪岩组" target="武平湘村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="桃溪岩组" target="布于闽西南">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="桃溪岩组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="桃溪岩组" target="桃溪岩组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="桃溪岩组层型剖面" target="武平县桃溪镇">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="东岩（岩）组" target="变粒岩云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="东岩（岩）组" target="云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="东岩（岩）组" target="变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="东岩（岩）组" target="斜长阳起片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="东岩（岩）组" target="辉石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="东岩（岩）组" target="岩相—低角闪岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="东岩（岩）组" target="片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="东岩（岩）组" target="角闪岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="东岩（岩）组" target="前震旦纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="东岩（岩）组" target="溪梅仙一带">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="东岩（岩）组" target="于建瓯东南">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="东岩（岩）组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="东岩（岩）组" target="东岩（岩）组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="东岩（岩）组层型剖面" target="建瓯东南34km东岩村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="大岭（岩）组" target="云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大岭（岩）组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大岭（岩）组" target="变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大岭（岩）组" target="长石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大岭（岩）组" target="灰绿色云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大岭（岩）组" target="云母石英片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大岭（岩）组" target="绿色云母石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大岭（岩）组" target="片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大岭（岩）组" target="前震旦纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="大岭（岩）组" target="德化等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="大岭（岩）组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="大岭（岩）组" target="卓地组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="大岭（岩）组" target="大岭（岩）组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="大岭（岩）组层型剖面" target="建瓯大岭">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="龙北溪（岩）组" target="特征包括石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="龙北溪（岩）组" target="包括石英云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="龙北溪（岩）组" target="云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="龙北溪（岩）组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="龙北溪（岩）组" target="变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="龙北溪（岩）组" target="石英云母片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="龙北溪（岩）组" target="岩相—低角闪岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="龙北溪（岩）组" target="片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="龙北溪（岩）组" target="角闪岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="龙北溪（岩）组" target="英片岩变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="龙北溪（岩）组" target="前震旦纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="龙北溪（岩）组" target="安溪等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="龙北溪（岩）组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="龙北溪（岩）组" target="葛坑组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="龙北溪（岩）组" target="泮地组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="龙北溪（岩）组" target="龙北溪（岩）组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="龙北溪（岩）组层型剖面" target="建瓯市龙北溪">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="黄潭（岩）组" target="夹白云石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="黄潭（岩）组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="黄潭（岩）组" target="变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="黄潭（岩）组" target="白云石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="黄潭（岩）组" target="白云石英片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="黄潭（岩）组" target="片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="黄潭（岩）组" target="黑云钠长变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="黄潭（岩）组" target="元古代">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="黄潭（岩）组" target="将乐等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="黄潭（岩）组" target="泰宁等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="黄潭（岩）组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="黄潭（岩）组" target="丁屋岭组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="黄潭（岩）组" target="吴墩组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="黄潭（岩）组" target="黄潭（岩）组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="黄潭（岩）组层型剖面" target="将乐黄潭镇">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="下峰（岩）组" target="云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="下峰（岩）组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="下峰（岩）组" target="黑色绿泥白云石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="下峰（岩）组" target="变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="下峰（岩）组" target="白云石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="下峰（岩）组" target="白云石英片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="下峰（岩）组" target="片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="下峰（岩）组" target="英片岩云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="下峰（岩）组" target="绿泥白云石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="下峰（岩）组" target="元古代">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="下峰（岩）组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="下峰（岩）组" target="乐黄潭等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="下峰（岩）组" target="丁屋岭组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="下峰（岩）组" target="三溪寨组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="下峰（岩）组" target="下峰（岩）组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="下峰（岩）组层型剖面" target="将乐县黄潭镇西北约5 km下峰自然村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="楼前组" target="流纹质凝灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼前组" target="灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼前组" target="质流纹质凝灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼前组" target="凝灰质粉砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼前组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼前组" target="夹有变质沉凝灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼前组" target="熔结凝灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼前组" target="沉凝灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼前组" target="凝灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼前组" target="流纹岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼前组" target="震旦纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="楼前组" target="化方田等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="楼前组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="楼前组" target="丁屋岭组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="楼前组" target="大岭（岩）组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="楼前组" target="天井坪岩组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="楼前组" target="楼前组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="楼前组层型剖面" target="明溪县盖洋镇北7 km楼前村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="西溪组" target="细粒长石石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="西溪组" target="细—细粒长石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="西溪组" target="薄层变质硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="西溪组" target="硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="西溪组" target="千枚岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="西溪组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="西溪组" target="长石石英砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="西溪组" target="长石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="西溪组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="西溪组" target="泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="西溪组" target="含）砂质泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="西溪组" target="震旦纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="西溪组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="西溪组" target="南平一带">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="西溪组" target="布于闽西北">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="西溪组" target="西溪组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="西溪组层型剖面" target="将乐县黄潭镇西北8.5 km西溪村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="楼子坝组" target="中）细粒长石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼子坝组" target="细粒长石石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼子坝组" target="千枚岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼子坝组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼子坝组" target="板岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼子坝组" target="绿泥绢云千枚岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼子坝组" target="石石英杂砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼子坝组" target="长石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼子坝组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼子坝组" target="千枚岩或板岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="楼子坝组" target="前震旦纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="楼子坝组" target="于上杭等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="楼子坝组" target="平桃溪东部">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="楼子坝组" target="布于闽西南">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="楼子坝组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="楼子坝组" target="楼子坝组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="楼子坝组层型剖面" target="长汀县西南30 km楼子坝村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="南岩组" target="大理岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南岩组" target="硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南岩组" target="千枚岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南岩组" target="岩及少量磷块岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南岩组" target="间夹变质硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南岩组" target="钙质）细砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南岩组" target="粉砂岩千枚岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南岩组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南岩组" target="见白云质大理岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南岩组" target="磷块岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="南岩组" target="晚震旦世">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="南岩组" target="长塘里等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="南岩组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="南岩组" target="南岩组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="南岩组层型剖面" target="长汀县西南15 km南岩村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="黄连组" target="硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="黄连组" target="千枚岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="黄连组" target="薄-中层硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="黄连组" target="夹变质细砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="黄连组" target="粉砂岩千枚岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="黄连组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="黄连组" target="晚震旦世">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="黄连组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="黄连组" target="横坑等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="黄连组" target="黄连组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="黄连组层型剖面" target="长汀县西南约11 km黄连村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="亲营山（岩）组" target="云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="亲营山（岩）组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="亲营山（岩）组" target="区岩性呈混合岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="亲营山（岩）组" target="（石英）片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="亲营山（岩）组" target="变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="亲营山（岩）组" target="为特征的云母">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="亲营山（岩）组" target="混合岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="亲营山（岩）组" target="的云母（石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="亲营山（岩）组" target="片岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="亲营山（岩）组" target="）片岩夹变粒岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="亲营山（岩）组" target="泥盆纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="亲营山（岩）组" target="平潭等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="亲营山（岩）组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="亲营山（岩）组" target="亲营山（岩）组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="亲营山（岩）组层型剖面" target="东山县城东南约3.5km亲营山">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="早—晚寒武世林田组" target="大理岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="早—晚寒武世林田组" target="硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="早—晚寒武世林田组" target="千枚岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="早—晚寒武世林田组" target="色的变质砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="早—晚寒武世林田组" target="硅质岩和大理岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="早—晚寒武世林田组" target="岩及变质硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="早—晚寒武世林田组" target="质砂岩千枚岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="早—晚寒武世林田组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="早—晚寒武世林田组" target="寒武纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="早—晚寒武世林田组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="早—晚寒武世林田组" target="早—晚寒武世林田组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="早—晚寒武世林田组层型剖面" target="长汀县东南25 km林田村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="东坑口组" target="变质石英砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="东坑口组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="东坑口组" target="厚层变质石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="东坑口组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="东坑口组" target="寒武系中—上统">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="东坑口组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="东坑口组" target="明溪等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="东坑口组" target="东坑口组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="东坑口组层型剖面" target="永安市西北17 km东坑口">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="魏坊组" target="黑色薄层千枚岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="魏坊组" target="硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="魏坊组" target="千枚岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="魏坊组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="魏坊组" target="粉砂质）泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="魏坊组" target="夹变质石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="魏坊组" target="变质石英砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="魏坊组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="魏坊组" target="泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="魏坊组" target="奥陶纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="魏坊组" target="长汀一带">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="魏坊组" target="流小池等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="魏坊组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="魏坊组" target="魏坊组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="魏坊组层型剖面" target="永安市西北15 km魏坊村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="罗峰溪组" target="硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="罗峰溪组" target="千枚岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="罗峰溪组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="罗峰溪组" target="板岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="罗峰溪组" target="粉砂岩和千枚岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="罗峰溪组" target="千枚岩板岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="罗峰溪组" target="英（杂）砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="罗峰溪组" target="变质（含长石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="罗峰溪组" target="长石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="罗峰溪组" target="板岩硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="罗峰溪组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="罗峰溪组" target="含长石）石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="罗峰溪组" target="奥陶纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="罗峰溪组" target="长汀县">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="罗峰溪组" target="大源坝一带">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="罗峰溪组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="罗峰溪组" target="罗峰溪组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="罗峰溪组层型剖面" target="长汀县城西北7 km坝下剖面">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="天瓦崠组" target="千枚岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天瓦崠组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天瓦崠组" target="变质岩千枚岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天瓦崠组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天瓦崠组" target="砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天瓦崠组" target="由石英砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="天瓦崠组" target="白垩纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="天瓦崠组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="天瓦崠组" target="天瓦崠组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="天瓦崠组层型剖面" target="闽西南（龙岩、上杭、永定、清流、长汀等地）">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="桃子坑组" target="砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="桃子坑组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="桃子坑组" target="由石英砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="桃子坑组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="桃子坑组" target="白垩纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="桃子坑组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="桃子坑组" target="桃子坑组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="桃子坑组层型剖面" target="闽西南（龙岩、永定、清流等地）">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="林地组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="林地组" target="以石英砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="林地组" target="页岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="林地组" target="粉砂岩泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="林地组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="林地组" target="部含碳质页岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="林地组" target="泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="林地组" target="石英砂砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="林地组" target="砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="林地组" target="石炭纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="林地组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="林地组" target="与下伏桃子坑组平行不整合接触">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="林地组" target="上与经畲组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="林地组" target="船山组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="林地组" target="栖霞组呈不整合或断层接触。">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="林地组" target="林地组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="船山组" target="硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="船山组" target="核灰岩及硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="船山组" target="燧石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="船山组" target="灰黑色灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="船山组" target="灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="船山组" target="质灰岩燧石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="船山组" target="石炭纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="船山组" target="宁化湖村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="船山组" target="亚等地区">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="船山组" target="向北至东南">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="船山组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="船山组" target="上杭等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="船山组" target="船山组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="林地组层型剖面" target="漳平市双洋乡林地村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="经畲组" target="石炭纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="经畲组" target="宁化湖村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="经畲组" target="地层小区">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="经畲组" target="布于闽西南">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="经畲组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="经畲组" target="经畲组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="经畲组层型剖面" target="龙岩市东南15 km曹溪乡经杨村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="老虎洞组" target="局部含燧石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="老虎洞组" target="白云质灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="老虎洞组" target="白云岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="老虎洞组" target="燧石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="老虎洞组" target="灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="老虎洞组" target="石炭纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="老虎洞组" target="安坑边等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="老虎洞组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="老虎洞组" target="老虎洞组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="老虎洞组层型剖面" target="江苏省江宁县淳化老虎洞">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="船山组层型剖面" target="江苏句容县东昌街北赣船山">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="栖霞组" target="层含燧石灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="栖霞组" target="硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="栖霞组" target="燧石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="栖霞组" target="中薄层含燧石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="栖霞组" target="灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="栖霞组" target="碎屑岩或硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="栖霞组" target="二叠纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="栖霞组" target="龙岩等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="栖霞组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="栖霞组" target="栖霞组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="栖霞组层型剖面" target="江苏南京东郊栖霞山">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="泉上组" target="灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="泉上组" target="夹灰岩或硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="泉上组" target="碎屑岩夹灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="泉上组" target="硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="泉上组" target="二叠纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="泉上组" target="地层小区">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="泉上组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="泉上组" target="泉上组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="泉上组层型剖面" target="宁化泉上">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="文笔山组" target="二叠纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="文笔山组" target="化泉上等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="文笔山组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="文笔山组" target="文笔山组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="文笔山组层型剖面" target="永安市大湖镇">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="童子岩组" target="碎屑岩煤层">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="童子岩组" target="煤层">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="童子岩组" target="二叠纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="童子岩组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="童子岩组" target="童子岩组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="童子岩组层型剖面" target="连城县西山童子岩">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="翠屏山组" target="性沉积煤层">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="翠屏山组" target="煤层">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="翠屏山组" target="二叠纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="翠屏山组" target="龙岩一带">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="翠屏山组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="翠屏山组" target="翠屏山组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="翠屏山组层型剖面" target="龙岩市翠屏山一带">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="罗坑组" target="泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="罗坑组" target="粉砂岩泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="罗坑组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="罗坑组" target="二叠纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="罗坑组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="罗坑组" target="永安等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="罗坑组" target="南平等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="罗坑组" target="大隆组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="罗坑组" target="罗坑组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="罗坑组层型剖面" target="清流县罗坑村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="长兴组" target="灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="长兴组" target="生物屑灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="长兴组" target="硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="长兴组" target="质灰岩硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="长兴组" target="二叠纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="长兴组" target="洪田等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="长兴组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="长兴组" target="长兴组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="长兴组层型剖面" target="大田县梅林崆洞山">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="溪口组" target="角岩灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="溪口组" target="钙质粉砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="溪口组" target="角岩化硅泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="溪口组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="溪口组" target="灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="溪口组" target="泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="溪口组" target="角岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="溪口组" target="三叠纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="溪口组" target="定等闽西南">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="溪口组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="溪口组" target="溪口组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="溪口组层型剖面" target="龙岩市东南22km适中镇陈坑尾—兰田剖面">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="新祠角岩段" target="主要由角岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="新祠角岩段" target="角岩化硅泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="新祠角岩段" target="角岩化粉砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="新祠角岩段" target="辉石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="新祠角岩段" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="新祠角岩段" target="泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="新祠角岩段" target="角岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="新祠角岩段" target="三叠纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="新祠角岩段" target="岩适中等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="新祠角岩段" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="新祠角岩段" target="新祠角岩段层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="新祠角岩段层型剖面" target="龙岩市适中乡新祠">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="兰田灰岩段" target="泥灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="兰田灰岩段" target="钙质砂泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="兰田灰岩段" target="灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="兰田灰岩段" target="泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="兰田灰岩段" target="角岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="兰田灰岩段" target="由灰岩泥灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="兰田灰岩段" target="三叠纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="兰田灰岩段" target="平拱桥一带">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="兰田灰岩段" target="永定抚市">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="兰田灰岩段" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="兰田灰岩段" target="兰田灰岩段层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="兰田灰岩段层型剖面" target="龙岩市25km适中镇兰田村东">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="石碧溪泥岩段" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石碧溪泥岩段" target="分地区夹角岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石碧溪泥岩段" target="主要由粉砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石碧溪泥岩段" target="粉砂岩泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石碧溪泥岩段" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石碧溪泥岩段" target="泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石碧溪泥岩段" target="角岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石碧溪泥岩段" target="三叠纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="石碧溪泥岩段" target="永定抚市">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="石碧溪泥岩段" target="昌杨厝等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="石碧溪泥岩段" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="石碧溪泥岩段" target="石碧溪泥岩段层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="石碧溪泥岩段层型剖面" target="永定县城东北21 km石碧溪村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="安仁组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="安仁组" target="绿色钙质砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="安仁组" target="粉砂岩长石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="安仁组" target="长石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="安仁组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="安仁组" target="英砂岩砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="安仁组" target="砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="安仁组" target="三叠纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="安仁组" target="田桃源等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="安仁组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="安仁组" target="安仁组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="安仁组层型剖面" target="漳平市东北30 km新桥镇安仁">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="大坑村组" target="岩及局部煤层">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大坑村组" target="煤层">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大坑村组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大坑村组" target="由细砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大坑村组" target="泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="大坑村组" target="侏罗纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="大坑村组" target="泰玉山等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="大坑村组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="大坑村组" target="大坑村组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="大坑村组层型剖面" target="漳平大坑矿区">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="文宾山组" target="侏罗纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="文宾山组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="文宾山组" target="闽南等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="文宾山组" target="粤北地区">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="文宾山组" target="以及闽西南">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="文宾山组" target="文宾山组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="文宾山组层型剖面" target="漳平市北27km新桥镇文宾山">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="象牙群" target="侏罗纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="象牙群" target="长汀等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="象牙群" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="象牙群" target="象牙组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="象牙群" target="象牙群层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="象牙群层型剖面" target="永定县堂堡下村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="下村组" target="英砂岩长石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="下村组" target="下段以石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="下村组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="下村组" target="长石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="下村组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="下村组" target="段以石英砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="下村组" target="砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="下村组" target="侏罗纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="下村组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="下村组" target="下村组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="下村组层型剖面" target="永定县堂堡下村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="藩坑组" target="安山岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="藩坑组" target="玄武岩凝灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="藩坑组" target="流纹岩安山岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="藩坑组" target="凝灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="藩坑组" target="灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="藩坑组" target="安山岩玄武岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="藩坑组" target="玄武岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="藩坑组" target="流纹岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="藩坑组" target="侏罗纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="藩坑组" target="平洪坑等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="藩坑组" target="永定下村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="藩坑组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="藩坑组" target="藩坑组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="藩坑组层型剖面" target="永定县堂堡下村藩坑">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="梨山组" target="侏罗纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="梨山组" target="建阳等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="梨山组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="梨山组" target="梨山组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="梨山组层型剖面" target="建瓯县梨山煤矿">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="长林组" target="硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="长林组" target="泥灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="长林组" target="石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="长林组" target="硅质岩泥灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="长林组" target="砾岩石英">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="长林组" target="浅灰色砂砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="长林组" target="石英杂砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="长林组" target="粉砂岩硅质岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="长林组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="长林组" target="灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="长林组" target="砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="长林组" target="侏罗纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="长林组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="长林组" target="长林组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="长林组层型剖面" target="尤溪近德坑长林">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="南园组" target="侏罗纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="南园组" target="地层小区">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="南园组" target="武夷山区">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="南园组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="南园组" target="平和一带">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="南园组" target="尤以沿海">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="南园组" target="鹅宅组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="南园组" target="赤水组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="南园组" target="南园组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="南园组层型剖面" target="闽侯县鸿尾乡南园村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="小溪组" target="侏罗纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="小溪组" target="田小溪等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="小溪组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="小溪组" target="小溪组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="小溪组层型剖面" target="古田县鹤塘乡东南5 km 小溪村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="下渡组" target="白垩纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="下渡组" target="三明等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="下渡组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="下渡组" target="下渡组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="下渡组层型剖面" target="永安市下渡村北1 km公路剖面">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="坂头组" target="白垩纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="坂头组" target="赤头坂一带">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="坂头组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="坂头组" target="坂头组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="坂头组层型剖面" target="坂头村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="吉山组" target="白色复分砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="吉山组" target="砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="吉山组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="吉山组" target="白垩纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="吉山组" target="春船山等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="吉山组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="吉山组" target="吉山组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="吉山组层型剖面" target="吉山村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="石帽山群" target="性熔岩流纹岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石帽山群" target="流纹岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石帽山群" target="白垩纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="石帽山群" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="石帽山群" target="地层小区">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="石帽山群" target="交界区">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="石帽山群" target="白牙山组">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="石帽山群" target="石帽山群层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="石帽山群层型剖面" target="石帽山">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="黄坑组" target="白垩纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="黄坑组" target="福建省沿海">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="黄坑组" target="地层小区">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="黄坑组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="黄坑组" target="交界区">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="黄坑组" target="黄坑组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="黄坑组层型剖面" target="福清市黄坑之南公路剖面">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="石牛山组" target="凝灰质砂砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石牛山组" target="质熔结凝灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石牛山组" target="灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石牛山组" target="纹质熔结凝灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石牛山组" target="粉砂岩泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石牛山组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石牛山组" target="熔结凝灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石牛山组" target="泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石牛山组" target="砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石牛山组" target="凝灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="石牛山组" target="白垩纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="石牛山组" target="福建省沿海">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="石牛山组" target="地层小区">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="石牛山组" target="顺盆地西南">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="石牛山组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="石牛山组" target="石牛山组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="石牛山组层型剖面" target="德化南埕镇东约9 km与水口镇交界的石牛山">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="赤石群" target="含砂岩砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="赤石群" target="页岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="赤石群" target="砾岩页岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="赤石群" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="赤石群" target="砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="赤石群" target="白垩纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="赤石群" target="福建西部">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="赤石群" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="赤石群" target="赤石群层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="赤石群层型剖面" target="武夷山市西南10 km赤石街">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="均口组" target="泥灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="均口组" target="粉砂质泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="均口组" target="紫红色粉砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="均口组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="均口组" target="灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="均口组" target="泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="均口组" target="白垩纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="均口组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="均口组" target="均口组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="均口组层型剖面" target="建宁县均口乡南约20 km">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="沙县组" target="泥质）粉砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="沙县组" target="长石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="沙县组" target="细砂岩长石">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="沙县组" target="粉砂岩泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="沙县组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="沙县组" target="灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="沙县组" target="泥岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="沙县组" target="砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="沙县组" target="凝灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="沙县组" target="粉砂岩凝灰岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="沙县组" target="白垩纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="沙县组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="沙县组" target="禾口组（早期）">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="沙县组" target="沙县组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="沙县组层型剖面" target="沙县城北约3 km">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="崇安组" target="砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="崇安组" target="砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="崇安组" target="巨厚层砂砾岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="崇安组" target="层含砾细砂岩">
+  <data key="d1">COMPOSED_OF</data>
+</edge>
+<edge source="崇安组" target="白垩纪">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="崇安组" target="武夷山市">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="崇安组" target="建宁等地">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="崇安组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="崇安组" target="赤石群（同物异名）">
+  <data key="d1">SAME_AS</data>
+</edge>
+<edge source="崇安组" target="崇安组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="崇安组层型剖面" target="武夷山市西南约11 km">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="天宝组" target="早更新世">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="天宝组" target="龙海市">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="天宝组" target="港尾镇">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="天宝组" target="头自然村">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="天宝组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="天宝组" target="天宝组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="天宝组层型剖面" target="漳州天宝东2 km的茶铺公路旁">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="龙海组" target="晚更新世">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="龙海组" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="龙海组" target="龙海组层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="龙海组层型剖面" target="龙海下沧">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="残积层" target="更新世">
+  <data key="d1">DATED_AS</data>
+</edge>
+<edge source="残积层" target="福建沿海">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="残积层" target="福建省">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+<edge source="残积层" target="残积层层型剖面">
+  <data key="d1">MEASURED_AT</data>
+</edge>
+<edge source="残积层层型剖面" target="福建沿海">
+  <data key="d1">DISTRIBUTED_IN</data>
+</edge>
+</graph></graphml>

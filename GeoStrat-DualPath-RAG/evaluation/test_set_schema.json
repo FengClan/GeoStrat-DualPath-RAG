@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Geological QA Test Set Schema",
+  "description": "Schema for annotated stratigraphic QA pairs with ground truth for evaluation",
+  "type": "object",
+  "required": ["version", "created_at", "description", "questions"],
+  "properties": {
+    "version": {"type": "string", "description": "Schema version"},
+    "created_at": {"type": "string", "description": "ISO 8601 timestamp"},
+    "description": {"type": "string", "description": "Test set description and source"},
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "question", "expected_answer", "difficulty"],
+        "properties": {
+          "id": {"type": "string", "description": "Unique question identifier"},
+          "question": {"type": "string", "description": "The geological question"},
+          "query_type": {
+            "type": "string",
+            "enum": ["FACTUAL", "COMPARATIVE", "REASONING", "SPATIAL"],
+            "description": "Classified query type"
+          },
+          "expected_answer": {"type": "string", "description": "Ground truth answer"},
+          "key_points": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Key facts that should appear in the answer"
+          },
+          "supporting_sources": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Expected source documents or references"
+          },
+          "expected_kg_path": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "entity": {"type": "string"},
+                "relation": {"type": "string"},
+                "target": {"type": "string"}
+              }
+            },
+            "description": "Expected KG reasoning path (entity→relation→target chains)"
+          },
+          "expected_entities": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Expected entity names in the answer"
+          },
+          "difficulty": {
+            "type": "string",
+            "enum": ["easy", "medium", "hard"],
+            "description": "Question difficulty level"
+          },
+          "category": {
+            "type": "string",
+            "description": "Geological sub-domain (lithology, stratigraphy, fossil, etc.)"
+          },
+          "kb_id": {
+            "type": "string",
+            "description": "Target knowledge base for this question"
+          }
+        }
+      }
+    }
+  }
+}
