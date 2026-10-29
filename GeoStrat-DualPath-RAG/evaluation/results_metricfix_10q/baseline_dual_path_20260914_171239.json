@@ -1,0 +1,720 @@
+{
+  "overall_scores": {
+    "qa_correctness": 0.62,
+    "qa_faithfulness": 0.68,
+    "qa_completeness": 0.62,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "retrieval_recall@5": 1.0,
+    "retrieval_mrr": 1.0,
+    "extraction_entity_f1": 0.0,
+    "extraction_triple_f1": 0.0,
+    "contrast_agreement": 0.0,
+    "avg_latency_ms": 82224.197,
+    "coverage": {
+      "total_questions": 10,
+      "extraction_with_gt": 0,
+      "contrast_with_gt": 0,
+      "evidence_recall_evaluated": 4,
+      "judge_failed": 0
+    },
+    "overall_score": 0.6385,
+    "evidence_recall@5": 0.5
+  },
+  "per_question_results": [
+    {
+      "id": "FJ-I-e03e54ab",
+      "question": "翠屏山组的厚度有什么特点？",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "answer": "基于提供的参考文献，**文献中未找到相关信息**关于翠屏山组的具体厚度特点。\n\n虽然多篇文献提及了翠屏山组（P3cp），但均未提供该组地层的厚度数据或厚度变化特征，具体情况如下：\n\n1.  **文献 [1]** 和 **文献 [2]** 虽将翠屏山组列为上覆地层，但文中明确标注的厚度数据（分别为 584.80 m 和 410.9 m）均属于下伏的**童子岩组（P2t）**，而非翠屏山组 [文献 1][文献 2]。\n2.  **文献 [3]** 将翠屏山组列为下伏地层，但文中给出的厚度数据（＞15.6 m→257.1 m）属于上覆的**罗坑组** [文献 3]。\n3.  **文献 [4]** 详细描述了翠屏山组的分布区域、岩性组合（陆相为主的海陆交互相细碎屑岩沉积）及地层划分历史，但全文未涉及该组的厚度数据 [文献 4]。\n4.  **文献 [5]** 主要描述龙北溪组，与翠屏山组无关 [文献 5]。\n\n因此，无法基于现有文献回答翠屏山组的厚度特点。",
+      "expected_answer": "翠屏山组（P3cp） 厚度494.9 m",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.0,
+        "completeness": 0.0,
+        "faithfulness": 0.3,
+        "coherence": 1.0,
+        "domain_accuracy": 0.9,
+        "llm_judge_score": 0.2,
+        "llm_judge_reason": "系统回答未提供标准答案中的厚度494.9 m，反而声称未找到相关信息，与已知事实不符；尽管表达清晰、术语准确，但核心信息完全错误。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": 0.0,
+        "applicable": true,
+        "n_gold": 1,
+        "n_found": 0,
+        "details": "0/1 段逐字证据被展示的片段覆盖"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 71478.86180877686
+    },
+    {
+      "id": "FJ-I-28d2d8fb",
+      "question": "林地组由谁、在何处创名？",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "answer": "根据提供的参考文献，林地组的创名信息如下：\n\n*   **创名单位**：福建省区域地质测量队\n*   **创名时间**：1965 年\n*   **创名地点**：漳平市双洋乡林地村（原划属中下石炭统的“南靖群”上部地层）\n\n该组是因在上述地点采获植物化石（*Neuroptris sp.*, *Pecopteris? sp.*），时代属早石炭世，故将原“南靖群”上部单独划出而创建 [文献 1][文献 2][文献 4][文献 5]。",
+      "expected_answer": "林地组由福建省区域地质测量队（1965）在漳平市双洋乡林地村创名。",
+      "qa_metrics": {
+        "key_point_coverage": 0.75,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 1.0,
+        "completeness": 1.0,
+        "faithfulness": 1.0,
+        "coherence": 1.0,
+        "domain_accuracy": 0.9,
+        "llm_judge_score": 1.0,
+        "llm_judge_reason": "系统回答准确给出了林地组的创名单位、时间和地点，与标准答案完全一致，并补充了相关地层与化石信息。仅化石属名拼写可能有轻微瑕疵，但不影响核心事实。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该题 evidence_span 为专家改写，语料中无逐字对应，不可作检索真值"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 57712.056159973145
+    },
+    {
+      "id": "FJ-I-330dcb9b",
+      "question": "南岩组的原岩类型是什么？",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "answer": "基于提供的参考文献，南岩组的原岩类型主要为**砂泥质碎屑岩类**，并含有**中酸性火山碎屑岩**及**海相钙硅质沉积**成分。具体依据如下：\n\n1.  **主要原岩成分**：\n    根据文献 4，南岩组的原岩以**砂泥质碎屑岩类**为主，含**中酸性火山碎屑岩** [文献 4]。\n\n2.  **沉积环境与岩性特征**：\n    根据文献 5，南岩组指闽西南地区发育的一套**海相钙硅质、砂泥质细碎屑沉积**。其岩性组成包括变质（钙质）细砂岩、变质粉砂岩、千枚岩，间夹变质硅质岩及少量磷块岩条带；局部地区偶见白云质大理岩透镜体及黄铁矿层 [文献 5]。\n\n综上所述，南岩组原岩为一套海相的砂泥质细碎屑沉积，夹有硅质岩、磷块岩及少量火山碎屑物质。\n\n**出处标注：**\n*   [文献 4] 2.原岩恢复及构造环境讨论\n*   [文献 5] 南岩组由福建省区域地层表编写组（1979）创建...",
+      "expected_answer": "南岩组变质程度较低，原岩面貌多有残留，其原岩以砂泥质碎屑岩类为主，含中酸性火山碎屑岩。",
+      "qa_metrics": {
+        "key_point_coverage": 0.0,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.9,
+        "completeness": 1.0,
+        "faithfulness": 1.0,
+        "coherence": 1.0,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 0.9,
+        "llm_judge_reason": "系统回答准确覆盖了标准答案的核心信息（砂泥质碎屑岩类为主，含中酸性火山碎屑岩），并补充了海相钙硅质沉积等细节；术语使用规范，逻辑清晰，未发现矛盾或幻觉。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该题 evidence_span 为专家改写，语料中无逐字对应，不可作检索真值"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 81349.77865219116
+    },
+    {
+      "id": "FJ-I-6fcb96f4",
+      "question": "新生代时期的地质特征是什么？",
+      "query_type": "REASONING",
+      "difficulty": "hard",
+      "answer": "由于提供的知识图谱中暂无新生代相关的结构化事实数据 [G]，根据使用原则，若图谱事实缺失，必须以参考文献为准。以下地质特征综合自提供的参考文献（主要为福建区域的新生代第四纪地层记录）[D]：\n\n### 1. 构造运动特征\n*   **断块活动与盆地形成**：中更新世时期发生强烈的断块差异升降活动，形成了断陷盆地，如福州盆地、漳州盆地和龙海平原开始沉降沉积 [D]。\n*   **地壳上升**：晚更新世福建地壳继续上升，其中武夷山带和闽中山带的上升幅度最大 [D]。\n*   **水系演化**：晚更新世时期水系结构臻于完善，河流下切形成险峻峡谷地貌 [D]。\n\n### 2. 火山活动\n*   **玄武岩喷发**：早更新世时期，明溪、龙海等地新近纪基性火山喷发区有玄武岩延续喷溢活动 [D]。\n*   **火山活动减弱**：相较于晚中生代，新生代火山活动总体减弱（参考文献主要提及早更新世的延续活动）[D]。\n\n### 3. 地层与沉积特征\n*   **早更新世**：形成天宝组冲洪积砂砾卵石层沉积，沿河流形成Ⅳ级阶地 [D]。\n*   **中更新世**：形成同安组，沉积于福州盆地、漳州盆地和龙海平原；闽东南沿海一带红色风化壳发育形成红土台地 [D]。\n*   **晚更新世**：在一级河流出口处形成海湾沉积龙海组 [D]。\n*   **海侵事件**：晚更新世以来沿海开始发生海侵，早期发生第一次海侵沉积（霞浦），中期发生第二次海侵 [D]。\n\n### 4. 地貌特征\n*   **丹霞与喀斯特地貌**：早更新世红层盆地开始发育丹霞地貌，石灰岩地区发育喀斯特地貌；中更新世这两种地貌有了进一步的发展 [D]。\n*   **阶地发育**：早更新世形成Ⅳ级阶地，中更新世形成三级基座阶地或覆盖基座阶地，晚更新世形成二级基座阶地 [D]。\n\n**说明**：\n1.  以上信息均源自参考文献 [D]，知识图谱中无对应结构化数据 [G]。\n2.  参考文献内容主要反映的是**福建及周边区域**的新生代（主要是第四纪）地质特征，而非全球或全国范围的整体属性，需注意其区域性局限 [D]。\n3.  文献 1 主要涉及南华纪—中三叠世，文献 3 主要涉及晚中生代，均不属于新生代范畴，故未采纳 [D]。",
+      "expected_answer": "第四纪以来，福建地壳以上升为总趋势，断块差异隆升明显，不同地区上升幅度不同，以闽北地区黄岗山一带上升幅度最大，闽中大山带上升幅度一般从沿海向内地逐渐增多，造成有规律分布的层状地形。全新世福建气候逐渐转暖，流水作用更趋活跃，形成8 m～10 m左右的堆积阶地。随着气候的转暖，福建低山和丘陵地区的红色风化壳进一步发育，丹霞地貌和喀斯特地貌也有所发展。在河流强烈的堆积作用下沿河两岸与河口形成长乐组冲积平原。简言之，福建沿海自晚更新世晚期海水入侵之后，基本上处于振荡运动环境之中，海水时有进退，但以海水渐次后退，海岸上升为总趋势。",
+      "qa_metrics": {
+        "key_point_coverage": 0.0,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.7,
+        "completeness": 0.4,
+        "faithfulness": 0.8,
+        "coherence": 0.9,
+        "domain_accuracy": 0.8,
+        "llm_judge_score": 0.6,
+        "llm_judge_reason": "系统回答提供了福建新生代第四纪的构造、地层、火山和地貌信息，与标准答案在断块差异、上升、丹霞/喀斯特和海侵等方面部分一致；但遗漏了全新世气候转暖、8-10m堆积阶地、长乐组冲积平原以及晚更新世晚期后海岸上升为总趋势等核心内容，完整性不足。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该题 evidence_span 为专家改写，语料中无逐字对应，不可作检索真值"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 95932.41000175476
+    },
+    {
+      "id": "FJ-I-100e53fe",
+      "question": "请对比麻源岩群与天井坪岩组的分布差异。",
+      "query_type": "COMPARATIVE",
+      "difficulty": "hard",
+      "answer": "基于提供的知识图谱事实与参考文献，以下是对**麻源岩群**与**天井坪岩组**在分布、年代及岩性等方面的系统对比分析。\n\n### 1. 地层隶属关系\n*   **麻源岩群**：为上级地层单位，是闽西北前震旦纪变质基底的主体 [D]。\n*   **天井坪岩组**：隶属于麻源岩群，是其下属单元之一 [G]。\n\n### 2. 分布区域对比 (Distribution)\n*   **麻源岩群**：\n    *   **分布范围**：分布较广，主要出露于闽西北地区的建阳、武夷山、浦城、邵武拿口一带 [G][D]。\n    *   **边界特征**：与周边地质体主要以脆性、韧性剪切断层为界 [D]。\n*   **天井坪岩组**：\n    *   **分布范围**：分布局限，仅分布于闽西北建宁一带（具体包括建宁伊家、天井坪村、落马地等）[G][D]。\n    *   **边界特征**：偏处一隅，四周被志留纪与晚侏罗世侵入岩以及中生代沉积 - 火山断陷盆地所围限 [D]。\n*   **差异总结**：麻源岩群为区域性的基底主体，分布广泛；天井坪岩组为局部残留体，分布狭窄且孤立 [D]。\n\n### 3. 地质年代对比 (Age)\n*   **麻源岩群**：\n    *   **时代**：前震旦纪、古元古代、吕梁期 [G]。\n*   **天井坪岩组**：\n    *   **时代**：古元古代、吕梁期 [G]。\n    *   **学术讨论**：早期研究（如付树超等，1991）曾将其时代归属为晚太古代，但当前结构化事实及地层符号（Pt1t）支持古元古代归属 [D][G]。\n*   **差异总结**：两者在当前地层划分中时代一致，均属古元古代吕梁期 [G]。\n\n### 4. 岩石组成与变质特征对比 (Lithology & Metamorphism)\n*   **麻源岩群**：\n    *   **岩石组成**：知识图谱未直接编码具体的岩石组成列表 [G]。\n    *   **变质特征**：文献描述其为前震旦纪变质基底，所属各地层单位变质程度均达到高绿片岩相—低角闪岩相 [D]。\n*   **天井坪岩组**：\n    *   **岩石组成**：知识图谱编码详细，主要包括黑云斜长变粒岩、二云片岩、矽线黑云变粒岩、云母片岩、石英岩、斜长角闪岩、黑云二长变粒岩等 [G]。\n    *   **变质特征**：为一套低角闪岩相变质岩系，普遍含矽线石、铁铝榴石等特征变质矿物，混合岩化较强，脉体为花岗质、长英质 [D]。\n    *   **原岩恢复**：原岩以砂泥质岩为主，夹基性、中酸性火山岩（火山复理石建造）[D]。\n*   **差异总结**：天井坪岩组具有明确的岩石组合编码和详细的变质矿物描述 [G][D]；麻源岩群在图谱中缺乏具体岩性编码，文献中主要作为基底主体进行宏观描述 [D]。\n\n### 5. 综合结论\n麻源岩群是闽西北古元古代变质基底的主体单元，分布广泛 [D][G]；天井坪岩组是麻源岩群内部的一个具体岩石地层单位，分布局限于建宁地区，具有特定的高变质矿物组合（如矽线石）和较强的混合岩化特征 [G][D]。两者在时代上归属一致，但在空间分布规模和岩性描述的颗粒度上存在显著差异。",
+      "expected_answer": "麻源岩群主要出露于建阳、武夷山、浦城、邵武拿口一带；天井坪岩组仅分布于闽西北建宁。",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 1.0,
+        "completeness": 1.0,
+        "faithfulness": 1.0,
+        "coherence": 1.0,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 1.0,
+        "llm_judge_reason": "系统回答准确覆盖了标准答案中关于麻源岩群和天井坪岩组分布差异的关键信息，并提供了详细的对比分析，无事实错误或幻觉。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": 1.0,
+        "applicable": true,
+        "n_gold": 1,
+        "n_found": 1,
+        "details": "1/1 段逐字证据被展示的片段覆盖"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 93130.19180297852
+    },
+    {
+      "id": "FJ-I-fe5a0f0e",
+      "question": "佛昙组的空间展布有什么特征？",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "answer": "根据知识图谱事实与参考文献，佛昙组的空间展布特征综合如下：\n\n**1. 总体分布范围**\n佛昙组主要分布于**福建**省境内 [G]。知识图谱明确记录其分布区域涵盖**沿海**、**漳浦**、**龙海**、**内陆地层小区**、**沿海地层小区**，以及具体的**明溪大洋窠**、**龙岩白沙**等地 [G]。\n\n**2. 空间分区界线**\n佛昙组的空间展布具有明显的分区性，大致以**福安 - 南靖断裂带**东侧一线为界 [D]。\n- 断裂带以西归属**内陆地层小区** [D]。\n- 断裂带以东归属**沿海地层小区**（又称“东带”）[D]。\n知识图谱中记录的“内陆地层小区”与“沿海地层小区”分布属性与此划分一致 [G]。\n\n**3. 内陆地层小区展布特征**\n- **出露形态**：大致呈**北东向分散零星出露** [D]。\n- **层位展布**：包括中带与西带。其中西带出露**中、上段**；中带分布零星，出露**中、下段** [D]。\n- **具体地点**：知识图谱中记录的**明溪大洋窠**、**龙岩白沙**等分布点位于此区域 [G]。图谱中定义的**佛昙组上段**、**佛昙组中段**、**佛昙组下段**均在此小区内有不同程度的出露 [G]。\n\n**4. 沿海地层小区展布特征**\n- **出露形态**：分布面积相对较大 [D]。\n- **层位展布**：主要出露**下段**（滨海相沉积的碎屑岩）和**中段**（水下喷发的拉斑玄武岩至钙碱性玄武岩）[D]。\n- **具体地点**：知识图谱中记录的**沿海**、**漳浦**、**龙海**等分布点主要位于此区域 [G]。图谱中记录的**龙海市流会剖面**即位于沿海区域 [G]。\n\n**5. 层位结构**\n知识图谱结构化数据显示，佛昙组整体包含**佛昙组下段**、**佛昙组中段**、**佛昙组上段**三个亚单位 [G]。参考文献进一步补充了这三个段在不同空间小区（内陆 vs 沿海）的出露组合差异 [D]。\n\n**总结**\n佛昙组在空间上以福安 - 南靖断裂带为界分为内陆与沿海两个地层小区 [D]。内陆小区呈北东向零星出露，层段组合多样（中、上段或中、下段）[D]；沿海小区分布面积较大，主要出露下段和中段 [D]。具体分布地点包括漳浦、龙海、明溪、龙岩等 [G]。",
+      "expected_answer": "佛昙组出露于福安—南靖断裂带东侧以西地区，呈圆株状、椭圆状北东向零散分布。",
+      "qa_metrics": {
+        "key_point_coverage": 0.0,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.3,
+        "completeness": 0.4,
+        "faithfulness": 0.4,
+        "coherence": 0.9,
+        "domain_accuracy": 0.6,
+        "llm_judge_score": 0.5,
+        "llm_judge_reason": "系统回答在空间分布范围上与标准答案存在矛盾，标准答案指出佛昙组仅出露于福安—南靖断裂带东侧以西地区，而系统回答将其分为内陆和沿海两个小区，且未提及圆株状、椭圆状形态，关键信息遗漏且部分内容与标准答案不一致。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该题 evidence_span 为专家改写，语料中无逐字对应，不可作检索真值"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 93646.88897132874
+    },
+    {
+      "id": "FJ-I-624be7b4",
+      "question": "福建上侏罗统—上白垩统划分哪两个地层小区？",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "answer": "根据提供的知识图谱事实与参考文献，针对福建上侏罗统—上白垩统的地层小区划分，回答如下：\n\n**地层小区划分**\n福建晚侏罗世—晚白垩世（对应上侏罗统—上白垩统）沉积 - 火山岩系大致以**政和 - 大埔断裂**为界，划分为以下两个地层小区 [D]：\n1.  **沿海地层小区**：位于政和 - 大埔断裂以东 [D]。\n2.  **武夷地层小区**：位于政和 - 大埔断裂以西 [D]。\n\n**依据说明**\n- **知识图谱 [G]**：图谱中记录了多个分布于福建的地层单位（如南园组、藩坑组、龙海组、麻源岩群等共 20 余个单位），确认了这些单位的空间分布属性为“福建”[G]。但图谱事实中未编码“地层小区”、“年代地层（侏罗纪/白垩纪）”或“断裂边界”等属性。\n- **参考文献 [D]**：由于图谱缺失上述属性，依据原则以参考文献为准。文献明确指出该时期地层以政和 - 大埔断裂为界分为东、西两个地层小区，并描述了各自的沉积 - 火山岩系特征 [D]。\n\n**结论**\n虽然知识图谱提供了福建地区众多地层单位的分布事实 [G]，但关于“上侏罗统—上白垩统”的具体地层小区划分属性在图谱中缺失，因此该具体划分结论主要依据参考文献描述 [D]。",
+      "expected_answer": "福建上侏罗统—上白垩统划分为武夷地层小区和沿海地层小区。",
+      "qa_metrics": {
+        "key_point_coverage": 1.0,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 1.0,
+        "completeness": 1.0,
+        "faithfulness": 1.0,
+        "coherence": 1.0,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 1.0,
+        "llm_judge_reason": "系统回答准确列出了武夷地层小区和沿海地层小区两个划分，与标准答案完全一致，并提供了政和-大埔断裂作为边界依据，术语使用准确，无幻觉。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该题 evidence_span 为专家改写，语料中无逐字对应，不可作检索真值"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 85900.67863464355
+    },
+    {
+      "id": "FJ-I-df677543",
+      "question": "福建二叠纪含煤岩系（童子岩组）分布于什么范围？",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "answer": "根据知识图谱事实与参考文献，福建二叠纪含煤岩系（童子岩组）的分布范围综合如下：\n\n**1. 主要分布区域（基于图谱事实）**\n童子岩组主要分布于**闽西南地层小区** [G]。具体分布区域包括**武平、连城、将乐**等县 [G]，实测及记录地点涉及**武平岩前、连城上江坊、宁化泉上、将乐老虎山**等 [G]。\n\n**2. 地理边界与补充范围（基于文献描述）**\n参考文献补充描述了该组的地理边界与更广泛的分布情况：\n*   **地理边界**：呈北东向带状出露，分布于**将乐—顺昌—南平一线以南，尤溪坂面—永春天湖山—南靖船场一线以西** [D]。\n*   **补充县市**：除图谱记录区域外，文献指出该组在**龙岩、永定、永安、大田、永春、清流**等县市亦有较多分布 [D]。\n\n**综上**，童子岩组核心分布区为闽西南地层小区（武平、连城、将乐等地）[G]，其整体地质分布范围北起将乐 - 南平一线，西至安溪 - 南靖一线，涵盖龙岩、永定等多个县市 [D]。",
+      "expected_answer": "童子岩组分布于将乐—顺昌—南平一线以南，尤溪坂面—永春天湖山—南靖船场一线以西的闽西南地层小区，呈北东向带状出露。",
+      "qa_metrics": {
+        "key_point_coverage": 0.8333,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.7,
+        "completeness": 0.9,
+        "faithfulness": 0.6,
+        "coherence": 0.8,
+        "domain_accuracy": 0.7,
+        "llm_judge_score": 0.7,
+        "llm_judge_reason": "系统回答正确引用了标准答案的核心地理边界和地层小区，并补充了具体县市，但总结部分将东界误述为西界（西至安溪-南靖一线），与标准答案矛盾，影响准确性和忠实性。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": 1.0,
+        "applicable": true,
+        "n_gold": 1,
+        "n_found": 1,
+        "details": "1/1 段逐字证据被展示的片段覆盖"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 76313.84587287903
+    },
+    {
+      "id": "FJ-I-d4461b24",
+      "question": "福建晚三叠世—中侏罗世地层划分哪两个地层小区？",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "answer": "根据知识图谱与参考文献的综合分析，福建晚三叠世—中侏罗世地层划分的两个地层小区（分区）为**闽西**和**闽东**。\n\n具体依据如下：\n\n1.  **地层分区方案**：知识图谱中虽记录了该时期多个地层单位（如文宾山组、西园组、藩坑组、下村组等）及其在福建的分布事实 [G]，但并未直接编码“地层分区”或“地层小区”这一属性。依据参考文献记载，该阶段地层分区大致以政和 - 大埔断裂带为界，划分为**闽西**和**闽东**两个地层分区 [D]。\n2.  **地层单位对应**：文献中明确提及属于该时代且用于划分区域的“象牙群下村组与藩坑组”[D]，在知识图谱中均有明确记录，其地质年代（晚三叠世）及分布区域（福建）与文献描述相符 [G]。但具体的分区归属属性在图谱中缺失，故以文献描述为准 [D]。\n\n**结论**：福建晚三叠世—中侏罗世地层划分为**闽西**和**闽东**两个地层小区 [D]。",
+      "expected_answer": "福建晚三叠世—中侏罗世地层划分为闽西南地层小区和闽北地层小区，二者以政和-大埔断裂带为界。",
+      "qa_metrics": {
+        "key_point_coverage": 0.1667,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.1,
+        "completeness": 0.2,
+        "faithfulness": 0.2,
+        "coherence": 0.9,
+        "domain_accuracy": 0.2,
+        "llm_judge_score": 0.2,
+        "llm_judge_reason": "系统回答将福建晚三叠世—中侏罗世地层小区错误地划分为闽西和闽东，而标准答案为闽西南和闽北，虽分界线正确但关键名称错误，导致整体正确性低。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该题 evidence_span 为专家改写，语料中无逐字对应，不可作检索真值"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 107682.21306800842
+    },
+    {
+      "id": "FJ-I-8e090ca6",
+      "question": "大坑村组的空间展布有什么特征？",
+      "query_type": "SPATIAL",
+      "difficulty": "hard",
+      "answer": "根据知识图谱事实与参考文献的综合分析，大坑村组的空间展布特征如下：\n\n1.  **总体分布区域**\n    大坑村组主要分布于**闽西南**地区 [G]。具体涉及**南靖、华安、漳平、永定**等行政区域 [G]。\n\n2.  **具体分布地点**\n    在上述区域内，该组的具体分布点包括**漳平大坑、华安马寮地区及大坑村地区** [G]。这些地点也是该组实测剖面发育的主要位置。\n\n3.  **展布局限性与露头状况**\n    尽管有上述分布记录，参考文献指出大坑村组整体**分布局限**，且**露头普遍较差，出露不甚完整** [D]。这表明其在空间上的连续性可能受到限制，地表可见度较低。\n\n4.  **典型剖面位置**\n    在分布范围内，**漳平煤矿大坑矿区**（正层型剖面）与**华安马寮地区**的层序发育相对较完整 [D]。这两个地点与知识图谱中记录的核心分布区域（漳平大坑、华安马寮地区）相吻合 [G]，是研究该组地层特征的关键区域。\n\n**总结**：大坑村组空间上集中于闽西南的南靖、华安、漳平、永定一带 [G]，但整体分布局限且露头条件较差 [D]，主要依靠漳平大坑和华安马寮等地的剖面进行完整层序研究 [D]。",
+      "expected_answer": "大坑村组仅分布在闽西南小区中南部的漳平大坑、钱坂、马寮及长泰玉山等小盆地内，呈狭小条带状，为内陆盆地含煤碎屑岩建造",
+      "qa_metrics": {
+        "key_point_coverage": 0.0,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.5,
+        "completeness": 0.3,
+        "faithfulness": 0.5,
+        "coherence": 0.8,
+        "domain_accuracy": 0.5,
+        "llm_judge_score": 0.5,
+        "llm_judge_reason": "系统回答部分识别了闽西南及漳平大坑、马寮等地点，但遗漏了钱坂、长泰玉山、小盆地、狭小条带状和含煤碎屑岩建造等关键特征，并加入了南靖、永定等标准答案未列的分布区，整体一致性有限。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": 0.0,
+        "applicable": true,
+        "n_gold": 1,
+        "n_found": 0,
+        "details": "0/1 段逐字证据被展示的片段覆盖"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 59095.0448513031
+    }
+  ],
+  "by_difficulty": {
+    "medium": {
+      "avg_score": 0.6071,
+      "count": 7
+    },
+    "hard": {
+      "avg_score": 0.75,
+      "count": 3
+    }
+  },
+  "by_query_type": {
+    "FACTUAL": {
+      "avg_score": 0.7,
+      "count": 3
+    },
+    "REASONING": {
+      "avg_score": 0.75,
+      "count": 1
+    },
+    "COMPARATIVE": {
+      "avg_score": 1.0,
+      "count": 1
+    },
+    "SPATIAL": {
+      "avg_score": 0.53,
+      "count": 5
+    }
+  },
+  "timing": {
+    "total_seconds": 204.44,
+    "total_questions": 10,
+    "workers": 6,
+    "avg_per_question_ms": 20444.4,
+    "sum_model_seconds": 822.24,
+    "speedup_vs_serial": 4.02
+  },
+  "evaluated_at": "2026-09-14 17:12:39",
+  "evaluator_model": "deepseek-flash",
+  "generator_model": "qwen3.5-plus",
+  "independent_judge": true
+}

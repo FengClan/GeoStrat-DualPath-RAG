@@ -52,18 +52,6 @@ ENTITY_TYPES = {
         "description": "地层中含有的古生物化石",
         "examples": ["蜓类", "珊瑚", "腕足类", "菊石"],
         "pattern": None
-    },
-    "THICKNESS": {
-        "label": "厚度",
-        "description": "地层厚度数值",
-        "examples": [">100m", "50-80米"],
-        "pattern": None
-    },
-    "CONTACT_RELATIONSHIP": {
-        "label": "接触关系",
-        "description": "地层之间的接触关系描述",
-        "examples": ["整合接触", "平行不整合", "角度不整合", "断层接触"],
-        "pattern": None
     }
 }
 
@@ -102,18 +90,6 @@ RELATION_TYPES = {
         "description": "地层单位的地理分布",
         "domain": ["GROUP", "FORMATION", "MEMBER"],
         "range": ["LOCATION"]
-    },
-    "CONTACTS": {
-        "label": "接触关系",
-        "description": "地层单位之间的接触关系",
-        "domain": ["GROUP", "FORMATION", "MEMBER"],
-        "range": ["GROUP", "FORMATION", "MEMBER", "CONTACT_RELATIONSHIP"]
-    },
-    "HAS_THICKNESS": {
-        "label": "厚度",
-        "description": "地层单位的厚度值",
-        "domain": ["GROUP", "FORMATION", "MEMBER"],
-        "range": ["THICKNESS"]
     },
     "CONTAINS_FOSSIL": {
         "label": "含化石",

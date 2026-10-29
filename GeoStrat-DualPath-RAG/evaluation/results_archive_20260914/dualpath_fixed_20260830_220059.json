@@ -1,0 +1,957 @@
+{
+  "overall_scores": {
+    "qa_correctness": 0.7,
+    "qa_faithfulness": 0.84,
+    "qa_completeness": 0.715,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "retrieval_recall@5": 1.0,
+    "retrieval_mrr": 1.0,
+    "extraction_entity_f1": 1.0,
+    "extraction_triple_f1": 1.0,
+    "contrast_agreement": 0.0,
+    "avg_latency_ms": 86017.0835,
+    "overall_score": 0.8345
+  },
+  "per_question_results": [
+    {
+      "id": "FJ-I-0116",
+      "question": "魏坊组形成于什么地质年代？",
+      "query_type": "FACTUAL",
+      "difficulty": "easy",
+      "qa_metrics": {
+        "key_point_coverage": 1.0,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 1.0,
+        "completeness": 1.0,
+        "faithfulness": 1.0,
+        "coherence": 1.0,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 1.0,
+        "llm_judge_reason": "回答准确命中“早奥陶世”核心事实，与标准答案完全一致，且补充了地层代号等专业信息，术语规范无误。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 77583.05954933167
+    },
+    {
+      "id": "FJ-I-0026",
+      "question": "迪口岩组的厚度有什么特点？",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.1,
+        "completeness": 0.1,
+        "faithfulness": 0.2,
+        "coherence": 0.9,
+        "domain_accuracy": 0.3,
+        "llm_judge_score": 0.2,
+        "llm_judge_reason": "系统回答与标准答案在核心事实（厚度数值）上完全矛盾，声称厚度未知而实际有具体数据。虽然表述连贯且术语规范，但关键地质信息错误且遗漏。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 82558.19582939148
+    },
+    {
+      "id": "FJ-I-0285",
+      "question": "长林组的厚度有什么特点？",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 1.0,
+        "completeness": 1.0,
+        "faithfulness": 1.0,
+        "coherence": 1.0,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 1.0,
+        "llm_judge_reason": "系统回答准确覆盖了标准答案的关键厚度数据，补充的地质背景信息合理专业，术语规范且逻辑清晰，无事实矛盾。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 64493.162393569946
+    },
+    {
+      "id": "FJ-I-0253",
+      "question": "象牙群由谁创建、命名地点在哪？",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.0,
+        "completeness": 0.0,
+        "faithfulness": 0.9,
+        "coherence": 1.0,
+        "domain_accuracy": 0.7,
+        "llm_judge_score": 0.3,
+        "llm_judge_reason": "系统未能提供标准答案中的关键事实，导致正确性与完整性缺失。但回答逻辑清晰、无幻觉，且准确建议了地层名称的潜在混淆（象牙组）。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 69167.59848594666
+    },
+    {
+      "id": "FJ-I-0231",
+      "question": "大坑村组主要分布在哪些地区？",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "qa_metrics": {
+        "key_point_coverage": 0.3333,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.5,
+        "completeness": 0.5,
+        "faithfulness": 0.5,
+        "coherence": 0.9,
+        "domain_accuracy": 0.6,
+        "llm_judge_score": 0.6,
+        "llm_judge_reason": "系统回答核心分布区（漳平）正确，但具体县市列表与标准答案偏差较大（缺失长泰、钱坂，多出南靖、永定），且遗漏关键的岩性建造描述。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 40111.485719680786
+    },
+    {
+      "id": "FJ-I-0534",
+      "question": "根据以下特征判断最可能的地层单位：岩性为为一套浅海—滨海泻湖—海陆交互相沉积的硅泥岩、角岩、碳酸盐岩、碎屑岩等、时代属晚二叠世、分布于分布局限，仅分布于闽西南地",
+      "query_type": "REASONING",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.6667,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 1.0,
+        "completeness": 1.0,
+        "faithfulness": 1.0,
+        "coherence": 1.0,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 1.0,
+        "llm_judge_reason": "系统回答结论与标准答案完全一致，推理逻辑严密且结构清晰。通过分布、时代及岩性的综合对比与排除，展现了优秀的地质学专业分析能力。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 158208.5645198822
+    },
+    {
+      "id": "FJ-I-0963",
+      "question": "一套继承在震旦系之上的海相细碎屑岩、划分上下两段、属寒武纪的地层，是哪个组？",
+      "query_type": "REASONING",
+      "difficulty": "medium",
+      "qa_metrics": {
+        "key_point_coverage": 0.8333,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 1.0,
+        "completeness": 1.0,
+        "faithfulness": 1.0,
+        "coherence": 1.0,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 1.0,
+        "llm_judge_reason": "系统回答准确识别了“林田组”，与标准答案完全一致，推理逻辑清晰且地质术语使用规范，同时诚实地指出了部分细节信息的缺失而未产生幻觉。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 159473.0019569397
+    },
+    {
+      "id": "FJ-I-0525",
+      "question": "根据以下特征判断最可能的地层单位：岩性为其岩性为一套海相沉积的细碎屑岩夹少量钙、硅质岩，产蜒类Neostaffella，、时代属中石炭世、分布于本组零星分布于闽",
+      "query_type": "REASONING",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.8333,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 1.0,
+        "completeness": 1.0,
+        "faithfulness": 0.9,
+        "coherence": 1.0,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 1.0,
+        "llm_judge_reason": "系统回答准确识别了地层单位（经畲组），与标准答案完全一致。分析逻辑清晰，涵盖了岩性、化石、分布和时代等关键特征，地质术语使用准确，且诚实处理了文献中可能存在的时代差异。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 96564.65291976929
+    },
+    {
+      "id": "FJ-I-0880",
+      "question": "福建中石炭世的沉积环境如何？",
+      "query_type": "REASONING",
+      "difficulty": "medium",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.5,
+        "completeness": 0.4,
+        "faithfulness": 0.8,
+        "coherence": 0.9,
+        "domain_accuracy": 0.6,
+        "llm_judge_score": 0.6,
+        "llm_judge_reason": "系统正确识别了地层组名及海相碳酸盐性质，但未能确认“中石炭世”这一关键年代划分，反而归为上统/晚石炭世。此外，遗漏了蜓类化石及泻湖等关键沉积环境细节，与标准答案存在显著偏差。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 90201.90715789795
+    },
+    {
+      "id": "FJ-I-0964",
+      "question": "一套陆相—滨海相碎屑岩沉积、产 Neuroptris、Pecopteris 的早石炭世地层，是哪个组？",
+      "query_type": "REASONING",
+      "difficulty": "medium",
+      "qa_metrics": {
+        "key_point_coverage": 0.8333,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 1.0,
+        "completeness": 1.0,
+        "faithfulness": 1.0,
+        "coherence": 1.0,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 1.0,
+        "llm_judge_reason": "系统回答结论与标准答案完全一致，准确识别出林地组。推理过程逻辑严密，正确匹配了地质年代与岩性特征，且对化石信息缺失进行了合理说明，专业术语使用规范。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 131362.42294311523
+    },
+    {
+      "id": "FJ-I-0435",
+      "question": "请对比 林地组 与 经畲组 的岩性（岩石组合）差异。",
+      "query_type": "COMPARATIVE",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.8,
+        "completeness": 1.0,
+        "faithfulness": 0.9,
+        "coherence": 1.0,
+        "domain_accuracy": 0.8,
+        "llm_judge_score": 0.8,
+        "llm_judge_reason": "回答结构清晰且覆盖全面，准确反映了沉积相和化石差异，但在经畲组主导岩性的总结上与标准答案（细碎屑岩为主）存在细微偏差。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 89946.66171073914
+    },
+    {
+      "id": "FJ-I-0855",
+      "question": "请对比东岩组与大岭组的原岩差异。",
+      "query_type": "COMPARATIVE",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.3,
+        "completeness": 0.4,
+        "faithfulness": 0.3,
+        "coherence": 0.9,
+        "domain_accuracy": 0.4,
+        "llm_judge_score": 0.4,
+        "llm_judge_reason": "系统回答在大岭组原岩定义上与标准答案严重冲突（火山 - 沉积岩 vs 酸性火山岩），且遗漏“富钠”、“海相”等关键限定词。尽管结构清晰且术语专业，但核心事实准确性不足，无法满足地质评估的严谨性。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 53068.410873413086
+    },
+    {
+      "id": "FJ-I-0421",
+      "question": "请对比 栖霞组 与 文笔山组 的岩性（岩石组合）差异。",
+      "query_type": "COMPARATIVE",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.9,
+        "completeness": 1.0,
+        "faithfulness": 0.9,
+        "coherence": 1.0,
+        "domain_accuracy": 0.8,
+        "llm_judge_score": 0.9,
+        "llm_judge_reason": "核心岩性与分布信息与标准答案高度一致，结构清晰完整；但地质年代描述存在专业偏差（如栖霞组通常为中二叠世），略微影响领域准确性。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 106683.93230438232
+    },
+    {
+      "id": "FJ-I-0420",
+      "question": "请对比 南岩组 与 楼子坝组 的地质年代差异。",
+      "query_type": "COMPARATIVE",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 1.0,
+        "completeness": 1.0,
+        "faithfulness": 1.0,
+        "coherence": 1.0,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 1.0,
+        "llm_judge_reason": "系统回答准确指出了南岩组为晚震旦世、楼子坝组为早震旦世，与标准答案完全一致，且提供了丰富的地层学背景信息，术语使用专业准确。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 65357.86485671997
+    },
+    {
+      "id": "FJ-I-0436",
+      "question": "请对比 船山组 与 栖霞组 的地质年代差异。",
+      "query_type": "COMPARATIVE",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.7,
+        "completeness": 1.0,
+        "faithfulness": 0.9,
+        "coherence": 1.0,
+        "domain_accuracy": 0.9,
+        "llm_judge_score": 0.8,
+        "llm_judge_reason": "系统回答地质专业性强，结构清晰且内容详尽，但在地层时代界定上与标准答案存在显著差异（标准答案均为早二叠世，系统回答涉及晚石炭世及中二叠世），虽可能更符合实际地质情况，但降低了与标准答案的一致性。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 93489.56727981567
+    },
+    {
+      "id": "FJ-I-0578",
+      "question": "黄坑组的空间展布有什么特征？",
+      "query_type": "SPATIAL",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.4,
+        "completeness": 0.3,
+        "faithfulness": 0.8,
+        "coherence": 0.9,
+        "domain_accuracy": 0.5,
+        "llm_judge_score": 0.5,
+        "llm_judge_reason": "系统回答侧重于具体地点罗列，严重遗漏了分布形态（带状、半环状）、构造位置（盆地边缘）及岩性厚度变化等关键地质特征，未准确回应“展布特征”的核心含义。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 52003.533363342285
+    },
+    {
+      "id": "FJ-I-0579",
+      "question": "黄坑组的厚度空间变化有什么规律？",
+      "query_type": "SPATIAL",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.3333,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.4,
+        "completeness": 0.3,
+        "faithfulness": 0.9,
+        "coherence": 0.9,
+        "domain_accuracy": 0.6,
+        "llm_judge_score": 0.4,
+        "llm_judge_reason": "系统准确指出了厚度变化显著的事实，但未能回答核心的空间分布规律（盆地边缘、带状分布等），与标准答案存在关键信息缺失。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 61632.44891166687
+    },
+    {
+      "id": "FJ-I-0826",
+      "question": "黄坑组、寨下组分布在火山构造的什么部位？",
+      "query_type": "SPATIAL",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.5,
+        "completeness": 0.5,
+        "faithfulness": 0.9,
+        "coherence": 0.9,
+        "domain_accuracy": 0.8,
+        "llm_judge_score": 0.6,
+        "llm_judge_reason": "系统准确回答了寨下组的位置，但未能正确检索黄坑组的分布部位（边缘），错误声称信息缺失，导致核心事实遗漏。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 77660.17508506775
+    },
+    {
+      "id": "FJ-I-0566",
+      "question": "下峰组的空间展布有什么特征？",
+      "query_type": "SPATIAL",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.6667,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 1.0,
+        "completeness": 1.0,
+        "faithfulness": 1.0,
+        "coherence": 1.0,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 1.0,
+        "llm_judge_reason": "系统回答准确覆盖了标准答案中的所有关键信息（分布地点、带状特征、共生关系），地质术语使用规范，逻辑结构清晰，无事实性错误或幻觉。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 82238.06262016296
+    },
+    {
+      "id": "FJ-I-0577",
+      "question": "焦坑组的空间展布有什么特征？",
+      "query_type": "SPATIAL",
+      "difficulty": "hard",
+      "qa_metrics": {
+        "key_point_coverage": 0.8333,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.9,
+        "completeness": 0.8,
+        "faithfulness": 0.9,
+        "coherence": 1.0,
+        "domain_accuracy": 1.0,
+        "llm_judge_score": 0.9,
+        "llm_judge_reason": "系统回答准确复现了标准答案中的核心展布形态（北东向长条状）及大部分产地信息，地质术语规范；虽遗漏个别具体小地名（如岭后、大平），但整体信息覆盖度高且逻辑清晰。"
+      },
+      "retrieval_metrics": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "hit@1": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@10": 1.0,
+        "ndcg@1": 1.0,
+        "ndcg@3": 2.1309,
+        "ndcg@5": 2.9485,
+        "ndcg@10": 2.9485
+      },
+      "extraction_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 68536.96131706238
+    }
+  ],
+  "by_difficulty": {
+    "easy": {
+      "avg_score": 1.0,
+      "count": 1
+    },
+    "medium": {
+      "avg_score": 0.6786,
+      "count": 7
+    },
+    "hard": {
+      "avg_score": 0.8042,
+      "count": 12
+    }
+  },
+  "by_query_type": {
+    "FACTUAL": {
+      "avg_score": 0.62,
+      "count": 5
+    },
+    "REASONING": {
+      "avg_score": 0.92,
+      "count": 5
+    },
+    "COMPARATIVE": {
+      "avg_score": 0.77,
+      "count": 5
+    },
+    "SPATIAL": {
+      "avg_score": 0.77,
+      "count": 5
+    }
+  },
+  "timing": {
+    "total_seconds": 3636.05,
+    "total_questions": 20,
+    "avg_per_question_ms": 181802.3
+  },
+  "evaluated_at": "2026-08-30 22:00:59",
+  "evaluator_model": "qwen3.5-plus"
+}

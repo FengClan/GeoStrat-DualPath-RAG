@@ -1,0 +1,236 @@
+{
+  "config": {
+    "test_set": "E:\\地质文本空间化平台\\python服务\\GeoStrat-DualPath-RAG\\evaluation\\..\\test_sets\\test_set_honest_dev.json",
+    "total": 0,
+    "seed": 42,
+    "hops": "1,2,3",
+    "baseline": "both",
+    "model": "qwen3.5-plus",
+    "judge_model": "deepseek-flash",
+    "workers": 8,
+    "results_dir": "./evaluation/results",
+    "out": null
+  },
+  "sample_composition": {
+    "COMPARATIVE": 13,
+    "FACTUAL": 95,
+    "REASONING": 37,
+    "SPATIAL": 5
+  },
+  "results": {
+    "graph_rag": {
+      "1": {
+        "overall_score": 0.4339,
+        "qa_correctness": 0.2913,
+        "qa_faithfulness": 0.7813,
+        "qa_completeness": 0.238,
+        "avg_latency_ms": 56818.5947,
+        "coverage": {
+          "total_questions": 150,
+          "errors": 0,
+          "evaluated_questions": 150,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 0,
+          "judge_failed": 0
+        },
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.5462,
+            "count": 13
+          },
+          "FACTUAL": {
+            "avg_score": 0.53,
+            "count": 95
+          },
+          "REASONING": {
+            "avg_score": 0.5608,
+            "count": 37
+          },
+          "SPATIAL": {
+            "avg_score": 0.45,
+            "count": 5
+          }
+        },
+        "wall_seconds": 1364.3
+      },
+      "2": {
+        "overall_score": 0.427,
+        "qa_correctness": 0.2833,
+        "qa_faithfulness": 0.772,
+        "qa_completeness": 0.24,
+        "avg_latency_ms": 56347.6446,
+        "coverage": {
+          "total_questions": 150,
+          "errors": 0,
+          "evaluated_questions": 150,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 0,
+          "judge_failed": 0
+        },
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.5231,
+            "count": 13
+          },
+          "FACTUAL": {
+            "avg_score": 0.5258,
+            "count": 95
+          },
+          "REASONING": {
+            "avg_score": 0.5446,
+            "count": 37
+          },
+          "SPATIAL": {
+            "avg_score": 0.45,
+            "count": 5
+          }
+        },
+        "wall_seconds": 1400.9
+      },
+      "3": {
+        "overall_score": 0.4299,
+        "qa_correctness": 0.2953,
+        "qa_faithfulness": 0.7587,
+        "qa_completeness": 0.2433,
+        "avg_latency_ms": 55173.7887,
+        "coverage": {
+          "total_questions": 150,
+          "errors": 0,
+          "evaluated_questions": 150,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 0,
+          "judge_failed": 0
+        },
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.5462,
+            "count": 13
+          },
+          "FACTUAL": {
+            "avg_score": 0.5284,
+            "count": 95
+          },
+          "REASONING": {
+            "avg_score": 0.523,
+            "count": 37
+          },
+          "SPATIAL": {
+            "avg_score": 0.48,
+            "count": 5
+          }
+        },
+        "wall_seconds": 1215.1
+      }
+    },
+    "dual_path": {
+      "1": {
+        "overall_score": 0.6595,
+        "qa_correctness": 0.6273,
+        "qa_faithfulness": 0.7567,
+        "qa_completeness": 0.578,
+        "avg_latency_ms": 66949.3308,
+        "coverage": {
+          "total_questions": 150,
+          "errors": 0,
+          "evaluated_questions": 150,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 75,
+          "judge_failed": 1
+        },
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.6654,
+            "count": 13
+          },
+          "FACTUAL": {
+            "avg_score": 0.7547,
+            "count": 95
+          },
+          "REASONING": {
+            "avg_score": 0.5527,
+            "count": 37
+          },
+          "SPATIAL": {
+            "avg_score": 0.6,
+            "count": 5
+          }
+        },
+        "wall_seconds": 1462.7
+      },
+      "2": {
+        "overall_score": 0.6609,
+        "qa_correctness": 0.626,
+        "qa_faithfulness": 0.7643,
+        "qa_completeness": 0.576,
+        "avg_latency_ms": 67968.1951,
+        "coverage": {
+          "total_questions": 150,
+          "errors": 0,
+          "evaluated_questions": 150,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 75,
+          "judge_failed": 0
+        },
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.7,
+            "count": 13
+          },
+          "FACTUAL": {
+            "avg_score": 0.7582,
+            "count": 95
+          },
+          "REASONING": {
+            "avg_score": 0.5432,
+            "count": 37
+          },
+          "SPATIAL": {
+            "avg_score": 0.61,
+            "count": 5
+          }
+        },
+        "wall_seconds": 1461.6
+      },
+      "3": {
+        "overall_score": 0.658,
+        "qa_correctness": 0.63,
+        "qa_faithfulness": 0.7453,
+        "qa_completeness": 0.5813,
+        "avg_latency_ms": 70144.2406,
+        "coverage": {
+          "total_questions": 150,
+          "errors": 0,
+          "evaluated_questions": 150,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 75,
+          "judge_failed": 1
+        },
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.6846,
+            "count": 13
+          },
+          "FACTUAL": {
+            "avg_score": 0.7521,
+            "count": 95
+          },
+          "REASONING": {
+            "avg_score": 0.5284,
+            "count": 37
+          },
+          "SPATIAL": {
+            "avg_score": 0.65,
+            "count": 5
+          }
+        },
+        "wall_seconds": 1550.0
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "overall_scores": {
+    "qa_correctness": 0.0,
+    "qa_faithfulness": 0.0,
+    "qa_completeness": 0.0,
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "retrieval_recall@5": null,
+    "retrieval_mrr": null,
+    "extraction_entity_f1": 0.0,
+    "extraction_triple_f1": 0.0,
+    "contrast_agreement": 0.0,
+    "avg_latency_ms": 0.0,
+    "coverage": {
+      "total_questions": 13,
+      "extraction_with_gt": 0,
+      "contrast_with_gt": 0,
+      "judge_failed": 0
+    },
+    "overall_score": 0.0
+  },
+  "per_question_results": [
+    {
+      "id": "FJ-I-e03e54ab",
+      "error": "Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-cc44a146-ed56-9142-b1ba-3c1b3d947efb', 'request_id': 'cc44a146-ed56-9142-b1ba-3c1b3d947efb'}"
+    },
+    {
+      "id": "FJ-I-28d2d8fb",
+      "error": "Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-94a9d06f-8d80-9181-8c45-6bb2b4f0c580', 'request_id': '94a9d06f-8d80-9181-8c45-6bb2b4f0c580'}"
+    },
+    {
+      "id": "FJ-I-330dcb9b",
+      "error": "Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-a784c5b9-bbcc-9535-9697-764a4b24c179', 'request_id': 'a784c5b9-bbcc-9535-9697-764a4b24c179'}"
+    },
+    {
+      "id": "FJ-I-82bba8ee",
+      "error": "Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-014bef88-493c-94dd-98ae-d87b98fd4f36', 'request_id': '014bef88-493c-94dd-98ae-d87b98fd4f36'}"
+    },
+    {
+      "id": "FJ-I-3ee1f5f9",
+      "error": "Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-30e4fcc8-27ee-9b81-9bcd-48fe8b7fb54e', 'request_id': '30e4fcc8-27ee-9b81-9bcd-48fe8b7fb54e'}"
+    },
+    {
+      "id": "FJ-I-9bcb4278",
+      "error": "Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-6e4a8f5e-47a0-9b29-a3b2-0c6ee2f08111', 'request_id': '6e4a8f5e-47a0-9b29-a3b2-0c6ee2f08111'}"
+    },
+    {
+      "id": "FJ-I-fa65ccd3",
+      "error": "Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-63f20e29-2b15-90d9-82ac-31546bb9a229', 'request_id': '63f20e29-2b15-90d9-82ac-31546bb9a229'}"
+    },
+    {
+      "id": "FJ-I-8bd720e2",
+      "error": "Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-9f6e9c66-7f98-9215-b28e-7c63b6a5e124', 'request_id': '9f6e9c66-7f98-9215-b28e-7c63b6a5e124'}"
+    },
+    {
+      "id": "FJ-I-845a07a7",
+      "error": "Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-9af36540-272e-9a4c-9b23-09df8b954bef', 'request_id': '9af36540-272e-9a4c-9b23-09df8b954bef'}"
+    },
+    {
+      "id": "FJ-I-1585cf83",
+      "error": "Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-7fd205d3-f721-9744-8b27-20fe5f84c224', 'request_id': '7fd205d3-f721-9744-8b27-20fe5f84c224'}"
+    },
+    {
+      "id": "FJ-I-30dc318a",
+      "error": "Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-b891b861-58b1-9322-ae20-93d610ba164a', 'request_id': 'b891b861-58b1-9322-ae20-93d610ba164a'}"
+    },
+    {
+      "id": "FJ-I-d0533a53",
+      "error": "Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-a0f100c9-1e9d-9f0f-8533-6ebdc803b08b', 'request_id': 'a0f100c9-1e9d-9f0f-8533-6ebdc803b08b'}"
+    },
+    {
+      "id": "FJ-I-c954d74c",
+      "error": "Error code: 400 - {'error': {'message': 'Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment', 'type': 'Arrearage', 'param': None, 'code': 'Arrearage'}, 'id': 'chatcmpl-37d51490-b8fc-95a6-b332-a050f008dba8', 'request_id': '37d51490-b8fc-95a6-b332-a050f008dba8'}"
+    }
+  ],
+  "by_difficulty": {},
+  "by_query_type": {},
+  "timing": {
+    "total_seconds": 3.83,
+    "total_questions": 30,
+    "workers": 6,
+    "avg_per_question_ms": 127.5,
+    "sum_model_seconds": 0.0,
+    "speedup_vs_serial": 0.0
+  },
+  "evaluated_at": "2026-09-14 15:58:36",
+  "evaluator_model": "deepseek-flash",
+  "generator_model": "qwen3.5-plus",
+  "independent_judge": true
+}

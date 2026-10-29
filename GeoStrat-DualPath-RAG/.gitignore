@@ -1,0 +1,45 @@
+# ============================================================
+#  GeoStrat-DualPath-RAG — .gitignore
+# ============================================================
+
+# --- Secrets (NEVER commit) ---
+.env
+*.log
+logs/
+
+# --- Large files (exceeds GitHub 100MB limit) ---
+# Embedding model — download from HuggingFace instead
+text2vec-base-chinese/
+
+# Raw documents — obtain from original sources
+kb_uploads/
+*.docx
+*.pdf
+*.xlsx
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+*.egg
+
+# --- IDE ---
+.idea/
+.vscode/
+*.suo
+*.sw?
+
+# --- Temporary files ---
+_temp_*
+hs_err_pid*.log
+
+# --- Manuscript / reply-letter tooling (not part of this code release) ---
+tools/
+/_*.py
+/_*.txt
+
+# --- Dated local duplicates (canonical copies live in kb_storage/ and test_sets/) ---
+*_lyf.graphml
+*_lyf.json
+*.bom_backup

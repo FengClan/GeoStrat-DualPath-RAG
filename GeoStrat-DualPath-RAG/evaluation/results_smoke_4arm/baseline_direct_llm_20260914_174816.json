@@ -1,0 +1,511 @@
+{
+  "overall_scores": {
+    "qa_correctness": 0.125,
+    "qa_faithfulness": 0.1625,
+    "qa_completeness": 0.1,
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "retrieval_recall@5": null,
+    "retrieval_mrr": null,
+    "extraction_entity_f1": 0.0,
+    "extraction_triple_f1": 0.0,
+    "contrast_agreement": 0.0,
+    "avg_latency_ms": 81091.0554,
+    "coverage": {
+      "total_questions": 8,
+      "extraction_with_gt": 0,
+      "contrast_with_gt": 0,
+      "evidence_recall_evaluated": 0,
+      "judge_failed": 0
+    },
+    "overall_score": 0.1327,
+    "evidence_recall@5": null
+  },
+  "per_question_results": [
+    {
+      "id": "FJ-I-e03e54ab",
+      "question": "翠屏山组的厚度有什么特点？",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "answer": "作为地质学家，针对**翠屏山组（Cuipingshan Formation）**的厚度特点，需要结合其地层归属、分布区域及沉积背景进行专业阐述。\n\n翠屏山组主要分布于中国**四川盆地**及其周缘地区，地质时代通常划分为**上三叠统（Late Triassic）**。在部分地层划分方案中，它被视为**须家河组（Xujiahe Formation）**的上部层段（常对应须六段 T3x6）或与之相当的地层单元。\n\n其厚度特点主要体现在以下几个方面：\n\n### 1. 厚度变化大，横向不稳定\n翠屏山组的显著特征是**厚度横向变化剧烈**。\n*   **总体范围**：一般厚度在 **200 米至 600 米** 之间。\n*   **极值情况**：在沉积中心或拗陷深区（如川西坳陷带），厚度可超过 **800 米甚至达 1000 米**；而在盆地边缘或古隆起区域，厚度显著减薄，甚至发生尖灭（pinch out）。\n\n### 2. 空间分布规律：西厚东薄\n受当时**前陆盆地（Foreland Basin）**构造格局及物源供给控制，翠屏山组的厚度呈现明显的**“西厚东薄”**趋势：\n*   **西部（靠近龙门山物源区）**：由于靠近造山带，沉降速率快，碎屑物质供给充足，沉积厚度最大。\n*   **东部及南部**：随着远离物源区，水体变浅，沉积速率降低，地层厚度逐渐减薄。\n\n### 3. 岩性组合对厚度感知的影响\n翠屏山组主要由**陆相碎屑岩**组成，岩性以灰白色中 - 粗粒砂岩、深灰色泥岩及**煤层**为主。\n*   由于含煤地层的存在，不同钻孔或剖面在对比时，若对煤线或夹层处理标准不一，可能导致实测厚度数据存在一定偏差。\n*   砂泥岩互层的韵律性沉积特征，使得其在垂向上厚度累积受沉积微相（如河道、泛滥平原）迁移影响较大。\n\n### 4. 地层对比的复杂性\n需要注意的是，在中国区域地层表中，翠屏山组的定义在不同时期和不同行业（如石油勘探 vs. 区域地质调查）存在差异：\n*   在**石油地质**语境下，常将其归入须家河组顶部，厚度统计往往包含在须家河组总厚内。\n*   在**早期区域地质**填图中，若将其作为独立组级单位，其厚度数据可能包含部分下伏或上覆过渡层，导致数据范围较宽。\n\n### 总结\n翠屏山组的厚度特点可概括为：**总体中等厚度（200-600m 为主），横向非均质性强，受构造沉降控制明显，呈现靠近物源区（西部）厚、远离物源区（东部）薄的分布规律。**\n\n*注：具体厚度数据需依据研究区的具体构造位置及所采用的地层划分方案（如是否独立建组或归入须家河组）进行校正。*",
+      "expected_answer": "翠屏山组（P3cp） 厚度494.9 m",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.1,
+        "completeness": 0.1,
+        "faithfulness": 0.1,
+        "coherence": 0.9,
+        "domain_accuracy": 0.2,
+        "llm_judge_score": 0.1,
+        "llm_judge_reason": "系统回答将翠屏山组错误归为上三叠统并与须家河组关联，且未提供标准答案中的具体厚度494.9 m，存在严重事实错误。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@5": null,
+        "mrr": null,
+        "hit@5": null,
+        "applicable": false,
+        "details": "N/A — 该基线无文本片段检索通道，召回类指标不适用（R2#6）"
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该基线无文本片段通道（R2#6）"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 74723.02293777466
+    },
+    {
+      "id": "FJ-I-28d2d8fb",
+      "question": "林地组由谁、在何处创名？",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "answer": "作为地质学家，针对“林地组”的创名信息，基于《中国地层典》及区域地质志的标准记录，回答如下：\n\n**林地组（Lindi Formation）**\n\n*   **创名人**：中国著名地质学家 **乐森璕**（Le Senxun）。\n*   **创名时间**：**1933 年**。\n*   **创名地点**：**中国广西壮族自治区桂林市南郊林地村**（Lindi）。\n*   **地质时代**：**中泥盆世**（Middle Devonian）。\n*   **层型剖面**：广西桂林南郊林地剖面。\n\n**补充地质背景：**\n林地组是华南地区泥盆系地层对比的重要单元之一。其岩性主要以厚层块状灰岩、白云质灰岩为主，常含丰富的腕足类及珊瑚化石。该组整合于东岭岭组之上，不整合或整合于塘丁组之下（具体接触关系视区域构造背景而定）。在区域地层划分中，林地组是确立华南中泥盆世地层格架的关键标志层。\n\n**参考文献依据：**\n*   乐森璕。(1933). 《中国南部之泥盆纪地层》. 中国地质学会志.\n*   《中国地层典·泥盆系》. 地质出版社.\n*   《广西壮族自治区区域地质志》. 地质出版社。",
+      "expected_answer": "林地组由福建省区域地质测量队（1965）在漳平市双洋乡林地村创名。",
+      "qa_metrics": {
+        "key_point_coverage": 0.0,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.0,
+        "completeness": 0.0,
+        "faithfulness": 0.0,
+        "coherence": 0.9,
+        "domain_accuracy": 0.1,
+        "llm_judge_score": 0.1,
+        "llm_judge_reason": "系统回答将林地组的创名人、创名时间、创名地点和地质时代全部误为广西中泥盆世乐森璕1933年，与标准答案福建区测队1965年在漳平市双洋乡林地村创名完全不符，属于严重事实错误和幻觉。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@5": null,
+        "mrr": null,
+        "hit@5": null,
+        "applicable": false,
+        "details": "N/A — 该基线无文本片段检索通道，召回类指标不适用（R2#6）"
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该基线无文本片段通道（R2#6）"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 61758.20803642273
+    },
+    {
+      "id": "FJ-I-ed80e296",
+      "question": "一套以紫红色粉砂岩和灰黑钙质粉砂岩为主、夹泥灰岩条带、偶有石膏夹层的地层，是哪个组？",
+      "query_type": "REASONING",
+      "difficulty": "medium",
+      "answer": "作为专业地质学家，根据您提供的岩性组合特征（紫红色粉砂岩和灰黑钙质粉砂岩为主、夹泥灰岩条带、偶有石膏夹层），该地层最符合**下三叠统和尚沟组（Heshanggou Formation）**的典型描述。\n\n以下是详细的专业分析与回答：\n\n### 1. 地层名称\n*   **名称**：**和尚沟组（Heshanggou Formation）**\n*   **代号**：通常记为 **T₁h**\n*   **时代**：**早三叠世（Early Triassic）**\n\n### 2. 典型分布区域\n该地层主要发育于**华北地台（North China Platform）**，特别是在**鄂尔多斯盆地（Ordos Basin）**及其周缘地区（如陕西渭北、山西、河北等地）分布广泛且层位稳定。\n\n### 3. 岩性特征匹配分析\n您描述的岩性组合与和尚沟组的标准岩性剖面高度吻合：\n*   **紫红色粉砂岩（Purple-red siltstone）**：这是和尚沟组的主体岩性，反映了当时干旱 - 半干旱气候条件下的氧化环境，属于典型的“红层”沉积。\n*   **灰黑钙质粉砂岩（Gray-black calcareous siltstone）**：在和尚沟组的部分层段（尤其是湖盆扩张期），会出现还原环境下的深色钙质粉砂岩，这通常与短暂的湖侵事件有关，也是该组区别于下伏刘家沟组（以粗碎屑为主）的重要特征之一。\n*   **夹泥灰岩条带（Interbedded marlstone bands）**：指示了湖泊水体较深、碳酸盐岩沉积的时期，常与粉砂岩构成韵律层。\n*   **偶有石膏夹层（Occasional gypsum interlayers）**：石膏的出现是和尚沟组的重要标志之一，指示了干旱气候下的蒸发浓缩环境（萨布哈或咸化湖盆），这将其与上覆纸坊组（通常石膏较少）或下伏刘家沟组（石膏极少）区分开来。\n\n### 4. 沉积相与古环境\n*   **沉积相**：主要为**干旱 - 半干旱气候下的湖泊 - 河流相（Arid Lacustrine-Fluvial Facies）**。\n*   **古环境**：该地层记录了早三叠世华北地区气候由炎热干燥向半湿润波动的过程。紫红色代表氧化暴露环境，灰黑色钙质岩代表还原深水环境，石膏则代表高盐度蒸发环境。这种岩性互层反映了古湖泊水位的频繁波动。\n\n### 5. 地层接触关系\n*   **下伏地层**：通常为**刘家沟组（Liujiagou Formation）**，整合接触。刘家沟组主要以紫红色中细砂岩为主，碎屑粒度较粗。\n*   **上覆地层**：通常为**纸坊组（Zhifang Formation）**，整合接触。纸坊组岩性虽也为紫红色，但通常钙质成分减少，石膏夹层不如和尚沟组典型。\n\n### 6. 专业提示（区域差异性）\n虽然**和尚沟组**是该岩性组合在华北 stratigraphy 中的标准答案，但在地质工作中需注意区域差异：\n*   **四川盆地**：若工作区在四川，类似的“紫红色碎屑岩 + 石膏”组合可能指向**中三叠统雷口坡组（Leikoupo Formation）**或**上侏罗统遂宁组（Suining Formation）**，但遂宁组通常以泥岩为主，钙质粉砂岩不如和尚沟组典型。\n*   **渤海湾盆地**：若涉及油气勘探语境，**古近系沙河街组四段（Es4）**也有“红层 + 膏盐 + 深色钙质岩”的组合，但 Es4 通常含有岩盐层且时代为新生代，与三叠纪和尚沟组有本质区别。\n\n**结论：**\n基于经典的区域地层学描述，这套地层应判定为**下三叠统和尚沟组（T₁h）**。",
+      "expected_answer": "该地层为均口组，为一套以紫红色粉砂岩和灰黑钙质粉砂岩为主、夹泥灰岩条带及偶有石膏夹层的沉积。",
+      "qa_metrics": {
+        "key_point_coverage": 0.1667,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.0,
+        "completeness": 0.0,
+        "faithfulness": 0.0,
+        "coherence": 0.9,
+        "domain_accuracy": 0.4,
+        "llm_judge_score": 0.2,
+        "llm_judge_reason": "系统回答将地层错误识别为和尚沟组，而标准答案为均口组，核心事实完全错误；虽然表述连贯且术语专业，但未能提供正确答案，且包含与标准答案矛盾的幻觉内容。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@5": null,
+        "mrr": null,
+        "hit@5": null,
+        "applicable": false,
+        "details": "N/A — 该基线无文本片段检索通道，召回类指标不适用（R2#6）"
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该基线无文本片段通道（R2#6）"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 204422.9712486267
+    },
+    {
+      "id": "FJ-I-fe5a0f0e",
+      "question": "佛昙组的空间展布有什么特征？",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "answer": "作为专业地质学家，针对**佛昙组（Fotan Formation）** 的空间展布特征，我基于区域地层学、构造地质学及沉积学的研究资料，为您提供以下专业、准确的回答：\n\n### 佛昙组空间展布特征综述\n\n佛昙组是中国东南沿海地区（主要是福建省南部）古近系的重要地层单元，其时代主要为**始新世至渐新世（Eocene-Oligocene）**。该组的空间展布受控于区域构造格架，具有显著的**断陷盆地充填**特征。具体展布特征如下：\n\n#### 1. 地理分布范围（Geographic Distribution）\n*   **核心分布区：** 佛昙组主要出露于**福建省漳浦县佛昙镇**及其周边地区（如龙海、云霄等地），属于东南沿海火山 - 沉积带的一部分。\n*   **局限性：** 其分布具有明显的**局限性**和**不连续性**。它并非区域性的连续铺盖层，而是局限于特定的新生代断陷盆地内（即佛昙盆地）。\n\n#### 2. 构造控盆特征（Tectonic Control）\n*   **断裂控制：** 佛昙组的沉积和空间展布严格受**北东（NE）向及北北东（NNE）向断裂**控制。这些断裂多为长乐 - 诏安断裂带及其次级断裂的组成部分。\n*   **盆地形态：** 表现为**地堑或半地堑式断陷盆地**。地层主要堆积在断裂下盘或断裂夹持的凹陷中心，导致其平面展布呈**条带状**或**狭长的透镜状**，沿断裂走向延伸。\n\n#### 3. 厚度变化特征（Thickness Variation）\n*   **非均质性：** 地层厚度在空间上变化剧烈，具有显著的**非均质性**。\n*   **中心厚、边缘薄：** 在盆地沉降中心（通常是深大断裂附近），沉积厚度最大，可达数百米甚至更厚；向盆地边缘或隆起区，地层迅速尖灭或变薄。\n*   **相变导致厚度差异：** 由于岩性包含火山岩与沉积岩的互层，火山喷发中心的堆积厚度往往远大于远源沉积区。\n\n#### 4. 岩相空间分异（Lithofacies Spatial Differentiation）\n*   **火山 - 沉积交互：** 佛昙组的空间展布伴随着明显的岩相分异。在空间上，**火山岩相**（如玄武岩、凝灰岩）通常集中在断裂活动强烈的部位或古火山口附近；而**沉积岩相**（如砂岩、泥岩、含煤/油页岩层）则主要分布在古湖泊或古河漫滩的低能环境区。\n*   **侧向变化快：** 由于断陷盆地地形起伏大，沉积环境复杂，导致岩性在横向上的变化非常快，相带狭窄。\n\n#### 5. 保存与出露状况（Preservation and Outcrop）\n*   **遭受剥蚀：** 受新近纪以来的构造抬升和剥蚀作用影响，佛昙组的原始沉积范围远大于目前的出露范围。\n*   **不整合接触：** 其空间边界通常表现为与下伏中生界（如燕山期花岗岩或火山岩）呈**角度不整合**接触，与上覆新近系（如牛脚山组等）呈平行不整合或角度不整合接触。这限制了其在垂向和侧向上的连续延伸。\n\n### 总结\n佛昙组的空间展布特征可以概括为：**“受北东向断裂控制的、局限在断陷盆地内的、厚度变化剧烈的、火山 - 沉积岩相交互的条带状或透镜状分布”**。\n\n这一展布特征反映了古近纪时期东南沿海地区处于**陆内裂陷伸展**的构造背景，是研究中国东南缘新生代构造 - 岩浆活动及古气候环境的重要地质载体。",
+      "expected_answer": "佛昙组出露于福安—南靖断裂带东侧以西地区，呈圆株状、椭圆状北东向零散分布。",
+      "qa_metrics": {
+        "key_point_coverage": 0.0,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.2,
+        "completeness": 0.1,
+        "faithfulness": 0.2,
+        "coherence": 0.9,
+        "domain_accuracy": 0.3,
+        "llm_judge_score": 0.2,
+        "llm_judge_reason": "系统回答虽然结构清晰、术语专业，但完全遗漏了标准答案中‘福安—南靖断裂带东侧以西’的位置信息和‘圆株状、椭圆状北东向零散分布’的形态特征，反而描述为受长乐-诏安断裂控制的条带状或透镜状分布，与标准答案严重不符。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@5": null,
+        "mrr": null,
+        "hit@5": null,
+        "applicable": false,
+        "details": "N/A — 该基线无文本片段检索通道，召回类指标不适用（R2#6）"
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该基线无文本片段通道（R2#6）"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 45315.42372703552
+    },
+    {
+      "id": "FJ-I-624be7b4",
+      "question": "福建上侏罗统—上白垩统划分哪两个地层小区？",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "answer": "根据中国地层区划标准及福建省区域地质调查成果，福建上侏罗统—上白垩统（J₃—K₂）地层主要划分为以下两个**地层小区**：\n\n1.  **闽东地层小区**（Min-Dong Stratigraphic Sub-zone）\n2.  **闽西地层小区**（Min-Xi Stratigraphic Sub-zone）\n\n### 专业地质背景解析：\n\n**1. 划分界线：**\n这两个地层小区的分界主要受**政和—大埔深大断裂带**（Zhenghe-Dapu Fault Zone）控制。该断裂带是福建省内重要的地质构造界线，也是燕山期岩浆活动和沉积建造的重要分界。\n\n**2. 地层与岩性特征差异：**\n\n*   **闽东地层小区（断裂带以东）：**\n    *   **构造背景：** 属于闽东火山断陷带，受太平洋板块俯冲影响显著，地壳拉张与火山活动强烈。\n    *   **岩性特征：** 上侏罗统—上白垩统以**中酸性火山岩**为主，夹少量火山沉积岩。主要地层单元包括上侏罗统南园组（J₃n）及下白垩统石帽山群（K₁sh）等。岩性多为流纹岩、英安岩、凝灰岩等，反映了强烈的燕山期火山喷发事件。\n    *   **沉积环境：** 陆相火山 - 沉积盆地。\n\n*   **闽西地层小区（断裂带以西）：**\n    *   **构造背景：** 属于闽西内陆凹陷带，相对稳定，火山活动较弱。\n    *   **岩性特征：** 上侏罗统—上白垩统以**陆相红色碎屑沉积岩**为主，局部夹火山岩。主要地层单元包括上侏罗统长林组（J₃c）、上白垩统崇安组（K₂ch）或沙县组（K₂s）等。岩性多为紫红色砂岩、粉砂岩、泥岩，常含石膏等蒸发岩矿物。\n    *   **沉积环境：** 内陆干旱 - 半干旱条件下的河湖相沉积。\n\n**3. 地质意义：**\n这一划分不仅反映了福建中生代晚期（燕山运动主幕）东西两侧截然不同的**沉积 - 火山建造**特征，也揭示了当时古地理环境、古气候以及构造应力场的显著差异。闽东以火山喷发为主导，闽西则以盆地沉积为主导。\n\n综上所述，福建上侏罗统—上白垩统地层划分的两个核心小区为**闽东地层小区**与**闽西地层小区**。",
+      "expected_answer": "福建上侏罗统—上白垩统划分为武夷地层小区和沿海地层小区。",
+      "qa_metrics": {
+        "key_point_coverage": 0.0,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.0,
+        "completeness": 0.0,
+        "faithfulness": 0.1,
+        "coherence": 0.9,
+        "domain_accuracy": 0.2,
+        "llm_judge_score": 0.1,
+        "llm_judge_reason": "系统回答将福建上侏罗统—上白垩统的地层小区错误地划分为闽东和闽西，与标准答案的武夷和沿海完全不符，核心信息错误。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@5": null,
+        "mrr": null,
+        "hit@5": null,
+        "applicable": false,
+        "details": "N/A — 该基线无文本片段检索通道，召回类指标不适用（R2#6）"
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该基线无文本片段通道（R2#6）"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 47759.6709728241
+    },
+    {
+      "id": "FJ-I-df677543",
+      "question": "福建二叠纪含煤岩系（童子岩组）分布于什么范围？",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "answer": "作为专业地质学家，针对福建二叠纪含煤岩系（童子岩组）的分布范围，回答如下：\n\n**福建二叠纪含煤岩系（童子岩组）主要分布于福建省西部及中部地区，构造上属于闽西南坳陷带。**\n\n具体地质与地理分布特征如下：\n\n1.  **地理分布范围：**\n    *   **核心区域：** 主要集中在今**龙岩市**和**三明市**境内。\n    *   **具体县市：** 包括**永定、龙岩（新罗区）、连城、上杭、漳平、大田、三明（三元区/梅列区）、宁化、清流**等地。\n    *   **展布方向：** 含煤岩系呈北东—南西向（NNE-SSW）带状展布，与福建主要的构造线方向一致。\n    *   **分布面积：** 含煤地层出露及隐伏面积约为 1 万余平方公里，是福建省最重要的煤炭资源赋存层位。\n\n2.  **构造单元背景：**\n    *   童子岩组主要沉积于**闽西南晚二叠世陆相沉积盆地**（即闽西南坳陷）。\n    *   该区域在二叠纪晚期处于相对稳定的内陆凹陷环境，有利于泥炭沼泽的发育和煤炭的堆积。\n    *   东侧以政和—大浦断裂带为界，与闽东火山断拗带相隔，因此闽东沿海地区基本无此含煤岩系分布。\n\n3.  **地层与岩性特征：**\n    *   **层位：** 属**上二叠统（Late Permian）**。\n    *   **岩性：** 主要由砂岩、粉砂岩、泥岩及煤层组成，含植物化石丰富（如 *Gigantopteris* 大羽羊齿植物群）。\n    *   **含煤性：** 童子岩组是福建省唯一的工业含煤地层，含煤性较好的地段通常位于永定—龙岩—连城一线及大田—三明一带。\n\n**总结：**\n福建童子岩组含煤岩系**不分布于全省**，而是局限在**闽西和闽中地区**（以龙岩、三明为核心），受古构造盆地控制，呈北东向带状分布。这是福建省煤炭地质勘查与开发的核心目标层位。",
+      "expected_answer": "童子岩组分布于将乐—顺昌—南平一线以南，尤溪坂面—永春天湖山—南靖船场一线以西的闽西南地层小区，呈北东向带状出露。",
+      "qa_metrics": {
+        "key_point_coverage": 0.0,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.6,
+        "completeness": 0.5,
+        "faithfulness": 0.7,
+        "coherence": 0.9,
+        "domain_accuracy": 0.6,
+        "llm_judge_score": 0.6,
+        "llm_judge_reason": "系统回答大致指出闽西南地区，但未给出标准答案中的精确边界线（将乐—顺昌—南平一线以南，尤溪坂面—永春天湖山—南靖船场一线以西），且时代（上二叠统）和构造背景（陆相盆地）描述存在不准确之处。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@5": null,
+        "mrr": null,
+        "hit@5": null,
+        "applicable": false,
+        "details": "N/A — 该基线无文本片段检索通道，召回类指标不适用（R2#6）"
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该基线无文本片段通道（R2#6）"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 41372.46823310852
+    },
+    {
+      "id": "FJ-I-d4461b24",
+      "question": "福建晚三叠世—中侏罗世地层划分哪两个地层小区？",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "answer": "作为专业地质学家，针对您提出的关于福建晚三叠世—中侏罗世地层划分的问题，基于《中国地层典》、《福建省区域地质志》及相关地层学研究资料，回答如下：\n\n福建省晚三叠世—中侏罗世（T₃—J₂）的地层，在区域地层区划上主要划分为以下**两个地层小区**：\n\n1.  **闽西地层小区（Western Fujian Stratigraphic Sub-region）**\n2.  **闽东地层小区（Eastern Fujian Stratigraphic Sub-region）**\n\n### 专业解析与地质背景：\n\n这一划分主要基于福建省内部的古地理格局、构造单元及沉积相带的显著差异，以**武夷山隆起带**及**政和—大埔断裂带**为主要的地质分界线索。\n\n*   **闽西地层小区**：\n    *   **构造背景**：位于武夷山以西，属于华南褶皱系的一部分，晚三叠世至中侏罗世期间主要为陆相沉积盆地环境。\n    *   **地层特征**：该小区地层发育较为齐全，主要为陆相碎屑岩建造，常含煤系。\n    *   **代表性组**：包括晚三叠世的**文宾山组**（T₃w）、**梨山组**（T₃l），以及早—中侏罗世的**漳平组**（J₁₋₂z）等。岩性以砂岩、粉砂岩、泥岩及煤层为主，反映了内陆湖盆及河流相沉积环境。\n\n*   **闽东地层小区**：\n    *   **构造背景**：位于武夷山以东，沿海地区。在晚三叠世—中侏罗世期间，该区域构造活动较强，多处于隆起剥蚀状态或火山活动带，沉积记录相对不连续或缺失。\n    *   **地层特征**：地层发育不如闽西完整，部分区域缺失该时段沉积，或表现为火山 - 沉积混杂建造。\n    *   **代表性组**：若存在沉积，往往与闽西具有不同的岩相组合，部分区域可见与**南园组**（J₃n，虽主要为晚侏罗世，但反映了该带火山沉积特征）相关的早期火山沉积前兆，但在 T₃—J₂ 时段主要以缺失或浅海 - 陆相过渡带沉积为特征，与闽西的陆相含煤盆地形成鲜明对比。\n\n### 总结\n福建省晚三叠世—中侏罗世地层划分的两个地层小区为：**闽西地层小区**和**闽东地层小区**。这一划分体现了当时福建省“西盆东隆”或“西沉积东火山/剥蚀”的古地理构造格局。",
+      "expected_answer": "福建晚三叠世—中侏罗世地层划分为闽西南地层小区和闽北地层小区，二者以政和-大埔断裂带为界。",
+      "qa_metrics": {
+        "key_point_coverage": 0.0,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.1,
+        "completeness": 0.1,
+        "faithfulness": 0.2,
+        "coherence": 0.8,
+        "domain_accuracy": 0.2,
+        "llm_judge_score": 0.2,
+        "llm_judge_reason": "系统回答将福建晚三叠世—中侏罗世地层小区错误划分为闽西和闽东，而标准答案为闽西南和闽北，且分界描述不准确，核心信息完全错误。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@5": null,
+        "mrr": null,
+        "hit@5": null,
+        "applicable": false,
+        "details": "N/A — 该基线无文本片段检索通道，召回类指标不适用（R2#6）"
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该基线无文本片段通道（R2#6）"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 77758.76426696777
+    },
+    {
+      "id": "FJ-I-8e090ca6",
+      "question": "大坑村组的空间展布有什么特征？",
+      "query_type": "SPATIAL",
+      "difficulty": "hard",
+      "answer": "作为专业地质学家，针对**大坑村组（Dakengcun Formation）**的空间展布特征，基于中国区域地层学（特别是华南地区地层划分）的现有资料，回答如下：\n\n### 1. 地层归属与地理定位\n*   **地层时代**：大坑村组主要归属于**晚侏罗世（Late Jurassic）**。\n*   **地理分布**：该组是**广东省北部**（特别是**连平县、河源市**一带）的地方性岩石地层单位。在区域地层对比中，它通常相当于或隶属于**南园组（Nanyuan Formation）**的上部或同期异相沉积。\n*   **构造位置**：位于**华南中生代火山岩带**的中西段，处于**南岭东西向构造带**与**新华夏系北东向构造带**的复合部位。\n\n### 2. 空间展布特征\n大坑村组的空间展布受中生代构造 - 岩浆活动的严格控制，具有以下显著特征：\n\n*   **展布方向（走向）**：\n    总体呈**北东向（NE）**或**北北东向（NNE）**展布。这一方向与华南地区晚侏罗世主要的断裂构造体系（如河源 - 新丰断裂带及其次级断裂）一致，反映了当时火山 - 沉积盆地受区域应力场控制的特点。\n\n*   **分布形态**：\n    呈**条带状**、**透镜状**或**断陷盆地状**分布。由于该组岩性以火山岩及火山碎屑岩为主（如流纹质凝灰岩、火山角砾岩等），其分布往往局限于古火山机构或火山沉积盆地内，因此在平面上不连续，呈“斑块状”或“串珠状”产出。\n\n*   **分布范围**：\n    分布范围相对**局限**。不同于广布的海相地层，大坑村组主要出露于特定的火山 - 构造洼地中。在连平大坑村型剖面附近出露较好，向周边延伸时厚度变化大，尖灭较快。\n\n*   **垂向与接触关系**：\n    *   **下伏地层**：通常与早侏罗世地层（如金鸡组）或古生代地层呈**角度不整合**接触，反映了印支运动后的地壳抬升与剥蚀。\n    *   **上覆地层**：常被早白垩世红色陆相碎屑岩（如园墩组或 equivalents）不整合覆盖，或与后期侵入岩体呈侵入接触。\n    *   **断层接触**：其边界常受后期断裂切割，与围岩呈断层接触关系，导致其空间形态在局部发生错位或缺失。\n\n### 3. 构造控制意义\n大坑村组的空间展布特征记录了**古太平洋板块向欧亚板块俯冲**背景下的弧后伸展或陆内火山活动信息。其北东向的展布格局印证了晚侏罗世华南地区**北东向断裂系统**对岩浆活动和沉积盆地发育的主导控制作用。\n\n### 4. 总结\n综上所述，大坑村组的空间展布特征可概括为：**“时代晚侏罗、地域粤北连平、走向北东向、形态断陷状、接触多不整合”**。\n\n*(注：地层名称在不同省份或不同比例尺地质调查中可能存在厘定差异。若指代广西晚三叠世的大坑组，其空间展布则为海陆过渡相的盆地沉积，呈北西 - 南东向展布。但根据“大坑村组”这一具体命名，通常指向粤北晚侏罗世火山地层单位。)*",
+      "expected_answer": "大坑村组仅分布在闽西南小区中南部的漳平大坑、钱坂、马寮及长泰玉山等小盆地内，呈狭小条带状，为内陆盆地含煤碎屑岩建造",
+      "qa_metrics": {
+        "key_point_coverage": 0.0,
+        "citation_precision": 0.0,
+        "citation_recall": 0.0,
+        "correctness": 0.0,
+        "completeness": 0.0,
+        "faithfulness": 0.0,
+        "coherence": 0.8,
+        "domain_accuracy": 0.1,
+        "llm_judge_score": 0.0,
+        "llm_judge_reason": "系统回答将大坑村组误判为粤北晚侏罗世火山岩地层，而标准答案明确其分布于闽西南漳平、长泰等小盆地，为内陆含煤碎屑岩建造，核心信息完全错误且未覆盖。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@5": null,
+        "mrr": null,
+        "hit@5": null,
+        "applicable": false,
+        "details": "N/A — 该基线无文本片段检索通道，召回类指标不适用（R2#6）"
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该基线无文本片段通道（R2#6）"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 95617.91348457336
+    }
+  ],
+  "by_difficulty": {
+    "medium": {
+      "avg_score": 0.1643,
+      "count": 7
+    },
+    "hard": {
+      "avg_score": 0.0,
+      "count": 1
+    }
+  },
+  "by_query_type": {
+    "FACTUAL": {
+      "avg_score": 0.05,
+      "count": 2
+    },
+    "REASONING": {
+      "avg_score": 0.0,
+      "count": 1
+    },
+    "SPATIAL": {
+      "avg_score": 0.21,
+      "count": 5
+    }
+  },
+  "timing": {
+    "total_seconds": 213.48,
+    "total_questions": 8,
+    "workers": 8,
+    "avg_per_question_ms": 26685.4,
+    "sum_model_seconds": 648.73,
+    "speedup_vs_serial": 3.04
+  },
+  "evaluated_at": "2026-09-14 17:48:16",
+  "evaluator_model": "deepseek-flash",
+  "generator_model": "qwen3.5-plus",
+  "independent_judge": true,
+  "interrupted": false
+}

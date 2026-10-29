@@ -46,6 +46,12 @@ def run_single_evaluation(args):
     print("\n" + "=" * 60)
     print("EVALUATION RESULTS")
     print("=" * 60)
+    if results.get("interrupted"):
+        # 本脚本没传 checkpoint_path，中断后无法续跑，下面的分数只代表已跑完的那部分题
+        print("⚠️  本次评测被 Ctrl+C 中断，以下分数**只覆盖已完成的题**，"
+              "不是完整评测结果，不要直接写进论文。")
+        print("⚠️  本脚本不写 checkpoint，无法续跑；要可中断可续跑请用 "
+              "run_full_eval.py --results-dir <dir>。")
     for metric, score in results["overall_scores"].items():
         print(f"  {metric:<30}: {score}")
 

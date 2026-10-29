@@ -1,0 +1,98 @@
+{
+  "count": 1307,
+  "by_source": {
+    "handwritten_expert": 431,
+    "programmatic_evolution": 26,
+    "programmatic_template": 850
+  },
+  "by_query_type": {
+    "COMPARATIVE": 114,
+    "FACTUAL": 830,
+    "REASONING": 324,
+    "SPATIAL": 39
+  },
+  "by_category": {
+    "thickness_analysis": 124,
+    "stratigraphic_comparison": 149,
+    "stratigraphic_identification": 519,
+    "spatial_distribution": 105,
+    "sedimentary_environment": 100,
+    "geochronology": 74,
+    "economic_geology": 34,
+    "lithology": 58,
+    "paleontology": 64,
+    "synonym_detection": 32,
+    "tectonic_reasoning": 23,
+    "magmatism": 6,
+    "metamorphism": 19
+  },
+  "by_difficulty": {
+    "hard": 443,
+    "medium": 794,
+    "easy": 70
+  },
+  "by_source_section": {
+    "handwritten": 431,
+    "evolution": 15,
+    "conclusion": 11,
+    "unit": 850
+  },
+  "by_provenance": {
+    "expert_written": 431,
+    "original_text": 813,
+    "expert_assigned": 63
+  },
+  "by_template": {
+    "handwritten": 431,
+    "evolution.tectonic": 10,
+    "evolution.general": 3,
+    "evolution.sedimentary": 3,
+    "evolution.magmatic": 6,
+    "evolution.metamorphic": 4,
+    "comparative_same_age.lithology": 20,
+    "comparative_curated.distribution": 4,
+    "comparative_curated.age": 33,
+    "comparative_curated.lithology": 14,
+    "comparative_curated.contact": 3,
+    "single_factual.contact": 61,
+    "single_factual.age": 63,
+    "single_factual.naming": 51,
+    "single_factual.overlying": 39,
+    "single_factual.underlying": 48,
+    "single_factual.thickness": 57,
+    "single_factual.thickness_num": 46,
+    "single_factual.metamorph": 15,
+    "single_factual.distribution": 52,
+    "single_factual.fossil": 34,
+    "single_factual.sed_env": 30,
+    "single_factual.mineralization": 13,
+    "single_factual.section": 43,
+    "single_factual.lithology": 42,
+    "single_factual.subdivision": 9,
+    "single_factual.correlation": 35,
+    "multi_hop.overlying": 26,
+    "multi_hop.underlying": 30,
+    "single_factual.synonym": 3,
+    "reverse.mineralization": 13,
+    "reverse.sed_env": 30,
+    "aggregate.by_fossil": 5,
+    "aggregate.by_sed_env": 6,
+    "aggregate.by_age": 9,
+    "spatial.correlation": 10,
+    "spatial.thickness": 1,
+    "spatial.distribution": 5
+  },
+  "unique_fact_ids": 743,
+  "traceable_to_paragraph": {
+    "count": 760,
+    "ratio": 0.5815
+  },
+  "unit_coverage": 64,
+  "notes": [
+    "唯一事实题与实际题数之比 = unique_fact_ids / count，用于如实标注「同一事实多问法」的占比（若有）。",
+    "provenance=expert_assigned 的题（地质年代）来自人工核准的年代表，不是原文逐字句，论文中应如实说明。",
+    "source_section=evolution 的题来自第八篇地质发展史。实测 KG 中「构造演化/岩浆活动/变质作用」出现 0 次而向量库有 22/33/76 次，该组题对 graph_rag 结构性不可答，必须单独成表或按来源分组报告。",
+    "source_section=conclusion 的题来自志书结语，题面冠以「（据志书结语）」以便与正文题区分。结语为综述性文字，gold 是整节累积（非单句），其问题粒度与 unit/evolution 两组不可直接比较。",
+    "traceable_to_paragraph 只统计能回溯到原文段落的题；handwritten 组是人工撰写、无对应原文段落，故不在其内，该比率并非「数据质量」指标。"
+  ]
+}

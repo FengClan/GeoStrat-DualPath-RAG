@@ -1,0 +1,1273 @@
+{
+  "group": "baseline_20260917",
+  "config": {
+    "rounds": 3,
+    "mode": "baseline",
+    "test_set": "test_sets/test_set_honest_test.json",
+    "sample_size": 300,
+    "seed": 42,
+    "workers": 8,
+    "model": "qwen3.5-plus",
+    "judge_model": "deepseek-flash",
+    "independent_judge": true,
+    "enable_thinking": true,
+    "temperature": 0.3,
+    "note": "temperature=0.3（非 0），故各轮结果本就不同；本题集在所有轮次间固定不变，只有模型随机性变化。"
+  },
+  "sample_composition": {
+    "COMPARATIVE": 101,
+    "SPATIAL": 34,
+    "FACTUAL": 119,
+    "REASONING": 46
+  },
+  "rounds": {
+    "baseline__direct_llm": [
+      {
+        "round": 1,
+        "overall_scores": {
+          "qa_correctness": 0.1107,
+          "qa_faithfulness": 0.1337,
+          "qa_completeness": 0.0913,
+          "citation_precision": 0.0,
+          "citation_recall": 0.0,
+          "retrieval_recall@5": null,
+          "retrieval_mrr": null,
+          "extraction_entity_f1": 0.0,
+          "extraction_triple_f1": 0.0,
+          "contrast_agreement": 0.0,
+          "avg_latency_ms": 89747.0333,
+          "coverage": {
+            "total_questions": 300,
+            "errors": 0,
+            "evaluated_questions": 300,
+            "extraction_with_gt": 0,
+            "contrast_with_gt": 0,
+            "evidence_recall_evaluated": 0,
+            "judge_failed": 0
+          },
+          "overall_score": 0.1148,
+          "evidence_recall@5": null
+        },
+        "usage": {},
+        "wall_seconds": 0.0,
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.1238,
+            "count": 101
+          },
+          "SPATIAL": {
+            "avg_score": 0.1162,
+            "count": 34
+          },
+          "FACTUAL": {
+            "avg_score": 0.0874,
+            "count": 119
+          },
+          "REASONING": {
+            "avg_score": 0.213,
+            "count": 46
+          }
+        },
+        "coverage": {
+          "total_questions": 300,
+          "errors": 0,
+          "evaluated_questions": 300,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 0,
+          "judge_failed": 0
+        },
+        "timing": {
+          "total_seconds": 0.0,
+          "total_questions": 300,
+          "workers": 8,
+          "avg_per_question_ms": 0.0,
+          "sum_model_seconds": 26924.11,
+          "speedup_vs_serial": 1.0
+        }
+      },
+      {
+        "round": 2,
+        "overall_scores": {
+          "qa_correctness": 0.1177,
+          "qa_faithfulness": 0.142,
+          "qa_completeness": 0.0983,
+          "citation_precision": 0.0,
+          "citation_recall": 0.0,
+          "retrieval_recall@5": null,
+          "retrieval_mrr": null,
+          "extraction_entity_f1": 0.0,
+          "extraction_triple_f1": 0.0,
+          "contrast_agreement": 0.0,
+          "avg_latency_ms": 93596.9743,
+          "coverage": {
+            "total_questions": 300,
+            "errors": 0,
+            "evaluated_questions": 300,
+            "extraction_with_gt": 0,
+            "contrast_with_gt": 0,
+            "evidence_recall_evaluated": 0,
+            "judge_failed": 0
+          },
+          "overall_score": 0.1222,
+          "evidence_recall@5": null
+        },
+        "usage": {},
+        "wall_seconds": 0.0,
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.1208,
+            "count": 101
+          },
+          "SPATIAL": {
+            "avg_score": 0.1559,
+            "count": 34
+          },
+          "FACTUAL": {
+            "avg_score": 0.1017,
+            "count": 119
+          },
+          "REASONING": {
+            "avg_score": 0.2033,
+            "count": 46
+          }
+        },
+        "coverage": {
+          "total_questions": 300,
+          "errors": 0,
+          "evaluated_questions": 300,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 0,
+          "judge_failed": 0
+        },
+        "timing": {
+          "total_seconds": 0.0,
+          "total_questions": 300,
+          "workers": 8,
+          "avg_per_question_ms": 0.0,
+          "sum_model_seconds": 28079.09,
+          "speedup_vs_serial": 1.0
+        }
+      },
+      {
+        "round": 3,
+        "overall_scores": {
+          "qa_correctness": 0.134,
+          "qa_faithfulness": 0.1497,
+          "qa_completeness": 0.1103,
+          "citation_precision": 0.0,
+          "citation_recall": 0.0,
+          "retrieval_recall@5": null,
+          "retrieval_mrr": null,
+          "extraction_entity_f1": 0.0,
+          "extraction_triple_f1": 0.0,
+          "contrast_agreement": 0.0,
+          "avg_latency_ms": 90247.3209,
+          "coverage": {
+            "total_questions": 300,
+            "errors": 0,
+            "evaluated_questions": 300,
+            "extraction_with_gt": 0,
+            "contrast_with_gt": 0,
+            "evidence_recall_evaluated": 0,
+            "judge_failed": 1
+          },
+          "overall_score": 0.1352,
+          "evidence_recall@5": null
+        },
+        "usage": {},
+        "wall_seconds": 0.0,
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.1446,
+            "count": 101
+          },
+          "SPATIAL": {
+            "avg_score": 0.1088,
+            "count": 34
+          },
+          "FACTUAL": {
+            "avg_score": 0.1256,
+            "count": 119
+          },
+          "REASONING": {
+            "avg_score": 0.2022,
+            "count": 46
+          }
+        },
+        "coverage": {
+          "total_questions": 300,
+          "errors": 0,
+          "evaluated_questions": 300,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 0,
+          "judge_failed": 1
+        },
+        "timing": {
+          "total_seconds": 0.0,
+          "total_questions": 300,
+          "workers": 8,
+          "avg_per_question_ms": 0.0,
+          "sum_model_seconds": 27074.2,
+          "speedup_vs_serial": 1.0
+        }
+      }
+    ],
+    "baseline__vector_rag": [
+      {
+        "round": 1,
+        "overall_scores": {
+          "qa_correctness": 0.533,
+          "qa_faithfulness": 0.7943,
+          "qa_completeness": 0.4667,
+          "citation_precision": 1.0,
+          "citation_recall": 1.0,
+          "retrieval_recall@5": 1.0,
+          "retrieval_mrr": 1.0,
+          "extraction_entity_f1": 0.0,
+          "extraction_triple_f1": 0.0,
+          "contrast_agreement": 0.0,
+          "avg_latency_ms": 61308.1153,
+          "coverage": {
+            "total_questions": 300,
+            "errors": 0,
+            "evaluated_questions": 300,
+            "extraction_with_gt": 0,
+            "contrast_with_gt": 0,
+            "evidence_recall_evaluated": 125,
+            "judge_failed": 0
+          },
+          "overall_score": 0.6032,
+          "evidence_recall@5": 0.356
+        },
+        "usage": {},
+        "wall_seconds": 0.0,
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.6431,
+            "count": 101
+          },
+          "SPATIAL": {
+            "avg_score": 0.5706,
+            "count": 34
+          },
+          "FACTUAL": {
+            "avg_score": 0.7109,
+            "count": 119
+          },
+          "REASONING": {
+            "avg_score": 0.6554,
+            "count": 46
+          }
+        },
+        "coverage": {
+          "total_questions": 300,
+          "errors": 0,
+          "evaluated_questions": 300,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 125,
+          "judge_failed": 0
+        },
+        "timing": {
+          "total_seconds": 0.0,
+          "total_questions": 300,
+          "workers": 8,
+          "avg_per_question_ms": 0.0,
+          "sum_model_seconds": 18392.43,
+          "speedup_vs_serial": 1.0
+        }
+      },
+      {
+        "round": 2,
+        "overall_scores": {
+          "qa_correctness": 0.528,
+          "qa_faithfulness": 0.801,
+          "qa_completeness": 0.46,
+          "citation_precision": 1.0,
+          "citation_recall": 1.0,
+          "retrieval_recall@5": 1.0,
+          "retrieval_mrr": 1.0,
+          "extraction_entity_f1": 0.0,
+          "extraction_triple_f1": 0.0,
+          "contrast_agreement": 0.0,
+          "avg_latency_ms": 65917.184,
+          "coverage": {
+            "total_questions": 300,
+            "errors": 0,
+            "evaluated_questions": 300,
+            "extraction_with_gt": 0,
+            "contrast_with_gt": 0,
+            "evidence_recall_evaluated": 125,
+            "judge_failed": 1
+          },
+          "overall_score": 0.6015,
+          "evidence_recall@5": 0.356
+        },
+        "usage": {},
+        "wall_seconds": 0.0,
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.6173,
+            "count": 101
+          },
+          "SPATIAL": {
+            "avg_score": 0.575,
+            "count": 34
+          },
+          "FACTUAL": {
+            "avg_score": 0.7252,
+            "count": 119
+          },
+          "REASONING": {
+            "avg_score": 0.6772,
+            "count": 46
+          }
+        },
+        "coverage": {
+          "total_questions": 300,
+          "errors": 0,
+          "evaluated_questions": 300,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 125,
+          "judge_failed": 1
+        },
+        "timing": {
+          "total_seconds": 0.0,
+          "total_questions": 300,
+          "workers": 8,
+          "avg_per_question_ms": 0.0,
+          "sum_model_seconds": 19775.16,
+          "speedup_vs_serial": 1.0
+        }
+      },
+      {
+        "round": 3,
+        "overall_scores": {
+          "qa_correctness": 0.5352,
+          "qa_faithfulness": 0.8013,
+          "qa_completeness": 0.4667,
+          "citation_precision": 1.0,
+          "citation_recall": 1.0,
+          "retrieval_recall@5": 1.0,
+          "retrieval_mrr": 1.0,
+          "extraction_entity_f1": 0.0,
+          "extraction_triple_f1": 0.0,
+          "contrast_agreement": 0.0,
+          "avg_latency_ms": 60648.389,
+          "coverage": {
+            "total_questions": 300,
+            "errors": 0,
+            "evaluated_questions": 300,
+            "extraction_with_gt": 0,
+            "contrast_with_gt": 0,
+            "evidence_recall_evaluated": 125,
+            "judge_failed": 1
+          },
+          "overall_score": 0.6065,
+          "evidence_recall@5": 0.356
+        },
+        "usage": {},
+        "wall_seconds": 0.0,
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.6379,
+            "count": 101
+          },
+          "SPATIAL": {
+            "avg_score": 0.5676,
+            "count": 34
+          },
+          "FACTUAL": {
+            "avg_score": 0.7244,
+            "count": 119
+          },
+          "REASONING": {
+            "avg_score": 0.6641,
+            "count": 46
+          }
+        },
+        "coverage": {
+          "total_questions": 300,
+          "errors": 0,
+          "evaluated_questions": 300,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 125,
+          "judge_failed": 1
+        },
+        "timing": {
+          "total_seconds": 0.0,
+          "total_questions": 300,
+          "workers": 8,
+          "avg_per_question_ms": 0.0,
+          "sum_model_seconds": 18194.52,
+          "speedup_vs_serial": 1.0
+        }
+      }
+    ],
+    "baseline__graph_rag": [
+      {
+        "round": 1,
+        "overall_scores": {
+          "qa_correctness": 0.3533,
+          "qa_faithfulness": 0.732,
+          "qa_completeness": 0.2837,
+          "citation_precision": 0.9967,
+          "citation_recall": 0.9967,
+          "retrieval_recall@5": null,
+          "retrieval_mrr": null,
+          "extraction_entity_f1": 0.0,
+          "extraction_triple_f1": 0.0,
+          "contrast_agreement": 0.0,
+          "avg_latency_ms": 50837.6526,
+          "coverage": {
+            "total_questions": 300,
+            "errors": 0,
+            "evaluated_questions": 300,
+            "extraction_with_gt": 0,
+            "contrast_with_gt": 0,
+            "evidence_recall_evaluated": 0,
+            "judge_failed": 0
+          },
+          "overall_score": 0.4591,
+          "evidence_recall@5": null
+        },
+        "usage": {},
+        "wall_seconds": 0.0,
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.5634,
+            "count": 101
+          },
+          "SPATIAL": {
+            "avg_score": 0.5162,
+            "count": 34
+          },
+          "FACTUAL": {
+            "avg_score": 0.5672,
+            "count": 119
+          },
+          "REASONING": {
+            "avg_score": 0.4533,
+            "count": 46
+          }
+        },
+        "coverage": {
+          "total_questions": 300,
+          "errors": 0,
+          "evaluated_questions": 300,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 0,
+          "judge_failed": 0
+        },
+        "timing": {
+          "total_seconds": 0.0,
+          "total_questions": 300,
+          "workers": 8,
+          "avg_per_question_ms": 0.0,
+          "sum_model_seconds": 15251.3,
+          "speedup_vs_serial": 1.0
+        }
+      },
+      {
+        "round": 2,
+        "overall_scores": {
+          "qa_correctness": 0.3517,
+          "qa_faithfulness": 0.719,
+          "qa_completeness": 0.2817,
+          "citation_precision": 0.9967,
+          "citation_recall": 0.9967,
+          "retrieval_recall@5": null,
+          "retrieval_mrr": null,
+          "extraction_entity_f1": 0.0,
+          "extraction_triple_f1": 0.0,
+          "contrast_agreement": 0.0,
+          "avg_latency_ms": 56182.2615,
+          "coverage": {
+            "total_questions": 300,
+            "errors": 0,
+            "evaluated_questions": 300,
+            "extraction_with_gt": 0,
+            "contrast_with_gt": 0,
+            "evidence_recall_evaluated": 0,
+            "judge_failed": 2
+          },
+          "overall_score": 0.454,
+          "evidence_recall@5": null
+        },
+        "usage": {},
+        "wall_seconds": 0.0,
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.5554,
+            "count": 101
+          },
+          "SPATIAL": {
+            "avg_score": 0.5,
+            "count": 34
+          },
+          "FACTUAL": {
+            "avg_score": 0.5601,
+            "count": 119
+          },
+          "REASONING": {
+            "avg_score": 0.4533,
+            "count": 46
+          }
+        },
+        "coverage": {
+          "total_questions": 300,
+          "errors": 0,
+          "evaluated_questions": 300,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 0,
+          "judge_failed": 2
+        },
+        "timing": {
+          "total_seconds": 0.0,
+          "total_questions": 300,
+          "workers": 8,
+          "avg_per_question_ms": 0.0,
+          "sum_model_seconds": 16854.68,
+          "speedup_vs_serial": 1.0
+        }
+      },
+      {
+        "round": 3,
+        "overall_scores": {
+          "qa_correctness": 0.3545,
+          "qa_faithfulness": 0.7277,
+          "qa_completeness": 0.2867,
+          "citation_precision": 0.9967,
+          "citation_recall": 0.9967,
+          "retrieval_recall@5": null,
+          "retrieval_mrr": null,
+          "extraction_entity_f1": 0.0,
+          "extraction_triple_f1": 0.0,
+          "contrast_agreement": 0.0,
+          "avg_latency_ms": 54018.7285,
+          "coverage": {
+            "total_questions": 300,
+            "errors": 0,
+            "evaluated_questions": 300,
+            "extraction_with_gt": 0,
+            "contrast_with_gt": 0,
+            "evidence_recall_evaluated": 0,
+            "judge_failed": 2
+          },
+          "overall_score": 0.4589,
+          "evidence_recall@5": null
+        },
+        "usage": {},
+        "wall_seconds": 0.0,
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.5616,
+            "count": 101
+          },
+          "SPATIAL": {
+            "avg_score": 0.5265,
+            "count": 34
+          },
+          "FACTUAL": {
+            "avg_score": 0.5685,
+            "count": 119
+          },
+          "REASONING": {
+            "avg_score": 0.4359,
+            "count": 46
+          }
+        },
+        "coverage": {
+          "total_questions": 300,
+          "errors": 0,
+          "evaluated_questions": 300,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 0,
+          "judge_failed": 2
+        },
+        "timing": {
+          "total_seconds": 0.0,
+          "total_questions": 300,
+          "workers": 8,
+          "avg_per_question_ms": 0.0,
+          "sum_model_seconds": 16205.62,
+          "speedup_vs_serial": 1.0
+        }
+      }
+    ],
+    "baseline__dual_path": [
+      {
+        "round": 1,
+        "overall_scores": {
+          "qa_correctness": 0.5988,
+          "qa_faithfulness": 0.7275,
+          "qa_completeness": 0.5447,
+          "citation_precision": 1.0,
+          "citation_recall": 1.0,
+          "retrieval_recall@5": 1.0,
+          "retrieval_mrr": 1.0,
+          "extraction_entity_f1": 0.0,
+          "extraction_triple_f1": 0.0,
+          "contrast_agreement": 0.0,
+          "avg_latency_ms": 72503.9194,
+          "coverage": {
+            "total_questions": 300,
+            "errors": 0,
+            "evaluated_questions": 300,
+            "extraction_with_gt": 0,
+            "contrast_with_gt": 0,
+            "evidence_recall_evaluated": 125,
+            "judge_failed": 11
+          },
+          "overall_score": 0.6301,
+          "evidence_recall@5": 0.356
+        },
+        "usage": {},
+        "wall_seconds": 0.0,
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.6649,
+            "count": 101
+          },
+          "SPATIAL": {
+            "avg_score": 0.5603,
+            "count": 34
+          },
+          "FACTUAL": {
+            "avg_score": 0.7067,
+            "count": 119
+          },
+          "REASONING": {
+            "avg_score": 0.6228,
+            "count": 46
+          }
+        },
+        "coverage": {
+          "total_questions": 300,
+          "errors": 0,
+          "evaluated_questions": 300,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 125,
+          "judge_failed": 11
+        },
+        "timing": {
+          "total_seconds": 0.0,
+          "total_questions": 300,
+          "workers": 8,
+          "avg_per_question_ms": 0.0,
+          "sum_model_seconds": 21751.18,
+          "speedup_vs_serial": 1.0
+        }
+      },
+      {
+        "round": 2,
+        "overall_scores": {
+          "qa_correctness": 0.6073,
+          "qa_faithfulness": 0.7353,
+          "qa_completeness": 0.552,
+          "citation_precision": 1.0,
+          "citation_recall": 1.0,
+          "retrieval_recall@5": 1.0,
+          "retrieval_mrr": 1.0,
+          "extraction_entity_f1": 0.0,
+          "extraction_triple_f1": 0.0,
+          "contrast_agreement": 0.0,
+          "avg_latency_ms": 73083.698,
+          "coverage": {
+            "total_questions": 300,
+            "errors": 0,
+            "evaluated_questions": 300,
+            "extraction_with_gt": 0,
+            "contrast_with_gt": 0,
+            "evidence_recall_evaluated": 125,
+            "judge_failed": 5
+          },
+          "overall_score": 0.6382,
+          "evidence_recall@5": 0.356
+        },
+        "usage": {
+          "qwen3.5-plus": {
+            "calls": 91,
+            "prompt_tokens": 121000,
+            "completion_tokens": 366477,
+            "total_tokens": 487477
+          },
+          "deepseek-flash": {
+            "calls": 99,
+            "prompt_tokens": 87120,
+            "completion_tokens": 184526,
+            "total_tokens": 271646
+          }
+        },
+        "wall_seconds": 1041.3,
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.6782,
+            "count": 101
+          },
+          "SPATIAL": {
+            "avg_score": 0.5574,
+            "count": 34
+          },
+          "FACTUAL": {
+            "avg_score": 0.7185,
+            "count": 119
+          },
+          "REASONING": {
+            "avg_score": 0.6185,
+            "count": 46
+          }
+        },
+        "coverage": {
+          "total_questions": 300,
+          "errors": 0,
+          "evaluated_questions": 300,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 125,
+          "judge_failed": 5
+        },
+        "timing": {
+          "total_seconds": 1041.31,
+          "total_questions": 300,
+          "workers": 8,
+          "avg_per_question_ms": 3471.0,
+          "sum_model_seconds": 21925.11,
+          "speedup_vs_serial": 21.06
+        }
+      },
+      {
+        "round": 3,
+        "overall_scores": {
+          "qa_correctness": 0.6058,
+          "qa_faithfulness": 0.752,
+          "qa_completeness": 0.5453,
+          "citation_precision": 1.0,
+          "citation_recall": 1.0,
+          "retrieval_recall@5": 1.0,
+          "retrieval_mrr": 1.0,
+          "extraction_entity_f1": 0.0,
+          "extraction_triple_f1": 0.0,
+          "contrast_agreement": 0.0,
+          "avg_latency_ms": 71319.5634,
+          "coverage": {
+            "total_questions": 300,
+            "errors": 0,
+            "evaluated_questions": 300,
+            "extraction_with_gt": 0,
+            "contrast_with_gt": 0,
+            "evidence_recall_evaluated": 125,
+            "judge_failed": 2
+          },
+          "overall_score": 0.6415,
+          "evidence_recall@5": 0.356
+        },
+        "usage": {
+          "qwen3.5-plus": {
+            "calls": 300,
+            "prompt_tokens": 404760,
+            "completion_tokens": 1193194,
+            "total_tokens": 1597954
+          },
+          "deepseek-flash": {
+            "calls": 312,
+            "prompt_tokens": 319161,
+            "completion_tokens": 574465,
+            "total_tokens": 893626
+          }
+        },
+        "wall_seconds": 3101.7,
+        "by_query_type": {
+          "COMPARATIVE": {
+            "avg_score": 0.6772,
+            "count": 101
+          },
+          "SPATIAL": {
+            "avg_score": 0.5743,
+            "count": 34
+          },
+          "FACTUAL": {
+            "avg_score": 0.7261,
+            "count": 119
+          },
+          "REASONING": {
+            "avg_score": 0.638,
+            "count": 46
+          }
+        },
+        "coverage": {
+          "total_questions": 300,
+          "errors": 0,
+          "evaluated_questions": 300,
+          "extraction_with_gt": 0,
+          "contrast_with_gt": 0,
+          "evidence_recall_evaluated": 125,
+          "judge_failed": 2
+        },
+        "timing": {
+          "total_seconds": 3101.69,
+          "total_questions": 300,
+          "workers": 8,
+          "avg_per_question_ms": 10339.0,
+          "sum_model_seconds": 21395.87,
+          "speedup_vs_serial": 6.9
+        }
+      }
+    ]
+  },
+  "summary": {
+    "baseline__direct_llm": {
+      "overall_score": {
+        "n": 3,
+        "mean": 0.1241,
+        "sd": 0.0103,
+        "ci95": 0.0257,
+        "min": 0.1148,
+        "max": 0.1352
+      },
+      "qa_correctness": {
+        "n": 3,
+        "mean": 0.1208,
+        "sd": 0.012,
+        "ci95": 0.0297,
+        "min": 0.1107,
+        "max": 0.134
+      },
+      "qa_faithfulness": {
+        "n": 3,
+        "mean": 0.1418,
+        "sd": 0.008,
+        "ci95": 0.0199,
+        "min": 0.1337,
+        "max": 0.1497
+      },
+      "qa_completeness": {
+        "n": 3,
+        "mean": 0.1,
+        "sd": 0.0096,
+        "ci95": 0.0239,
+        "min": 0.0913,
+        "max": 0.1103
+      },
+      "citation_precision": {
+        "n": 3,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "citation_recall": {
+        "n": 3,
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "retrieval_recall@5": {
+        "n": 0,
+        "mean": null,
+        "sd": null,
+        "ci95": null
+      },
+      "retrieval_mrr": {
+        "n": 0,
+        "mean": null,
+        "sd": null,
+        "ci95": null
+      },
+      "avg_latency_ms": {
+        "n": 3,
+        "mean": 91197.1095,
+        "sd": 2093.3431,
+        "ci95": 5200.5722,
+        "min": 89747.0333,
+        "max": 93596.9743
+      }
+    },
+    "baseline__vector_rag": {
+      "overall_score": {
+        "n": 3,
+        "mean": 0.6037,
+        "sd": 0.0025,
+        "ci95": 0.0063,
+        "min": 0.6015,
+        "max": 0.6065
+      },
+      "qa_correctness": {
+        "n": 3,
+        "mean": 0.5321,
+        "sd": 0.0037,
+        "ci95": 0.0092,
+        "min": 0.528,
+        "max": 0.5352
+      },
+      "qa_faithfulness": {
+        "n": 3,
+        "mean": 0.7989,
+        "sd": 0.004,
+        "ci95": 0.0098,
+        "min": 0.7943,
+        "max": 0.8013
+      },
+      "qa_completeness": {
+        "n": 3,
+        "mean": 0.4645,
+        "sd": 0.0039,
+        "ci95": 0.0096,
+        "min": 0.46,
+        "max": 0.4667
+      },
+      "citation_precision": {
+        "n": 3,
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci95": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "citation_recall": {
+        "n": 3,
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci95": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "retrieval_recall@5": {
+        "n": 3,
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci95": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "retrieval_mrr": {
+        "n": 3,
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci95": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "avg_latency_ms": {
+        "n": 3,
+        "mean": 62624.5628,
+        "sd": 2870.5096,
+        "ci95": 7131.3168,
+        "min": 60648.389,
+        "max": 65917.184
+      }
+    },
+    "baseline__graph_rag": {
+      "overall_score": {
+        "n": 3,
+        "mean": 0.4573,
+        "sd": 0.0029,
+        "ci95": 0.0072,
+        "min": 0.454,
+        "max": 0.4591
+      },
+      "qa_correctness": {
+        "n": 3,
+        "mean": 0.3532,
+        "sd": 0.0014,
+        "ci95": 0.0035,
+        "min": 0.3517,
+        "max": 0.3545
+      },
+      "qa_faithfulness": {
+        "n": 3,
+        "mean": 0.7262,
+        "sd": 0.0066,
+        "ci95": 0.0165,
+        "min": 0.719,
+        "max": 0.732
+      },
+      "qa_completeness": {
+        "n": 3,
+        "mean": 0.284,
+        "sd": 0.0025,
+        "ci95": 0.0063,
+        "min": 0.2817,
+        "max": 0.2867
+      },
+      "citation_precision": {
+        "n": 3,
+        "mean": 0.9967,
+        "sd": 0.0,
+        "ci95": 0.0,
+        "min": 0.9967,
+        "max": 0.9967
+      },
+      "citation_recall": {
+        "n": 3,
+        "mean": 0.9967,
+        "sd": 0.0,
+        "ci95": 0.0,
+        "min": 0.9967,
+        "max": 0.9967
+      },
+      "retrieval_recall@5": {
+        "n": 0,
+        "mean": null,
+        "sd": null,
+        "ci95": null
+      },
+      "retrieval_mrr": {
+        "n": 0,
+        "mean": null,
+        "sd": null,
+        "ci95": null
+      },
+      "avg_latency_ms": {
+        "n": 3,
+        "mean": 53679.5475,
+        "sd": 2688.3999,
+        "ci95": 6678.8945,
+        "min": 50837.6526,
+        "max": 56182.2615
+      }
+    },
+    "baseline__dual_path": {
+      "overall_score": {
+        "n": 3,
+        "mean": 0.6366,
+        "sd": 0.0059,
+        "ci95": 0.0146,
+        "min": 0.6301,
+        "max": 0.6415
+      },
+      "qa_correctness": {
+        "n": 3,
+        "mean": 0.604,
+        "sd": 0.0045,
+        "ci95": 0.0113,
+        "min": 0.5988,
+        "max": 0.6073
+      },
+      "qa_faithfulness": {
+        "n": 3,
+        "mean": 0.7383,
+        "sd": 0.0125,
+        "ci95": 0.0311,
+        "min": 0.7275,
+        "max": 0.752
+      },
+      "qa_completeness": {
+        "n": 3,
+        "mean": 0.5473,
+        "sd": 0.0041,
+        "ci95": 0.0101,
+        "min": 0.5447,
+        "max": 0.552
+      },
+      "citation_precision": {
+        "n": 3,
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci95": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "citation_recall": {
+        "n": 3,
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci95": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "retrieval_recall@5": {
+        "n": 3,
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci95": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "retrieval_mrr": {
+        "n": 3,
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci95": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "avg_latency_ms": {
+        "n": 3,
+        "mean": 72302.3936,
+        "sd": 899.1675,
+        "ci95": 2233.8362,
+        "min": 71319.5634,
+        "max": 73083.698
+      }
+    },
+    "baseline__direct_llm_usage": {},
+    "baseline__vector_rag_usage": {},
+    "baseline__graph_rag_usage": {},
+    "baseline__dual_path_usage": {
+      "qwen3.5-plus": {
+        "calls": 391,
+        "prompt_tokens": 525760,
+        "completion_tokens": 1559671,
+        "total_tokens": 2085431
+      },
+      "deepseek-flash": {
+        "calls": 411,
+        "prompt_tokens": 406281,
+        "completion_tokens": 758991,
+        "total_tokens": 1165272
+      }
+    }
+  },
+  "by_query_type": {
+    "baseline__direct_llm": {
+      "FACTUAL": {
+        "n": 3,
+        "mean": 0.1049,
+        "sd": 0.0193,
+        "ci95": 0.0479,
+        "min": 0.0874,
+        "max": 0.1256
+      },
+      "REASONING": {
+        "n": 3,
+        "mean": 0.2062,
+        "sd": 0.0059,
+        "ci95": 0.0148,
+        "min": 0.2022,
+        "max": 0.213
+      },
+      "COMPARATIVE": {
+        "n": 3,
+        "mean": 0.1297,
+        "sd": 0.013,
+        "ci95": 0.0322,
+        "min": 0.1208,
+        "max": 0.1446
+      },
+      "SPATIAL": {
+        "n": 3,
+        "mean": 0.127,
+        "sd": 0.0253,
+        "ci95": 0.0629,
+        "min": 0.1088,
+        "max": 0.1559
+      }
+    },
+    "baseline__vector_rag": {
+      "FACTUAL": {
+        "n": 3,
+        "mean": 0.7202,
+        "sd": 0.008,
+        "ci95": 0.02,
+        "min": 0.7109,
+        "max": 0.7252
+      },
+      "REASONING": {
+        "n": 3,
+        "mean": 0.6656,
+        "sd": 0.011,
+        "ci95": 0.0273,
+        "min": 0.6554,
+        "max": 0.6772
+      },
+      "COMPARATIVE": {
+        "n": 3,
+        "mean": 0.6328,
+        "sd": 0.0136,
+        "ci95": 0.0339,
+        "min": 0.6173,
+        "max": 0.6431
+      },
+      "SPATIAL": {
+        "n": 3,
+        "mean": 0.5711,
+        "sd": 0.0037,
+        "ci95": 0.0092,
+        "min": 0.5676,
+        "max": 0.575
+      }
+    },
+    "baseline__graph_rag": {
+      "FACTUAL": {
+        "n": 3,
+        "mean": 0.5653,
+        "sd": 0.0045,
+        "ci95": 0.0112,
+        "min": 0.5601,
+        "max": 0.5685
+      },
+      "REASONING": {
+        "n": 3,
+        "mean": 0.4475,
+        "sd": 0.01,
+        "ci95": 0.025,
+        "min": 0.4359,
+        "max": 0.4533
+      },
+      "COMPARATIVE": {
+        "n": 3,
+        "mean": 0.5601,
+        "sd": 0.0042,
+        "ci95": 0.0104,
+        "min": 0.5554,
+        "max": 0.5634
+      },
+      "SPATIAL": {
+        "n": 3,
+        "mean": 0.5142,
+        "sd": 0.0134,
+        "ci95": 0.0332,
+        "min": 0.5,
+        "max": 0.5265
+      }
+    },
+    "baseline__dual_path": {
+      "FACTUAL": {
+        "n": 3,
+        "mean": 0.7171,
+        "sd": 0.0098,
+        "ci95": 0.0243,
+        "min": 0.7067,
+        "max": 0.7261
+      },
+      "REASONING": {
+        "n": 3,
+        "mean": 0.6264,
+        "sd": 0.0102,
+        "ci95": 0.0255,
+        "min": 0.6185,
+        "max": 0.638
+      },
+      "COMPARATIVE": {
+        "n": 3,
+        "mean": 0.6734,
+        "sd": 0.0074,
+        "ci95": 0.0184,
+        "min": 0.6649,
+        "max": 0.6782
+      },
+      "SPATIAL": {
+        "n": 3,
+        "mean": 0.564,
+        "sd": 0.009,
+        "ci95": 0.0225,
+        "min": 0.5574,
+        "max": 0.5743
+      }
+    }
+  },
+  "ablation_delta": {}
+}

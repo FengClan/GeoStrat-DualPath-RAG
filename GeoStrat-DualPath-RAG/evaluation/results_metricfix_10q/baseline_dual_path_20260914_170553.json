@@ -1,0 +1,80 @@
+{
+  "overall_scores": {
+    "qa_correctness": 0.0,
+    "qa_faithfulness": 0.0,
+    "qa_completeness": 0.0,
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "retrieval_recall@5": null,
+    "retrieval_mrr": null,
+    "extraction_entity_f1": 0.0,
+    "extraction_triple_f1": 0.0,
+    "contrast_agreement": 0.0,
+    "avg_latency_ms": 0.0,
+    "coverage": {
+      "total_questions": 10,
+      "extraction_with_gt": 0,
+      "contrast_with_gt": 0,
+      "evidence_recall_evaluated": 0,
+      "judge_failed": 0
+    },
+    "overall_score": 0.0,
+    "evidence_recall@5": null
+  },
+  "per_question_results": [
+    {
+      "id": "FJ-I-e03e54ab",
+      "error": "'dict' object has no attribute 'page_content'"
+    },
+    {
+      "id": "FJ-I-28d2d8fb",
+      "error": "'dict' object has no attribute 'page_content'"
+    },
+    {
+      "id": "FJ-I-330dcb9b",
+      "error": "'dict' object has no attribute 'page_content'"
+    },
+    {
+      "id": "FJ-I-6fcb96f4",
+      "error": "'dict' object has no attribute 'page_content'"
+    },
+    {
+      "id": "FJ-I-100e53fe",
+      "error": "'dict' object has no attribute 'page_content'"
+    },
+    {
+      "id": "FJ-I-fe5a0f0e",
+      "error": "'dict' object has no attribute 'page_content'"
+    },
+    {
+      "id": "FJ-I-624be7b4",
+      "error": "'dict' object has no attribute 'page_content'"
+    },
+    {
+      "id": "FJ-I-df677543",
+      "error": "'dict' object has no attribute 'page_content'"
+    },
+    {
+      "id": "FJ-I-d4461b24",
+      "error": "'dict' object has no attribute 'page_content'"
+    },
+    {
+      "id": "FJ-I-8e090ca6",
+      "error": "'dict' object has no attribute 'page_content'"
+    }
+  ],
+  "by_difficulty": {},
+  "by_query_type": {},
+  "timing": {
+    "total_seconds": 171.91,
+    "total_questions": 10,
+    "workers": 6,
+    "avg_per_question_ms": 17191.0,
+    "sum_model_seconds": 0.0,
+    "speedup_vs_serial": 0.0
+  },
+  "evaluated_at": "2026-09-14 17:05:53",
+  "evaluator_model": "deepseek-flash",
+  "generator_model": "qwen3.5-plus",
+  "independent_judge": true
+}

@@ -66,26 +66,61 @@ curl -X POST http://localhost:5000/api/geoqa \
 | Build knowledge graph | `scripts/convert_excel_to_kg.py` | Stratigraphic units Excel | `kb_storage/graphs/experiment_kb.graphml` |
 | Build vector index | `scripts/load_docx_to_vectordb.py` | Geological literature .docx | `chroma_db/` |
 
-Pre-built data is provided: the knowledge graph under `kb_storage/`, the FAISS index under `chroma_db/`, and test sets under `test_sets/`.
+Pre-built data is provided, so these steps can be skipped:
+
+| Artifact | Path | Size |
+|----------|------|------|
+| Knowledge graph | `kb_storage/graphs/experiment_kb.graphml` | 1,623 nodes, 2,894 edges |
+| FAISS vector index | `chroma_db/faiss.index` + `chroma_db/faiss_meta.pkl` | — |
+| Evaluation datasets | `test_sets/` | see below |
+
+### Datasets
+
+| File | Items | Use |
+|------|-------|-----|
+| `test_set_honest.json` | 1,307 | Full stratified dataset |
+| `test_set_honest_dev.json` | 150 | Development split used for tuning |
+| `test_set_honest_test.json` | 1,157 | Held-out test split |
+| `test_set_expanded.json` | 300 | Earlier set used for the baseline comparison |
+| `test_30q.json` | 30 | Medium quick check |
+| `test_10q.json` | 10 | Quick check |
+| `smoke_test.json` | 4 | Smoke test |
+
+The dev/test split is 3:1 and preserves the query-type proportions of the full set.
 
 ### Run Evaluations
 
 ```bash
-# Four-baseline comparison (main experiment)
-python evaluation/run_eval.py --baselines --test-set test_sets/test_set_expanded.json
-
-# Ablation study
-python evaluation/ablation.py --test-set test_sets/test_set_expanded.json
-
-# Quick smoke test (~5 min, 10 questions)
+# Quick smoke test (~5 min)
 python evaluation/run_eval.py --baselines --test-set test_sets/test_10q.json
+
+# Main four-baseline comparison, 300-item stratified sample
+python evaluation/run_full_eval.py --total 300 --seed 42
+
+# Multi-round repeats with mean ± SD (defaults to the 150-item dev split)
+python evaluation/run_multirun.py --mode baseline --rounds 3
+
+# Component ablation
+python evaluation/run_multirun.py --mode ablation --rounds 3
+
+# Claim-level hallucination verification
+python evaluation/run_hallucination_eval.py --total 100 --round 1
+
+# Retrieval-depth sensitivity
+python evaluation/run_sensitivity.py --hops 1,2,3
 ```
+
+Every runner checkpoints after each question, so an interrupted run resumes by
+re-running the same command.
 
 ### Analyze Results
 
 ```bash
-python scripts/analyze_results.py evaluation/results/baseline_comparison_*.json
+python scripts/analyze_results.py evaluation/results/multirun_baseline_20260917.json
 ```
+
+Evaluation outputs are kept under `evaluation/results*/`, including per-question
+checkpoints and the aggregated summaries reported in the paper.
 
 ## Core API
 
@@ -126,10 +161,16 @@ python scripts/analyze_results.py evaluation/results/baseline_comparison_*.json
 │   ├── evaluator.py          # Multi-dimension evaluation engine (LLM-as-Judge)
 │   ├── baselines.py          # Four-baseline comparison runner
 │   ├── ablation.py           # Ablation study runner
-│   ├── run_eval.py           # CLI entry point
+│   ├── run_eval.py           # Simple CLI entry point
+│   ├── run_full_eval.py      # Stratified 300-item main experiment
+│   ├── run_multirun.py       # Multi-round repeats with mean ± SD
+│   ├── run_hallucination_eval.py # Claim-level hallucination verification
+│   ├── run_sensitivity.py    # Retrieval-depth sensitivity analysis
+│   ├── run_pilot_independent.py  # Small pilot runs
+│   ├── rerun_dualpath.py     # Re-run the proposed method only
 │   ├── test_set_builder.py   # Test set builder
 │   ├── test_set_schema.json  # Test set JSON schema
-│   └── results/              # Historical evaluation outputs
+│   └── results*/             # Evaluation outputs and checkpoints
 │
 ├── scripts/                  # Data construction & analysis
 │   ├── convert_excel_to_kg.py    # Excel → knowledge graph
@@ -140,15 +181,17 @@ python scripts/analyze_results.py evaluation/results/baseline_comparison_*.json
 │
 ├── kb_storage/               # Knowledge graph data
 │   ├── graphs/
-│   │   ├── experiment_kb.graphml      # Core KG (448 nodes, 681 edges)
-│   │   └── experiment_expanded.graphml # Expanded KG (1187 nodes)
-│   └── experiment_triples.json
+│   │   ├── experiment_kb.graphml        # Core KG (1,623 nodes, 2,894 edges)
+│   │   └── experiment_expanded.graphml  # Earlier expanded KG (1,187 nodes, 1,666 edges)
+│   ├── experiment_triples*.json   # Triple extractions
+│   └── d3_human_review*.csv       # Expert review sample
 │
-├── test_sets/                # Evaluation test sets
-│   ├── test_set_expanded.json # 300-question full set
-│   ├── test_30q.json          # 30-question medium set
-│   ├── test_10q.json          # 10-question quick test
-│   └── smoke_test.json        # Smoke test
+├── test_sets/                # Evaluation datasets
+│   ├── test_set_honest.json       # 1,307-item stratified dataset
+│   ├── test_set_honest_dev.json   # 150-item development split
+│   ├── test_set_honest_test.json  # 1,157-item test split
+│   ├── test_set_expanded.json     # 300-item set for baseline comparison
+│   └── test_30q.json / test_10q.json / smoke_test.json
 │
 └── chroma_db/                # FAISS vector index
     ├── faiss.index            # Vector embeddings

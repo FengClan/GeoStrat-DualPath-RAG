@@ -1,0 +1,105 @@
+{
+  "config": {
+    "total": 30,
+    "seed": 42,
+    "test_set": "test_sets/test_set_honest.json",
+    "baseline": "dual_path",
+    "model": "qwen3.5-plus",
+    "judge_model": "deepseek-flash",
+    "workers": 6,
+    "out": null
+  },
+  "sample_composition": {
+    "FACTUAL": 19,
+    "REASONING": 7,
+    "COMPARATIVE": 3,
+    "SPATIAL": 1
+  },
+  "baselines": {
+    "dual_path": {
+      "thinking": {
+        "overall": {
+          "qa_correctness": 0.66,
+          "qa_faithfulness": 0.74,
+          "qa_completeness": 0.5767,
+          "citation_precision": 1.0,
+          "citation_recall": 1.0,
+          "retrieval_recall@5": 1.0,
+          "retrieval_mrr": 1.0,
+          "extraction_entity_f1": 0.0,
+          "extraction_triple_f1": 0.0,
+          "contrast_agreement": 0.0,
+          "avg_latency_ms": 85243.012,
+          "coverage": {
+            "total_questions": 30,
+            "extraction_with_gt": 0,
+            "contrast_with_gt": 0
+          },
+          "overall_score": 0.7333
+        },
+        "usage": {
+          "calls": 30,
+          "prompt_tokens": 42053,
+          "completion_tokens": 117666,
+          "total_tokens": 159719
+        },
+        "wall_seconds": 507.3
+      },
+      "nothinking": {
+        "overall": {
+          "qa_correctness": 0.59,
+          "qa_faithfulness": 0.71,
+          "qa_completeness": 0.5367,
+          "citation_precision": 1.0,
+          "citation_recall": 1.0,
+          "retrieval_recall@5": 1.0,
+          "retrieval_mrr": 1.0,
+          "extraction_entity_f1": 0.0,
+          "extraction_triple_f1": 0.0,
+          "contrast_agreement": 0.0,
+          "avg_latency_ms": 13436.0525,
+          "coverage": {
+            "total_questions": 30,
+            "extraction_with_gt": 0,
+            "contrast_with_gt": 0
+          },
+          "overall_score": 0.6902
+        },
+        "usage": {
+          "calls": 30,
+          "prompt_tokens": 42113,
+          "completion_tokens": 15333,
+          "total_tokens": 57446
+        },
+        "wall_seconds": 132.1
+      },
+      "delta_overall": -0.0431,
+      "delta_by_query_type": {
+        "FACTUAL": {
+          "delta": 0.0079,
+          "n": 19,
+          "thinking": 0.7526,
+          "nothinking": 0.7605
+        },
+        "REASONING": {
+          "delta": -0.1929,
+          "n": 7,
+          "thinking": 0.5286,
+          "nothinking": 0.3357
+        },
+        "COMPARATIVE": {
+          "delta": 0.0167,
+          "n": 3,
+          "thinking": 0.75,
+          "nothinking": 0.7667
+        },
+        "SPATIAL": {
+          "delta": -0.35,
+          "n": 1,
+          "thinking": 0.75,
+          "nothinking": 0.4
+        }
+      }
+    }
+  }
+}

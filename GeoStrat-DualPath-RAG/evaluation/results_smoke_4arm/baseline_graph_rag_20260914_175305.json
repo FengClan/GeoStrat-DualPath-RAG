@@ -1,0 +1,511 @@
+{
+  "overall_scores": {
+    "qa_correctness": 0.275,
+    "qa_faithfulness": 0.6125,
+    "qa_completeness": 0.1875,
+    "citation_precision": 1.0,
+    "citation_recall": 1.0,
+    "retrieval_recall@5": null,
+    "retrieval_mrr": null,
+    "extraction_entity_f1": 0.0,
+    "extraction_triple_f1": 0.0,
+    "contrast_agreement": 0.0,
+    "avg_latency_ms": 71799.3389,
+    "coverage": {
+      "total_questions": 8,
+      "extraction_with_gt": 0,
+      "contrast_with_gt": 0,
+      "evidence_recall_evaluated": 0,
+      "judge_failed": 0
+    },
+    "overall_score": 0.3654,
+    "evidence_recall@5": null
+  },
+  "per_question_results": [
+    {
+      "id": "FJ-I-e03e54ab",
+      "question": "翠屏山组的厚度有什么特点？",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "answer": "基于所提供的知识图谱结构化事实，**无法回答关于翠屏山组厚度特点的问题**。\n\n原因如下：\n在提供的【翠屏山组】结构化事实中，仅包含以下属性信息：\n- **地质年代**（如：晚二叠世、吴家坪期等）\n- **岩石组成**（如：石英砂岩、粉砂质泥岩等）\n- **同义名称**（如：广东龙潭组、江西乐平组）\n- **含化石**（如：植物化石、腕足等）\n- **分布区域**（如：闽西南地区、龙岩等）\n- **实测剖面**（如：龙岩市毛桃坑剖面）\n\n图谱中**未收录任何关于地层厚度（Thickness）的数据或描述**。作为专业地质学家，严格依据现有图谱事实，无法给出该组厚度的相关特征。",
+      "expected_answer": "翠屏山组（P3cp） 厚度494.9 m",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.0,
+        "completeness": 0.0,
+        "faithfulness": 0.3,
+        "coherence": 1.0,
+        "domain_accuracy": 0.8,
+        "llm_judge_score": 0.2,
+        "llm_judge_reason": "系统未提供标准答案中的厚度494.9 m，反而声称无法回答，核心信息完全缺失；虽表述清晰、术语基本准确，但未满足问题要求。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@5": null,
+        "mrr": null,
+        "hit@5": null,
+        "applicable": false,
+        "details": "N/A — 该基线无文本片段检索通道，召回类指标不适用（R2#6）"
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该基线无文本片段通道（R2#6）"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 29764.37783241272
+    },
+    {
+      "id": "FJ-I-28d2d8fb",
+      "question": "林地组由谁、在何处创名？",
+      "query_type": "FACTUAL",
+      "difficulty": "medium",
+      "answer": "基于提供的知识图谱结构化事实，**无法直接回答**林地组由谁、在何处创名，因为图谱中未收录关于“创名者”及“创名地点”的字段信息。\n\n根据图谱中现有的地层属性数据，仅能确认以下与地点相关的结构化事实：\n1.  **实测剖面**：林地村剖面。\n2.  **分布区域**：上杭、长汀、龙岩、光泽杨家、闽西南、德化贵德安、安溪感德、长汀陂角。\n3.  **所属单位**：南靖群、安砂群。\n\n综上所述，严格基于所提供的知识图谱事实，缺乏关于林地组创名人员及具体创名地点的权威记录。",
+      "expected_answer": "林地组由福建省区域地质测量队（1965）在漳平市双洋乡林地村创名。",
+      "qa_metrics": {
+        "key_point_coverage": 0.0,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.0,
+        "completeness": 0.0,
+        "faithfulness": 0.9,
+        "coherence": 0.9,
+        "domain_accuracy": 0.8,
+        "llm_judge_score": 0.2,
+        "llm_judge_reason": "系统回答未提供标准答案中的创名者（福建省区域地质测量队）和创名地点（漳平市双洋乡林地村），仅说明知识图谱中无相关字段，因此正确性和完整性均为0；但回答本身无事实矛盾，表达清晰，术语使用基本准确。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@5": null,
+        "mrr": null,
+        "hit@5": null,
+        "applicable": false,
+        "details": "N/A — 该基线无文本片段检索通道，召回类指标不适用（R2#6）"
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该基线无文本片段通道（R2#6）"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 85460.47854423523
+    },
+    {
+      "id": "FJ-I-ed80e296",
+      "question": "一套以紫红色粉砂岩和灰黑钙质粉砂岩为主、夹泥灰岩条带、偶有石膏夹层的地层，是哪个组？",
+      "query_type": "REASONING",
+      "difficulty": "medium",
+      "answer": "基于提供的知识图谱结构化事实，该地层为【均口组】。\n\n**判定依据如下：**\n\n1.  **关键矿物组合匹配**：\n    问题描述中提到的地层具有三个关键岩石/矿物组分：**石膏**（偶有石膏夹层）、**泥灰岩**（夹泥灰岩条带）和**钙质粉砂岩**（灰黑钙质粉砂岩为主）。\n    查阅知识图谱事实：\n    *   【均口组】的岩石组成明确列为：**石膏，泥灰岩，钙质粉砂岩**。\n    *   这是图谱中唯一同时包含这三种组分的地层单元。\n\n2.  **排他性分析**：\n    *   图谱中包含**石膏**的地层仅有【均口组】和【沙县组】。\n    *   【沙县组】的岩石组成为“石膏，砂岩”，缺乏问题中必需的“泥灰岩”和“钙质粉砂岩”。\n    *   图谱中包含**钙质粉砂岩**的其他组（如【罗坑组】、【安仁组下段】、【兰田灰岩段】、【溪口组】、【小溪组下段】）均不包含**石膏**。\n    *   图谱中包含**紫红色粉砂岩**的【安仁组上段】，其岩石组成仅列为“紫红色粉砂岩”，缺乏石膏和泥灰岩组分。\n\n3.  **结论**：\n    尽管知识图谱中【均口组】的条目未显式标注“紫红色”这一颜色特征（图谱仅列出了岩石类型），但基于**石膏、泥灰岩、钙质粉砂岩**这一独特的岩石组合事实，【均口组】是图谱中唯一符合问题描述中核心 lithological（岩性）特征的地层单位。\n\n**综上所述，依据知识图谱事实，该地层为【均口组】。**",
+      "expected_answer": "该地层为均口组，为一套以紫红色粉砂岩和灰黑钙质粉砂岩为主、夹泥灰岩条带及偶有石膏夹层的沉积。",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 1.0,
+        "completeness": 0.9,
+        "faithfulness": 1.0,
+        "coherence": 1.0,
+        "domain_accuracy": 0.9,
+        "llm_judge_score": 0.95,
+        "llm_judge_reason": "系统回答正确识别为均口组，并给出基于岩性组合的合理推理；但未完整强调‘紫红色粉砂岩为主’及‘灰黑钙质粉砂岩’的产状，且将石膏与泥灰岩等混称为‘矿物组合’，术语略不严谨。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@5": null,
+        "mrr": null,
+        "hit@5": null,
+        "applicable": false,
+        "details": "N/A — 该基线无文本片段检索通道，召回类指标不适用（R2#6）"
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该基线无文本片段通道（R2#6）"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 108405.14254570007
+    },
+    {
+      "id": "FJ-I-fe5a0f0e",
+      "question": "佛昙组的空间展布有什么特征？",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "answer": "基于提供的知识图谱结构化事实，佛昙组的空间展布特征主要体现在其分布区域上，具体事实如下：\n\n1.  **宏观分布**：分布于**福建**地区。\n2.  **具体地点**：涉及**沿海**、**漳浦**、**龙海**、**明溪大洋窠**、**龙岩白沙**等地。\n3.  **地层小区归属**：涵盖**沿海地层小区**及**内陆地层小区**。\n\n综上所述，佛昙组在空间上呈现于福建境内的沿海与内陆多个地层小区及具体地点（如漳浦、龙海、明溪、龙岩等）均有展布。",
+      "expected_answer": "佛昙组出露于福安—南靖断裂带东侧以西地区，呈圆株状、椭圆状北东向零散分布。",
+      "qa_metrics": {
+        "key_point_coverage": 0.0,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.4,
+        "completeness": 0.1,
+        "faithfulness": 0.8,
+        "coherence": 0.9,
+        "domain_accuracy": 0.5,
+        "llm_judge_score": 0.3,
+        "llm_judge_reason": "系统回答仅笼统列出分布地点和地层小区，未提及标准答案中福安—南靖断裂带东侧以西、圆株状/椭圆状北东向零散分布等关键空间展布特征，信息严重不完整。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@5": null,
+        "mrr": null,
+        "hit@5": null,
+        "applicable": false,
+        "details": "N/A — 该基线无文本片段检索通道，召回类指标不适用（R2#6）"
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该基线无文本片段通道（R2#6）"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 44841.09592437744
+    },
+    {
+      "id": "FJ-I-624be7b4",
+      "question": "福建上侏罗统—上白垩统划分哪两个地层小区？",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "answer": "基于提供的知识图谱结构化事实，回答如下：\n\n根据图谱中【漳平组】的分布区域信息，福建地区明确涉及的两个地层小区为**闽北地层小区**和**闽西南地层小区**。\n\n需特别说明的是，依据图谱事实，【漳平组】的地质年代标注为“中侏罗世”，图谱中未直接提供关于“上侏罗统—上白垩统”地层小区划分的明确结构化记录。基于图谱现有的福建地层小区数据，仅包含上述两个小区。",
+      "expected_answer": "福建上侏罗统—上白垩统划分为武夷地层小区和沿海地层小区。",
+      "qa_metrics": {
+        "key_point_coverage": 0.0,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.0,
+        "completeness": 0.0,
+        "faithfulness": 0.0,
+        "coherence": 0.9,
+        "domain_accuracy": 0.1,
+        "llm_judge_score": 0.1,
+        "llm_judge_reason": "系统回答未给出标准答案中的武夷地层小区和沿海地层小区，而是基于不相关的漳平组信息错误地提出闽北和闽西南地层小区，核心事实完全错误。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@5": null,
+        "mrr": null,
+        "hit@5": null,
+        "applicable": false,
+        "details": "N/A — 该基线无文本片段检索通道，召回类指标不适用（R2#6）"
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该基线无文本片段通道（R2#6）"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 121003.2114982605
+    },
+    {
+      "id": "FJ-I-df677543",
+      "question": "福建二叠纪含煤岩系（童子岩组）分布于什么范围？",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "answer": "根据提供的知识图谱结构化事实，福建二叠纪含煤岩系（童子岩组）的分布区域如下：\n\n**分布区域：**\n闽西南地层小区、武平、连城、将乐、武平岩前、连城上江坊、宁化泉上、将乐老虎山。\n\n**依据事实：**\n*   **地层名称：** 童子岩组\n*   **地质年代：** 中二叠世中晚期、晚二叠世、早二叠世（属二叠纪）\n*   **岩石组成：** 石英砂岩、含煤碎屑岩、细砂岩（属含煤岩系）\n*   **分布区域记录：** 闽西南地层小区，武平，连城，将乐，武平岩前，连城上江坊，宁化泉上，将乐老虎山",
+      "expected_answer": "童子岩组分布于将乐—顺昌—南平一线以南，尤溪坂面—永春天湖山—南靖船场一线以西的闽西南地层小区，呈北东向带状出露。",
+      "qa_metrics": {
+        "key_point_coverage": 0.5,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.4,
+        "completeness": 0.3,
+        "faithfulness": 0.5,
+        "coherence": 0.8,
+        "domain_accuracy": 0.4,
+        "llm_judge_score": 0.45,
+        "llm_judge_reason": "系统回答仅指出闽西南地层小区并列举部分地点，未给出标准答案中的关键边界和北东向带状出露特征，且二叠纪时代描述跨度过大不准确，正确性和完整性不足。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@5": null,
+        "mrr": null,
+        "hit@5": null,
+        "applicable": false,
+        "details": "N/A — 该基线无文本片段检索通道，召回类指标不适用（R2#6）"
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该基线无文本片段通道（R2#6）"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 27743.48735809326
+    },
+    {
+      "id": "FJ-I-d4461b24",
+      "question": "福建晚三叠世—中侏罗世地层划分哪两个地层小区？",
+      "query_type": "SPATIAL",
+      "difficulty": "medium",
+      "answer": "基于提供的知识图谱结构化事实，**无法直接得出**福建晚三叠世—中侏罗世地层具体划分为哪两个地层小区的总结性结论，因为图谱中未包含关于该时期地层区划方案的明确陈述。\n\n图谱中仅有个别地层单元提及了具体的地层小区信息，相关事实如下：\n\n1.  **【漳平组】**（地质年代：中侏罗世）：\n    *   分布区域明确列出了：**福建、闽西南、闽北、漳平、闽北地层小区**。\n    *   这是图谱中唯一明确出现“地层小区”字样的条目，其中明确命名了\"**闽北地层小区**\"。\n    *   分布区域中同时包含了\"**闽西南**\"和\"**闽北**\"，但图谱事实未将“闽西南”明确标注为“地层小区”。\n\n2.  **其他相关年代地层**（如【焦坑组】、【梨山组】、【文宾山组】等）：\n    *   分布区域仅标注为“福建”，未提及具体的地层小区划分。\n\n**结论**：\n严格依据提供的知识图谱事实，仅能确认**闽北地层小区**的存在（见于【漳平组】），图谱中**没有记录**福建晚三叠世—中侏罗世地层划分为哪“两个”地层小区的完整权威数据。如需准确回答该划分方案，需补充图谱中缺失的区域地层区划总结性事实。",
+      "expected_answer": "福建晚三叠世—中侏罗世地层划分为闽西南地层小区和闽北地层小区，二者以政和-大埔断裂带为界。",
+      "qa_metrics": {
+        "key_point_coverage": 0.3333,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.0,
+        "completeness": 0.0,
+        "faithfulness": 1.0,
+        "coherence": 1.0,
+        "domain_accuracy": 0.5,
+        "llm_judge_score": 0.3,
+        "llm_judge_reason": "系统回答未给出标准答案中的闽西南地层小区和闽北地层小区及政和-大埔断裂带界线，而是以知识图谱缺失为由拒绝回答，正确性和完整性严重不足；但表达清晰，无幻觉。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@5": null,
+        "mrr": null,
+        "hit@5": null,
+        "applicable": false,
+        "details": "N/A — 该基线无文本片段检索通道，召回类指标不适用（R2#6）"
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该基线无文本片段通道（R2#6）"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 117756.756067276
+    },
+    {
+      "id": "FJ-I-8e090ca6",
+      "question": "大坑村组的空间展布有什么特征？",
+      "query_type": "SPATIAL",
+      "difficulty": "hard",
+      "answer": "基于提供的知识图谱结构化事实，大坑村组（同义名称：大坑组）的空间展布特征如下：\n\n该组主要分布于**闽西南**地区。具体的分布区域涵盖**南靖、华安、漳平、永定**等地。在更具体的局部地区，该组分布于**漳平大坑、华安马寮地区**以及**大坑村地区**。",
+      "expected_answer": "大坑村组仅分布在闽西南小区中南部的漳平大坑、钱坂、马寮及长泰玉山等小盆地内，呈狭小条带状，为内陆盆地含煤碎屑岩建造",
+      "qa_metrics": {
+        "key_point_coverage": 0.0,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "correctness": 0.4,
+        "completeness": 0.2,
+        "faithfulness": 0.4,
+        "coherence": 0.9,
+        "domain_accuracy": 0.4,
+        "llm_judge_score": 0.4,
+        "llm_judge_reason": "回答仅部分提及闽西南、漳平大坑和马寮，遗漏了钱坂、长泰玉山、小盆地、狭小条带状及含煤碎屑岩建造等关键特征，并加入了标准答案未支持的南靖、永定等分布区，存在不准确和过度泛化。",
+        "judge_failed": false
+      },
+      "retrieval_metrics": {
+        "recall@5": null,
+        "mrr": null,
+        "hit@5": null,
+        "applicable": false,
+        "details": "N/A — 该基线无文本片段检索通道，召回类指标不适用（R2#6）"
+      },
+      "evidence_metrics": {
+        "evidence_recall@5": null,
+        "applicable": false,
+        "n_gold": 0,
+        "details": "N/A — 该基线无文本片段通道（R2#6）"
+      },
+      "extraction_metrics": {
+        "entity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "triple": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "pred_count": 0,
+        "gt_count": 0,
+        "entity_pred_count": 0,
+        "entity_gt_count": 0,
+        "details": "no ground truth"
+      },
+      "contrast_metrics": {
+        "dimension_agreement": 0.0,
+        "details": "no ground truth"
+      },
+      "latency_ms": 39420.16124725342
+    }
+  ],
+  "by_difficulty": {
+    "medium": {
+      "avg_score": 0.45,
+      "count": 7
+    },
+    "hard": {
+      "avg_score": 0.4,
+      "count": 1
+    }
+  },
+  "by_query_type": {
+    "FACTUAL": {
+      "avg_score": 0.3,
+      "count": 2
+    },
+    "REASONING": {
+      "avg_score": 1.0,
+      "count": 1
+    },
+    "SPATIAL": {
+      "avg_score": 0.39,
+      "count": 5
+    }
+  },
+  "timing": {
+    "total_seconds": 127.19,
+    "total_questions": 8,
+    "workers": 8,
+    "avg_per_question_ms": 15898.6,
+    "sum_model_seconds": 574.39,
+    "speedup_vs_serial": 4.52
+  },
+  "evaluated_at": "2026-09-14 17:53:05",
+  "evaluator_model": "deepseek-flash",
+  "generator_model": "qwen3.5-plus",
+  "independent_judge": true,
+  "interrupted": false
+}

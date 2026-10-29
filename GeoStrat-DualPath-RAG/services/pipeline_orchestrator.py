@@ -293,7 +293,7 @@ def run_pipeline():
 
     data = request.get_json(silent=True) or {}
     kb_id = data.get("kb_id", "default")
-    model = data.get("model", "QwQ-32B")
+    model = data.get("model", "qwen3.5-plus")
     documents = data.get("documents", None)
 
     try:

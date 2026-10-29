@@ -138,6 +138,16 @@ def fuse_knowledge_graphs(kb_id, alignment_confirmed=None):
 # ============================================================
 
 
+def _read_graphml(path):
+    """读取 graphml，容忍 UTF-8 BOM 或前导杂字符（如意外多出的 ·），避免静默读成空图。"""
+    with open(path, 'rb') as f:
+        raw = f.read()
+    idx = raw.find(b'<?xml')
+    if idx > 0:
+        raw = raw[idx:]
+    return nx.parse_graphml(raw.decode('utf-8'))
+
+
 def load_graph_for_kb(kb_id):
     """从本地读取当前知识库的图谱"""
     if kb_id == 'all':
@@ -148,15 +158,17 @@ def load_graph_for_kb(kb_id):
             if filename.endswith(".graphml"):
                 path = os.path.join(GRAPH_STORAGE_DIR, filename)
                 try:
-                    sub_g = nx.read_graphml(path)
+                    sub_g = _read_graphml(path)
                     merged_G = nx.compose(merged_G, sub_g)
                 except Exception as e:
                     logger.warning("读取子图 %s 失败: %s", sanitize(str(filename)), sanitize(str(e)))
+        if merged_G.number_of_nodes() == 0:
+            logger.warning("图谱为空(0节点)：请检查 %s 下的 .graphml 是否可读！", GRAPH_STORAGE_DIR)
         return merged_G
     else:
         graph_path = os.path.join(GRAPH_STORAGE_DIR, f"{kb_id}.graphml")
         if os.path.exists(graph_path):
-            return nx.read_graphml(graph_path)
+            return _read_graphml(graph_path)
         return nx.DiGraph()
 
 
@@ -206,26 +218,62 @@ def retrieve_graph_context(question, kb_id, max_hops=2, max_edges=50):
     if not matched_nodes:
         return [], []
 
+    # BFS 分层：记录每个节点到 matched 集合的跳数（matched=0，直接邻居=1，…）
+    hop = {n: 0 for n in matched_nodes}
     subgraph_nodes = set(matched_nodes)
     current_layer = set(matched_nodes)
 
-    for _ in range(max_hops):
+    for h in range(1, max_hops + 1):
         next_layer = set()
         for node in current_layer:
             if G.is_directed():
                 neighbors = set(G.successors(node)) | set(G.predecessors(node))
             else:
                 neighbors = set(G.neighbors(node))
-            next_layer.update(neighbors)
+            for nb in neighbors:
+                if nb not in hop:
+                    hop[nb] = h
+                    next_layer.add(nb)
         subgraph_nodes.update(next_layer)
         current_layer = next_layer
 
     subgraph = G.subgraph(subgraph_nodes)
+
+    # 按边两端到 matched 的最近跳数排序，把问题实体的直接边前置
+    def _edge_rank(u, v):
+        return min(hop.get(u, max_hops + 1), hop.get(v, max_hops + 1))
+
+    ordered_edges = sorted(subgraph.edges(data=True),
+                           key=lambda e: _edge_rank(e[0], e[1]))
+
+    # 多实体均衡：rank=0 的边按所属 matched 实体轮询，避免单个实体挤占全部配额
+    if len(matched_nodes) > 1:
+        rank0, rank_rest = [], []
+        for e in ordered_edges:
+            (rank0 if _edge_rank(e[0], e[1]) == 0 else rank_rest).append(e)
+        by_entity = {}
+        for e in rank0:
+            u, v, _ = e
+            for n in (u, v):
+                if n in matched_nodes:
+                    by_entity.setdefault(n, []).append(e)
+                    break
+        interleaved = []
+        if by_entity:
+            lists = list(by_entity.values())
+            for i in range(max(len(lst) for lst in lists)):
+                for lst in lists:
+                    if i < len(lst):
+                        interleaved.append(lst[i])
+        else:
+            interleaved = rank0
+        ordered_edges = interleaved + rank_rest
+
     context_texts = []
     citations = []
     edge_count = 0
 
-    for u, v, data in subgraph.edges(data=True):
+    for u, v, data in ordered_edges:
         if edge_count >= max_edges:
             break
         rel = data.get('relation', '关联')

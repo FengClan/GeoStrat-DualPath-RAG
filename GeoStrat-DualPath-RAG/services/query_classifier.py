@@ -122,7 +122,7 @@ def classify_endpoint():
     data = request.get_json(silent=True) or {}
     question = data.get("question", "")
     use_llm = data.get("use_llm", False)
-    model = data.get("model", "QwQ-32B")
+    model = data.get("model", "qwen3.5-plus")
 
     if not question:
         return jsonify({"error": "问题不能为空"}), 400

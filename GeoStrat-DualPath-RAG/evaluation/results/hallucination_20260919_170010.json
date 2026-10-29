@@ -1,0 +1,3328 @@
+{
+  "config": {
+    "checkpoints": "E:\\地质文本空间化平台\\python服务\\GeoStrat-DualPath-RAG\\evaluation\\results\\multirun_baseline_20260917",
+    "round": 1,
+    "arms": "dual_path,direct_llm",
+    "total": 100,
+    "seed": 42,
+    "judge_model": "deepseek-flash",
+    "workers": 8,
+    "max_tokens": 32768,
+    "no_evidence": false,
+    "out": null
+  },
+  "n_questions": 100,
+  "evidence_mode": "replayed_retrieval",
+  "arms": {
+    "dual_path": {
+      "label": "双路融合（提出方法）",
+      "has_retrieval": true,
+      "n_judged": 100,
+      "n_failed": 0,
+      "total_claims": 937,
+      "by_kind": {
+        "n_supported": 854,
+        "n_unsupported": 49,
+        "n_contradicted": 10,
+        "n_fabricated": 24
+      },
+      "rate_per_answer": {
+        "n_unsupported": 0.49,
+        "n_contradicted": 0.1,
+        "n_fabricated": 0.24
+      },
+      "share_of_claims": {
+        "n_supported": 0.9114,
+        "n_unsupported": 0.0523,
+        "n_contradicted": 0.0107,
+        "n_fabricated": 0.0256
+      },
+      "by_query_type": {
+        "COMPARATIVE": {
+          "n_unsupported": 36,
+          "n_contradicted": 5,
+          "n_fabricated": 12
+        },
+        "SPATIAL": {
+          "n_unsupported": 5,
+          "n_contradicted": 1,
+          "n_fabricated": 2
+        },
+        "FACTUAL": {
+          "n_unsupported": 6,
+          "n_contradicted": 3,
+          "n_fabricated": 2
+        },
+        "REASONING": {
+          "n_unsupported": 2,
+          "n_contradicted": 1,
+          "n_fabricated": 8
+        }
+      },
+      "per_question": {
+        "FJ-I-143bb612": {
+          "n_supported": 9,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "陈述均可在标准答案或依据中找到支撑",
+          "judge_failed": false
+        },
+        "FJ-I-147787ee": {
+          "n_supported": 5,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "明确称未找到信息，均属有据",
+          "judge_failed": false
+        },
+        "FJ-I-081872a3": {
+          "n_supported": 3,
+          "n_unsupported": 0,
+          "n_contradicted": 1,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [
+              "梨山组的下伏地层为**焦坑组** [D]。"
+            ],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "主结论与标准答案冲突",
+          "judge_failed": false
+        },
+        "FJ-I-152ca602": {
+          "n_supported": 2,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "全部有据，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-056b03ad": {
+          "n_supported": 8,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "未编造，未找到信息不计为幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-0a18347d": {
+          "n_supported": 9,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均为依据可支持内容",
+          "judge_failed": false
+        },
+        "FJ-I-072bb50e": {
+          "n_supported": 10,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均可在依据中找到支撑，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-0534eb43": {
+          "n_supported": 11,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "全部陈述有据，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-213b97cb": {
+          "n_supported": 6,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "全部有据",
+          "judge_failed": false
+        },
+        "FJ-I-1da66c76": {
+          "n_supported": 7,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均为依据可支持内容",
+          "judge_failed": false
+        },
+        "FJ-I-0c1395a7": {
+          "n_supported": 10,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均可在依据或标准答案中找到支撑",
+          "judge_failed": false
+        },
+        "FJ-I-24ca29b4": {
+          "n_supported": 2,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "明确说未找到，不算幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-1a4d414a": {
+          "n_supported": 5,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "有据，无幻觉；未细分至段",
+          "judge_failed": false
+        },
+        "FJ-I-17aef206": {
+          "n_supported": 5,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均可在依据中找到，无幻觉。",
+          "judge_failed": false
+        },
+        "FJ-I-32699c9a": {
+          "n_supported": 12,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "全部有据，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-2b54f5de": {
+          "n_supported": 12,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均属未找到相关信息或有依据支持",
+          "judge_failed": false
+        },
+        "FJ-I-27e74670": {
+          "n_supported": 9,
+          "n_unsupported": 0,
+          "n_contradicted": 1,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [
+              "综上所述，老虎洞组在闽西南地区具有广泛的地理分布 [G]"
+            ],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "“广泛”与标准“零星”矛盾",
+          "judge_failed": false
+        },
+        "FJ-I-1c5ec17b": {
+          "n_supported": 10,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 2,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "藩坑组：含具体的植物化石属种，包括 Nilssonia sp. (尼勒松尼亚)、Podozamites sp. (楔羊齿) [G]。"
+            ],
+            "unsupported": []
+          },
+          "reason": "多数有据，化石属种与凝灰岩系编造",
+          "judge_failed": false
+        },
+        "FJ-I-3443c2fc": {
+          "n_supported": 12,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均有依据支持，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-236004d1": {
+          "n_supported": 7,
+          "n_unsupported": 5,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "天宝组：颗粒粗大，分选性可能较差，通常指示较高能量的沉积环境（如强水流搬运）[G]。"
+            ]
+          },
+          "reason": "无编造矛盾，多为无据推断",
+          "judge_failed": false
+        },
+        "FJ-I-30f8449e": {
+          "n_supported": 12,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均依据检索材料，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-39d62f76": {
+          "n_supported": 12,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "全部陈述有据，无幻觉。",
+          "judge_failed": false
+        },
+        "FJ-I-234cba71": {
+          "n_supported": 9,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 3,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "正层型地点：邵武市东南约 10 km 邵武煤矿晒口矿区"
+            ],
+            "unsupported": []
+          },
+          "reason": "核心年代正确，少数沿革层型误植",
+          "judge_failed": false
+        },
+        "FJ-I-00f91376": {
+          "n_supported": 9,
+          "n_unsupported": 3,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "黄潭组岩性更偏向稳定沉积或浅变质环境（石英岩互层），二者反映的构造背景可能存在差异。"
+            ]
+          },
+          "reason": "多数有据，少数泛化无据。",
+          "judge_failed": false
+        },
+        "FJ-I-437f8ea3": {
+          "n_supported": 6,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "明确称未找到，均计有据",
+          "judge_failed": false
+        },
+        "FJ-I-445c2243": {
+          "n_supported": 4,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "全部可在文献1中找到",
+          "judge_failed": false
+        },
+        "FJ-I-3507e20c": {
+          "n_supported": 6,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "文宾山组的建组剖面位置对应于福建省漳平市新桥镇文宾山及大坑煤矿一带。"
+            ]
+          },
+          "reason": "结论含无据的建组剖面位置扩展",
+          "judge_failed": false
+        },
+        "FJ-I-46b68c42": {
+          "n_supported": 4,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均能在标准答案或依据中找到支撑",
+          "judge_failed": false
+        },
+        "FJ-I-43bff8f8": {
+          "n_supported": 12,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "全部陈述有据，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-3542bd3c": {
+          "n_supported": 10,
+          "n_unsupported": 2,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "但其现代分布受限于上述构造背景。"
+            ]
+          },
+          "reason": "无矛盾编造，存在少量无支撑表述",
+          "judge_failed": false
+        },
+        "FJ-I-490fc72a": {
+          "n_supported": 10,
+          "n_unsupported": 2,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "楼前组的空间展布在宏观上可能与武夷地区的断块差异升降活动及北武夷隆起构造单元有关"
+            ]
+          },
+          "reason": "无编造矛盾，关键构造控制缺失",
+          "judge_failed": false
+        },
+        "FJ-I-530d1610": {
+          "n_supported": 6,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "明确称未找到相关信息，非幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-3c74cd97": {
+          "n_supported": 6,
+          "n_unsupported": 5,
+          "n_contradicted": 0,
+          "n_fabricated": 1,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "沙县组分布：福建多地（武夷山、泰宁、连城、上杭、永安、龙岩等盆地）"
+            ],
+            "unsupported": [
+              "沙县组紫红色调表明氧化环境，细碎屑特征暗示水动力条件较崇安组弱"
+            ]
+          },
+          "reason": "无矛盾；1条编造地名，5条无据推断",
+          "judge_failed": false
+        },
+        "FJ-I-4fce4fea": {
+          "n_supported": 7,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "未找到相关信息，均属有据",
+          "judge_failed": false
+        },
+        "FJ-I-48c1f8dd": {
+          "n_supported": 12,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "核心陈述均有依据支撑",
+          "judge_failed": false
+        },
+        "FJ-I-59ec7d77": {
+          "n_supported": 2,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "全部有据，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-49f7b597": {
+          "n_supported": 9,
+          "n_unsupported": 2,
+          "n_contradicted": 0,
+          "n_fabricated": 1,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "在地层序列上，天宝组通常位于同安组之下 [G]。"
+            ],
+            "unsupported": [
+              "同安组含有更多的粘土及泥质成分，显示沉积环境可能存在 finer-grained 的相变。"
+            ]
+          },
+          "reason": "年代正确；个别地层关系编造，推断无据。",
+          "judge_failed": false
+        },
+        "FJ-I-54248ebf": {
+          "n_supported": 5,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均为有据陈述，无幻觉。",
+          "judge_failed": false
+        },
+        "FJ-I-5c23c986": {
+          "n_supported": 8,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 1,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "孢粉及藻类：Classopollis sp.、Sphaerochara sp. [G]。"
+            ],
+            "unsupported": []
+          },
+          "reason": "仅Sphaerochara为编造，其余有据",
+          "judge_failed": false
+        },
+        "FJ-I-4d04158c": {
+          "n_supported": 11,
+          "n_unsupported": 0,
+          "n_contradicted": 1,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [
+              "文献未提及象牙群的分布信息，故无法确认其是否属于福建省，予以排除。"
+            ],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "排除象牙群与标准答案冲突，其余有据。",
+          "judge_failed": false
+        },
+        "FJ-I-56d12e77": {
+          "n_supported": 9,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "基于图谱权威属性及全省通用的地层划分原则，以上、下两段作为该组整体的段级划分依据 [D]。"
+            ]
+          },
+          "reason": "整体正确，仅一句泛泛原则无据",
+          "judge_failed": false
+        },
+        "FJ-I-4e02b317": {
+          "n_supported": 11,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "含有石膏和泥灰岩，指示了较为平静的水体环境，可能涉及蒸发岩沉积或湖泊相化学沉积"
+            ]
+          },
+          "reason": "仅一处环境推断无依据，余有据。",
+          "judge_failed": false
+        },
+        "FJ-I-57a046ae": {
+          "n_supported": 11,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "长乐组上部包含冲积—风积及湖积层，环境较东山组更为复杂"
+            ]
+          },
+          "reason": "除环境复杂度外均有依据",
+          "judge_failed": false
+        },
+        "FJ-I-7537caf0": {
+          "n_supported": 3,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "明确未找到相关信息，不计幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-49226d4d": {
+          "n_supported": 10,
+          "n_unsupported": 2,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "两者可能存在时代上的重叠或先后关系"
+            ]
+          },
+          "reason": "两处时代推测无据",
+          "judge_failed": false
+        },
+        "FJ-I-5ddaf902": {
+          "n_supported": 9,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 1,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "漳平属龙岩管辖"
+            ],
+            "unsupported": []
+          },
+          "reason": "1条编造，其余有据",
+          "judge_failed": false
+        },
+        "FJ-I-6ece54a7": {
+          "n_supported": 9,
+          "n_unsupported": 0,
+          "n_contradicted": 1,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [
+              "综上所述，根据现有文献，漳平组与梨山组之间不存在接触关系的差异记载，均定义为整合接触，且漳平组整合覆盖于梨山组之上。"
+            ],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "多数有据；结论称无差异与标准答案冲突。",
+          "judge_failed": false
+        },
+        "FJ-I-8909b94f": {
+          "n_supported": 11,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "[文献3] 内容与文献2一致，同样确认了两者之间为平行不整合接触。"
+            ]
+          },
+          "reason": "核心有据，文献3确认无支撑",
+          "judge_failed": false
+        },
+        "FJ-I-933767ab": {
+          "n_supported": 12,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "全部有据，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-86881f2e": {
+          "n_supported": 12,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均有依据，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-8a4056a4": {
+          "n_supported": 11,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "坂头组在区域上呈永安—崇安带状分布"
+            ]
+          },
+          "reason": "仅“带状”无据，余有据",
+          "judge_failed": false
+        },
+        "FJ-I-9853ebf1": {
+          "n_supported": 8,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "全部陈述有据，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-9702aa0c": {
+          "n_supported": 5,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "文献中还记录该组在大田、三明、长汀、清流、宁化、顺昌等地亦有出露（部分区域描述为出露零星或属特定带） [D]。"
+            ]
+          },
+          "reason": "一处地点归属无依据，余有据",
+          "judge_failed": false
+        },
+        "FJ-I-923038b3": {
+          "n_supported": 12,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "未发现幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-711de4e4": {
+          "n_supported": 10,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 2,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "林地组（图谱并列单元）含孢粉，石碧溪泥岩段含双壳类 [G]"
+            ],
+            "unsupported": []
+          },
+          "reason": "多数有据，两处编造地层细节",
+          "judge_failed": false
+        },
+        "FJ-I-9411eeea": {
+          "n_supported": 11,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "虽然问题中描述了“紫红色沉积-火山喷发岩系”，但根据原则，图谱缺失该属性时以文献为准，且地层的最终认定主要依据图谱中权威的分布区域事实 [G]。"
+            ]
+          },
+          "reason": "结论正确，仅一处原则表述无据",
+          "judge_failed": false
+        },
+        "FJ-I-86012936": {
+          "n_supported": 11,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "文献描述的上段含安山岩及流纹岩、球粒流纹岩的特征与寨下组火山岩性质相符，显示其火山活动强度可能较黄坑组更强或更偏酸性 [D]。"
+            ]
+          },
+          "reason": "仅一条推断无据",
+          "judge_failed": false
+        },
+        "FJ-I-936e55b4": {
+          "n_supported": 8,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "沿革事实均见于依据",
+          "judge_failed": false
+        },
+        "FJ-I-a9da1dca": {
+          "n_supported": 8,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "明确表示未找到相关信息，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-a89f9718": {
+          "n_supported": 2,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "全部有据",
+          "judge_failed": false
+        },
+        "FJ-I-a5404eb4": {
+          "n_supported": 6,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均有依据支撑，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-a58b6551": {
+          "n_supported": 12,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均有依据支撑",
+          "judge_failed": false
+        },
+        "FJ-I-b02485de": {
+          "n_supported": 3,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "内容均可由文献1支撑",
+          "judge_failed": false
+        },
+        "FJ-I-b4438c9a": {
+          "n_supported": 10,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均可在依据中找到，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-9df4023d": {
+          "n_supported": 11,
+          "n_unsupported": 0,
+          "n_contradicted": 1,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [
+              "主要分布地区：福建省、闽西南地区、武平、武平湘村、武平桃溪、新贡、永定 [G]。"
+            ],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "永定误作主要分布区",
+          "judge_failed": false
+        },
+        "FJ-I-a0913dd2": {
+          "n_supported": 11,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "参考文献主要描述了藩坑组在不同盆地（漳平、龙岩、长汀等）内部的岩性、岩相、厚度及化石特征"
+            ]
+          },
+          "reason": "未找到信息不算幻觉，一处归属无据",
+          "judge_failed": false
+        },
+        "FJ-I-adbbdade": {
+          "n_supported": 10,
+          "n_unsupported": 2,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "两者均含有粘土和砾石成分，但同安组砾石具“泥质”特征，而龙海组粘土具明显的颜色分层（白/黄），反映物质来源或氧化还原环境的差异 [G]。"
+            ]
+          },
+          "reason": "无矛盾编造，少量推测无据",
+          "judge_failed": false
+        },
+        "FJ-I-aac4579c": {
+          "n_supported": 11,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "目前主流观点倾向于震旦纪（早震旦世或南华纪）"
+            ]
+          },
+          "reason": "仅一处主流观点无据，其余有据",
+          "judge_failed": false
+        },
+        "FJ-I-c92503ea": {
+          "n_supported": 7,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均可在依据中找到支撑",
+          "judge_failed": false
+        },
+        "FJ-I-bf83ece6": {
+          "n_supported": 8,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 1,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "图谱中虽提及【坂头组】分布涉及“永安—崇安”，但并未提及“永安—晋江”断裂带 [G]。"
+            ],
+            "unsupported": []
+          },
+          "reason": "仅编造永安—崇安",
+          "judge_failed": false
+        },
+        "FJ-I-a0d0ad4f": {
+          "n_supported": 8,
+          "n_unsupported": 1,
+          "n_contradicted": 2,
+          "n_fabricated": 1,
+          "examples": {
+            "contradicted": [
+              "翠屏山组：厚度变化大。龙岩毛桃坑剖面总厚度 584.80 m [D]；连城上江坊剖面总厚 410.9 m [D]。"
+            ],
+            "fabricated": [
+              "长兴组分布包括标准命名地（浙江长兴）及福建沿海/过渡带（如大田、漳平）"
+            ],
+            "unsupported": [
+              "长兴组沉积环境暗示：富含海相化石，指示深海或浅海碳酸盐台地环境。"
+            ]
+          },
+          "reason": "厚度误植、福建沿海编造、深海无据",
+          "judge_failed": false
+        },
+        "FJ-I-bf704263": {
+          "n_supported": 10,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 1,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "下渡组所属单位：兜岭群"
+            ],
+            "unsupported": [
+              "下渡组的火山岩属性更为显著且具体（酸性火山喷发相）"
+            ]
+          },
+          "reason": "多数有据，兜岭群编造，岩性评价无据",
+          "judge_failed": false
+        },
+        "FJ-I-c7615c40": {
+          "n_supported": 11,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "未找到相关信息，非幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-ce0ef182": {
+          "n_supported": 1,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "回答与标准答案及依据一致",
+          "judge_failed": false
+        },
+        "FJ-I-b3780b38": {
+          "n_supported": 8,
+          "n_unsupported": 2,
+          "n_contradicted": 0,
+          "n_fabricated": 2,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "经畲组：分布于福鼎南溪、闽西南地层小区、龙岩高陂、长汀、龙岩、宁化、永安"
+            ],
+            "unsupported": [
+              "含有较多的碎屑岩、泥岩、粉砂岩，表明其沉积环境可能涉及陆源碎屑供给较多的区域"
+            ]
+          },
+          "reason": "多数有据，含编造与无支撑",
+          "judge_failed": false
+        },
+        "FJ-I-cc93ce94": {
+          "n_supported": 9,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 1,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "东岩组第一段：岩性明确编码为大理岩 [G]。"
+            ],
+            "unsupported": [
+              "知识图谱提供了东岩组当前的变质岩石组合权威列表，而参考文献 [文献 1] 侧重于原岩恢复及地球化学解释，两者在“变质岩 vs 原岩”的描述层面上互补，无事实冲突。"
+            ]
+          },
+          "reason": "一处编造，一处无支撑，无矛盾",
+          "judge_failed": false
+        },
+        "FJ-I-c4d97aca": {
+          "n_supported": 8,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 4,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "龙北溪组含有中酸性火山岩和砂泥质碎屑岩"
+            ],
+            "unsupported": []
+          },
+          "reason": "多数有据，编造龙北溪、罗峰溪、梨山组细节",
+          "judge_failed": false
+        },
+        "FJ-I-cd7c84f4": {
+          "n_supported": 3,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "回答与依据一致",
+          "judge_failed": false
+        },
+        "FJ-I-bff21663": {
+          "n_supported": 7,
+          "n_unsupported": 0,
+          "n_contradicted": 1,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [
+              "东坑口组主要分布于福建省的北武夷地层分区 [G]。"
+            ],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "北武夷与标准答案南武夷冲突",
+          "judge_failed": false
+        },
+        "FJ-I-dbd81025": {
+          "n_supported": 6,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "全部有据，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-d107d9db": {
+          "n_supported": 10,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "这些特征符合全新世沿海沉积地层的属性"
+            ]
+          },
+          "reason": "主要答案有据，仅一处泛化无支撑",
+          "judge_failed": false
+        },
+        "FJ-I-cd3a59df": {
+          "n_supported": 10,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 1,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "文笔山组与下伏地层整合"
+            ],
+            "unsupported": [
+              "反映了从浅海环境向海陆过渡环境的演化过程 [D]。"
+            ]
+          },
+          "reason": "多数有据；下伏整合编造，演化表述无支撑",
+          "judge_failed": false
+        },
+        "FJ-I-de200a38": {
+          "n_supported": 2,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "全部陈述有据，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-d79cf034": {
+          "n_supported": 12,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均可在依据中找到支撑",
+          "judge_failed": false
+        },
+        "FJ-I-dd97146b": {
+          "n_supported": 12,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均属未找到信息或依据内陈述，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-db062c75": {
+          "n_supported": 11,
+          "n_unsupported": 0,
+          "n_contradicted": 1,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [
+              "关于二者层位关系曾有争议，但李兼海等（1997）及福建省地质调查研究院（2001）认为东坑口组层位仍居魏坊组之下 [文献 3]。"
+            ],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "1条层位归属与依据矛盾，余有据。",
+          "judge_failed": false
+        },
+        "FJ-I-d8bfa323": {
+          "n_supported": 12,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均有依据或标准答案支持",
+          "judge_failed": false
+        },
+        "FJ-I-ddb0e4dd": {
+          "n_supported": 10,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "均可由依据或标准答案支撑",
+          "judge_failed": false
+        },
+        "FJ-I-ea79d15b": {
+          "n_supported": 8,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "全部有据，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-d33805c4": {
+          "n_supported": 10,
+          "n_unsupported": 2,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "其中蜓类（Palaeofusulina）是晚二叠世晚期的重要标准化石。"
+            ]
+          },
+          "reason": "核心有据，化石指示意义无据",
+          "judge_failed": false
+        },
+        "FJ-I-e1749e34": {
+          "n_supported": 9,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "全部有据，无幻觉",
+          "judge_failed": false
+        },
+        "FJ-I-ed8db5ca": {
+          "n_supported": 3,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "需注意，文献所述的矿区剖面属于局部实测剖面特征，而图谱所列区域代表该地层单元的整体分布范围 [G][D]。"
+            ]
+          },
+          "reason": "主要事实有据，补充说明无支撑",
+          "judge_failed": false
+        },
+        "FJ-I-efffd422": {
+          "n_supported": 11,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 1,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "知识图谱显示小溪组与“坂头组”互为同义名称 [G]。"
+            ],
+            "unsupported": []
+          },
+          "reason": "仅编造小溪组与坂头组同义关系",
+          "judge_failed": false
+        },
+        "FJ-I-e1e694bb": {
+          "n_supported": 11,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "在野外工作中，二者界线划分往往需结合生物化石组合及岩石风化色调进行详细研究 [D]。"
+            ]
+          },
+          "reason": "主要支持，一处边界方法无据",
+          "judge_failed": false
+        },
+        "FJ-I-ee05cd54": {
+          "n_supported": 11,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "属于碎屑岩与化学沉积岩（石膏、泥灰岩）的混合组合，符合赤石群“红层/湖泊相”的大背景"
+            ]
+          },
+          "reason": "主体有据，个别解释无支撑",
+          "judge_failed": false
+        },
+        "FJ-I-e16a387f": {
+          "n_supported": 12,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "全部有据",
+          "judge_failed": false
+        },
+        "FJ-I-f8c6720c": {
+          "n_supported": 11,
+          "n_unsupported": 0,
+          "n_contradicted": 1,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [
+              "用户提到的“同属早白垩世晚期”不完全准确。"
+            ],
+            "fabricated": [],
+            "unsupported": []
+          },
+          "reason": "仅1条年代判断与标准答案冲突，余有据。",
+          "judge_failed": false
+        },
+        "FJ-I-f19017dd": {
+          "n_supported": 11,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "二者属于不同的群级地层单位，代表了不同的地层分区系统。"
+            ]
+          },
+          "reason": "基本有据，仅一条分区系统无支撑",
+          "judge_failed": false
+        },
+        "FJ-I-f2064053": {
+          "n_supported": 10,
+          "n_unsupported": 2,
+          "n_contradicted": 0,
+          "n_fabricated": 0,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [],
+            "unsupported": [
+              "两者形成时代相近，可能属于同一构造旋回下的不同沉积单元。"
+            ]
+          },
+          "reason": "多数有据，少量泛化推断",
+          "judge_failed": false
+        },
+        "FJ-I-f4d3348d": {
+          "n_supported": 11,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 1,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "1987 年龚世福等置震旦纪"
+            ],
+            "unsupported": []
+          },
+          "reason": "一处1987东岩组年龄编造",
+          "judge_failed": false
+        }
+      }
+    },
+    "direct_llm": {
+      "label": "纯 LLM",
+      "has_retrieval": false,
+      "n_judged": 100,
+      "n_failed": 0,
+      "total_claims": 1192,
+      "by_kind": {
+        "n_supported": 71,
+        "n_unsupported": 96,
+        "n_contradicted": 341,
+        "n_fabricated": 684
+      },
+      "rate_per_answer": {
+        "n_unsupported": 0.96,
+        "n_contradicted": 3.41,
+        "n_fabricated": 6.84
+      },
+      "share_of_claims": {
+        "n_supported": 0.0596,
+        "n_unsupported": 0.0805,
+        "n_contradicted": 0.2861,
+        "n_fabricated": 0.5738
+      },
+      "by_query_type": {
+        "COMPARATIVE": {
+          "n_unsupported": 33,
+          "n_contradicted": 114,
+          "n_fabricated": 224
+        },
+        "SPATIAL": {
+          "n_unsupported": 11,
+          "n_contradicted": 38,
+          "n_fabricated": 78
+        },
+        "FACTUAL": {
+          "n_unsupported": 38,
+          "n_contradicted": 139,
+          "n_fabricated": 282
+        },
+        "REASONING": {
+          "n_unsupported": 14,
+          "n_contradicted": 50,
+          "n_fabricated": 100
+        }
+      },
+      "per_question": {
+        "FJ-I-056b03ad": {
+          "n_supported": 0,
+          "n_unsupported": 3,
+          "n_contradicted": 1,
+          "n_fabricated": 8,
+          "examples": {
+            "contradicted": [
+              "在未限定具体地理区域和地质图幅的前提下，无法对比两者的厚度差异。"
+            ],
+            "fabricated": [
+              "在A地区（如湘西北），黄连组厚度可能为 200-300 米，南岩组（若存在）可能为 150 米。"
+            ],
+            "unsupported": [
+              "地层单位的定义、命名及厚度特征具有极强的区域性和地方性。"
+            ]
+          },
+          "reason": "否认可对比，且编造多处具体厚度与产地",
+          "judge_failed": false
+        },
+        "FJ-I-072bb50e": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 12,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "具体行政区域包括台州（临海、天台、三门）及宁波（宁海）等地。"
+            ],
+            "unsupported": []
+          },
+          "reason": "无依据，具体地名层名年龄均属编造",
+          "judge_failed": false
+        },
+        "FJ-I-143bb612": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 1,
+          "n_fabricated": 11,
+          "examples": {
+            "contradicted": [
+              "东坑口组（Dongkengkou Formation）的建组剖面（层型剖面）位于中国江西省上饶市婺源县赋春镇东坑口村附近。"
+            ],
+            "fabricated": [
+              "该组名主要由江西省地质矿产局在进行1:20万区域地质调查（婺源幅等）及编制《江西省区域地质志》时确立。"
+            ],
+            "unsupported": []
+          },
+          "reason": "位置矛盾，其余具体细节多属编造",
+          "judge_failed": false
+        },
+        "FJ-I-0c1395a7": {
+          "n_supported": 3,
+          "n_unsupported": 2,
+          "n_contradicted": 1,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "福建晚白垩世红层盆地主要分布在福建省西部和西北部地区（即闽西及闽西北拗陷带）。"
+            ],
+            "fabricated": [
+              "永定盆地：典型的晚白垩世断陷盆地，红层沉积厚度大。"
+            ],
+            "unsupported": [
+              "东南沿海构造带由早白垩世的强烈火山活动转为伸展构造环境，形成了一系列受断裂控制的陆相断陷盆地，沉积了巨厚的红色碎屑岩系。"
+            ]
+          },
+          "reason": "主分布矛盾，多处盆地及地层细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-081872a3": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 3,
+          "n_fabricated": 8,
+          "examples": {
+            "contradicted": [
+              "梨山组（$D_1l$）的下伏地层通常为：上志留统茅山组（$S_3m$）。"
+            ],
+            "fabricated": [
+              "在个别地区（如广西钦州盆地）的地质文献中，曾存在早二叠世梨山组的用法（下伏地层可能为石炭系四家组等）。"
+            ],
+            "unsupported": [
+              "需要结合具体的地质时代和区域地层划分来进行回答。"
+            ]
+          },
+          "reason": "核心下伏地层错误且多处编造",
+          "judge_failed": false
+        },
+        "FJ-I-00f91376": {
+          "n_supported": 1,
+          "n_unsupported": 0,
+          "n_contradicted": 6,
+          "n_fabricated": 5,
+          "examples": {
+            "contradicted": [
+              "黄潭组以泥质岩为主，常见紫红色、灰绿色页岩、粉砂质页岩，夹薄层粉砂岩。"
+            ],
+            "fabricated": [
+              "二者常被视为丹洲群或equivalent地层的不同岩性段，或为横向相变关系。"
+            ],
+            "unsupported": []
+          },
+          "reason": "核心岩性误判，多处编造",
+          "judge_failed": false
+        },
+        "FJ-I-0a18347d": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 3,
+          "n_fabricated": 8,
+          "examples": {
+            "contradicted": [
+              "在川东 - 鄂西地区，黄连组常与巴东组（Badong Formation）的下部或雷口坡组（Leikoupo Formation）的某些层位进行对比或互用，具体取决于采用的地层划分方案。"
+            ],
+            "fabricated": [
+              "地质时代：通常归属于中三叠世（Middle Triassic），部分区域对比关系可能涉及晚二叠世顶部或中三叠统底部。"
+            ],
+            "unsupported": [
+              "“黄连组”并非中国地层表（Chinese Stratigraphic Chart）中的全国标准岩石地层单位，而是一个区域性或地方性的岩石地层单位。"
+            ]
+          },
+          "reason": "区域层位矛盾，大量具体细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-1da66c76": {
+          "n_supported": 0,
+          "n_unsupported": 3,
+          "n_contradicted": 0,
+          "n_fabricated": 9,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "在龙海组地层中，普遍发现海相微体化石，如底栖有孔虫（Benthic Foraminifera）、介形虫（Ostracoda）以及海相软体动物化石（如牡蛎、蛤类等）。"
+            ],
+            "unsupported": [
+              "岩性中常混有陆源碎屑物质，表明其沉积过程受到陆地径流与海洋作用的双重影响。"
+            ]
+          },
+          "reason": "大量无据具体细节，属编造",
+          "judge_failed": false
+        },
+        "FJ-I-0534eb43": {
+          "n_supported": 2,
+          "n_unsupported": 0,
+          "n_contradicted": 2,
+          "n_fabricated": 8,
+          "examples": {
+            "contradicted": [
+              "长兴组：开阔台地 - 台地边缘礁滩环境 (Open Platform - Rimmed Shelf/Reef)"
+            ],
+            "fabricated": [
+              "罗坑组：时代：晚二叠世早期（吴家坪阶，Wuchiapingian）。"
+            ],
+            "unsupported": []
+          },
+          "reason": "大量具体细节无据，部分相矛盾",
+          "judge_failed": false
+        },
+        "FJ-I-147787ee": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 3,
+          "n_fabricated": 8,
+          "examples": {
+            "contradicted": [
+              "时代：中泥盆世（主要为吉维特期，Givetian）。"
+            ],
+            "fabricated": [
+              "典型厚度：在标准剖面（如广西南丹地区），黄潭组的厚度通常在 200 米至 500 米之间。"
+            ],
+            "unsupported": [
+              "黄潭组厚度最显著的地质特征是“横向变化大，受相带控制明显”。"
+            ]
+          },
+          "reason": "误判时代，编造厚度与分布细节",
+          "judge_failed": false
+        },
+        "FJ-I-152ca602": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 6,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "创名人：**韩渊丰**（Han Yuanfeng）。"
+            ],
+            "fabricated": [
+              "地层时代与归属：**下泥盆统（Lower Devonian）**。"
+            ],
+            "unsupported": []
+          },
+          "reason": "核心创名信息全错，细节多编造",
+          "judge_failed": false
+        },
+        "FJ-I-213b97cb": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 10,
+          "n_fabricated": 2,
+          "examples": {
+            "contradicted": [
+              "在华北克拉通（North China Craton）冀东地区的太古宙基底研究中，东岩组（通常在地层划分中称为“东岩群”，Dongyan Group）是迁西杂岩（Qianxi Complex）的重要组成部分。"
+            ],
+            "fabricated": [
+              "东岩组形成于太古宙（约 2.5-2.8 Ga）。"
+            ],
+            "unsupported": []
+          },
+          "reason": "误将建瓯群东岩组作华北克拉通迁西杂岩，原岩错误。",
+          "judge_failed": false
+        },
+        "FJ-I-234cba71": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 7,
+          "n_fabricated": 5,
+          "examples": {
+            "contradicted": [
+              "下村组老于梨山组。"
+            ],
+            "fabricated": [
+              "下村组：岩性多为紫红色页岩、粉砂岩夹细砂岩。"
+            ],
+            "unsupported": []
+          },
+          "reason": "核心年代错误且编造细节",
+          "judge_failed": false
+        },
+        "FJ-I-1a4d414a": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 6,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "安仁组（Anren Formation）的标准下伏地层为：塘边组（Tangbian Formation）。"
+            ],
+            "fabricated": [
+              "地质时代：属于白垩纪晚期（Late Cretaceous, K₂）。"
+            ],
+            "unsupported": []
+          },
+          "reason": "下伏层位错误，多项细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-17aef206": {
+          "n_supported": 3,
+          "n_unsupported": 1,
+          "n_contradicted": 2,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "在沉积盆地中心或台地凹陷区，厚度可能超过 150 米；而在古陆隆起区或剥蚀区，厚度可能减薄至 10 米以下甚至缺失。"
+            ],
+            "fabricated": [
+              "贵州地区（如长顺剖面）：厚度约为 60-90 米。"
+            ],
+            "unsupported": [
+              "请务必查阅工作区所在地的《区域地质志》或实测地层柱状图。"
+            ]
+          },
+          "reason": "统计12条实质陈述。",
+          "judge_failed": false
+        },
+        "FJ-I-24ca29b4": {
+          "n_supported": 0,
+          "n_unsupported": 2,
+          "n_contradicted": 4,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "经畲组在典型剖面（浙江龙泉）的厚度约为 1377 米，一般地质描述中常记为 >1000 米。"
+            ],
+            "fabricated": [
+              "深变质岩系，主要包括黑云斜长片麻岩、角闪斜长片麻岩、变粒岩及大理岩透镜体等。"
+            ],
+            "unsupported": [
+              "具体数值需结合具体的工作图幅和剖面位置确定。"
+            ]
+          },
+          "reason": "厚度矛盾，具体细节多为编造。",
+          "judge_failed": false
+        },
+        "FJ-I-27e74670": {
+          "n_supported": 1,
+          "n_unsupported": 1,
+          "n_contradicted": 2,
+          "n_fabricated": 8,
+          "examples": {
+            "contradicted": [
+              "核心分布区：主要集中在浙江省西北部（如常山、江山、开化一带）及江西省东北部（如玉山）、安徽省南部边缘。"
+            ],
+            "fabricated": [
+              "厚度稳定性：在层型剖面所在地（浙江常山老虎洞剖面），地层厚度相对稳定，一般在50-100 米之间。"
+            ],
+            "unsupported": [
+              "老虎洞组是一个具有区域性的地层单位名称，在中国不同地层区划中存在“同名异物”的现象。"
+            ]
+          },
+          "reason": "主要分布与标准答案冲突，多处编造",
+          "judge_failed": false
+        },
+        "FJ-I-30f8449e": {
+          "n_supported": 1,
+          "n_unsupported": 0,
+          "n_contradicted": 2,
+          "n_fabricated": 9,
+          "examples": {
+            "contradicted": [
+              "坂头组属于晚侏罗世，小溪组属于早白垩世。"
+            ],
+            "fabricated": [
+              "绝对年龄估算：坂头组约 152 - 145 Ma，小溪组约 145 - 130 Ma。"
+            ],
+            "unsupported": []
+          },
+          "reason": "坂头组年代误判，并编造多项细节",
+          "judge_failed": false
+        },
+        "FJ-I-3443c2fc": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 4,
+          "n_fabricated": 7,
+          "examples": {
+            "contradicted": [
+              "翠屏山组主要代表晚侏罗世，而罗坑组跨越了侏罗纪-白垩纪界线并延伸至早白垩世。"
+            ],
+            "fabricated": [
+              "翠屏山组常被视为蓬莱镇组的上部层位或同物异名。"
+            ],
+            "unsupported": [
+              "这两个地层单位属于中国不同的地层分区，其定义、层型及对比标准存在区域性的差异。"
+            ]
+          },
+          "reason": "年代与标准冲突，细节多编造。",
+          "judge_failed": false
+        },
+        "FJ-I-1c5ec17b": {
+          "n_supported": 3,
+          "n_unsupported": 3,
+          "n_contradicted": 0,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "台湾中央山脉虽有梨山组，但多为变质岩系，且藩坑组作为独立地层单位在东南大陆沉积区更为典型和常用。"
+            ],
+            "unsupported": [
+              "代表还原环境下的火山弧 - 盆地相（Volcanic Arc-Basin）沉积。"
+            ]
+          },
+          "reason": "核心岩性部分有据，大量细节编造。",
+          "judge_failed": false
+        },
+        "FJ-I-2b54f5de": {
+          "n_supported": 0,
+          "n_unsupported": 2,
+          "n_contradicted": 8,
+          "n_fabricated": 2,
+          "examples": {
+            "contradicted": [
+              "主要分布于中国东南沿海中生代火山岩带（特别是浙江、福建一带）。"
+            ],
+            "fabricated": [
+              "地质时代：主要为晚侏罗世（Late Jurassic），部分区域可能延续至早白垩世早期。"
+            ],
+            "unsupported": [
+              "构造域：属于古太平洋构造域（Palaeo-Pacific Tectonic Domain）。"
+            ]
+          },
+          "reason": "核心构造背景与标准答案相反",
+          "judge_failed": false
+        },
+        "FJ-I-236004d1": {
+          "n_supported": 0,
+          "n_unsupported": 2,
+          "n_contradicted": 4,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "同安组可能为残积-坡积层或滨海沉积"
+            ],
+            "fabricated": [
+              "常见正式地层单位包括南园组、长林组、厦门组等"
+            ],
+            "unsupported": [
+              "天宝组、同安组、龙海组并非国家标准或广泛认可的区域性地层单位"
+            ]
+          },
+          "reason": "未答标准成因，多编造且矛盾",
+          "judge_failed": false
+        },
+        "FJ-I-3542bd3c": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 6,
+          "n_fabricated": 5,
+          "examples": {
+            "contradicted": [
+              "楼前组主要指分布于赣杭构造带（Gan-Hang Tectonic Belt）及其邻区（主要是江西东部、浙江西部）的一套早白垩世（Early Cretaceous）陆相火山 - 沉积地层。"
+            ],
+            "fabricated": [
+              "在单个断陷盆地内部，楼前组的厚度呈现明显的中心厚、向边缘减薄的特征。盆地中心凹陷处沉积和火山堆积最厚，可达数千米；"
+            ],
+            "unsupported": [
+              "楼前组并非区域性的连续铺盖式地层，而是局限于特定的火山 - 沉积盆地内。"
+            ]
+          },
+          "reason": "分布、方向、层位均误，含编造细节",
+          "judge_failed": false
+        },
+        "FJ-I-32699c9a": {
+          "n_supported": 1,
+          "n_unsupported": 0,
+          "n_contradicted": 1,
+          "n_fabricated": 10,
+          "examples": {
+            "contradicted": [
+              "其自下而上的岩石地层组序为：1. 小源组（Xiaoyuan Formation）——下部 2. 赤石组（Chishi Formation）——中部 3. 良家组（Liangjia Formation）——上部"
+            ],
+            "fabricated": [
+              "小源组（K₂x）：岩性：主要为紫红色、灰白色厚层 - 巨厚层砾岩、砂砾岩，夹少量砂岩。"
+            ],
+            "unsupported": []
+          },
+          "reason": "组序错误且大量细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-39d62f76": {
+          "n_supported": 2,
+          "n_unsupported": 0,
+          "n_contradicted": 1,
+          "n_fabricated": 9,
+          "examples": {
+            "contradicted": [
+              "上覆泉上组：主要为陆源碎屑岩（砂岩、粉砂岩、页岩）并含煤层，代表海陆交互相或滨海沼泽环境。"
+            ],
+            "fabricated": [
+              "栖霞组：中二叠世（Middle Permian）。"
+            ],
+            "unsupported": []
+          },
+          "reason": "主结论有据，细节多编造，岩相矛盾",
+          "judge_failed": false
+        },
+        "FJ-I-3507e20c": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 1,
+          "n_fabricated": 11,
+          "examples": {
+            "contradicted": [
+              "文宾山组的层型剖面（即建组剖面）位于：湖南省邵阳市城步苗族自治县白鹿乡文宾山。"
+            ],
+            "fabricated": [
+              "该组由湖南省区域地质测量队于 20 世纪 70 年代（约 1972 年）在进行区域地质调查时正式命名。"
+            ],
+            "unsupported": []
+          },
+          "reason": "层型地点矛盾，其余多为编造细节",
+          "judge_failed": false
+        },
+        "FJ-I-43bff8f8": {
+          "n_supported": 4,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 7,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "在年代地层学上，它归属于 第四系上更新统（Quaternary, Upper Pleistocene Series）。"
+            ],
+            "unsupported": [
+              "在龙海滨海一带，该地层记录了海侵 - 海退（Transgression-Regression）的旋回变化。"
+            ]
+          },
+          "reason": "核心龙海组有据，年代与对比细节多编造",
+          "judge_failed": false
+        },
+        "FJ-I-445c2243": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 7,
+          "n_fabricated": 4,
+          "examples": {
+            "contradicted": [
+              "梨山组由我国著名地质学家赵亚曾（Zhao Yazeng）于 1931 年创建并命名。"
+            ],
+            "fabricated": [
+              "地质时代：中泥盆世（Middle Devonian）。"
+            ],
+            "unsupported": [
+              "此回答依据中国地层名称数据库及经典区域地质调查文献，确保准确无误。"
+            ]
+          },
+          "reason": "与标准答案严重矛盾并编造细节",
+          "judge_failed": false
+        },
+        "FJ-I-46b68c42": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 8,
+          "n_fabricated": 4,
+          "examples": {
+            "contradicted": [
+              "在华南新元古代地层序列中（通常归属于板溪群或南华系下部），小溪组的下伏地层是冷家溪群。"
+            ],
+            "fabricated": [
+              "这一界面代表了晋宁运动（Jinning Movement）（或称四堡运动）的构造不整合面。"
+            ],
+            "unsupported": []
+          },
+          "reason": "结论矛盾，且编造大量地层细节",
+          "judge_failed": false
+        },
+        "FJ-I-3c74cd97": {
+          "n_supported": 2,
+          "n_unsupported": 3,
+          "n_contradicted": 2,
+          "n_fabricated": 5,
+          "examples": {
+            "contradicted": [
+              "均口组以砂砾岩、中粗砂岩为主，夹粉砂岩薄层。"
+            ],
+            "fabricated": [
+              "常含介形虫、叶肢介等化石。"
+            ],
+            "unsupported": [
+              "崇安组为冲积扇相或辫状河相。"
+            ]
+          },
+          "reason": "12条陈述分类统计",
+          "judge_failed": false
+        },
+        "FJ-I-490fc72a": {
+          "n_supported": 0,
+          "n_unsupported": 3,
+          "n_contradicted": 6,
+          "n_fabricated": 3,
+          "examples": {
+            "contradicted": [
+              "楼前组的空间展布主要受南雄断陷盆地的边界断裂系统（特别是南雄断裂带）控制。"
+            ],
+            "fabricated": [
+              "楼前组主要分布于广东南雄盆地，时代为晚白垩世。"
+            ],
+            "unsupported": [
+              "断裂活动强烈的地段，地壳沉降速率快，可容纳空间大，导致楼前组沉积厚度显著增大。"
+            ]
+          },
+          "reason": "核心地点与构造控制均与标准答案冲突",
+          "judge_failed": false
+        },
+        "FJ-I-48c1f8dd": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 4,
+          "n_fabricated": 8,
+          "examples": {
+            "contradicted": [
+              "安仁组：主要岩类为碳酸盐岩系，典型岩石白云岩、灰岩、硅质岩、含燧石条带白云岩。"
+            ],
+            "fabricated": [
+              "溪口组：时代：新元古代早期，通常划归为青白口系上部，部分新研究将其置于南华系底部。"
+            ],
+            "unsupported": []
+          },
+          "reason": "岩性判反且大量编造地层细节",
+          "judge_failed": false
+        },
+        "FJ-I-49f7b597": {
+          "n_supported": 1,
+          "n_unsupported": 1,
+          "n_contradicted": 4,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "同安组（Tongan Formation）：时代确定为晚三叠世（Late Triassic），具体层位通常对应诺利期（Norian）至瑞替期（Rhaetian）。"
+            ],
+            "fabricated": [
+              "植物化石组合典型晚三叠世，如 *Dictyophyllum natense*, *Clathropteris menisci* 等。"
+            ],
+            "unsupported": [
+              "在野外地质工作和地层对比中，同安组是更可靠的时代标志层，而天宝组需结合具体的区域构造背景进行谨慎对比。"
+            ]
+          },
+          "reason": "年代错为三叠纪，细节多编造",
+          "judge_failed": false
+        },
+        "FJ-I-4fce4fea": {
+          "n_supported": 2,
+          "n_unsupported": 2,
+          "n_contradicted": 2,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "该地层单位即为福建省光泽地区的杨家林地组（Yangjialindi Formation）。"
+            ],
+            "fabricated": [
+              "与福建西南部的童子岩组在沉积演化上具有一定的可比性。"
+            ],
+            "unsupported": [
+              "滨海相：指示了海陆交互的环境，可能受到潮汐或波浪作用的影响。"
+            ]
+          },
+          "reason": "名称错误，多处时代构造等编造",
+          "judge_failed": false
+        },
+        "FJ-I-4d04158c": {
+          "n_supported": 1,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 10,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "新店组 (J₁x)：在福建省部分旧版地层划分或局部区域（如永定一带），曾将早侏罗世地层划分为新店组。"
+            ],
+            "unsupported": [
+              "在现行的省级区域地层对比中，梨山组是早侏罗世的代表性标准地层单位。"
+            ]
+          },
+          "reason": "梨山组正确，多处具体细节无据编造。",
+          "judge_failed": false
+        },
+        "FJ-I-49226d4d": {
+          "n_supported": 1,
+          "n_unsupported": 1,
+          "n_contradicted": 3,
+          "n_fabricated": 7,
+          "examples": {
+            "contradicted": [
+              "东坑口组主要岩石类型为碳酸盐岩系"
+            ],
+            "fabricated": [
+              "林田组通常归属于中泥盆世"
+            ],
+            "unsupported": [
+              "林田组典型岩性组合：灰绿色、紫红色页岩、粉砂岩、细砂岩；局部夹薄层泥灰岩或透镜状灰岩"
+            ]
+          },
+          "reason": "东坑口组误为碳酸盐岩，泥盆纪细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-54248ebf": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 12,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "古䗴属 (*Palaeofusulina*)：如 *Palaeofusulina sinensis*（中华古䗴），是长兴阶的标志性化石。"
+            ],
+            "unsupported": []
+          },
+          "reason": "无检索，具体地层与化石细节均编造。",
+          "judge_failed": false
+        },
+        "FJ-I-437f8ea3": {
+          "n_supported": 0,
+          "n_unsupported": 2,
+          "n_contradicted": 1,
+          "n_fabricated": 9,
+          "examples": {
+            "contradicted": [
+              "主要反映了温暖的、清澈的、正常盐度的浅海碳酸盐岩台地沉积环境。"
+            ],
+            "fabricated": [
+              "富含䗴类（如 Palaeofusulina 古纺锤虫）、珊瑚、海绵、腕足类及藻类。"
+            ],
+            "unsupported": [
+              "受海平面变化及构造沉降控制。"
+            ]
+          },
+          "reason": "核心环境与标准不符，多处具体细节无依据",
+          "judge_failed": false
+        },
+        "FJ-I-56d12e77": {
+          "n_supported": 1,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 10,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "下段（Lower Member）：岩性特征：主要以灰岩、泥质灰岩为主，夹少量页岩。"
+            ],
+            "unsupported": [
+              "林田组并非全国性地层表中的标准统一划分单位，其细分方案在不同区域地质调查或研究文献中可能存在差异。"
+            ]
+          },
+          "reason": "核心两段正确，多处具体细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-4e02b317": {
+          "n_supported": 3,
+          "n_unsupported": 1,
+          "n_contradicted": 1,
+          "n_fabricated": 7,
+          "examples": {
+            "contradicted": [
+              "主体：主要为紫红色、砖红色**泥岩**、**粉砂质泥岩**。"
+            ],
+            "fabricated": [
+              "典型产地：福建省宁化均口一带。"
+            ],
+            "unsupported": [
+              "在区域地层对比中，二者常被视为**同期异相**的产物。"
+            ]
+          },
+          "reason": "部分岩性细节无依据，均口组主岩性有矛盾",
+          "judge_failed": false
+        },
+        "FJ-I-530d1610": {
+          "n_supported": 1,
+          "n_unsupported": 3,
+          "n_contradicted": 2,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "同安组（Tongan Formation）由福建省区域地质测量队（隶属于当时的福建省地质矿产局）创建并命名。"
+            ],
+            "fabricated": [
+              "1985 年出版《福建省区域地质志》时正式确立并刊布。"
+            ],
+            "unsupported": [
+              "该组地层在闽东南地区的新元古代地层划分中具有代表性。"
+            ]
+          },
+          "reason": "创建者时间错，多处细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-57a046ae": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 4,
+          "n_fabricated": 7,
+          "examples": {
+            "contradicted": [
+              "在福建区域地质背景下，“长乐组”（晚侏罗世）的地质年代老于“东山组”（早白垩世）。"
+            ],
+            "fabricated": [
+              "长乐组 (Changle Formation)：主要见于福建省东部沿海地区（福州长乐一带），常与“长乐 - 南澳构造带”相关。"
+            ],
+            "unsupported": [
+              "两者之间可能存在一个构造不整合或岩性转换界面。"
+            ]
+          },
+          "reason": "年代对比与标准答案相反，多处细节无据",
+          "judge_failed": false
+        },
+        "FJ-I-5c23c986": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 12,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "代表属种：**丽水江山龙（*Jiangshanosaurus lixiensis*）**。"
+            ],
+            "unsupported": []
+          },
+          "reason": "标准答案仅列孢粉，回答所列化石均无依据",
+          "judge_failed": false
+        },
+        "FJ-I-5ddaf902": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 4,
+          "n_fabricated": 8,
+          "examples": {
+            "contradicted": [
+              "林地组主要分布于中国广西壮族自治区的中部及南部地区，典型剖面位于南宁、横县（现横州市）一带。"
+            ],
+            "fabricated": [
+              "下伏地层：通常与塘定组（Tangding Formation）呈整合或平行不整合接触。"
+            ],
+            "unsupported": []
+          },
+          "reason": "地点矛盾且大量细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-7537caf0": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 5,
+          "n_fabricated": 7,
+          "examples": {
+            "contradicted": [
+              "东坑口组由**浙江省地质矿产局**于**1984 年**创建命名，命名地点位于**浙江省临安市河桥镇东坑口村**。"
+            ],
+            "fabricated": [
+              "* **岩性特征**：主要由一套浅变质岩系组成，典型岩性包括**千枚岩、板岩、变质砂岩**，局部夹有凝灰质岩石。"
+            ],
+            "unsupported": []
+          },
+          "reason": "创建者、时间、地点均矛盾，其余细节编造。",
+          "judge_failed": false
+        },
+        "FJ-I-59ec7d77": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 6,
+          "n_fabricated": 3,
+          "examples": {
+            "contradicted": [
+              "文宾山组由广西区域地质测量大队于1965年在广西桂林西南文宾山创名。"
+            ],
+            "fabricated": [
+              "地层时代：上泥盆统（Upper Devonian），通常归于弗拉期（Frasnian）至法门期（Famennian）。"
+            ],
+            "unsupported": [
+              "常用于区域地层对比及古环境重建。"
+            ]
+          },
+          "reason": "创名者地点时间均错，另编造时代岩性。",
+          "judge_failed": false
+        },
+        "FJ-I-711de4e4": {
+          "n_supported": 1,
+          "n_unsupported": 1,
+          "n_contradicted": 1,
+          "n_fabricated": 9,
+          "examples": {
+            "contradicted": [
+              "岩性特征：主要由紫红色砾岩、砂岩、粉砂岩、泥岩组成，夹有流纹质凝灰岩、熔岩等火山岩夹层。"
+            ],
+            "fabricated": [
+              "下渡组主要可与江西周田组、浙江塘上组以及广东南雄组进行时代对比。"
+            ],
+            "unsupported": [
+              "属于典型的红层盆地火山-沉积建造。"
+            ]
+          },
+          "reason": "核心对比未提，多编造具体地层与时代",
+          "judge_failed": false
+        },
+        "FJ-I-6ece54a7": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 7,
+          "n_fabricated": 5,
+          "examples": {
+            "contradicted": [
+              "在正常层序下，两者**不存在直接接触关系**。"
+            ],
+            "fabricated": [
+              "漳平组含晚二叠世化石（如*Palaeofusulina*），梨山组含晚三叠世植物化石或孢粉"
+            ],
+            "unsupported": []
+          },
+          "reason": "回答与标准答案接触关系多处冲突并编造细节",
+          "judge_failed": false
+        },
+        "FJ-I-8a4056a4": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 2,
+          "n_fabricated": 10,
+          "examples": {
+            "contradicted": [
+              "分布主要集中在福建省西部（闽西）地区。"
+            ],
+            "fabricated": [
+              "命名地点：福建省永定区坂头村（Type Section）。"
+            ],
+            "unsupported": []
+          },
+          "reason": "多为无据细节，部分与金标冲突",
+          "judge_failed": false
+        },
+        "FJ-I-923038b3": {
+          "n_supported": 1,
+          "n_unsupported": 0,
+          "n_contradicted": 4,
+          "n_fabricated": 7,
+          "examples": {
+            "contradicted": [
+              "| **岩石大类** | **碎屑岩系 (Clastic Rocks)** 为主 | **碳酸盐岩系 (Carbonate Rocks)** 为主 |"
+            ],
+            "fabricated": [
+              "南岩组 (Nanyan Fm.)：**时代：** 主要为**下泥盆统**（Early Devonian，大致对应洛赫科夫阶 - 布拉格阶，Lochkovian-Pragian）。"
+            ],
+            "unsupported": []
+          },
+          "reason": "楼子坝组碳酸盐岩矛盾，多时代地点编造",
+          "judge_failed": false
+        },
+        "FJ-I-8909b94f": {
+          "n_supported": 1,
+          "n_unsupported": 0,
+          "n_contradicted": 2,
+          "n_fabricated": 9,
+          "examples": {
+            "contradicted": [
+              "由梨山组的滨海碎屑岩直接过渡到焦坑组的含煤系或海相灰岩"
+            ],
+            "fabricated": [
+              "在接触面上，常可见古风化壳、底砾岩或铁锰氧化物富集带。"
+            ],
+            "unsupported": []
+          },
+          "reason": "接触顺序相反，年龄岩性等细节无据",
+          "judge_failed": false
+        },
+        "FJ-I-936e55b4": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 8,
+          "n_fabricated": 4,
+          "examples": {
+            "contradicted": [
+              "典型剖面位于浙江省临安县（现杭州市临安区）境内的东坑口一带。"
+            ],
+            "fabricated": [
+              "在全国地层委员会维护的《中国地层名称》数据库及现行的国家标准地层表中，“东坑口组”不再作为推荐的标准地层单位使用。"
+            ],
+            "unsupported": []
+          },
+          "reason": "福建变质砂岩误作浙江火山岩，多编造。",
+          "judge_failed": false
+        },
+        "FJ-I-86012936": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 6,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "黄坑组岩性：变质碎屑岩为主，灰绿色、灰色板岩、千枚岩"
+            ],
+            "fabricated": [
+              "寨下组层位：南华系下部，通常对比于斯图特冰期（Sturtian Glaciation）沉积"
+            ],
+            "unsupported": []
+          },
+          "reason": "核心岩性分布矛盾，新元古代细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-933767ab": {
+          "n_supported": 2,
+          "n_unsupported": 1,
+          "n_contradicted": 5,
+          "n_fabricated": 4,
+          "examples": {
+            "contradicted": [
+              "地质时代：**晚三叠世（Late Triassic）**。"
+            ],
+            "fabricated": [
+              "在区域地层对比中，梨山组通常与**须家河组（Xujiahe Formation）** 的上段或**香溪群（Xiangxi Group）** 的部分层位相当。"
+            ],
+            "unsupported": [
+              "沉积环境：**大陆相湖沼沉积环境（Continental Lacustrine-Swamp Facies）**，部分层段可能涉及河流 - 三角洲相。"
+            ]
+          },
+          "reason": "时代矛盾，多处具体细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-9702aa0c": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 5,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "翠屏山组主要分布于**中国西南地区的四川盆地中部（川中地区）**。"
+            ],
+            "fabricated": [
+              "地质时代：**中侏罗世晚期至晚侏罗世早期**（Middle to Late Jurassic）。"
+            ],
+            "unsupported": [
+              "需要注意的是，地层名称的使用具有区域性。"
+            ]
+          },
+          "reason": "地点与标准答案矛盾，具体细节多为编造。",
+          "judge_failed": false
+        },
+        "FJ-I-9411eeea": {
+          "n_supported": 0,
+          "n_unsupported": 2,
+          "n_contradicted": 5,
+          "n_fabricated": 5,
+          "examples": {
+            "contradicted": [
+              "该套岩系属于 **岭北组（Lingbei Formation）**。"
+            ],
+            "fabricated": [
+              "地层时代：**晚侏罗世（Late Jurassic）**。"
+            ],
+            "unsupported": [
+              "这种紫红色调反映了当时陆相火山 - 沉积环境下的氧化条件。"
+            ]
+          },
+          "reason": "主组名错误，多处无据细节",
+          "judge_failed": false
+        },
+        "FJ-I-9df4023d": {
+          "n_supported": 0,
+          "n_unsupported": 2,
+          "n_contradicted": 2,
+          "n_fabricated": 8,
+          "examples": {
+            "contradicted": [
+              "桃溪岩组（Taoxiyan Formation/Assemblage）主要分布于中国福建省北部地区。"
+            ],
+            "fabricated": [
+              "地质时代：一般归属于新元古代（Neoproterozoic），部分研究将其对比为震旦纪（Sinian）早期的地层。"
+            ],
+            "unsupported": [
+              "地质地层命名随研究深入可能会有修订，具体工作建议参考最新的《福建省区域地质志》或 1:50,000 区域地质调查报告。"
+            ]
+          },
+          "reason": "分布与标准答案矛盾，具体细节多处编造。",
+          "judge_failed": false
+        },
+        "FJ-I-86881f2e": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 8,
+          "n_fabricated": 3,
+          "examples": {
+            "contradicted": [
+              "老虎洞组代表中 - 晚奥陶世界线附近的碳酸盐台地相，以 Nemagraptus gracilis 笔石及 Pygodus serra 牙形石组合为特征，标志着晚奥陶世的开始。"
+            ],
+            "fabricated": [
+              "景山组：岩性以灰黑色页岩、泥岩夹薄层灰岩为主。老虎洞组：岩性以厚层灰岩、白云质灰岩为主，夹少量页岩。"
+            ],
+            "unsupported": [
+              "可能性一（最可能）：您所指的可能是在浙西常山 - 江山地区与老虎洞组相邻的景山组（“景山”与“经畲”在部分地方文献或口语中可能存在混淆，或者“经畲”是极局部的地方性名称，对应景山组层位）。"
+            ]
+          },
+          "reason": "误判时代并编造化石组合",
+          "judge_failed": false
+        },
+        "FJ-I-9853ebf1": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 6,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "层型（建组）剖面位于中国广西壮族自治区河池市南丹县大厂镇大坑村附近。"
+            ],
+            "fabricated": [
+              "地质时代：中泥盆世。"
+            ],
+            "unsupported": []
+          },
+          "reason": "地点与标准答案冲突，时代岩性等细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-a58b6551": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 2,
+          "n_fabricated": 9,
+          "examples": {
+            "contradicted": [
+              "泉上组见于宁化、清流、连城等“泉上”地名周边区域。"
+            ],
+            "fabricated": [
+              "栖霞组广泛分布于扬子地台及周边地区，包括四川、贵州、湖北、湖南、安徽、江苏、浙江、江西、广西等广大区域。"
+            ],
+            "unsupported": [
+              "栖霞组是中国地层表中的标准地层单位。"
+            ]
+          },
+          "reason": "编造地层时代岩性分布，泉上组分布矛盾",
+          "judge_failed": false
+        },
+        "FJ-I-a0913dd2": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 6,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "在闽西地区（如长汀、连城一带）的标准地层序列中，藩坑组（J₃f）的上覆地层通常为早白垩世的赤石组（Chishi Formation, K₁ch）。"
+            ],
+            "fabricated": [
+              "底部常发育一套底砾岩，砾石成分复杂，磨圆度较差，分选性中等，反映了盆地初始沉积时的近源快速堆积特征。"
+            ],
+            "unsupported": []
+          },
+          "reason": "上覆地层错误，岩性细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-a5404eb4": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 5,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "上覆地层：**灯影组（Dengying Formation）**。"
+            ],
+            "fabricated": [
+              "层位：上奥陶统（凯迪阶）。"
+            ],
+            "unsupported": [
+              "地层名称具有区域性和时代性，“小溪组”在中国不同地层区划和地质时代中均有使用，因此其上覆地层取决于具体的地质背景。"
+            ]
+          },
+          "reason": "未提黄坑组，多编造且矛盾",
+          "judge_failed": false
+        },
+        "FJ-I-a89f9718": {
+          "n_supported": 2,
+          "n_unsupported": 2,
+          "n_contradicted": 1,
+          "n_fabricated": 7,
+          "examples": {
+            "contradicted": [
+              "主要出露于闽北隆起带，包括建瓯、南平、顺昌、建阳及政和等县市的部分区域。"
+            ],
+            "fabricated": [
+              "时代：归属于古元古代（Paleoproterozoic），同位素年龄测定多在 1800-2000 Ma（百万年）左右。"
+            ],
+            "unsupported": [
+              "它是研究华夏地块早期地壳演化及前寒武纪地质历史的关键层位。"
+            ]
+          },
+          "reason": "多处具体细节无据且分布范围矛盾",
+          "judge_failed": false
+        },
+        "FJ-I-a0d0ad4f": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 2,
+          "n_fabricated": 10,
+          "examples": {
+            "contradicted": [
+              "**特征：** 典型的**温暖浅海环境**，水体较深且清澈，适合生物（如䗴类、珊瑚、海绵）繁盛。"
+            ],
+            "fabricated": [
+              "**层位：** 通常位于吴家坪组之上，飞仙关组（或大隆组）之下。是二叠系 - 三叠系界线（PTB）的关键层位。"
+            ],
+            "unsupported": []
+          },
+          "reason": "编造具体地层细节，两处矛盾。",
+          "judge_failed": false
+        },
+        "FJ-I-adbbdade": {
+          "n_supported": 2,
+          "n_unsupported": 1,
+          "n_contradicted": 0,
+          "n_fabricated": 9,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "同安组 ($Q_3t$)：时代：更新世晚期（Late Pleistocene）。地质年代：约距今 12 万年 - 1.17 万年。"
+            ],
+            "unsupported": [
+              "在具体的工程地质勘察中，需结合钻孔岩芯、碳 -14 测年及微体古生物分析来准确界定两者的分界线"
+            ]
+          },
+          "reason": "同安组部分有据，多数具体细节无据编造。",
+          "judge_failed": false
+        },
+        "FJ-I-aac4579c": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 3,
+          "n_fabricated": 9,
+          "examples": {
+            "contradicted": [
+              "南岩组：时代为早寒武世（Early Cambrian）。"
+            ],
+            "fabricated": [
+              "南岩组：岩性：主要以黑色页岩、硅质岩为主，常含磷、钡（重晶石）等矿产。"
+            ],
+            "unsupported": []
+          },
+          "reason": "年代与金标相反，且多编造细节。",
+          "judge_failed": false
+        },
+        "FJ-I-b02485de": {
+          "n_supported": 0,
+          "n_unsupported": 3,
+          "n_contradicted": 5,
+          "n_fabricated": 3,
+          "examples": {
+            "contradicted": [
+              "其实测厚度约为 1367 米"
+            ],
+            "fabricated": [
+              "时代层位：晚侏罗世（Late Jurassic），地层代号通常记为 J₃t"
+            ],
+            "unsupported": [
+              "地层厚度并非一个绝对固定的数值，它会随沉积环境、构造背景及剖面位置的不同而发生横向变化。"
+            ]
+          },
+          "reason": "厚度岩性多处矛盾，并编造时代分布",
+          "judge_failed": false
+        },
+        "FJ-I-a9da1dca": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 2,
+          "n_fabricated": 10,
+          "examples": {
+            "contradicted": [
+              "上覆地层：通常为朝川组（Chaochuan Formation, K₁）或早白垩世其他地层（如方岩组）。"
+            ],
+            "fabricated": [
+              "层位时代：晚侏罗世（Late Jurassic, J₃）。"
+            ],
+            "unsupported": []
+          },
+          "reason": "未提西溪组，上覆层位冲突，余多编造。",
+          "judge_failed": false
+        },
+        "FJ-I-bf704263": {
+          "n_supported": 1,
+          "n_unsupported": 0,
+          "n_contradicted": 3,
+          "n_fabricated": 8,
+          "examples": {
+            "contradicted": [
+              "这两个地层单位主要分布于中国西南地区的兰坪 - 思茅盆地（Lanping-Simao Basin），是该区早白垩世红层序列的重要组成部分。"
+            ],
+            "fabricated": [
+              "通常认为小溪组位于下渡组之下（即小溪组较老，下渡组较新），二者之间多为整合接触或平行不整合接触。"
+            ],
+            "unsupported": []
+          },
+          "reason": "错认盆地与岩性，多细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-bff21663": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 3,
+          "n_fabricated": 8,
+          "examples": {
+            "contradicted": [
+              "东坑口组主要分布于中国浙江省西北部地区。"
+            ],
+            "fabricated": [
+              "归属于晚侏罗世（Late Jurassic）。"
+            ],
+            "unsupported": [
+              "“东坑口组”属于地方性地层单位（Local Stratigraphic Unit），并非全国性的标准地层单位。"
+            ]
+          },
+          "reason": "分布地错误，大量细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-b4438c9a": {
+          "n_supported": 1,
+          "n_unsupported": 1,
+          "n_contradicted": 4,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "时代归属为晚侏罗世（Late Jurassic）。"
+            ],
+            "fabricated": [
+              "黄坑组主要分布于中国华南地区（特别是广东省河源、惠州一带）。"
+            ],
+            "unsupported": [
+              "黄坑组厚度的最显著特点是侧向变化大（Lateral Variation），具有明显的非均质性。"
+            ]
+          },
+          "reason": "多处具体细节无据且时代厚度矛盾",
+          "judge_failed": false
+        },
+        "FJ-I-b3780b38": {
+          "n_supported": 3,
+          "n_unsupported": 2,
+          "n_contradicted": 1,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "老虎洞组通常被划归为早石炭世（Early Carboniferous），而经畲组通常被划归为中石炭世。"
+            ],
+            "fabricated": [
+              "常含有燧石结核或燧石条带（Chert nodules/bands），局部可见生物灰岩。"
+            ],
+            "unsupported": [
+              "老虎洞组：代表浅海碳酸盐台地相（Shallow Marine Carbonate Platform）。"
+            ]
+          },
+          "reason": "编造具体岩性化石时代较多",
+          "judge_failed": false
+        },
+        "FJ-I-c4d97aca": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 12,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "南岩组通常被界定为中泥盆世（Middle Devonian）的产物。"
+            ],
+            "unsupported": []
+          },
+          "reason": "大量无据编造具体地层细节",
+          "judge_failed": false
+        },
+        "FJ-I-bf83ece6": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 6,
+          "n_fabricated": 5,
+          "examples": {
+            "contradicted": [
+              "永安—晋江北西向断裂带主要控制上三叠统桃溪组（Taoxi Formation）的分布。"
+            ],
+            "fabricated": [
+              "桃溪组岩性主要以紫红色砂砾岩、粉砂岩及泥岩为主，夹煤层，是福建重要的含煤地层之一。"
+            ],
+            "unsupported": [
+              "虽然后期（如白垩纪）该断裂带可能有复活活动并影响红层盆地分布"
+            ]
+          },
+          "reason": "核心错误：应为坂头组而非桃溪组",
+          "judge_failed": false
+        },
+        "FJ-I-c7615c40": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 12,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "林地组典型的变质相为绿片岩相。"
+            ],
+            "unsupported": []
+          },
+          "reason": "无依据编造具体变质相、时代、地点等",
+          "judge_failed": false
+        },
+        "FJ-I-cd7c84f4": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 6,
+          "n_fabricated": 4,
+          "examples": {
+            "contradicted": [
+              "长乐组（Changle Formation）主要形成于晚侏罗世（Late Jurassic）。"
+            ],
+            "fabricated": [
+              "长乐组主要分布于中国东南沿海火山岩带，典型出露区域位于福建省（如长乐、福州及周边地区）。"
+            ],
+            "unsupported": []
+          },
+          "reason": "答称晚侏罗世，与标准冲突并编造细节",
+          "judge_failed": false
+        },
+        "FJ-I-cc93ce94": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 6,
+          "n_fabricated": 5,
+          "examples": {
+            "contradicted": [
+              "这是东岩组最主要的岩石类型。"
+            ],
+            "fabricated": [
+              "地质时代：新元古代（Neoproterozoic），大致对应青白口纪至南华纪早期（约 800-720 Ma）。"
+            ],
+            "unsupported": [
+              "沉积环境：裂谷盆地或被动大陆边缘的深水 - 半深水陆棚环境。"
+            ]
+          },
+          "reason": "系统回答与金标准岩性矛盾且编造地层细节",
+          "judge_failed": false
+        },
+        "FJ-I-ce0ef182": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 4,
+          "n_fabricated": 7,
+          "examples": {
+            "contradicted": [
+              "创名者：王曰伦（Wang Yuelun）"
+            ],
+            "fabricated": [
+              "该组定义于浙江省临海市溪口村附近，是一套晚侏罗世的火山 - 沉积地层"
+            ],
+            "unsupported": [
+              "存在两个主要且不同时代的地层单位均使用了“溪口组”这一名称"
+            ]
+          },
+          "reason": "核心创名者错，细节多编造",
+          "judge_failed": false
+        },
+        "FJ-I-d107d9db": {
+          "n_supported": 0,
+          "n_unsupported": 2,
+          "n_contradicted": 1,
+          "n_fabricated": 8,
+          "examples": {
+            "contradicted": [
+              "东山组通常指代形成于晚侏罗世（J₃）的地层"
+            ],
+            "fabricated": [
+              "同位素年龄测定范围大致在 160 Ma - 145 Ma 之间"
+            ],
+            "unsupported": [
+              "地层单位名称具有区域性（Regionalism）"
+            ]
+          },
+          "reason": "核心年代错误，具体细节多编造。",
+          "judge_failed": false
+        },
+        "FJ-I-cd3a59df": {
+          "n_supported": 2,
+          "n_unsupported": 2,
+          "n_contradicted": 5,
+          "n_fabricated": 3,
+          "examples": {
+            "contradicted": [
+              "**主导岩性**：**酸性火山岩及火山碎屑岩**。"
+            ],
+            "fabricated": [
+              "*   **时代**：均为晚二叠世（乐平世，Lopingian）。"
+            ],
+            "unsupported": [
+              "*   **关系**：二者在时空上往往具有**相变（Facies Change）**关系，即同一时期不同沉积环境下的产物。"
+            ]
+          },
+          "reason": "文笔山组岩性错为火山岩，多处编造",
+          "judge_failed": false
+        },
+        "FJ-I-d79cf034": {
+          "n_supported": 2,
+          "n_unsupported": 1,
+          "n_contradicted": 3,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "在经典的福建地层方案中，石帽山群被划分为两个主要的组：下部的石牛山组和上部的小 Ying 组（或类似名称，视具体分区而定）。"
+            ],
+            "fabricated": [
+              "石帽山群（J₂₋₃s）：建立于 20 世纪 60 年代，是福建省中生代陆相火山岩系中的一个重要群级岩石地层单位。"
+            ],
+            "unsupported": [
+              "在现代地质工作中，石牛山组是更为常用和标准的岩石地层单位名称，而石帽山群更多作为一个历史性的或区域性的地层集合概念存在。"
+            ]
+          },
+          "reason": "核心归属冲突，多处具体细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-c92503ea": {
+          "n_supported": 1,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 11,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "地质时代：主要为中二叠世（Middle Permian），部分层位可能涉及晚二叠世早期。"
+            ],
+            "unsupported": []
+          },
+          "reason": "仅闽西有支撑，其余细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-dd97146b": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 5,
+          "n_fabricated": 7,
+          "examples": {
+            "contradicted": [
+              "桃溪岩组（Taoxiyan Formation）的上覆地层主要为南华系，具体层位通常为南华系底部的铁屎坳组（Tiesi'ao Formation）或长安组（Chang'an Formation）。"
+            ],
+            "fabricated": [
+              "桃溪岩组主要分布于广西北部（桂北）及江南造山带相关区域。"
+            ],
+            "unsupported": []
+          },
+          "reason": "核心上覆层错误，多项具体细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-db062c75": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 5,
+          "n_fabricated": 7,
+          "examples": {
+            "contradicted": [
+              "东坑口组命名时间：1980年（部分文献引用为1984年江西省区域地质测量队正式报告）。"
+            ],
+            "fabricated": [
+              "命名地点：江西省婺源县镇头乡东坑口村。"
+            ],
+            "unsupported": []
+          },
+          "reason": "命名年份单位矛盾，多处细节编造",
+          "judge_failed": false
+        },
+        "FJ-I-dbd81025": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 4,
+          "n_fabricated": 5,
+          "examples": {
+            "contradicted": [
+              "南岩组的层型（建组）剖面位于：广西壮族自治区南宁市武鸣区（原武鸣县）灵塘镇南岩村。"
+            ],
+            "fabricated": [
+              "该地层单位最早由我国著名地质学家王钰等人于 1964 年创立并命名。"
+            ],
+            "unsupported": [
+              "南岩组是华南地层区，特别是广西泥盆系对比的标准地层单位之一，对于研究古生代碳酸盐岩台地沉积及古地理演化具有重要参考价值。"
+            ]
+          },
+          "reason": "核心地点与标准答案冲突，余多编造。",
+          "judge_failed": false
+        },
+        "FJ-I-d8bfa323": {
+          "n_supported": 1,
+          "n_unsupported": 0,
+          "n_contradicted": 8,
+          "n_fabricated": 3,
+          "examples": {
+            "contradicted": [
+              "梨山组：普遍公认为晚二叠世长兴期（Late Permian, Changhsingian）。"
+            ],
+            "fabricated": [
+              "梨山组主要分布于福建西北部（如建宁、泰宁、宁化等地），向东南方向逐渐尖灭或相变为碳酸盐岩。"
+            ],
+            "unsupported": []
+          },
+          "reason": "多处时代岩性矛盾并编造细节",
+          "judge_failed": false
+        },
+        "FJ-I-d33805c4": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 1,
+          "n_fabricated": 11,
+          "examples": {
+            "contradicted": [
+              "环境：滨海平原、三角洲或泻湖相，属于海陆交互相或近岸浅海环境。这种环境更利于陆生植物保存，海洋生物相对受限。"
+            ],
+            "fabricated": [
+              "典型属种：古䗴属 (*Palaeofusulina*)（如 *P. sinensis*）、陈氏䗴 (*Chenella*)。"
+            ],
+            "unsupported": []
+          },
+          "reason": "溪口组海相化石冲突，多项细节编造。",
+          "judge_failed": false
+        },
+        "FJ-I-e1749e34": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 5,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "船山组（时代主要为上石炭统）的下伏地层通常为 **黄龙组（Huanglong Formation）**。"
+            ],
+            "fabricated": [
+              "在经典剖面（如南京湖山剖面）中，二者表现为连续的沉积序列。"
+            ],
+            "unsupported": [
+              "其化石组合反映了温暖、清澈的浅海碳酸盐台地环境。"
+            ]
+          },
+          "reason": "下伏地层错误，多处编造细节。",
+          "judge_failed": false
+        },
+        "FJ-I-ddb0e4dd": {
+          "n_supported": 0,
+          "n_unsupported": 3,
+          "n_contradicted": 2,
+          "n_fabricated": 7,
+          "examples": {
+            "contradicted": [
+              "麻源岩群自下而上主要包含三个组：大溪口组、茶坑组、马面山组。"
+            ],
+            "fabricated": [
+              "麻源岩群命名于江西南丰麻源地区。"
+            ],
+            "unsupported": [
+              "反映了一套相对较深水、低能的陆源碎屑沉积环境。"
+            ]
+          },
+          "reason": "核心地层错误且多处编造",
+          "judge_failed": false
+        },
+        "FJ-I-ea79d15b": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 5,
+          "n_fabricated": 6,
+          "examples": {
+            "contradicted": [
+              "总结为：一套上三叠统的、灰 - 深灰色的、以砂岩和泥页岩互层为主的深海浊积碎屑岩组合。"
+            ],
+            "fabricated": [
+              "命名地点：该组名源于广西壮族自治区凌云县境内的天瓦崠（地名）。"
+            ],
+            "unsupported": [
+              "天瓦崠组的岩性特征主要表现为深海 - 半深海相的碎屑岩沉积。"
+            ]
+          },
+          "reason": "系统回答与标准岩性冲突，且编造多处细节",
+          "judge_failed": false
+        },
+        "FJ-I-ed8db5ca": {
+          "n_supported": 0,
+          "n_unsupported": 2,
+          "n_contradicted": 7,
+          "n_fabricated": 3,
+          "examples": {
+            "contradicted": [
+              "大坑组主要分布于中国江南造山带（Jiangnan Orogen）的核心区域"
+            ],
+            "fabricated": [
+              "地层归属：大坑组通常被视为双桥山群（Shuangqiaoshan Group）的下部层位（上部通常为河水组）"
+            ],
+            "unsupported": [
+              "可能存在同名但时代不同的“大坑组”（例如福建或广东某些地区可能存在中生代同名岩石地层单位）"
+            ]
+          },
+          "reason": "核心分布与时代均错，多为矛盾编造",
+          "judge_failed": false
+        },
+        "FJ-I-e1e694bb": {
+          "n_supported": 4,
+          "n_unsupported": 2,
+          "n_contradicted": 1,
+          "n_fabricated": 5,
+          "examples": {
+            "contradicted": [
+              "长兴组：典型的碳酸盐岩台地相（Carbonate Platform）或开阔台地相。"
+            ],
+            "fabricated": [
+              "底部偶见含铁粘土岩（“绿豆岩”等标志层）。"
+            ],
+            "unsupported": [
+              "罗坑组：主要为滨海平原、三角洲相或浅海陆棚碎屑沉积。"
+            ]
+          },
+          "reason": "按12条实质陈述归类",
+          "judge_failed": false
+        },
+        "FJ-I-de200a38": {
+          "n_supported": 2,
+          "n_unsupported": 2,
+          "n_contradicted": 4,
+          "n_fabricated": 4,
+          "examples": {
+            "contradicted": [
+              "创建/命名单位：浙江省区域地质测量队"
+            ],
+            "fabricated": [
+              "命名地点：广东省仁化县小溪村"
+            ],
+            "unsupported": [
+              "在中国地层命名中，存在同物异名或同名异地现象"
+            ]
+          },
+          "reason": "核心省份、单位、时间、地点均错",
+          "judge_failed": false
+        },
+        "FJ-I-f4d3348d": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 3,
+          "n_fabricated": 8,
+          "examples": {
+            "contradicted": [
+              "龙北溪组位于下位，东岩组位于上位。"
+            ],
+            "fabricated": [
+              "同位素定年数据（如锆石 U-Pb 年龄）通常显示其形成于约 800 Ma - 750 Ma 左右（具体数据随研究进展有所波动）。"
+            ],
+            "unsupported": [
+              "龙北溪组与东岩组的序列记录了华南板块新元古代裂谷作用或洋陆转换的关键历史。"
+            ]
+          },
+          "reason": "核心关系错，细节多编造",
+          "judge_failed": false
+        },
+        "FJ-I-ee05cd54": {
+          "n_supported": 0,
+          "n_unsupported": 2,
+          "n_contradicted": 7,
+          "n_fabricated": 3,
+          "examples": {
+            "contradicted": [
+              "均口组主体：紫红色、砖红色的厚层 - 巨厚层砾岩、砂砾岩、中粗粒长石砂岩。"
+            ],
+            "fabricated": [
+              "均口组主要分布于福建宁化、清流一带。"
+            ],
+            "unsupported": [
+              "均口组沉积环境：主要为冲积扇 - 河流相。"
+            ]
+          },
+          "reason": "多数岩性与标准矛盾并编造地点",
+          "judge_failed": false
+        },
+        "FJ-I-f2064053": {
+          "n_supported": 0,
+          "n_unsupported": 0,
+          "n_contradicted": 3,
+          "n_fabricated": 9,
+          "examples": {
+            "contradicted": [
+              "桃溪岩组分布相对局限，多呈环带状或构造窗形式分布于迪口岩组的外围，或见于特定的断陷盆地中（如建瓯桃溪村周边）。"
+            ],
+            "fabricated": [
+              "锆石 U-Pb 年龄主要集中在 1.85 Ga ~ 1.75 Ga 左右，代表了华夏地块基底形成的关键时期（可能与哥伦比亚超大陆聚合有关）。"
+            ],
+            "unsupported": []
+          },
+          "reason": "桃溪分布矛盾，年龄岩性多编造",
+          "judge_failed": false
+        },
+        "FJ-I-f19017dd": {
+          "n_supported": 4,
+          "n_unsupported": 3,
+          "n_contradicted": 1,
+          "n_fabricated": 4,
+          "examples": {
+            "contradicted": [
+              "石牛山组颜色较杂，常见灰白色、浅灰色、灰绿色，部分因氧化呈紫红色，但整体色调较崇安组偏浅或偏冷色调。"
+            ],
+            "fabricated": [
+              "介形虫、轮藻、叶肢介 (水生生物) | 植物化石为主，动物化石较少"
+            ],
+            "unsupported": [
+              "石牛山组：通常与火山机构或火山盆地中心相有关。"
+            ]
+          },
+          "reason": "多处编造化石岩名地名，颜色矛盾",
+          "judge_failed": false
+        },
+        "FJ-I-e16a387f": {
+          "n_supported": 0,
+          "n_unsupported": 1,
+          "n_contradicted": 7,
+          "n_fabricated": 4,
+          "examples": {
+            "contradicted": [
+              "下伏地层通常为南园组（Nanyuan Formation, J₃n）。"
+            ],
+            "fabricated": [
+              "上覆地层通常为石帽山群（Shimaoshan Group, K₁）或早白垩世的其他火山 - 沉积地层（如朝洋组、番州组等）。"
+            ],
+            "unsupported": [
+              "与上覆地层接触性质为不整合接触，多为角度不整合或平行不整合。"
+            ]
+          },
+          "reason": "长乐组被误作侏罗纪火山岩，接触关系多错。",
+          "judge_failed": false
+        },
+        "FJ-I-f8c6720c": {
+          "n_supported": 4,
+          "n_unsupported": 3,
+          "n_contradicted": 1,
+          "n_fabricated": 4,
+          "examples": {
+            "contradicted": [
+              "地层属性：火山岩群（Volcanic Group）。"
+            ],
+            "fabricated": [
+              "火山物质含量极高 (>90%)"
+            ],
+            "unsupported": [
+              "代表火山喷发中心相或火山机构相。"
+            ]
+          },
+          "reason": "石帽山群分类冲突，多处地名数值编造。",
+          "judge_failed": false
+        },
+        "FJ-I-efffd422": {
+          "n_supported": 4,
+          "n_unsupported": 0,
+          "n_contradicted": 0,
+          "n_fabricated": 8,
+          "examples": {
+            "contradicted": [],
+            "fabricated": [
+              "植物化石：产有丰富的早白垩世植物化石，如Coniopteris（锥叶蕨）、Brachyphyllum（短叶杉）等，反映了当时的古气候和古植被环境。"
+            ],
+            "unsupported": []
+          },
+          "reason": "单位正确，具体细节多编造",
+          "judge_failed": false
+        }
+      }
+    }
+  },
+  "usage": {
+    "deepseek-flash": {
+      "calls": 200,
+      "prompt_tokens": 374047,
+      "completion_tokens": 1340221,
+      "total_tokens": 1714268
+    }
+  }
+}

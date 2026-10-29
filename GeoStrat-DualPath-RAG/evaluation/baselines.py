@@ -13,9 +13,33 @@ import time
 import json
 import os
 import sys
+import threading
 
 # 确保能导入项目服务
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+# 并发评测时保护向量库查询（见 _retrieve_docs 注释）
+_VEC_LOCK = threading.Lock()
+
+
+# —— 图谱本体覆盖判断：图谱只对「它确实编码的关系」权威 ——
+# D2 阶段已删除 THICKNESS/HAS_THICKNESS、CONTACTS 关系，且本体无「命名/创名/沉积环境」关系。
+# 当问题只问这些「图谱盲区」属性时，关闭图谱通道、退化为文献通道（真正的自适应退化）。
+_GRAPH_BLIND_ATTRS = (
+    '厚度', '命名', '创名', '创建', '接触', '不整合', '整合',
+    '沉积环境', '沉积相', '原岩', '古水流', '含矿',
+)
+_GRAPH_COVER_ATTRS = (
+    '岩性', '岩石', '年代', '时代', '分布', '展布', '出露', '位于', '见于',
+    '化石', '同义', '组成', '层位', '含煤', '序列', '上下', '归属',
+)
+
+
+def _graph_is_blind(question):
+    """判断问题所问属性是否在图谱本体之外（图谱盲区），若是则双路法应退化为文献通道。"""
+    blind = any(k in question for k in _GRAPH_BLIND_ATTRS)
+    cover = any(k in question for k in _GRAPH_COVER_ATTRS)
+    return blind and not cover
 
 
 class BaselineRunner:
@@ -25,13 +49,33 @@ class BaselineRunner:
         "direct_llm": "纯LLM (无RAG)",
         "vector_rag": "向量RAG",
         "graph_rag": "图谱RAG",
-        "dual_path": "双路自适应融合 (Proposed)"
+        "dual_path": "双路自适应融合 (Proposed)",
+        # 对照组（2026-09-16 加）：与 dual_path 逐行相同，**只改一个变量**——
+        # 图谱启用时也把文献上下文给满（top-5/500），而非 dual_path 的 top-3/400。
+        # 目的：把「图谱带来的增益」与「少给 40% 文献带来的代价」分开。否则
+        # "双路 vs 向量"比的是「减配文献 + 图谱」vs「满配文献」，说不清功劳归谁。
+        "dual_path_fullctx": "双路+满配文献 (对照)",
+        # 消融（2026-09-16 加）：删掉图谱盲区门控，图谱永不关闭。论文把"自适应退化"
+        # 写成设计却从未消融过它，这是补上那个缺失的消融。
+        "dual_path_nogate": "D − 自适应退化 (图谱永不关)",
+        # 消融（2026-09-19 归位）：以下两臂与 dual_path 共用 _dual_path_impl，
+        # 只差一个开关。此前它们住在 ablation.py、是一份复制后未同步的旧实现
+        # （旧 system 指令、无门控、无盲区分支），跑出来的"D. 完整方法"与主表
+        # "双路"不是同一个东西，差值不可解释。现统一到唯一实现体。
+        "dual_path_no_classify": "D − 自适应分类 (固定FACTUAL模板)",
+        "dual_path_no_citation": "D − 细粒度引用 (无[G]/[D]标注)",
     }
 
-    def __init__(self, model="qwen3.5-plus", kb_id="all", results_dir=None):
+    def __init__(self, model="qwen3.5-plus", kb_id="all", results_dir=None,
+                 hops_override=None):
         self.model = model
         self.kb_id = kb_id
         self.results_dir = results_dir or "./evaluation/results"
+        # 跳数敏感性分析用（R2#4）：设了就强制覆盖分类器给出的 max_hops，
+        # 用来跑 hop=1/2/3 的对照。None = 正常行为（按查询类型自适应）。
+        # ⚠️ 敏感性实验只作分析报告，**不得据此挑"最好的 hop"写进主实验**——
+        #    那等于用测试集调参，正好违反 R2#3。
+        self.hops_override = hops_override
 
     # ================================================================
     # Baseline A: Direct LLM (no retrieval)
@@ -54,6 +98,11 @@ class BaselineRunner:
         return {
             "answer": answer,
             "retrieved_docs": [],
+            # 纯 LLM 没有任何检索通道 → 召回类指标不适用，报 N/A 而非 0（R2#6）
+            "retrieval_applicable": False,
+            # 无检索 → 无展示片段，片段级证据召回同样记 N/A
+            "surfaced_spans": [],
+            "evidence_applicable": False,
             "citations": [],
             "extracted_triples": [],
             "contrast_dimensions": [],
@@ -66,13 +115,20 @@ class BaselineRunner:
     # ================================================================
 
     def _retrieve_docs(self, query, kb_id, top_k=5):
-        """绕过 retrieve_from_vectordb（返回元组），直接获取Document对象"""
+        """绕过 retrieve_from_vectordb（返回元组），直接获取Document对象
+
+        并发评测（run_full_evaluation(workers>1)）时用 _VEC_LOCK 串行化：
+        similarity_search 内部要调嵌入模型做 query 编码，底层模型句柄不是
+        线程安全的；而检索本身只占单题耗时极小一部分（生成要几十秒），
+        串行化它不会抵消并发收益。
+        """
         from rag_core import vectordb
         try:
-            if kb_id and kb_id != "all":
-                return vectordb.similarity_search(query, k=top_k, filter={"kb_id": kb_id})
-            else:
-                return vectordb.similarity_search(query, k=top_k)
+            with _VEC_LOCK:
+                if kb_id and kb_id != "all":
+                    return vectordb.similarity_search(query, k=top_k, filter={"kb_id": kb_id})
+                else:
+                    return vectordb.similarity_search(query, k=top_k)
         except Exception as e:
             print(f"[Baseline] Vector search failed: {e}")
             return []
@@ -145,14 +201,21 @@ class BaselineRunner:
         t0 = time.time()
         retrieved_docs = []
         context_text = ""
+        # docs 必须在 try 之外先绑定：检索抛异常时它不会被赋值，而下面返回值里
+        # 要引用它（surfaced_spans）——否则检索失败会从"退化为无上下文"变成 NameError。
+        docs = []
 
         try:
             docs = self._retrieve_docs(question_dict['question'], self.kb_id, top_k=5)
             if docs:
                 retrieved_docs = [
                     {"id": d.metadata.get("source_file", f"doc{i}"),
+                     "source_file": d.metadata.get("source_file", ""),
+                     "chunk_index": d.metadata.get("chunk_index"),
+                     # 存全文而非前 200 字：片段级证据召回要在完整 chunk 里找
+                     # evidence_span，截断会让真命中被判成未命中。
                      "score": d.metadata.get("score", 0.5),
-                     "content": d.page_content[:200]}
+                     "content": d.page_content}
                     for i, d in enumerate(docs)
                 ]
                 context_text = "\n\n".join([
@@ -183,6 +246,11 @@ class BaselineRunner:
             "answer": answer,
             "retrieved_docs": retrieved_docs,
             "citations": citations,
+            # 被召回片段的完整正文——片段级证据召回的真值比对用这个。
+            # 判定单位是"片段"，故用整段而非 prompt 中截断后的文本：
+            # prompt 里的 500 字截断属生成侧设置，不该影响"是否召回了证据"的判定。
+            "surfaced_spans": [d.page_content for d in docs],
+            "evidence_applicable": True,
             "extracted_triples": [],
             "contrast_dimensions": [],
             "query_type": "FACTUAL",
@@ -205,7 +273,7 @@ class BaselineRunner:
         try:
             result = retrieve_graph_context(
                 question_dict['question'], self.kb_id,
-                max_hops=2
+                max_hops=self.hops_override or 2
             )
             if isinstance(result, tuple) and len(result) == 2:
                 kg_edges = result[0] if isinstance(result[0], list) else []
@@ -231,6 +299,15 @@ class BaselineRunner:
         return {
             "answer": answer,
             "retrieved_docs": [],
+            # 图谱通道返回的是三元组、不是文本片段，无 recall@K/MRR 可言
+            # → 报 N/A 而非 0（R2#6）
+            "retrieval_applicable": False,
+            # 图谱边其实带 evidence（实测 2894/2894 条都有），但
+            # retrieve_graph_context 返回的是 "A --[REL]--> B" 纯字符串，
+            # evidence 从未传给生成器 → 无可比对的"展示片段"，片段级指标记 N/A。
+            # 这是**行为缺口**（非度量问题），单独作为改进项处理，不与本次度量修正混做。
+            "surfaced_spans": [],
+            "evidence_applicable": False,
             "citations": ["福建地质志.docx"] if kg_facts else [],
             "extracted_triples": [],
             "contrast_dimensions": [],
@@ -244,35 +321,105 @@ class BaselineRunner:
 
     def _runner_dual_path(self, question_dict):
         """双路检索 + 自适应融合 (论文提出的方法)"""
+        return self._dual_path_impl(question_dict, full_context=False)
+
+    def _runner_dual_path_fullctx(self, question_dict):
+        """对照组：与 _runner_dual_path 逐行相同，仅「图谱启用时给多少文献」这一个变量不同。
+
+        动机：_runner_dual_path 在图谱启用时主动把文献从 top-5/500 砍到 top-3/400
+        （原注释称"避免无关片段稀释图谱信号"），于是"双路 vs 向量"实际比的是
+        「减配 40% 文献 + 图谱」vs「满配文献」，分不清增益来自图谱还是来自那次减法。
+        本臂把文献补满、其余一切不变，两者之差即那次减配的净代价。
+
+        用**函数参数**而非实例属性传开关：--workers>1 是多线程，实例属性会串
+        （一个线程还原成 False 时另一个线程仍在跑），故这里不碰 self。
+        """
+        return self._dual_path_impl(question_dict, full_context=True)
+
+    def _runner_dual_path_nogate(self, question_dict):
+        """消融「D − 自适应退化」：删掉 _graph_is_blind 门控，图谱**永不关闭**。
+
+        动机：门控是论文 3.3.2 节写明的设计（"问的属性不在图谱本体里 → 退化为纯文献"），
+        但论文从未消融过它。实测该门控在留出集上关掉了 28.9%（334/1157）的问题，
+        且这些题**全部**能从图谱检索到非空事实——返回的正是对比所需的层级、岩性组合、
+        年代与地层分区等事实。门控把"所问属性缺失"当成了"图谱对这个实体无用"。
+
+        本臂只改这一个变量：honor_gate=False。其余（prompt 模板、文献取 top-3/400、
+        检索参数）一律与 _runner_dual_path 相同。若本臂更差，则门控是必要设计；
+        若更好，则门控在过度触发——两种结果都能写进论文。
+        """
+        return self._dual_path_impl(question_dict, full_context=False, honor_gate=False)
+
+    def _runner_dual_path_no_classify(self, question_dict):
+        """消融「D − 自适应分类」：跳过查询分类器，全部问题按 FACTUAL 处理。
+
+        分类器在这条路径上实际只控制两件事：prompt 模板（三分支）与 max_hops。
+        本臂把两者钉死在默认值，其余（检索、文献取法、引用指令、门控）一字不动。
+
+        说明：论文摘要/4.7 节曾把分类器描述为"差异化向量与图谱权重"，但代码里
+        config 的 vector_ratio/graph_ratio 从未被读取。因此本臂量的**不是**权重
+        差异，而是"按题型换模板 + 按题型调跳数"的净效果 —— 论文相应表述须改。
+        """
+        return self._dual_path_impl(question_dict, no_classify=True)
+
+    def _runner_dual_path_no_citation(self, question_dict):
+        """消融「D − 细粒度引用」：删掉要求标注 [G]/[D] 的指令，其余一字不动。"""
+        return self._dual_path_impl(question_dict, no_citation=True)
+
+    def _dual_path_impl(self, question_dict, full_context=False, honor_gate=True,
+                        no_classify=False, no_citation=False):
+        """_runner_dual_path 的唯一实现体 —— 主表与消融全部走这一条路径。
+
+        full_context：图谱启用时是否把文献补满到 top-5/500（默认否，即 top-3/400）。
+        honor_gate：是否启用 _graph_is_blind 门控（默认是）。False = 图谱永不关闭。
+        no_classify：跳过查询分类器，全部问题按 FACTUAL 模板 + max_hops=2 处理
+                     （消融「D − 自适应分类」）。
+        no_citation：删掉要求标注 [G]/[D] 的指令（消融「D − 细粒度引用」）。
+
+        ⚠️ 每个开关只动它自己那一个变量，其余一律不变 —— 否则消融差值不是
+        单一变量的贡献，跟主表也没法并排比。
+        """
         from services.model_router import get_model_response
         from services.query_classifier import get_retrieval_config
 
         t0 = time.time()
 
-        # Step 1: 查询分类
+        # Step 1: 查询分类（no_classify=True 时整段跳过）
+        # 注意：分类器在这条代码路径上**只影响两件事**——prompt 模板
+        # （REASONING/COMPARATIVE/FACTUAL 三分支）和 max_hops。config 里的
+        # vector_ratio/graph_ratio 从未被本文件任何一处读取（是历史上的死变量），
+        # 故不取出，免得读代码的人以为权重真的参与了融合。
         query_type = "FACTUAL"
-        v_ratio, g_ratio, max_hops = 0.6, 0.4, 2
-        try:
-            config = get_retrieval_config(question_dict['question'])
-            query_type = config.get("query_type", "FACTUAL")
-            v_ratio = config.get("vector_ratio", 0.6)
-            g_ratio = config.get("graph_ratio", 0.4)
-            max_hops = config.get("max_hops", 2)
-        except Exception as e:
-            print(f"[Baseline-Dual] Query classification failed: {e}")
+        max_hops = 2
+        if not no_classify:
+            try:
+                config = get_retrieval_config(question_dict['question'])
+                query_type = config.get("query_type", "FACTUAL")
+                max_hops = config.get("max_hops", 2)
+            except Exception as e:
+                print(f"[Baseline-Dual] Query classification failed: {e}")
+
+        if self.hops_override:      # R2#4 跳数敏感性：强制覆盖分类器给的值
+            max_hops = self.hops_override
 
         # Step 2: 并行检索
         vector_docs = []
+        vector_raw = []  # 完整 page_content，用于构建 context（与 vector_rag 对齐）
         kg_facts = ""
 
         # 向量检索
         try:
             docs = self._retrieve_docs(question_dict['question'], self.kb_id, top_k=5)
             if docs:
+                vector_raw = docs
                 vector_docs = [
                     {"id": d.metadata.get("source_file", f"doc{i}"),
+                     "source_file": d.metadata.get("source_file", ""),
+                     "chunk_index": d.metadata.get("chunk_index"),
                      "score": d.metadata.get("score", 0.5),
-                     "content": d.page_content[:200]}
+                     # 存全文而非前 200 字：片段级证据召回要在完整 chunk 里找
+                     # evidence_span，截断会让真命中被判成未命中。
+                     "content": d.page_content}
                     for i, d in enumerate(docs)
                 ]
         except Exception as e:
@@ -295,22 +442,72 @@ class BaselineRunner:
         except Exception as e:
             print(f"[Baseline-Dual] KG retrieval failed: {e}")
 
+        # 图谱覆盖门控：问题只问图谱本体缺失的属性（厚度/命名/接触/沉积环境/原岩）时，
+        # 关闭图谱通道、退化为文献通道（自适应退化，而非把无关图谱事实硬套进去）。
+        # honor_gate=False（消融「D − 自适应退化」）时恒为 False：图谱永不关闭，
+        # 后续 prompt 与文献取法也随之走"图谱启用"那一条路，符合"只删门控"这一个改动。
+        graph_blind = _graph_is_blind(question_dict['question']) if honor_gate else False
+        if graph_blind:
+            kg_facts = ""
+
         # Step 3: 融合构建Prompt
+        # 向量上下文大小随「图谱是否覆盖所问属性」自适应：
+        # - 图谱盲区问题（厚度/命名/沉积环境等）：图谱已关闭，答案只能来自文献 → 取全量 top-5/500（与 vector_rag 对齐）
+        # - 图谱覆盖问题（岩性/年代/分布/推理）：图谱主导，文献仅辅助 → 取 top-3/400，避免无关片段稀释图谱信号
+        if graph_blind or full_context:
+            # 盲区问题：图谱已关，答案只能来自文献 → 给满，与 vector_rag 对齐。
+            # full_context=True（对照组）：图谱虽启用，也把文献给满——这正是与
+            # dual_path 唯一不同的那个变量，用来分离"图谱的增益"与"少给 40% 文献的代价"。
+            v_docs, v_chars = vector_raw[:5], 500
+        else:
+            v_docs, v_chars = vector_raw[:3], 400
         v_context = "\n\n".join([
-            f"[文献 {i+1}] {d.get('content', '')[:400]}"
-            for i, d in enumerate(vector_docs[:3])
+            f"[文献 {i+1}] {d.page_content[:v_chars]}"
+            for i, d in enumerate(v_docs)
         ])
 
         # 查询类型自适应 Prompt 模板
-        # 核心原则：图谱事实为结构化权威数据，文献为补充描述
+        # 核心原则：图谱只对「它确实编码的属性」权威（岩性/年代/分布/化石/层位/同义名）；
+        #           厚度/命名/沉积环境等图谱本体缺失的属性，必须以文献为准，避免硬套图谱。
+        # 消融「D − 细粒度引用」（no_citation=True）：删掉所有要求标注 [G]/[D] 的
+        # 指令，其余一字不动。COMPARATIVE/FACTUAL 两个模板本来就没有引用句，
+        # 受影响的只有公共的 system_instruction 和另外两个模板的收尾句。
+        # ⚠️ 换行必须跟着这一行走：no_citation=False 时拼出来的是
+        # "…以文献为准。\n- 在答案中标注依据来源：…。"，与重构前**逐字相同**。
+        # 若把 \n 写在本串尾部，模板里 {system_instruction} 后面本来就有一个
+        # 换行，整段会多出一个空行 —— 主表 prompt 就被悄悄改掉了。
+        _cite_bullet = ("" if no_citation else
+                        "\n- 在答案中标注依据来源：[G] 表示图谱、[D] 表示文献。")
+        _tail_blind = "请基于文献给出专业回答" + ("。" if no_citation else "，标注出处。")
+        _tail_reasoning = ("请先分析图谱中的推理链条，再结合文献证据给出综合判断。"
+                           + ("" if no_citation else
+                              "在图谱证据处标注[G]、文献证据处标注[D]。"))
+
         system_instruction = (
-            "你是一位专业地质学家。你必须综合以下两类信息回答问题：\n"
-            "1. 知识图谱事实 — 结构化提取的地层属性，为权威数据，优先采信\n"
-            "2. 参考文献 — 地质志描述文本，用于补充细节和上下文\n"
-            "重要：如果图谱事实与文献描述或你的训练知识存在冲突，以图谱事实为准。"
+            "你是一位专业地质学家。请综合以下两类信息回答问题：\n"
+            "1. 知识图谱事实 — 结构化提取的地层属性（岩性/年代/分布/化石/上下层位/同义名）\n"
+            "2. 参考文献 — 地质志原文描述\n"
+            "使用原则：\n"
+            "- 图谱事实只对它确实编码的属性权威；若问题所问的属性（如厚度、命名、沉积环境）在图谱事实中缺失，必须以参考文献为准，不要用图谱中的其他属性强行拼凑或编造。\n"
+            "- 图谱与文献冲突时：图谱对该属性有明确事实则优先图谱，否则以文献为准。"
+            + _cite_bullet
         )
 
-        if query_type == 'REASONING':
+        if graph_blind:
+            # 图谱盲区：退化为纯文献通道（自适应退化）。prompt 与 vector_rag 对齐，
+            # 不再提「图谱主导」——否则空图谱会让模型误以为有权威数据而编造答案。
+            prompt = f"""你是一位专业地质学家。你必须严格基于以下参考文献回答问题，不得依赖训练数据中的记忆。
+
+注意：如果参考文献中缺乏相关信息，请明确说明"文献中未找到相关信息"，不要编造。
+
+## 参考文献
+{v_context if v_context else '暂无相关文献'}
+
+## 问题
+{question_dict['question']}
+
+{_tail_blind}"""
+        elif query_type == 'REASONING':
             # 图谱主导：先展示推理路径，再补充文献
             prompt = f"""{system_instruction}
 
@@ -323,7 +520,7 @@ class BaselineRunner:
 ## 问题
 {question_dict['question']}
 
-请先分析图谱中的推理链条，再结合文献证据给出综合判断。在图谱证据处标注[G]、文献证据处标注[D]。"""
+{_tail_reasoning}"""
 
         elif query_type == 'COMPARATIVE':
             # 均衡模式：图谱提供结构化对比维度，文献提供细节
@@ -367,6 +564,13 @@ class BaselineRunner:
             "answer": answer,
             "retrieved_docs": vector_docs,
             "citations": citations,
+            # 双路有文本通道 → 片段级证据召回适用。这里报的是**向量通道展示的
+            # 片段**（图谱通道返回的是三元组字符串，不可比），与 vector_rag
+            # 的口径一致，这样"双路比向量RAG好在哪"才是同一把尺子量出来的。
+            # 注意用 vector_raw（原始 Document 列表）而非 vector_docs——
+            # 后者是给结果文件看的 dict 结构，没有 page_content 属性
+            "surfaced_spans": [d.page_content for d in vector_raw],
+            "evidence_applicable": True,
             "extracted_triples": [],
             "contrast_dimensions": [],
             "query_type": query_type,
@@ -384,6 +588,10 @@ class BaselineRunner:
             "vector_rag": self._runner_vector_rag,
             "graph_rag": self._runner_graph_rag,
             "dual_path": self._runner_dual_path,
+            "dual_path_fullctx": self._runner_dual_path_fullctx,
+            "dual_path_nogate": self._runner_dual_path_nogate,
+            "dual_path_no_classify": self._runner_dual_path_no_classify,
+            "dual_path_no_citation": self._runner_dual_path_no_citation,
         }
         return runners.get(baseline_name, self._runner_direct_llm)
 
