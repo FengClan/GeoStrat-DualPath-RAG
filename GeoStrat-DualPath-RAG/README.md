@@ -201,9 +201,9 @@ checkpoints and the aggregated summaries reported in the paper.
 ## Citation
 
 ```bibtex
-@article{qiu2026adaptive,
-  title={Adaptive Dual-Path Retrieval-Augmented Generation for Lithostratigraphic Question Answering},
-  author={Qiu, Qinjun and Lv, Yunfeng and Zhang, Yuang and Tian, Miao},
+@article{li2026adaptive,
+  title={An Adaptive Dual-Path Retrieval-Augmented Generation Method for Lithostratigraphic Question Answering via Large Language Model and Knowledge Graph},
+  author={Li, Yun and Lv, Yunfeng and Zhu, Hui and Xiao, Bin and Li, Dajun and Qiu, Qinjun and Zhang, Yuang and Tian, Miao},
   year={2026}
 }
 ```
