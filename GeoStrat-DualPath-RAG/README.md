@@ -1,6 +1,6 @@
 # GeoStrat-DualPath-RAG
 
-Adaptive Dual-Path Retrieval-Augmented Generation for Lithostratigraphic Question Answering.
+An Adaptive Dual-Path Retrieval-Augmented Generation Method for Lithostratigraphic Question Answering via Large Language Model and Knowledge Graph
 
 ## Overview
 
